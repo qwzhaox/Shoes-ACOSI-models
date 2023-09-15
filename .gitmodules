@@ -1,9 +1,9 @@
-[submodule "multi-view-prompting"]
-	path = multi-view-prompting
-	url = git@github.com:ZubinGou/multi-view-prompting.git
 [submodule "InstructABSA"]
 	path = InstructABSA
 	url = git@github.com:kevinscaria/InstructABSA.git
 [submodule "ECSR-shoes"]
 	path = ECSR-shoes
 	url = git@github.com:qwzhaox/ECSR-shoes.git
+[submodule "multi-view-prompting"]
+	path = multi-view-prompting
+	url = git@github.com:ZubinGou/multi-view-prompting.git
