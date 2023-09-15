@@ -1,0 +1,6 @@
+[submodule "multi-view-prompting"]
+	path = multi-view-prompting
+	url = git@github.com:ZubinGou/multi-view-prompting.git
+[submodule "InstructABSA"]
+	path = InstructABSA
+	url = git@github.com:kevinscaria/InstructABSA.git
