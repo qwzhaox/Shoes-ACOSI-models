@@ -4,3 +4,6 @@
 [submodule "InstructABSA"]
 	path = InstructABSA
 	url = git@github.com:kevinscaria/InstructABSA.git
+[submodule "ECSR-shoes"]
+	path = ECSR-shoes
+	url = git@github.com:qwzhaox/ECSR-shoes.git
