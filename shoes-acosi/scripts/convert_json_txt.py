@@ -33,15 +33,39 @@ test_str_list = []
 val_str_list = []
 
 for rev in train:
-    rev_str = rev["review"] + "####" + str(rev["annot"])
+    rev_str = (
+        rev["review"]
+        + "####"
+        + str(rev["annot"])
+        .replace("#", " ")
+        .replace("/", "_")
+        .replace("\\\\_", "_")
+        .lower()
+    )
     train_str_list.append(rev_str)
 
 for rev in test:
-    rev_str = rev["review"] + "####" + str(rev["annot"])
+    rev_str = (
+        rev["review"]
+        + "####"
+        + str(rev["annot"])
+        .replace("#", " ")
+        .replace("/", "_")
+        .replace("\\\\_", "_")
+        .lower()
+    )
     test_str_list.append(rev_str)
 
 for rev in val:
-    rev_str = rev["review"] + "####" + str(rev["annot"])
+    rev_str = (
+        rev["review"]
+        + "####"
+        + str(rev["annot"])
+        .replace("#", " ")
+        .replace("/", "_")
+        .replace("\\\\_", "_")
+        .lower()
+    )
     val_str_list.append(rev_str)
 
 train_str = "\n".join(train_str_list)
