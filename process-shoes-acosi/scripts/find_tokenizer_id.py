@@ -4,7 +4,7 @@ tokenizer = T5Tokenizer.from_pretrained("t5-base")
 
 model = T5ForConditionalGeneration.from_pretrained("t5-base")
 
-input_ids = tokenizer("[I]", return_tensors="pt").input_ids
+input_ids = tokenizer("implicit", return_tensors="pt").input_ids
 
 # impl_expl_tokenize_res = []
 
