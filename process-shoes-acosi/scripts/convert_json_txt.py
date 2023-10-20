@@ -2,18 +2,21 @@ import argparse
 from json import load
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--input_file", help="input json file", required=True)
+parser.add_argument("-i", "--input_file", help="input json file", required=True)
 parser.add_argument(
+    "-1",
     "--output_file1",
     help="output json file",
     required=True,
 )
 parser.add_argument(
+    "-2",
     "--output_file2",
     help="output json file",
     required=True,
 )
 parser.add_argument(
+    "-3",
     "--output_file3",
     help="output json file",
     required=True,
@@ -36,7 +39,7 @@ for rev in train:
     rev_str = (
         rev["review"]
         + "####"
-        + str(rev["annot"])
+        + str(rev["annot1"])
         .replace("#", " ")
         .replace("/", "_")
         .replace("\\\\_", "_")
@@ -48,7 +51,7 @@ for rev in test:
     rev_str = (
         rev["review"]
         + "####"
-        + str(rev["annot"])
+        + str(rev["annot1"])
         .replace("#", " ")
         .replace("/", "_")
         .replace("\\\\_", "_")
@@ -60,7 +63,7 @@ for rev in val:
     rev_str = (
         rev["review"]
         + "####"
-        + str(rev["annot"])
+        + str(rev["annot1"])
         .replace("#", " ")
         .replace("/", "_")
         .replace("\\\\_", "_")
