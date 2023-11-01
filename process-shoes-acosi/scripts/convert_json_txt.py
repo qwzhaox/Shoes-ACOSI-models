@@ -37,7 +37,7 @@ val_str_list = []
 
 for rev in train:
     rev_str = (
-        rev["review"]
+        rev["review"].lower()
         + "####"
         + str(rev["annot1"])
         .replace("#", " ")
@@ -49,7 +49,7 @@ for rev in train:
 
 for rev in test:
     rev_str = (
-        rev["review"]
+        rev["review"].lower()
         + "####"
         + str(rev["annot1"])
         .replace("#", " ")
@@ -61,7 +61,7 @@ for rev in test:
 
 for rev in val:
     rev_str = (
-        rev["review"]
+        rev["review"].lower()
         + "####"
         + str(rev["annot1"])
         .replace("#", " ")
