@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 scripts/convert_json_txt.py --input_file data/splits.json --output_file1 data/train.txt --output_file2 data/test.txt --output_file3 data/dev.txt
+python3 scripts/convert_json_txt.py --input_file data/splits.json --train data/train.txt --test data/test.txt --val data/dev.txt

@@ -13,5 +13,5 @@ input_ids = tokenizer("implicit", return_tensors="pt").input_ids
 #         tokenizer(ie, return_tensors="pt")["input_ids"].tolist()[0]
 #     )
 
-# print(tokenizer.decode(71))
+print(tokenizer.decode(1))
 print(input_ids)
