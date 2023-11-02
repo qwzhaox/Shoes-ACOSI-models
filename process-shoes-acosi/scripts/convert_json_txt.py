@@ -24,6 +24,11 @@ parser.add_argument(
     help="output json file",
     required=True,
 )
+parser.add_argument(
+    "-it",
+    "--implicit_to_it",
+    action="store_true",
+)
 
 args = parser.parse_args()
 
@@ -42,7 +47,7 @@ def get_str_list(reviews):
             annot[CATEGORY_IDX] = (
                 annot[CATEGORY_IDX].replace("#", " ").replace("/", "_")
             )
-            if annot[ASPECT_IDX].lower() == "implicit":
+            if args.implicit_to_it and annot[ASPECT_IDX].lower() == "implicit":
                 annot[ASPECT_IDX] = "it"
         rev_str = (
             rev["review"].lower()
