@@ -48,7 +48,7 @@ def get_str_list(reviews):
                 annot[CATEGORY_IDX].replace("#", " ").replace("/", "_")
             )
             if args.implicit_to_it and annot[ASPECT_IDX].lower() == "implicit":
-                annot[ASPECT_IDX] = "it"
+                annot[ASPECT_IDX] = "null"
         rev_str = (
             rev["review"].lower()
             + "####"
