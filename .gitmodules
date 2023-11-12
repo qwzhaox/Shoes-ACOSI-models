@@ -1,9 +1,6 @@
-[submodule "ECSR-shoes"]
-	path = ECSR-shoes
-	url = git@github.com:qwzhaox/ECSR-shoes.git
 [submodule "multi-view-prompting-acosi"]
 	path = multi-view-prompting-acosi
 	url = git@github.com:qwzhaox/multi-view-prompting-acosi.git
-[submodule "InstructABSA-acosi"]
-	path = InstructABSA-acosi
-	url = git@github.com:qwzhaox/InstructABSA-acosi.git
+[submodule "Shoes-ACOSI"]
+	path = Shoes-ACOSI
+	url = git@github.com:qwzhaox/Shoes-ACOSI.git

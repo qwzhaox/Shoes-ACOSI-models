@@ -25,8 +25,8 @@ parser.add_argument(
     required=True,
 )
 parser.add_argument(
-    "-it",
-    "--implicit_to_it",
+    "-mvp",
+    "--is_mvp",
     action="store_true",
 )
 
@@ -44,17 +44,23 @@ def get_str_list(reviews):
     str_list = []
     for rev in reviews:
         for annot in rev["annot1"]:
-            annot[CATEGORY_IDX] = (
-                annot[CATEGORY_IDX].replace("#", " ").replace("/", "_")
-            )
-            if args.implicit_to_it and annot[ASPECT_IDX].lower() == "implicit":
-                annot[ASPECT_IDX] = "null"
-        rev_str = (
-            rev["review"].lower()
-            + "####"
-            + str(rev["annot1"]).replace("\\\\_", "_").lower()
-        )
+            if args.is_mvp:
+                annot[CATEGORY_IDX] = (
+                    annot[CATEGORY_IDX].replace("#", " ").replace("/", "_")
+                )
+                if annot[ASPECT_IDX].lower() == "implicit":
+                    annot[ASPECT_IDX] = "null"
+
+        review_str = rev["review"]
+        annot_str = str(rev["annot1"])
+
+        if args.is_mvp:
+            annot_str = annot_str.replace("\\\\_", "_").lower()
+            review_str = review_str.lower()
+
+        rev_str = review_str + "####" + annot_str
         str_list.append(rev_str)
+
     return str_list
 
 
