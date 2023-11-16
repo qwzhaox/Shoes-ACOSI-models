@@ -1,9 +1,6 @@
 [submodule "multi-view-prompting-acosi"]
 	path = multi-view-prompting-acosi
 	url = git@github.com:qwzhaox/multi-view-prompting-acosi.git
-[submodule "Shoes-ACOSI"]
-	path = Shoes-ACOSI
-	url = git@github.com:qwzhaox/Shoes-ACOSI.git
 [submodule "EECS595Project"]
 	path = EECS595Project
 	url = git@github.com:qwzhaox/EECS595Project.git
