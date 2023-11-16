@@ -7,3 +7,6 @@
 [submodule "ACOSI_simple"]
 	path = ACOSI_simple
 	url = git@github.com:qwzhaox/ACOSI_simple.git
+[submodule "Shoes-ACOSI"]
+	path = Shoes-ACOSI
+	url = git@github.com:qwzhaox/Shoes-ACOSI.git
