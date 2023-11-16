@@ -7,3 +7,6 @@
 [submodule "EECS595Project"]
 	path = EECS595Project
 	url = git@github.com:qwzhaox/EECS595Project.git
+[submodule "ACOSI_simple"]
+	path = ACOSI_simple
+	url = git@github.com:qwzhaox/ACOSI_simple.git
