@@ -10,3 +10,6 @@
 [submodule "Shoes-ACOSI"]
 	path = Shoes-ACOSI
 	url = git@github.com:qwzhaox/Shoes-ACOSI.git
+[submodule "ACOS"]
+	path = ACOS
+	url = git@github.com:qwzhaox/ACOS.git
