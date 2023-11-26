@@ -1,0 +1,18 @@
+~/src/absa/EECS595Project ~/src/absa
+Running ACOS extract ABSA_TASK
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:55<00:55, 55.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:14<00:00, 33.81s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:14<00:00, 37.02s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 42128.40item/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (1323 > 1024). Running this sequence through the model will result in indexing errors
+Running pipeline...
+Total output tokens: 129643
+Avg out tokens per prompt: 1296.43
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:07<00:07,  7.43s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.21s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:09<00:00,  4.69s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 38515.19item/s]
+Token indices sequence length is longer than the specified maximum sequence length for this model (1268 > 1024). Running this sequence through the model will result in indexing errors
+slurmstepd: error: *** JOB 65585149 ON gl1504 CANCELLED AT 2023-11-26T15:46:21 DUE TO TIME LIMIT ***
