@@ -3,7 +3,7 @@
 #SBATCH --partition=spgpu
 #SBATCH --time=00-02:00:00
 #SBATCH --gpus=1
-#SBATCH --cpus-per-gpu=2
+#SBATCH --cpus-per-gpu=1
 #SBATCH --nodes=1 
 #SBATCH --mem-per-cpu=2800m
 #SBATCH --account=eecs595f23_class

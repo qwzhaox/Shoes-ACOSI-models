@@ -1,0 +1,827 @@
+~/src/absa/EECS595Project ~/src/absa
+Running ACOS extract
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:14, 37.09s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:14<00:37, 37.11s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:36<00:00, 30.45s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:36<00:00, 32.25s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 35659.79item/s]
+Running pipeline...
+Total output tokens: 104157
+Avg out tokens per prompt: 1041.57
+Prediction:  [A] yum [C] food#general [S] positive [O] NULL
+Quints:  [('yum', 'food#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] NULL [C] sushi#general [S] positive [O] NULL [SSEP] [A] NULL [C] sushi#general [S] positive [O] really good
+Quints:  [('NULL', 'sushi#general', 'positive', 'NULL', 'null'), ('NULL', 'sushi#general', 'positive', 'really good', 'null')]
+Prediction:  [A] NULL [C] food#prices [S] negative [O] not the biggest portions [SSEP] [A] NULL [C] food#quality [S] negative [O] adequate
+Quints:  [('NULL', 'food#prices', 'negative', 'not the biggest portions', 'null'), ('NULL', 'food#quality', 'negative', 'adequate', 'null')]
+Prediction:  ### Hint:
+
+### Note:
+
+### Example Test Case:
+
+### Output File:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] NULL [C] food#prices [S] positive [O] great [SSEP] [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] ambience#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] even [SSEP] [A] NULL [C] restaurant#prices [S] positive [O] better
+Quints:  [('NULL', 'food#prices', 'positive', 'great', 'null'), ('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'ambience#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'even', 'null'), ('NULL', 'restaurant#prices', 'positive', 'better', 'null')]
+Prediction:  [A] NULL [C] staff#general [S] positive [O] NULL [SSEP] [A] NULL [C] staff#general [S] positive [O] tended [SSEP] [A] NULL [C] staff#general [S] positive [O] need
+Quints:  [('NULL', 'staff#general', 'positive', 'NULL', 'null'), ('NULL', 'staff#general', 'positive', 'tended', 'null'), ('NULL', 'staff#general', 'positive', 'need', 'null')]
+Prediction:  [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C
+Quints:  [('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL [ C', 'null', 'null', 'null', 'null')]
+Prediction:  [A] the owner [C] restaurant#service [S] negative [O] belligerent
+Quints:  [('the owner', 'restaurant#service', 'negative', 'belligerent', 'null')]
+Prediction:  [A] good [C] food#quality [S] positive [O] NULL
+Quints:  [('good', 'food#quality', 'positive', 'NULL', 'null')]
+Prediction:  [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] delicious
+Quints:  [('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'delicious', 'null')]
+Prediction:  [A] the staff [C] staff#general [S] positive [O] NULL
+Quints:  [('the staff', 'staff#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] the onion rings [C] food#prices [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] great [SSEP] [A] NULL [C] food#style_options [S] positive [O] amazing
+Quints:  [('the onion rings', 'food#prices', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'great', 'null'), ('NULL', 'food#style_options', 'positive', 'amazing', 'null')]
+Prediction:  [A] the lemon chicken [C] food#quality [S] negative [O] sticky sweet donuts [SSEP] [A] the honey walnut prawns [C] food#quality [S] negative [O] not good [SSEP] [A] NULL [C] restaurant#prices [S] negative [O] few
+Quints:  [('the lemon chicken', 'food#quality', 'negative', 'sticky sweet donuts', 'null'), ('the honey walnut prawns', 'food#quality', 'negative', 'not good', 'null'), ('NULL', 'restaurant#prices', 'negative', 'few', 'null')]
+Prediction:  [A] nice ambience [C] ambience#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] negative [O] highly [SSEP] [A] overrated [C] food#general [S] negative [O] place
+Quints:  [('nice ambience', 'ambience#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'negative', 'highly', 'null'), ('overrated', 'food#general', 'negative', 'place', 'null')]
+Prediction:  [A] NULL [C] service#general [S] negative [O] worst [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL
+Quints:  [('NULL', 'service#general', 'negative', 'worst', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null')]
+Prediction:  [A] everyone that sat in the back outside [C] restaurant#service_experience [S] negative [O] NULL [SSEP] [A] NULL [C] restaurant#service_experience [S] negative [O] worst [SSEP] [A] NULL [C] restaurant#service_experience [S] negative [O] ever
+Quints:  [('everyone that sat in the back outside', 'restaurant#service_experience', 'negative', 'NULL', 'null'), ('NULL', 'restaurant#service_experience', 'negative', 'worst', 'null'), ('NULL', 'restaurant#service_experience', 'negative', 'ever', 'null')]
+Prediction:  [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] waiter [C] service#general [S] negative [O] non - existent [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] food [C] food#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A
+Quints:  [('NULL', 'service#general', 'negative', 'NULL', 'null'), ('waiter', 'service#general', 'negative', 'non - existent', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('food', 'food#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] NULL [C] service#general [S] negative [O] complained [SSEP] [A] NULL [C] service#general [S] negative [O] not apologetic
+Quints:  [('NULL', 'service#general', 'negative', 'complained', 'null'), ('NULL', 'service#general', 'negative', 'not apologetic', 'null')]
+Prediction:  [A] fabulous [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL
+Quints:  [('fabulous', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] NULL [C] restaurant#location [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#location [S] positive [O] wonderful
+Quints:  [('NULL', 'restaurant#location', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#location', 'positive', 'wonderful', 'null')]
+Prediction:  ### Expected:
+
+
+### Sample Dataset:
+
+
+### Note:
+
+
+
+### Reference:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] NULL [C] food#prices [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] ambience#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#prices [S] positive [O] NULL [SSEP] [A] NULL [C] drinks#prices [S] positive [O] NULL [SSEP] [A] NULL [C] drinks#quality [S] positive [O] NULL [SSEP] [A] NULL [C] drinks#style_options [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#style_options [S] positive [O] NULL
+Quints:  [('NULL', 'food#prices', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'ambience#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#prices', 'positive', 'NULL', 'null'), ('NULL', 'drinks#prices', 'positive', 'NULL', 'null'), ('NULL', 'drinks#quality', 'positive', 'NULL', 'null'), ('NULL', 'drinks#style_options', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'food#style_options', 'positive', 'NULL', 'null')]
+Prediction:  [A] i will never forget [C] restaurant#general [S] positive [O] NULL [SSEP] [A] amazing meal [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] ambience#general [S] positive [O] NULL
+Quints:  [('i will never forget', 'restaurant#general', 'positive', 'NULL', 'null'), ('amazing meal', 'food#general', 'positive', 'NULL', 'null'), ('service', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'ambience#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] NULL [C] wine_list#general [S] positive [O] incredible [SSEP] [A] NULL [C] wine_list#general [S] positive [O] extensive [SSEP] [A] NULL [C] wine_list#general [S] positive [O] diverse [SSEP] [A] NULL [C] food#general [S] positive [O] incredible [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] staff#general [S] positive [O] good [SSEP] [A] NULL [C] staff#general [S] positive [O] cultured
+Quints:  [('NULL', 'wine_list#general', 'positive', 'incredible', 'null'), ('NULL', 'wine_list#general', 'positive', 'extensive', 'null'), ('NULL', 'wine_list#general', 'positive', 'diverse', 'null'), ('NULL', 'food#general', 'positive', 'incredible', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'staff#general', 'positive', 'good', 'null'), ('NULL', 'staff#general', 'positive', 'cultured', 'null')]
+Prediction:  [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL
+Quints:  [('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] food [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#miscellaneous [S] positive [O] great
+Quints:  [('food', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#miscellaneous', 'positive', 'great', 'null')]
+Prediction:  [A] NULL [C] food#prices [S] positive [O] very [SSEP] [A] reasonably priced [C] food#prices [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL
+Quints:  [('NULL', 'food#prices', 'positive', 'very', 'null'), ('reasonably priced', 'food#prices', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] i had [C] food#quality [S] positive [O] NULL [SSEP] [A] the kafta plate [C] food#quality [S] positive [O] perfect
+Quints:  [('i had', 'food#quality', 'positive', 'NULL', 'null'), ('the kafta plate', 'food#quality', 'positive', 'perfect', 'null')]
+Prediction:  [A] NULL [C] food#prices [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] high [SSEP] [A] NULL [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] good
+Quints:  [('NULL', 'food#prices', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'high', 'null'), ('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'good', 'null')]
+Prediction:  [A] this [C] location#general [S] positive [O] NULL [SSEP] [A] is [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL
+Quints:  [('this', 'location#general', 'positive', 'NULL', 'null'), ('is', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] love [SSEP] [A] NULL [C] food#quality [S] positive [O] best
+Quints:  [('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'love', 'null'), ('NULL', 'food#quality', 'positive', 'best', 'null')]
+Prediction:  [A] NULL [C] location#general [S] negative [O] NULL [SSEP] [A] NULL [C] food#prices [S] negative [O] not worth [SSEP] [A] NULL [C] food#quality [S] negative [O] NULL [SSEP] [A] NULL [C] atmosphere#general [S] positive [O] very much
+Quints:  [('NULL', 'location#general', 'negative', 'NULL', 'null'), ('NULL', 'food#prices', 'negative', 'not worth', 'null'), ('NULL', 'food#quality', 'negative', 'NULL', 'null'), ('NULL', 'atmosphere#general', 'positive', 'very much', 'null')]
+Prediction:  [A] i may not be a sushi guru [C] food#general [S] negative [O] NULL [SSEP] [A] NULL [C] food#general [S] negative [O] okay [SSEP] [A] NULL [C] food#general [S] negative [O] NULL [SSEP] [A] NULL [C] food#general [S] negative [O] NULL
+Quints:  [('i may not be a sushi guru', 'food#general', 'negative', 'NULL', 'null'), ('NULL', 'food#general', 'negative', 'okay', 'null'), ('NULL', 'food#general', 'negative', 'NULL', 'null'), ('NULL', 'food#general', 'negative', 'NULL', 'null')]
+Prediction:  [A] rice [C] food#quality [S] negative [O] too dry [SSEP] [A] tuna [C] food#quality [S] negative [O]n't so fresh [SSEP]
+Quints:  [('rice', 'food#quality', 'negative', 'too dry', 'null'), ('tuna', 'food#quality', 'negative', "' t so fresh", 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] NULL [C] food#quality [S] positive [O] excellent [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#miscellaneous [S] positive [O] NULL
+Quints:  [('NULL', 'food#quality', 'positive', 'excellent', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#miscellaneous', 'positive', 'NULL', 'null')]
+Prediction:  [A] NULL [C] value#general [S] negative [O] however [SSEP] [A] NULL [C] service#general [S] negative [O] NULL [SSEP] [A] NULL [C] value#general [S] negative [O] severely [SSEP] [A] NULL [C] service#general [S] negative [O] lacking
+Quints:  [('NULL', 'value#general', 'negative', 'however', 'null'), ('NULL', 'service#general', 'negative', 'NULL', 'null'), ('NULL', 'value#general', 'negative', 'severely', 'null'), ('NULL', 'service#general', 'negative', 'lacking', 'null')]
+Prediction:  [A] NULL [C] fish#general [S] positive [O] unquestionably [SSEP] [A] NULL [C] fish#general [S] positive [O] fresh [SSEP] [A] NULL [C] fish#general [S] positive [O] NULL [SSEP] [A] NULL [C] rolls#general [S] negative [O] inexplicably [SSEP] [A] NULL [C] rolls#general [S] negative [O] bland
+Quints:  [('NULL', 'fish#general', 'positive', 'unquestionably', 'null'), ('NULL', 'fish#general', 'positive', 'fresh', 'null'), ('NULL', 'fish#general', 'positive', 'NULL', 'null'), ('NULL', 'rolls#general', 'negative', 'inexplicably', 'null'), ('NULL', 'rolls#general', 'negative', 'bland', 'null')]
+Prediction:  [A] the service [C] restaurant#service [S] negative [O] mediocre [SSEP] [A] the service [C] restaurant#service [S] negative [O] offensive
+Quints:  [('the service', 'restaurant#service', 'negative', 'mediocre', 'null'), ('the service', 'restaurant#service', 'negative', 'offensive', 'null')]
+Prediction:  [A] NULL [C] service#general [S] negative [O] extremely dismissive [SSEP] [A] NULL [C] service#general [S] negative [O] while no less than three staff members waited hand - and - foot [SSEP] [A] NULL [C] service#general [S] negative [O] on a recent trip
+Quints:  [('NULL', 'service#general', 'negative', 'extremely dismissive', 'null'), ('NULL', 'service#general', 'negative', 'while no less than three staff members waited hand - and - foot', 'null'), ('NULL', 'service#general', 'negative', 'on a recent trip', 'null')]
+Prediction:  [A] freshest sushi [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] i love this restaurant
+Quints:  [('freshest sushi', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'i love this restaurant', 'null')]
+Prediction:  ### Explanation:
+
+
+
+
+### Citations:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] the sashimi [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] tender
+Quints:  [('the sashimi', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'tender', 'null')]
+Prediction:  [A] their [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] delicious
+Quints:  [('their', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'delicious', 'null')]
+Prediction:  [A] NULL [C] restaurant#general [S] negative [O] expensive [SSEP] [A] NULL [C] restaurant#general [S] negative [O] small
+Quints:  [('NULL', 'restaurant#general', 'negative', 'expensive', 'null'), ('NULL', 'restaurant#general', 'negative', 'small', 'null')]
+Prediction:  [A] NULL [C] restaurant#location [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#location [S] positive [O] lovely [SSEP] [A] NULL [C] restaurant#service [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#service [S] positive [O] helpful
+Quints:  [('NULL', 'restaurant#location', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#location', 'positive', 'lovely', 'null'), ('NULL', 'restaurant#service', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#service', 'positive', 'helpful', 'null')]
+Prediction:  [A] NULL [C] food#quality [S] negative [O] not great [SSEP] [A] NULL [C] waiters#general [S] negative [O] rude
+Quints:  [('NULL', 'food#quality', 'negative', 'not great', 'null'), ('NULL', 'waiters#general', 'negative', 'rude', 'null')]
+Prediction:  [A] NULL [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] great [SSEP] [A] NULL [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] NULL
+Quints:  [('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'great', 'null'), ('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] stellar [C] service#general [S] positive [O] stellar [SSEP] [A] NULL [C] service#general [S] positive [O] stellar
+Quints:  [('stellar', 'service#general', 'positive', 'stellar', 'null'), ('NULL', 'service#general', 'positive', 'stellar', 'null')]
+Prediction:  [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] stabilized
+Quints:  [('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'stabilized', 'null')]
+Prediction:  [A] food [C] food#quality [S] neutral [O] NULL [SSEP] [A] salsa [C] food#style_options [S] positive [O] tastier [SSEP] [A] NULL [C] food#general [S] neutral [O] NULL
+Quints:  [('food', 'food#quality', 'neutral', 'NULL', 'null'), ('salsa', 'food#style_options', 'positive', 'tastier', 'null'), ('NULL', 'food#general', 'neutral', 'NULL', 'null')]
+Prediction:  [A] the food [C] food#quality [S] positive [O] NULL [SSEP] [A] the margaritas [C] drinks#quality [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] too busy
+Quints:  [('the food', 'food#quality', 'positive', 'NULL', 'null'), ('the margaritas', 'drinks#quality', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'too busy', 'null')]
+Prediction:  [A] mama mia [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] lucky [SSEP] [A] NULL [C] food#general [S] positive [O] live
+Quints:  [('mama mia', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'lucky', 'null'), ('NULL', 'food#general', 'positive', 'live', 'null')]
+Prediction:  [A] NULL [C] pizza#general [S] negative [O] edible [SSEP] [A] NULL [C] pizza#general [S] negative [O] warm up [SSEP] [A] NULL [C] pizza#general [S] negative [O] really [SSEP] [A] NULL [C] pizza#general [S] negative [O] have to [SSEP] [A] NULL [C] pizza#general [S] negative [O] order [SSEP] [A] NULL [C] pizza#general [S] negative [O] ahead
+Quints:  [('NULL', 'pizza#general', 'negative', 'edible', 'null'), ('NULL', 'pizza#general', 'negative', 'warm up', 'null'), ('NULL', 'pizza#general', 'negative', 'really', 'null'), ('NULL', 'pizza#general', 'negative', 'have to', 'null'), ('NULL', 'pizza#general', 'negative', 'order', 'null'), ('NULL', 'pizza#general', 'negative', 'ahead', 'null')]
+Prediction:  [A] NULL [C] pizza#general [S] positive [O] NULL [SSEP] [A] NULL [C] pizza#general [S] positive [O] dough [SSEP] [A] NULL [C] pizza#general [S] positive [O] cheese [SSEP] [A] NULL [C] pizza#general [S] positive [O] sauce
+Quints:  [('NULL', 'pizza#general', 'positive', 'NULL', 'null'), ('NULL', 'pizza#general', 'positive', 'dough', 'null'), ('NULL', 'pizza#general', 'positive', 'cheese', 'null'), ('NULL', 'pizza#general', 'positive', 'sauce', 'null')]
+Prediction:  [A] NULL [C] food#quality [S] positive [O] best [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL
+Quints:  [('NULL', 'food#quality', 'positive', 'best', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] NULL
+Quints:  [('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'NULL', 'null')]
+Prediction:  [A] NULL [C] deck#general [S] positive [O] NULL [SSEP] [A] NULL [C] deck#general [S] positive [O] best [SSEP] [A] NULL [C] deck#general [S] positive [O] deck
+Quints:  [('NULL', 'deck#general', 'positive', 'NULL', 'null'), ('NULL', 'deck#general', 'positive', 'best', 'null'), ('NULL', 'deck#general', 'positive', 'deck', 'null')]
+Prediction:  [A] a perfect place [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A]
+Quints:  [('a perfect place', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('', 'null', 'null', 'null', 'null')]
+Prediction:  [A] NULL [C] music#general [S] positive [O] awesome [SSEP] [A] NULL [C] staff#general [S] positive [O] great [SSEP] [A] NULL [C] fun#general [S] positive [O] endless
+Quints:  [('NULL', 'music#general', 'positive', 'awesome', 'null'), ('NULL', 'staff#general', 'positive', 'great', 'null'), ('NULL', 'fun#general', 'positive', 'endless', 'null')]
+Prediction:  [A] NULL [C] location#general [S] positive [O] best [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL
+Quints:  [('NULL', 'location#general', 'positive', 'best', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] great [C] pizza#general [S] positive [O] NULL [SSEP] [A] draft [C] draft_beer#general [S] positive [O] NULL [SSEP] [A] bottle [C] alcohol#general [S] positive [O] NULL [SSEP] [A] NULL [C] pizza#general [S] positive [O] rocks
+Quints:  [('great', 'pizza#general', 'positive', 'NULL', 'null'), ('draft', 'draft_beer#general', 'positive', 'NULL', 'null'), ('bottle', 'alcohol#general', 'positive', 'NULL', 'null'), ('NULL', 'pizza#general', 'positive', 'rocks', 'null')]
+Prediction:  [A] definitely [C] jukebox#general [S] positive [O] NULL [SSEP] [A] NULL [C] jukebox#general [S] positive [O] NULL [SSEP] [A] NULL [C] jukebox#general [S] positive [O] NULL
+Quints:  [('definitely', 'jukebox#general', 'positive', 'NULL', 'null'), ('NULL', 'jukebox#general', 'positive', 'NULL', 'null'), ('NULL', 'jukebox#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] food [C] food#quality [S] positive [O] great [SSEP] [A] NULL [C] bartenders#general [S] positive [O] go [SSEP] [A] NULL [C] bartenders#general [S] positive [O] that
+Quints:  [('food', 'food#quality', 'positive', 'great', 'null'), ('NULL', 'bartenders#general', 'positive', 'go', 'null'), ('NULL', 'bartenders#general', 'positive', 'that', 'null')]
+Prediction:  [A] the owners [C] staff#general [S] positive [O] great fun [SSEP] [A] NULL [C] beer#general [S] positive [O] NULL [SSEP] [A] NULL [C] beer#general [S] positive [O] worth staying
+Quints:  [('the owners', 'staff#general', 'positive', 'great fun', 'null'), ('NULL', 'beer#general', 'positive', 'NULL', 'null'), ('NULL', 'beer#general', 'positive', 'worth staying', 'null')]
+Prediction:  [A] NULL [C] upstairs#general [S] positive [O] NULL
+Quints:  [('NULL', 'upstairs#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking#general [S] positive [O] NULL [SSEP] [A] NULL [C] smoking
+Quints:  [('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking#general', 'positive', 'NULL', 'null'), ('NULL', 'smoking', 'null', 'null', 'null')]
+Prediction:  [A] the sushi [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] delicious
+Quints:  [('the sushi', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'delicious', 'null')]
+Prediction:  [A] they [C] food#general [S] neutral [O] NULL [SSEP] [A] have [C] food#general [S] neutral [O] NULL [SSEP] [A] a [C] food#general [S] neutral [O] wide [SSEP] [A] variety [C] food#general [S] neutral [O] NULL [SSEP] [A] of [C] food#general [S] neutral [O] NULL [SSEP] [A] fish [C] food#general [S] neutral [O] NULL [SSEP] [A] and [C] food#general [S] neutral [O] NULL [SSEP] [A] they [C] food#general [S] neutral [O] NULL [SSEP] [A] even [C] food#general [S] neutral [O] NULL [SSEP] [A] list [C] food#general [S] neutral [O] NULL [SSEP] [A] which [C] food#general [S] neutral [O] NULL [SSEP] [A] oceans [C] food#general [S] neutral [O] NULL [SSEP] [A] they [C] food#general [S] neutral [O] NULL [SSEP] [A] come [C] food#general [S] neutral [O] NULL [SSEP] [A] from [C] food#general [S] neutral [O] NULL
+Quints:  [('they', 'food#general', 'neutral', 'NULL', 'null'), ('have', 'food#general', 'neutral', 'NULL', 'null'), ('a', 'food#general', 'neutral', 'wide', 'null'), ('variety', 'food#general', 'neutral', 'NULL', 'null'), ('of', 'food#general', 'neutral', 'NULL', 'null'), ('fish', 'food#general', 'neutral', 'NULL', 'null'), ('and', 'food#general', 'neutral', 'NULL', 'null'), ('they', 'food#general', 'neutral', 'NULL', 'null'), ('even', 'food#general', 'neutral', 'NULL', 'null'), ('list', 'food#general', 'neutral', 'NULL', 'null'), ('which', 'food#general', 'neutral', 'NULL', 'null'), ('oceans', 'food#general', 'neutral', 'NULL', 'null'), ('they', 'food#general', 'neutral', 'NULL', 'null'), ('come', 'food#general', 'neutral', 'NULL', 'null'), ('from', 'food#general', 'neutral', 'NULL', 'null')]
+Prediction:  [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL
+Quints:  [('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null')]
+Prediction:  [A] NULL [C] cake#general [S] negative [O] NULL [SSEP] [A] NULL [C] cake#general [S] negative [O] wish [SSEP] [A] pieces [C] cake#general [S] negative [O] little [SSEP] [A] NULL [C] cake#general [S] negative [O] bigger
+Quints:  [('NULL', 'cake#general', 'negative', 'NULL', 'null'), ('NULL', 'cake#general', 'negative', 'wish', 'null'), ('pieces', 'cake#general', 'negative', 'little', 'null'), ('NULL', 'cake#general', 'negative', 'bigger', 'null')]
+Prediction:  [A] NULL [C] decor#general [S] positive [O] rustic [SSEP] [A] NULL [C] decor#general [S] positive [O] traditional
+Quints:  [('NULL', 'decor#general', 'positive', 'rustic', 'null'), ('NULL', 'decor#general', 'positive', 'traditional', 'null')]
+Prediction:  [A] the crowd [C] location#general [S] neutral [O] NULL [SSEP] [A] NULL [C] location#general [S] neutral [O] yuppies [SSEP] [A] NULL [C] location#general [S] neutral [O] young [SSEP] [A] NULL [C] location#general [S] neutral [O] old
+Quints:  [('the crowd', 'location#general', 'neutral', 'NULL', 'null'), ('NULL', 'location#general', 'neutral', 'yuppies', 'null'), ('NULL', 'location#general', 'neutral', 'young', 'null'), ('NULL', 'location#general', 'neutral', 'old', 'null')]
+Prediction:  [A] the service [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] courteous [SSEP] [A] NULL [C] service#general [S] positive [O] attentive
+Quints:  [('the service', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'courteous', 'null'), ('NULL', 'service#general', 'positive', 'attentive', 'null')]
+Prediction:  [A] mediocre [C] food#quality [S] negative [O] NULL
+Quints:  [('mediocre', 'food#quality', 'negative', 'NULL', 'null')]
+Prediction:  [A] NULL [C] restaurant#location [S] positive [O] NULL [SSEP] [A] patio [C] restaurant#location [S] positive [O] NULL [SSEP] [A] menu [C] restaurant#food [S] positive [O] abbreviated
+Quints:  [('NULL', 'restaurant#location', 'positive', 'NULL', 'null'), ('patio', 'restaurant#location', 'positive', 'NULL', 'null'), ('menu', 'restaurant#food', 'positive', 'abbreviated', 'null')]
+Prediction:  [A] my g / f [C] NULL [S] negative [O] NULL [SSEP] [A] food [C] food#quality [S] negative [O] very mediocre [SSEP] [A] food [C] food#prices [S] negative [O] especially [SSEP] [A] considering [C] NULL [S] negative [O] the price
+Quints:  [('my g / f', 'NULL', 'negative', 'NULL', 'null'), ('food', 'food#quality', 'negative', 'very mediocre', 'null'), ('food', 'food#prices', 'negative', 'especially', 'null'), ('considering', 'NULL', 'negative', 'the price', 'null')]
+Prediction:  ### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] service [C] service#general [S] NULL [O] decent
+Quints:  [('service', 'service#general', 'NULL', 'decent', 'null')]
+Prediction:  [A] NULL [C] drinks#quality [S] positive [O] good
+Quints:  [('NULL', 'drinks#quality', 'positive', 'good', 'null')]
+Prediction:  [A] excellent [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] ambience#general [S] positive [O] nice [SSEP] [A] NULL [C] restaurant#prices [S] positive [O] fairly
+Quints:  [('excellent', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'ambience#general', 'positive', 'nice', 'null'), ('NULL', 'restaurant#prices', 'positive', 'fairly', 'null')]
+Prediction:  [A] NULL [C] food#prices [S] negative [O] i loved the pumpkin ravioli [SSEP] [A] NULL [C] food#prices [S] negative [O] and my sister loved her filet mignon [SSEP] [A] NULL [C] food#prices [S] negative [O] on top of spinach and mashed potatoes
+Quints:  [('NULL', 'food#prices', 'negative', 'i loved the pumpkin ravioli', 'null'), ('NULL', 'food#prices', 'negative', 'and my sister loved her filet mignon', 'null'), ('NULL', 'food#prices', 'negative', 'on top of spinach and mashed potatoes', 'null')]
+Prediction:  [A] ambiance [C] ambience#general [S] positive [O] NULL [SSEP] [A] NULL [C] downtown_disney#general [S] positive [O] peaceful [SSEP] [A] NULL [C] downtown_disney#general [S] positive [O] relaxing
+Quints:  [('ambiance', 'ambience#general', 'positive', 'NULL', 'null'), ('NULL', 'downtown_disney#general', 'positive', 'peaceful', 'null'), ('NULL', 'downtown_disney#general', 'positive', 'relaxing', 'null')]
+Prediction:  [A] best [C] food#prices [S] positive [O] NULL [SSEP] [A] indian [C] food#style_options [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#miscellaneous [S] positive [O] NULL
+Quints:  [('best', 'food#prices', 'positive', 'NULL', 'null'), ('indian', 'food#style_options', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#miscellaneous', 'positive', 'NULL', 'null')]
+Prediction:  ### Hints:
+- The review is a string, which you can obtain using the `review` argument of the `extract_quadruples` function.
+- The `extract_quadruples` function returns a list of quadruples, which are lists of 4 strings.
+- The first string in each quadruple is the aspect, the second is the category, the third is the sentiment, and the fourth is the opinion.
+- You can use the `len()` function to check the length of a string or list.
+- You can use the `str.find()` function to find the position of a substring in a string.
+- You can use the `str.startswith()` function to check if a string starts with a substring.
+- You can use the `str.endswith()` function to check if a string ends with a substring.
+- You can use the `str.split()` function to split a string into a list of strings.
+- You can use the `str.strip()` function to remove whitespace from the beginning and end of a string.
+- You can use the `str.isdigit()` function to check if a string is a number.
+- You can use the `str.isalpha()` function to check if a string is a letter.
+- You can use the `str.islower()` function to check if a string is lowercase.
+- You can use the `str.isupper()` function to check if a string is uppercase.
+- You can use the `str.lower()` function to convert a string to lowercase.
+- You can use the `str.upper()` function to convert a string to uppercase.
+- You can use the `str.count()` function to count the number of times a substring appears in a string.
+- You can use the `str.join()` function to join a list of strings into a single string.
+- You can use the `str.strip()` function to remove whitespace from the beginning and end of a string.
+- You can use the `str.split()` function to split a string into a list of strings.
+- You can use the `str.startswith()` function to check if a string starts with a substring.
+- You can use the `str.endswith()` function to check if a string ends with a substring.
+- You can use the `str.find()` function to find the position of a substring in a string.
+- You can use the `str.isdigit()` function to check if a string is a number.
+- You can use the `str.isalpha()` function to check if a string is a letter.
+- You can use the `str.islower()` function to check if a string is lowercase.
+- You can use the `str.isupper()` function to check if a string is uppercase.
+- You can use the `str.lower()` function to convert a string to lowercase.
+- You can use the `str.upper()` function to convert a string to uppercase.
+- You can use the `str.count()` function to count the number of times a substring appears in a string.
+- You can use the `str.join()` function to join a list of strings into a single string.
+- You can use the `str.strip()` function to remove whitespace from the beginning and end of a string.
+- You can use the `str.split()` function to split a string into a list of strings.
+- You can use the `str.startswith()` function to check if a string starts with a substring.
+- You can use the `str.endswith()` function to check if a string ends with a substring.
+- You can use the `str.find()` function to find the position of a substring in a string.
+- You can use the `str.isdigit()` function to check if a string is a number.
+- You can use the `str.isalpha()` function to check if a string is a letter.
+- You can use the `str.islower()` function to check if a string is lowercase.
+- You can use the `str.isupper()` function to check if a string is uppercase.
+- You can use the `str.lower()` function to convert a string to lowercase.
+- You can use the `str.upper()` function to convert a string to uppercase.
+- You can use the `str.count()` function to count the number of times a substring appears in a string.
+- You can use the `str.join()` function to join a list of strings into a single string.
+- You can use the `str.strip()` function to remove whitespace from the beginning and end of a string.
+- You can use the `str.split()`
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] NULL [C] food#prices [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] excellent [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#prices [S] positive [O] garbanzo beans
+Quints:  [('NULL', 'food#prices', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'excellent', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#prices', 'positive', 'garbanzo beans', 'null')]
+Prediction:  [A] NULL [C] location#general [S] negative [O] not the greatest location [SSEP] [A] NULL [C] location#general [S] negative [O] but [SSEP] [A] NULL [C] location#general [S] negative [O] the food [SSEP] [A] NULL [C] food#general [S] positive [O] keeps me coming back for more
+Quints:  [('NULL', 'location#general', 'negative', 'not the greatest location', 'null'), ('NULL', 'location#general', 'negative', 'but', 'null'), ('NULL', 'location#general', 'negative', 'the food', 'null'), ('NULL', 'food#general', 'positive', 'keeps me coming back for more', 'null')]
+Prediction:  [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] never too crowded [C] restaurant#general [S] positive [O] great [SSEP] [A] NULL [C] restaurant#general [S] positive [O] service
+Quints:  [('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('never too crowded', 'restaurant#general', 'positive', 'great', 'null'), ('NULL', 'restaurant#general', 'positive', 'service', 'null')]
+Prediction:  [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] excellent
+Quints:  [('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'excellent', 'null')]
+Prediction:  [A] NULL [C] restaurant#miscellaneous [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#miscellaneous [S] positive [O] various [SSEP] [A] saag [C] food#style_options [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP
+Quints:  [('NULL', 'restaurant#miscellaneous', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#miscellaneous', 'positive', 'various', 'null'), ('saag', 'food#style_options', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL [ SSEP', 'null')]
+Prediction:  ### Explanation:
+
+
+### Code:
+
+### Sample Output:
+
+
+### Notes:
+
+
+### Hints:
+
+
+
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] nice food [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [
+Quints:  [('nice food', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL [', 'null', 'null', 'null', 'null')]
+Prediction:  [A] NULL [C] food#prices [S] positive [O] NULL [SSEP] [A] NULL [C] food#quality [S] positive [O] NULL [SSEP] [A] NULL [C] ambience#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#prices [S] positive [O] NULL [SSEP] [A] NULL [C] drinks#prices [S] positive [O] NULL [SSEP] [A] NULL [C] drinks#quality [S] positive [O] NULL [SSEP] [A] NULL [C] drinks#style_options [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#style_options [S] positive [O] NULL
+Quints:  [('NULL', 'food#prices', 'positive', 'NULL', 'null'), ('NULL', 'food#quality', 'positive', 'NULL', 'null'), ('NULL', 'ambience#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#prices', 'positive', 'NULL', 'null'), ('NULL', 'drinks#prices', 'positive', 'NULL', 'null'), ('NULL', 'drinks#quality', 'positive', 'NULL', 'null'), ('NULL', 'drinks#style_options', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'food#style_options', 'positive', 'NULL', 'null')]
+Prediction:  [A] i had [C] food#general [S] positive [O] NULL [SSEP] [A] yummy [C] food#quality [S] positive [O] lamb [SSEP] [A] korma [C] food#general [S] positive [O] NULL [SSEP] [A] saag [C] food#general [S] positive [O] paneer [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [S
+Quints:  [('i had', 'food#general', 'positive', 'NULL', 'null'), ('yummy', 'food#quality', 'positive', 'lamb', 'null'), ('korma', 'food#general', 'positive', 'NULL', 'null'), ('saag', 'food#general', 'positive', 'paneer', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL [ S', 'null')]
+Prediction:  ### Hint:
+- ACOS quadruples are the basic building blocks of customer reviews.
+- ACOS quadruples can be extracted from the review text using regular expressions.
+- ACOS quadruples can be represented as a list of lists.
+
+
+### Note:
+- This is an example of a [Review Extraction](https://www.aclweb.org/anthology/2018/P18-1104.pdf) task.
+- The input review is a single sentence, and the output quadruples are separated by a new line.
+- There are 4 components in each quadruple.
+- Aspects are not always explicitly stated; if this is the case, use a NULL label for the aspect.
+- Opinions are not always explicitly stated; if this is the case, use a NULL lable for the opinion.
+
+
+### Reference:
+- [ACOS](https://github.com/microsoft/acos)
+- [Review Extraction](https://www.aclweb.org/anthology/2018/P18-1104.pdf)
+- [ACOS: Aspect-Category-Opinion-Sentiment](https://github.com/microsoft/acos/blob/master/docs/acos.pdf)
+
+
+### Source:
+
+[LeetCode](https://leetcode.com/problems/review-extraction/)
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] naan [C] food#prices [S] positive [O] best [SSEP] [A] bhartha [C] food#quality [S] positive [O] enjoyed [SSEP] [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] positive [O] tomatoey
+Quints:  [('naan', 'food#prices', 'positive', 'best', 'null'), ('bhartha', 'food#quality', 'positive', 'enjoyed', 'null'), ('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#general', 'positive', 'tomatoey', 'null')]
+Prediction:  [A] even the chickpeas [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] good
+Quints:  [('even the chickpeas', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'good', 'null')]
+Prediction:  [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] delicious
+Quints:  [('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'delicious', 'null')]
+Prediction:  ### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+
+
+
+### Note:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL
+Quints:  [('NULL', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null')]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:36<01:13, 36.68s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:09<00:34, 34.20s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:30<00:00, 28.29s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:30<00:00, 30.14s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 42162.28item/s]
