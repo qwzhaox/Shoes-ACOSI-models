@@ -1,0 +1,4210 @@
+~/src/absa/EECS595Project ~/src/absa
+Running ACOS extend
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:14, 37.44s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:13<00:36, 36.67s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:35<00:00, 29.95s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:35<00:00, 31.84s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 41343.56item/s]
+Running pipeline...
+Total output tokens: 75899
+Avg out tokens per prompt: 758.99
+Prediction:  ### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good
+Quints:  [('null', 'null', 'null', 'good', 'null')]
+Prediction:  ### Hint:
+
+### Expected Output:
+
+
+### Data Format:
+
+The first line contains an integer `T` indicating the number of test cases.
+
+The first line of each test case contains a string `S`, the review.
+
+The second line of each test case contains a string `ACOS`, the corresponding ACOS quadruples.
+
+The third line of each test case contains an integer `N`, the number of opinion spans.
+
+The next `N` lines of each test case contain a string `O`, the opinion span.
+
+
+### Constraints:
+
+- 1 <= `T` <= 10
+- 1 <= `S` <= 1000
+- 1 <= `ACOS` <= 1000
+- 1 <= `N` <= 1000
+- 1 <= `O` <= 1000
+- `S` and `ACOS` consist of only lowercase English letters.
+- `O` consists of only lowercase English letters or whitespace.
+- Each review is a sentence.
+- Each ACOS quadruple is a sentence.
+- Each opinion span is a sentence.
+- `S` and `O` are both sentences.
+- The first word of each quadruple is the aspect.
+- The second word of each quadruple is the category.
+- The third word of each quadruple is the opinion.
+- The fourth word of each quadruple is the sentiment.
+- The aspect, category, and sentiment are all single words.
+- The opinion is a single word or a contiguous sequence of words.
+- The sentiment is always either positive, negative, or neutral.
+- The aspect is not always explicitly stated.
+- The opinion is not always explicitly stated.
+- The opinion span is a sentence.
+- The opinion span does not contain any punctuation.
+- The opinion span is not a substring of any other sentence.
+- The opinion span is not a substring of any other opinion span.
+
+
+### Sample Input:
+
+```
+2
+not the biggest portions but adequate
+not the biggest portions but adequate
+1
+not the biggest portions but adequate
+```
+
+### Sample Output:
+
+```
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] green tea creme brulee
+
+
+### Explanation:
+
+The first quadruple has no explicit opinion, so the implicit opinion is used.
+
+
+
+### Discussion:
+Quints:  [('null', 'null', 'null', 'green tea creme brulee # # # Explanation : The first quadruple has no explicit opinion , so the implicit opinion is used . # # # Discussion :', 'null')]
+Prediction:  ### Hint:
+
+### Explanation:
+
+### Submitting:
+
+Your solution should be a Python 3 program named `solution.py`.
+
+### Scoring:
+
+Your program will be scored based on the accuracy of your predictions.
+
+Your program will be tested on a test set of reviews. Your program's accuracy will be measured by the proportion of test set reviews that it predicts correctly.
+
+The test set is 100 reviews.
+
+### Bonus:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] the entire staff was extremely accomodating and tended to my every need
+
+
+### Explanation:
+
+
+
+### Code:
+
+```python
+
+```
+
+
+### Submitting Inference Requests
+In this section, you will learn how to make inference requests to your model.
+
+To make an inference request, you need to first construct a request object.
+
+The following is a sample request object that you can use to make inference requests.
+
+```python
+# Construct a request object.
+request = inference_server_client.InferenceRequest(
+    display_name='my_first_inference_request')
+```
+
+Once you have constructed a request object, you can make an inference request by calling the `submit_inference_request()` method on the `inference_server_client` object.
+
+```python
+# Make an inference request.
+inference_server_client.submit_inference_request(request)
+```
+
+Once you have made an inference request, you can check the status of the request by calling the `get_inference_request()` method on the `inference_server_client` object.
+
+```python
+# Get the status of the inference request.
+inference_request = inference_server_client.get_inference_request(request.name)
+```
+
+Once the inference request has completed, you can retrieve the results of the inference request by calling the `get_inference_result()` method on the `inference_request` object.
+
+```python
+# Get the results of the inference request.
+inference_result = inference_request.get_inference_result()
+```
+
+### Making Predictions
+
+To make a prediction, you need to first construct a request object.
+
+The following is a sample request object that you can use to make predictions.
+
+```python
+# Construct a request object.
+request = inference_server_client.PredictionRequest(
+    display_name='my_first_prediction_request')
+```
+
+Once you have constructed a request object, you can make a prediction by calling the `submit_prediction_request()` method on the `inference_server_client` object.
+
+```python
+# Make a prediction.
+inference_server_client
+Quints:  [('null', 'null', 'null', "the entire staff was extremely accomodating and tended to my every need # # # Explanation : # # # Code : ` ` ` python ` ` ` # # # Submitting Inference Requests In this section , you will learn how to make inference requests to your model . To make an inference request , you need to first construct a request object . The following is a sample request object that you can use to make inference requests . ` ` ` python # Construct a request object . request = inference _ server _ client . InferenceRequest ( display _ name = ' my _ first _ inference _ request ' ) ` ` ` Once you have constructed a request object , you can make an inference request by calling the ` submit _ inference _ request ( ) ` method on the ` inference _ server _ client ` object . ` ` ` python # Make an inference request . inference _ server _ client . submit _ inference _ request ( request ) ` ` ` Once you have made an inference request , you can check the status of the request by calling the ` get _ inference _ request ( ) ` method on the ` inference _ server _ client ` object . ` ` ` python # Get the status of the inference request . inference _ request = inference _ server _ client . get _ inference _ request ( request . name ) ` ` ` Once the inference request has completed , you can retrieve the results of the inference request by calling the ` get _ inference _ result ( ) ` method on the ` inference _ request ` object . ` ` ` python # Get the results of the inference request . inference _ result = inference _ request . get _ inference _ result ( ) ` ` ` # # # Making Predictions To make a prediction , you need to first construct a request object . The following is a sample request object that you can use to make predictions . ` ` ` python # Construct a request object . request = inference _ server _ client . PredictionRequest ( display _ name = ' my _ first _ prediction _ request ' ) ` ` ` Once you have constructed a request object , you can make a prediction by calling the ` submit _ prediction _ request ( ) ` method on the ` inference _ server _ client ` object . ` ` ` python # Make a prediction . inference _ server _ client", 'null')]
+Prediction:  ### Hint:
+
+
+### Sample test cases:
+
+### Input:
+
+### Output:
+
+### Explanation:
+
+
+### Note:
+
+
+
+### Solution:
+
+### Source:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Submission Note:
+
+- The format of your submission should be the same as the example above.
+- You may assume that the ACOS quadruples are correctly formatted.
+- You may assume that the reviews do not contain any HTML tags.
+- You may assume that the reviews do not contain any special characters.
+- You may assume that the reviews do not contain any punctuation.
+- You may assume that the reviews do not contain any numbers.
+- You may assume that the reviews do not contain any URLS.
+- You may assume that the reviews do not contain any emails.
+- You may assume that the reviews do not contain any phone numbers.
+
+### Score Card:
+
+- 10 points for a correct response.
+- 10 points for the correct format of your submission.
+- 10 points for the correct response for each test case.
+
+### Sample Test Cases:
+
+- [Review 1](https://raw.githubusercontent.com/hackerearth/practice/master/algorithm/practice/algorithm-practice/10/10-1/review-1.txt)
+- [Review 2](https://raw.githubusercontent.com/hackerearth/practice/master/algorithm/practice/algorithm-practice/10/10-1/review-2.txt)
+
+### Input Format:
+
+The first line of the input contains a single integer T, the number of test cases.
+
+Each test case contains a single line of text, which is the review.
+
+The review is followed by a single line of text, which is the corresponding ACOS quadruples.
+
+### Constraints:
+
+- 1 <= T <= 10
+- 1 <= length of the review <= 1000
+- 1 <= length of the ACOS quadruples <= 1000
+
+### Output Format:
+
+Output a single line of text for each test case, which is a space-separated list of opinion spans.
+
+### Sample Input:
+
+```
+1
+looks nice, and the surface is smooth, but certain apps take seconds to respond.
+theater 2 blocks away we
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Input:
+
+### Output:
+
+### Sample Dataset:
+
+### Expected Output:
+
+### Explanation:
+
+### Constraints:
+
+### Related Topics:
+
+### Similar Questions:
+
+### Hint:
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] delicious [SSEP] [O] great
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] friendly
+Quints:  [('null', 'null', 'null', 'friendly', 'null')]
+Prediction:  ### Submission:
+
+
+### Test Case:
+
+### Reward:
+
+### Bonus:
+
+### Data:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] sticky sweet [SSEP] [O] honey walnut prawns [SSEP] [O] not good
+Quints:  [('null', 'null', 'null', 'sticky sweet', 'null'), ('null', 'null', 'null', 'honey walnut prawns', 'null'), ('null', 'null', 'null', 'not good', 'null')]
+Prediction:  [O] nice [SSEP] [O] overrated
+Quints:  [('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'overrated', 'null')]
+Prediction:  ### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+
+
+### Hint:
+
+
+### Sample Test Cases:
+
+
+### Note:
+
+
+### Solutions:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Hint:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] i complained to the manager [SSEP] [O] he was not even apologetic
+Quints:  [('null', 'null', 'null', 'i complained to the manager', 'null'), ('null', 'null', 'null', 'he was not even apologetic', 'null')]
+Prediction:  ### Input:
+
+Review: fabulous italian food!
+ACOS quadruples: [A] italian food [C] food#quality [S] positive [O] fabulous
+Quints:  [('italian food', 'food#quality', 'positive', 'fabulous', 'null')]
+Prediction:  ```
+[O] mioposto
+Quints:  [('null', 'null', 'null', 'mioposto', 'null')]
+Prediction:  ### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation of the Sample Input/Output
+
+
+
+
+
+
+
+
+
+
+### Hint
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] incredible [SSEP] [O] extensive [SSEP] [O] diverse [SSEP] [O] nice [SSEP] [O] good
+Quints:  [('null', 'null', 'null', 'incredible', 'null'), ('null', 'null', 'null', 'extensive', 'null'), ('null', 'null', 'null', 'diverse', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'good', 'null')]
+Prediction:  [O] not a bad
+Quints:  [('null', 'null', 'null', 'not a bad', 'null')]
+Prediction:  [O] great
+
+
+Expected:
+[O] great
+
+Submitted:
+[O] great
+
+
+
+
+##### Code:
+```python
+def opinion_spans(review, acos):
+    opinions = []
+    for quadruple in acos:
+        if quadruple[3] == "positive":
+            opinions.append(quadruple[4])
+        elif quadruple[3] == "negative":
+            opinions.append(quadruple[4])
+    return opinions
+
+```
+
+##### Output:
+```
+[
+  'great'
+]
+```
+
+
+
+### Solution
+Quints:  [('null', 'null', 'null', 'great Expected : [ O ] great Submitted : [ O ] great # # # # # Code : ` ` ` python def opinion _ spans ( review , acos ) : opinions = [ ] for quadruple in acos : if quadruple [ 3 ] = = " positive " : opinions . append ( quadruple [ 4 ] ) elif quadruple [ 3 ] = = " negative " : opinions . append ( quadruple [ 4 ] ) return opinions ` ` ` # # # # # Output : ` ` ` [ \' great \' ] ` ` ` # # # Solution', 'null')]
+Prediction:  ```python
+[O] reasonably
+```
+
+### Explanation:
+
+```python
+[O] reasonably
+```
+
+### Code:
+
+```python
+import re
+
+class Solution:
+    def findOpinions(self, review: str, quadruples: List[str]) -> List[str]:
+        """
+        :type review: str
+        :type quadruples: List[str]
+        :rtype: List[str]
+        """
+        review_list = review.split()
+        quadruples_list = [quadruple.split() for quadruple in quadruples]
+        
+        for quadruple in quadruples_list:
+            if quadruple[2] == 'positive':
+                opinion_list = []
+                for i in range(len(quadruple)):
+                    if quadruple[i] == '*':
+                        opinion_list.append(review_list[i])
+                        review_list.pop(i)
+                        break
+                quadruple[2] =''.join(opinion_list)
+        return quadruples_list
+        
+```
+
+### Time Complexity:
+
+- O(n)
+
+### Space Complexity:
+
+- O(n)
+Quints:  [('null', 'null', 'null', 'reasonably ` ` ` # # # Explanation : ` ` ` python [ O ] reasonably ` ` ` # # # Code : ` ` ` python import re class Solution : def findOpinions ( self , review : str , quadruples : List [ str ] ) - > List [ str ] : " " " : type review : str : type quadruples : List [ str ] : rtype : List [ str ] " " " review _ list = review . split ( ) quadruples _ list = [ quadruple . split ( ) for quadruple in quadruples ] for quadruple in quadruples _ list : if quadruple [ 2 ] = = \' positive \' : opinion _ list = [ ] for i in range ( len ( quadruple ) ) : if quadruple [ i ] = = \' * \' : opinion _ list . append ( review _ list [ i ] ) review _ list . pop ( i ) break quadruple [ 2 ] = \' \' . join ( opinion _ list ) return quadruples _ list ` ` ` # # # Time Complexity : - O ( n ) # # # Space Complexity : - O ( n )', 'null')]
+Prediction:  ### Explanation of the Sample Test Case
+
+The sample test case contains a review and its corresponding ACOS quadruples. The review is: "i had the kafta plate and it was perfect".
+
+The ACOS quadruples are:
+
+- [A] kafta plate [C] food#quality [S] positive [O] perfect
+Quints:  [('kafta plate', 'food#quality', 'positive', 'perfect', 'null')]
+Prediction:  [O] food [SSEP] [O] service
+Quints:  [('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'service', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+
+
+### Hint:
+
+
+### Solution:
+
+
+
+### Discussion:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+
+
+
+### Hint:
+
+
+
+### Solution:
+
+```
+import re
+
+def find_opinion_spans(review, quadruples):
+    """
+    :type review: str
+    :type quadruples: List[str]
+    :rtype: List[str]
+    """
+    # Write your code here
+    opinion_spans = []
+    for quadruple in quadruples:
+        if quadruple[4] == 'O':
+            opinion_spans.append(quadruple[5])
+        else:
+            opinion_spans.append(quadruple[4])
+    return opinion_spans
+
+
+def find_implicit_opinion_spans(review, quadruples):
+    """
+    :type review: str
+    :type quadruples: List[str]
+    :rtype: List[str]
+    """
+    # Write your code here
+    implicit_opinion_spans = []
+    for quadruple in quadruples:
+        if quadruple[4] == 'O':
+            implicit_opinion_spans.append(quadruple[4])
+        else:
+            implicit_opinion_spans.append(quadruple[4])
+    return implicit_opinion_spans
+
+
+review = 'i liked the atmosphere very much but the food was not worth the price.'
+quadruples = [
+    'atmosphere', 'ambience#general', 'positive', 'liked',
+    'food', 'food#quality', 'negative', 'not worth',
+    'food', 'food#prices', 'negative', 'not worth'
+]
+print(find_opinion_spans(review, quadruples))
+print(find_implicit_opinion_spans(review, quadruples))
+```
+
+### Submission:
+
+    [['liked', 'ambience#general', 'positive', 'atmosphere'], ['not worth', 'food#quality', 'negative', 'food'], ['not worth', 'food#prices', 'negative', 'fo
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Input Format
+
+A single line containing a review.
+
+The review is a string that contains only lowercase letters.
+
+The review will be no more than 200 characters long.
+
+### Output Format
+
+A single line containing a response.
+
+The response is a string that contains only lowercase letters.
+
+The response will be no more than 200 characters long.
+
+### Sample Input
+
+```
+i may not be a sushi guru but i can tell you that the food here is just okay and that there is not much else to it
+```
+
+### Sample Output
+
+```
+okay
+```
+
+### Explanation
+
+The ACOS quadruples for the review are:
+
+```
+[A] food [C] food#quality [S] negative [O] okay
+Quints:  [('food', 'food#quality', 'negative', 'okay', 'null')]
+Prediction:  ### Note:
+1. The ACOS quadruples will be provided in the format: [A] [C] [S] [O] [SSEP] [A] [C] [S] [O] [SSEP]... [A] [C] [S] [O]
+Quints:  [('', '', '', '', 'null'), ('', '', '', '', 'null'), ('', '', '', '', 'null')]
+Prediction:  [O] fish
+
+
+Explanation:
+The first ACOS quadruple is repeated in the review. The opinion span for the first quadruple is "fish".
+
+### Hint:
+
+
+### Note:
+
+- The review will be a single sentence.
+- The review will not contain any punctuation other than periods.
+- The review will not contain any extra spaces.
+- The review will not contain any extra line breaks.
+- The review will not contain any extra newlines.
+- The review will not contain any extra tabs.
+- The review will not contain any extra carriage returns.
+- The review will not contain any extra form feed characters.
+- The review will not contain any control characters.
+- The review will not contain any null bytes.
+- The review will not contain any embedded null bytes.
+- The review will not contain any embedded nulls.
+- The review will not contain any embedded null characters.
+- The review will not contain any embedded null bytes.
+- The review will not contain any embedded null characters.
+- The review will not contain any embedded nulls.
+- The review will not contain any embedded null bytes.
+- The review will not contain any embedded null characters.
+- The review will not contain any embedded nulls.
+- The review will not contain any embedded null bytes.
+- The review will not contain any embedded null characters.
+- The review will not contain any embedded nulls.
+- The review will not contain any embedded null bytes.
+- The review will not contain any embedded null characters.
+- The review will not contain any embedded nulls.
+- The review will not contain any embedded null bytes.
+- The review will not contain any embedded null characters.
+- The review will not contain any embedded nulls.
+- The review will not contain any embedded null bytes.
+- The review will not contain any embedded null characters.
+- The review will not contain any embedded nulls.
+- The review will not contain any embedded null bytes.
+- The review will not contain any embedded null characters.
+- The review will not contain any embedded nulls.
+- The review will not contain any embedded null bytes.
+- The review will not contain any embedded null characters.
+- The review will not contain any embedded nulls.
+- The review will not contain any embedded null bytes.
+- The review
+Quints:  [('null', 'null', 'null', 'fish Explanation : The first ACOS quadruple is repeated in the review . The opinion span for the first quadruple is " fish " . # # # Hint : # # # Note : - The review will be a single sentence . - The review will not contain any punctuation other than periods . - The review will not contain any extra spaces . - The review will not contain any extra line breaks . - The review will not contain any extra newlines . - The review will not contain any extra tabs . - The review will not contain any extra carriage returns . - The review will not contain any extra form feed characters . - The review will not contain any control characters . - The review will not contain any null bytes . - The review will not contain any embedded null bytes . - The review will not contain any embedded nulls . - The review will not contain any embedded null characters . - The review will not contain any embedded null bytes . - The review will not contain any embedded null characters . - The review will not contain any embedded nulls . - The review will not contain any embedded null bytes . - The review will not contain any embedded null characters . - The review will not contain any embedded nulls . - The review will not contain any embedded null bytes . - The review will not contain any embedded null characters . - The review will not contain any embedded nulls . - The review will not contain any embedded null bytes . - The review will not contain any embedded null characters . - The review will not contain any embedded nulls . - The review will not contain any embedded null bytes . - The review will not contain any embedded null characters . - The review will not contain any embedded nulls . - The review will not contain any embedded null bytes . - The review will not contain any embedded null characters . - The review will not contain any embedded nulls . - The review will not contain any embedded null bytes . - The review will not contain any embedded null characters . - The review will not contain any embedded nulls . - The review will not contain any embedded null bytes . - The review will not contain any embedded null characters . - The review will not contain any embedded nulls . - The review will not contain any embedded null bytes . - The review', 'null')]
+Prediction:  ### Hint:
+
+
+
+
+
+### Notes:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] fresh [SSEP] [O] rolls tend to be inexplicably bland
+Quints:  [('null', 'null', 'null', 'fresh', 'null'), ('null', 'null', 'null', 'rolls tend to be inexplicably bland', 'null')]
+Prediction:  [O] smooth [SSEP] [O] nice [SSEP] [O] apps take seconds to respond
+Quints:  [('null', 'null', 'null', 'smooth', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'apps take seconds to respond', 'null')]
+Prediction:  [O] waiter was extremely dismissive [SSEP] [O] three staff members waited hand - and - foot [SSEP] [O] japanese girls
+Quints:  [('null', 'null', 'null', 'waiter was extremely dismissive', 'null'), ('null', 'null', 'null', 'three staff members waited hand - and - foot', 'null'), ('null', 'null', 'null', 'japanese girls', 'null')]
+Prediction:  [O] freshest [SSEP] [O] i love this restaurant
+Quints:  [('null', 'null', 'null', 'freshest', 'null'), ('null', 'null', 'null', 'i love this restaurant', 'null')]
+Prediction:  ### Hint:
+
+
+
+### Sample Test Cases:
+
+#### Sample Test Case 1:
+
+#### Sample Test Case 2:
+
+#### Sample Test Case 3:
+
+#### Sample Test Case 4:
+
+#### Sample Test Case 5:
+
+
+### Submission Instructions:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] freshest [SSEP] [O] tender
+Quints:  [('null', 'null', 'null', 'freshest', 'null'), ('null', 'null', 'null', 'tender', 'null')]
+Prediction:  [O] their apps are all delicious
+Quints:  [('null', 'null', 'null', 'their apps are all delicious', 'null')]
+Prediction:  ### Input:
+
+Review: the only drawback is that this place is really expensive and the portions are on the small side.
+ACOS quadruples: [A] place [C] restaurant#prices [S] negative [O] expensive [SSEP] [A] portions [C] food#style_options [S] negative [O] small
+Quints:  [('place', 'restaurant#prices', 'negative', 'expensive', 'null'), ('portions', 'food#style_options', 'negative', 'small', 'null')]
+Prediction:  [O] small [SSEP] [O] lovely [SSEP] [O] service is helpful
+Quints:  [('null', 'null', 'null', 'small', 'null'), ('null', 'null', 'null', 'lovely', 'null'), ('null', 'null', 'null', 'service is helpful', 'null')]
+Prediction:  ### Hint:
+
+
+### Notes:
+
+
+### Solutions:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] stellar
+Quints:  [('null', 'null', 'null', 'stellar', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] some little - tastier - than - normal salsa
+
+Expected:
+    "some little - tastier - than - normal salsa"
+
+Submitted:
+    "some little - tastier - than - normal salsa"
+
+### Explanation:
+    The correct answer is "some little - tastier - than - normal salsa".
+
+### Code: 
+```python
+# -*- coding: utf-8 -*-
+# @Author  : Congbo Wang
+# @Date    : 2018-03-14
+# @Email   : wangcongbo@outlook.com
+# @Link    : https://github.com/wangcongbo/
+# @Version : 1.0
+
+"""
+    评论：食物很好，有一些-比较-普通的-酱料
+    分析：
+        1. 第一个单词：food
+        2. 第一个单词的aspect：food#quality
+        3. 第一个单词的sentiment：positive
+        4. 第一个单词的opinion：fine
+        5. 第一个单词的aspect：salsa
+        6. 第一个单词的sentiment：positive
+        7. 第一个单词的opinion：fine
+        8. 结束标志：END
+"""
+
+import re
+
+def find_opinion(review, quadruples):
+    """
+    :param review: 评论
+    :param quadruples: 待找的评论
+    :return: 评论
+    """
+    # 1. 找到第一个单词
+    word = review.split()[0]
+    # 2. 找到第一个单词的aspect
+    aspect = quadruples[0][0]
+    # 3. �
+Quints:  [('null', 'null', 'null', 'some little - tastier - than - normal salsa Expected : " some little - tastier - than - normal salsa " Submitted : " some little - tastier - than - normal salsa " # # # Explanation : The correct answer is " some little - tastier - than - normal salsa " . # # # Code : ` ` ` python # - * - coding : utf - 8 - * - # @ Author : Congbo Wang # @ Date : 2018 - 03 - 14 # @ Email : wangcongbo @ outlook . com # @ Link : https : / / github . com / wangcongbo / # @ Version : 1 . 0 " " " 评论：食物很好，有一些 - 比较 - 普通的 - 酱料 分析： 1 . 第一个单词：food 2 . 第一个单词的aspect：food # quality 3 . 第一个单词的sentiment：positive 4 . 第一个单词的opinion：fine 5 . 第一个单词的aspect：salsa 6 . 第一个单词的sentiment：positive 7 . 第一个单词的opinion：fine 8 . 结束标志：END " " " import re def find _ opinion ( review , quadruples ) : " " " : param review : 评论 : param quadruples : 待找的评论 : return : 评论 " " " # 1 . 找到第一个单词 word = review . split ( ) [ 0 ] # 2 . 找到第一个单词的aspect aspect = quadruples [ 0 ] [ 0 ] # 3 . �', 'null')]
+Prediction:  [O] great [SSEP] [O] the waitress was too busy being nice to her other larger party
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'the waitress was too busy being nice to her other larger party', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] problem
+Quints:  [('null', 'null', 'null', 'problem', 'null')]
+Prediction:  ### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] best
+
+
+### Explanation:
+
+
+
+
+### Hint:
+
+
+
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'best # # # Explanation : # # # Hint : # # # Solution :', 'null')]
+Prediction:  ### Solution:
+
+```python
+
+```
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] perfect
+
+Expected:
+    "a perfect place to take out of town guests any time of the year." should return "a perfect place to take out of town guests any time of the year."
+
+Submitting your solution...
+
+```
+[WARNING] Could not find or load main class com.huawei.code.huawei.HuaweiTest.
+```
+
+### Solution:
+
+[O] perfect
+
+Expected:
+    "a perfect place to take out of town guests any time of the year." should return "a perfect place to take out of town guests any time of the year."
+
+Submitting your solution...
+
+```
+[WARNING] Could not find or load main class com.huawei.code.huawei.HuaweiTest.
+```
+
+### Solution:
+
+[O] perfect
+
+Expected:
+    "a perfect place to take out of town guests any time of the year." should return "a perfect place to take out of town guests any time of the year."
+
+Submitting your solution...
+
+```
+[WARNING] Could not find or load main class com.huawei.code.huawei.HuaweiTest.
+```
+
+### Solution:
+
+[O] perfect
+
+Expected:
+    "a perfect place to take out of town guests any time of the year." should return "a perfect place to take out of town guests any time of the year."
+
+Submitting your solution...
+
+```
+[WARNING] Could not find or load main class com.huawei.code.huawei.HuaweiTest.
+```
+
+### Solution:
+
+[O] perfect
+
+Expected:
+    "a perfect place to take out of town guests any time of the year." should return "a perfect place to take out of town guests any time of the year."
+
+Submitting your solution...
+
+```
+[WARNING] Could not find or load main class com.huawei.code.huawei.HuaweiTest.
+```
+
+### Solution:
+
+[O] perfect
+
+Expected:
+    "a perfect place to take out of town guests any time of the year
+Quints:  [('null', 'null', 'null', 'perfect Expected : " a perfect place to take out of town guests any time of the year . " should return " a perfect place to take out of town guests any time of the year . " Submitting your solution . . . ` ` ` [ WARNING ] Could not find or load main class com . huawei . code . huawei . HuaweiTest . ` ` ` # # # Solution : [ O ] perfect Expected : " a perfect place to take out of town guests any time of the year . " should return " a perfect place to take out of town guests any time of the year . " Submitting your solution . . . ` ` ` [ WARNING ] Could not find or load main class com . huawei . code . huawei . HuaweiTest . ` ` ` # # # Solution : [ O ] perfect Expected : " a perfect place to take out of town guests any time of the year . " should return " a perfect place to take out of town guests any time of the year . " Submitting your solution . . . ` ` ` [ WARNING ] Could not find or load main class com . huawei . code . huawei . HuaweiTest . ` ` ` # # # Solution : [ O ] perfect Expected : " a perfect place to take out of town guests any time of the year . " should return " a perfect place to take out of town guests any time of the year . " Submitting your solution . . . ` ` ` [ WARNING ] Could not find or load main class com . huawei . code . huawei . HuaweiTest . ` ` ` # # # Solution : [ O ] perfect Expected : " a perfect place to take out of town guests any time of the year . " should return " a perfect place to take out of town guests any time of the year . " Submitting your solution . . . ` ` ` [ WARNING ] Could not find or load main class com . huawei . code . huawei . HuaweiTest . ` ` ` # # # Solution : [ O ] perfect Expected : " a perfect place to take out of town guests any time of the year', 'null')]
+Prediction:  [O] awesome [SSEP] [O] endless fun [SSEP] [O] great
+Quints:  [('null', 'null', 'null', 'awesome', 'null'), ('null', 'null', 'null', 'endless fun', 'null'), ('null', 'null', 'null', 'great', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ```
+[O] great draft and bottle selection [SSEP] [O] pizza rocks
+Quints:  [('null', 'null', 'null', 'great draft and bottle selection', 'null'), ('null', 'null', 'null', 'pizza rocks', 'null')]
+Prediction:  Expected:
+"best"
+
+Submitted:
+"best"
+
+Expected Runtime:
+1 seconds
+
+Accepted Runtime:
+2 seconds
+
+### Code:
+
+```python
+def find_opinion_spans(text, quadruples):
+    """
+    :param text: The text of the review.
+    :param quadruples: A list of ACOS quadruples, each of which is a list of length 4.
+    :return: A list of opinion spans.
+    """
+
+    # Your code here
+
+    opinion_spans = []
+    for quadruple in quadruples:
+        if quadruple[3] == 'positive':
+            opinion_spans.append(quadruple[1])
+        elif quadruple[3] == 'negative':
+            opinion_spans.append(quadruple[1])
+        elif quadruple[3] == 'neutral':
+            opinion_spans.append(quadruple[1])
+    return opinion_spans
+```
+
+### Submitting In Solution
+
+1.  If you haven't already, fork the repository on [Github](https://github.com/edwithiess/coursera-competitive-programming-challenges).
+2.  Clone your OWN version of the repository (Not Labeled with Master).
+3.  Make your submissions using git.
+4.  Push to your version on Github.
+5.  Open a Pull Request so we can review your changes.
+
+### Testing
+
+1.  Make sure you are testing your [solution](solution.py).
+2.  You can run your code using the command `python3 solution.py`. This will run the function find_opinion_spans() on the input given in the test file.
+3.  If your code passes the test cases, you can be confident that your solution will pass the grading server.
+
+### Grading Server
+
+1.  Make sure you are testing your [solution](solution.py).
+2.  You can submit your solution using the command `python3 -m speller.grading_server -t solution.py`.
+3
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great [SSEP] [O] fun [SSEP] [O] worth staying for
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'fun', 'null'), ('null', 'null', 'null', 'worth staying for', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] smoking places
+
+
+### Explanation:
+
+
+
+### Hint:
+
+
+
+
+
+### Sample Test Cases:
+
+### Input:
+[A] balconey [C] restaurant#miscellaneous [S] positive [O] favorite
+Quints:  [('balconey', 'restaurant#miscellaneous', 'positive [O] favorite', 'smoking places # # # Explanation : # # # Hint : # # # Sample Test Cases : # # # Input :', 'null')]
+Prediction:  ### Explanation:
+
+
+
+
+### Hint:
+
+
+
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+
+
+### Hint:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good [SSEP] [O] jellyfish [SSEP] [O] horse mackerel [SSEP] [O] blue fin tuna [SSEP] [O] sake ikura roll
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'jellyfish', 'null'), ('null', 'null', 'null', 'horse mackerel', 'null'), ('null', 'null', 'null', 'blue fin tuna', 'null'), ('null', 'null', 'null', 'sake ikura roll', 'null')]
+Prediction:  ### Input Format
+
+A single line of text that contains the review and its corresponding ACOS quadruples.
+
+### Output Format
+
+A single line of text that contains the opinion spans.
+
+### Sample Input
+
+```
+my only negative comment is that i wish the pieces were a little bigger
+```
+
+### Sample Output
+
+```
+opinion spans: pieces were a little bigger
+```
+
+### Explanation
+
+In the above sample, the first ACOS quadruple is [A] pieces [C] food#style_options [S] negative [O] null
+Quints:  [('pieces', 'food#style_options', 'negative', 'null', 'null')]
+Prediction:  [O] rustic
+[SSEP] [O] traditional japanese
+
+
+Expected:
+
+[O] rustic
+[SSEP] [O] traditional japanese
+
+
+Submitting:
+
+
+Your program should read from STDIN.
+
+When you are finished writing your program, submit your solution to /bin/judge using the command:
+
+   ./submit solution.py
+
+### Scoring:
+
+Your program will be tested on 20 different customer reviews. The maximum score is 20.
+
+
+### Test cases:
+
+#### Case 1:
+
+Review: looks nice, and the surface is smooth, but certain apps take seconds to respond.
+ACOS quadruples: [A] surface [C] design [S] positive [O] smooth [SSEP] [A] NULL [C] design [S] positive [O] nice [SSEP] [A] apps [C] software [S] negative [O] NULL
+Quints:  [('null', 'null', 'null', 'rustic', 'null'), ('null', 'null', 'null', 'traditional japanese Expected : [ O ] rustic', 'null'), ('surface', 'design', 'positive [O] smooth', 'traditional japanese Submitting : Your program should read from STDIN . When you are finished writing your program , submit your solution to / bin / judge using the command : . / submit solution . py # # # Scoring : Your program will be tested on 20 different customer reviews . The maximum score is 20 . # # # Test cases : # # # # Case 1 : Review : looks nice , and the surface is smooth , but certain apps take seconds to respond . ACOS quadruples :', 'null'), ('NULL', 'design', 'positive', 'nice', 'null'), ('apps', 'software', 'negative', 'NULL', 'null')]
+Prediction:  Expected:
+[O] mixed yuppies, young and old
+
+Accepted:
+[O] mixed yuppies, young and old
+
+
+
+### Explanation:
+
+
+
+### Code:
+
+```python
+class Solution:
+    def findOpinionSpans(self, review: str, quadruples: List[str]) -> List[str]:
+        """
+        :type review: str
+        :type quadruples: List[str]
+        :rtype: List[str]
+        """
+        # write your code here
+        result = []
+        for quadruple in quadruples:
+            span = review.find(quadruple[2])
+            if span == -1:
+                result.append(quadruple[3])
+            else:
+                result.append(review[span:quadruple[4]])
+        return result
+```
+
+### Submitting Inline Solutions
+Inline Solutions are tested and accepted automatically.
+
+### Submitting Files
+Files can be submitted and tested manually by [our staff](https://leetcode.com/contact).
+Quints:  [('null', 'null', 'null', 'mixed yuppies , young and old Accepted : [ O ] mixed yuppies , young and old # # # Explanation : # # # Code : ` ` ` python class Solution : def findOpinionSpans ( self , review : str , quadruples : List [ str ] ) - > List [ str ] : " " " : type review : str : type quadruples : List [ str ] : rtype : List [ str ] " " " # write your code here result = [ ] for quadruple in quadruples : span = review . find ( quadruple [ 2 ] ) if span = = - 1 : result . append ( quadruple [ 3 ] ) else : result . append ( review [ span : quadruple [ 4 ] ] ) return result ` ` ` # # # Submitting Inline Solutions Inline Solutions are tested and accepted automatically . # # # Submitting Files Files can be submitted and tested manually by [ our staff ] ( https : / / leetcode . com / contact ) .', 'null')]
+Prediction:  [O] courteous [SSEP] [O] attentive
+Quints:  [('null', 'null', 'null', 'courteous', 'null'), ('null', 'null', 'null', 'attentive', 'null')]
+Prediction:  ### Explanation:
+
+
+### Hint:
+
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] outside patio area
+Quints:  [('null', 'null', 'null', 'outside patio area', 'null')]
+Prediction:  ### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null [SSEP] [O] tourists
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'tourists', 'null')]
+Prediction:  ### Note:
+
+1. The quadruples in the ACOS format are separated by a line break.
+2. Each quadruple is a separate line.
+3. Each opinion span is separated by a line break.
+4. Each opinion span is a separate line.
+5. The opinion span for an implicit opinion is separated from the implicit opinion by a line break.
+6. The implicit opinion is a separate line.
+7. The implicit opinion is not separated by a line break.
+8. The implicit opinion is not a separate line.
+9. The implicit opinion is not separated by a line break.
+10. The implicit opinion is not a separate line.
+11. The implicit opinion is not separated by a line break.
+12. The implicit opinion is not a separate line.
+13. The implicit opinion is not separated by a line break.
+14. The implicit opinion is not a separate line.
+15. The implicit opinion is not separated by a line break.
+16. The implicit opinion is not a separate line.
+17. The implicit opinion is not separated by a line break.
+18. The implicit opinion is not a separate line.
+19. The implicit opinion is not separated by a line break.
+20. The implicit opinion is not a separate line.
+21. The implicit opinion is not separated by a line break.
+22. The implicit opinion is not a separate line.
+23. The implicit opinion is not separated by a line break.
+24. The implicit opinion is not a separate line.
+25. The implicit opinion is not separated by a line break.
+26. The implicit opinion is not a separate line.
+27. The implicit opinion is not separated by a line break.
+28. The implicit opinion is not a separate line.
+29. The implicit opinion is not separated by a line break.
+30. The implicit opinion is not a separate line.
+31. The implicit opinion is not separated by a line break.
+32. The implicit opinion is not a separate line.
+33. The implicit opinion is not separated by a line break.
+34. The implicit opinion is not a separate line.
+35. The implicit opinion is not separated by a line break.
+36. The implicit opinion is not a separate line
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good
+Quints:  [('null', 'null', 'null', 'good', 'null')]
+Prediction:  [O] excellent [SSEP] [O] nice [SSEP] [O] expensive
+Quints:  [('null', 'null', 'null', 'excellent', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'expensive', 'null')]
+Prediction:  [O] pumpkin ravioli [SSEP] [O] goat cheese gnocchi [SSEP] [O] filet mignon on top of spinach and mashed potatoes
+Quints:  [('null', 'null', 'null', 'pumpkin ravioli', 'null'), ('null', 'null', 'null', 'goat cheese gnocchi', 'null'), ('null', 'null', 'null', 'filet mignon on top of spinach and mashed potatoes', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] chicken curry [SSEP] [O] chicken tikka masala
+Quints:  [('null', 'null', 'null', 'chicken curry', 'null'), ('null', 'null', 'null', 'chicken tikka masala', 'null')]
+Prediction:  ### Explanation:
+
+
+
+### Hint:
+
+
+
+### Example:
+
+```
+Input:
+Review: the chana masala ( garbanzo beans ) are also excellent.
+ACOS quadruples: [A] chana masala ( garbanzo beans ) [C] food#quality [S] positive [O] also
+Quints:  [('chana masala ( garbanzo beans )', 'food#quality', 'positive', 'also', 'null')]
+Prediction:  [O] not the greatest [SSEP] [O] food keeps me coming back for more
+Quints:  [('null', 'null', 'null', 'not the greatest', 'null'), ('null', 'null', 'null', 'food keeps me coming back for more', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] i think i have probably tried each item on their menu at least once
+Quints:  [('null', 'null', 'null', 'i think i have probably tried each item on their menu at least once', 'null')]
+Prediction:  [O] recommend [SSEP] [O] saag and paneer and korma
+Quints:  [('null', 'null', 'null', 'recommend', 'null'), ('null', 'null', 'null', 'saag and paneer and korma', 'null')]
+Prediction:  [O] appreciate
+
+
+Explanation:
+In the first quadruple, the opinion span is "appreciate".
+
+
+### Solution:
+```python
+import re
+
+import os
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "path/to/credentials.json"
+
+from google.cloud import language
+
+client = language.LanguageServiceClient()
+
+review = "i appreciate their delivery too."
+
+response = client.analyze_sentiment(
+    document=review,
+    encoding=language.Document.ENCODING_UTF8,
+    encoding_type=language.Document.ENCODING_TYPE_UTF8
+)
+
+opinion_spans = []
+
+for quadruple in response.sentence_sentiment.sentences:
+    for quad in quadruple.sentence_sentiment:
+        for quad_sentence in quad.sentiment:
+            for quad_opinion in quad_sentence.sentiment:
+                opinion_spans.append(quad_opinion.text)
+
+print(opinion_spans)
+```
+
+### Hint:
+
+
+### Reference:
+
+For more information on the Language Service, see
+[Language Service Documentation](https://cloud.google.com/natural-language/docs/reference/rest/).
+
+### Next Steps:
+
+- [Language Service Documentation](https://cloud.google.com/natural-language/docs/reference/rest/)
+Quints:  [('null', 'null', 'null', 'appreciate Explanation : In the first quadruple , the opinion span is " appreciate " . # # # Solution : ` ` ` python import re import os os . environ [ " GOOGLE _ APPLICATION _ CREDENTIALS " ] = " path / to / credentials . json " from google . cloud import language client = language . LanguageServiceClient ( ) review = " i appreciate their delivery too . " response = client . analyze _ sentiment ( document = review , encoding = language . Document . ENCODING _ UTF8 , encoding _ type = language . Document . ENCODING _ TYPE _ UTF8 ) opinion _ spans = [ ] for quadruple in response . sentence _ sentiment . sentences : for quad in quadruple . sentence _ sentiment : for quad _ sentence in quad . sentiment : for quad _ opinion in quad _ sentence . sentiment : opinion _ spans . append ( quad _ opinion . text ) print ( opinion _ spans ) ` ` ` # # # Hint : # # # Reference : For more information on the Language Service , see [ Language Service Documentation ] ( https : / / cloud . google . com / natural - language / docs / reference / rest / ) . # # # Next Steps : - [ Language Service Documentation ] ( https : / / cloud . google . com / natural - language / docs / reference / rest / )', 'null')]
+Prediction:  [O] nice [SSEP] [O] no spice!
+
+2) Review: looks nice, and the surface is smooth, but certain apps take seconds to respond.
+ACOS quadruples: [A] surface [C] design [S] positive [O] smooth [SSEP] [A] NULL [C] design [S] positive [O] nice [SSEP] [A] apps [C] software [S] negative [O] NULL
+Quints:  [('null', 'null', 'null', 'nice', 'null'), ('surface', 'design', 'positive [O] smooth', 'no spice ! 2 ) Review : looks nice , and the surface is smooth , but certain apps take seconds to respond . ACOS quadruples :', 'null'), ('NULL', 'design', 'positive', 'nice', 'null'), ('apps', 'software', 'negative', 'NULL', 'null')]
+Prediction:  [O] enjoyed
+
+
+Review: – i love the food and the atmosphere.
+ACOS quadruples: [A] food [C] food#quality [S] positive [O] love
+Quints:  [('food', 'food#quality', 'positive [O] love', 'enjoyed Review : – i love the food and the atmosphere . ACOS quadruples :', 'null')]
+Prediction:  [O] yummy [SSEP] [O] lamb korma [SSEP] [O] saag paneer [SSEP] [O] samosas [SSEP] [O] naan
+Quints:  [('null', 'null', 'null', 'yummy', 'null'), ('null', 'null', 'null', 'lamb korma', 'null'), ('null', 'null', 'null', 'saag paneer', 'null'), ('null', 'null', 'null', 'samosas', 'null'), ('null', 'null', 'null', 'naan', 'null')]
+Prediction:  ### Solution:
+
+
+
+### Submission:
+
+
+
+### Score:
+
+
+
+### Time:
+
+
+
+### Memory:
+
+
+
+### ID:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] best [SSEP] [O] bhartha
+Quints:  [('null', 'null', 'null', 'best', 'null'), ('null', 'null', 'null', 'bhartha', 'null')]
+Prediction:  ### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] fajita salad [SSEP] [O] colorado [SSEP] [O] fajitas
+Quints:  [('null', 'null', 'null', 'fajita salad', 'null'), ('null', 'null', 'null', 'colorado', 'null'), ('null', 'null', 'null', 'fajitas', 'null')]
+Prediction:  [A] environment [C] ambience#general [S] positive [O] warm [SSEP] [A] environment [C] ambience#general [S] positive [O] cosy
+Quints:  [('environment', 'ambience#general', 'positive', 'warm', 'null'), ('environment', 'ambience#general', 'positive', 'cosy', 'null')]
+Prediction:  [O] null
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Followup:
+
+- Can you identify the opinion spans for the second and third quadruples?
+- What is the opinion span for the first quadruple?
+
+### Hint:
+
+
+### Solution:
+
+```
+[O] null
+```
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[O] null
+```
+
+### Explanation:
+
+
+
+### Submission:
+
+```
+[
+Quints:  [('null', 'null', 'null', 'null # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Followup : - Can you identify the opinion spans for the second and third quadruples ? - What is the opinion span for the first quadruple ? # # # Hint : # # # Solution : ` ` ` [ O ] null ` ` ` # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [', 'null')]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:35<01:11, 35.77s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:11<00:35, 35.74s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 29.79s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 31.40s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 40052.56item/s]
+Running pipeline...
+Total output tokens: 61945
+Avg out tokens per prompt: 619.45
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] not the biggest [SSEP] [O] adequate
+Quints:  [('null', 'null', 'null', 'not the biggest', 'null'), ('null', 'null', 'null', 'adequate', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] delicious [SSEP] [O] great
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'great', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] sticky sweet [SSEP] [O] not good [SSEP]
+
+Please note that the task is to identify the opinion spans in the given review and ACOS quadruples. The task is not to evaluate the quality of the review or the opinions expressed.
+Quints:  [('null', 'null', 'null', 'sticky sweet', 'null'), ('null', 'null', 'null', 'not good', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the quadruples in the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] amazing [SSEP] [O] meal [SSEP] [O] service [SSEP] [O] ambiance
+Quints:  [('null', 'null', 'null', 'amazing', 'null'), ('null', 'null', 'null', 'meal', 'null'), ('null', 'null', 'null', 'service', 'null'), ('null', 'null', 'null', 'ambiance', 'null')]
+Prediction:  [O] incredible [SSEP] [O] extensive [SSEP] [O] diverse [SSEP] [O] nice [SSEP] [O] good
+Quints:  [('null', 'null', 'null', 'incredible', 'null'), ('null', 'null', 'null', 'extensive', 'null'), ('null', 'null', 'null', 'diverse', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'good', 'null')]
+Prediction:  Please provide the opinion spans for the quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review and ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] relax [SSEP] [O] enjoy [SSEP] [O] finest quality food
+Quints:  [('null', 'null', 'null', 'relax', 'null'), ('null', 'null', 'null', 'enjoy', 'null'), ('null', 'null', 'null', 'finest quality food', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] liked [SSEP] [O] not worth [SSEP] [O] food was not worth the price
+Quints:  [('null', 'null', 'null', 'liked', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food was not worth the price', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple, as well as any implicit opinions that can be inferred from the text.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] detail [SSEP] [O] complex rolls
+Quints:  [('null', 'null', 'null', 'detail', 'null'), ('null', 'null', 'null', 'complex rolls', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great [SSEP] [O] busy
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'busy', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great [SSEP] [O] fun [SSEP] [O] worth staying for
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'fun', 'null'), ('null', 'null', 'null', 'worth staying for', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+
+Please note that the task is to identify the opinion spans only, and not to label the sentiment of the opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good [SSEP] [O] jellyfish [SSEP] [O] horse mackerel [SSEP] [O] blue fin tuna [SSEP]
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'jellyfish', 'null'), ('null', 'null', 'null', 'horse mackerel', 'null'), ('null', 'null', 'null', 'blue fin tuna', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+
+
+Please provide the implicit opinion span for the first quadruple (originally labeled NULL).
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] courteous [SSEP] [O] attentive
+Quints:  [('null', 'null', 'null', 'courteous', 'null'), ('null', 'null', 'null', 'attentive', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] excellent [SSEP] [O] nice [SSEP] [O] expensive
+Quints:  [('null', 'null', 'null', 'excellent', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'expensive', 'null')]
+Prediction:  [O] loved [SSEP] [O] pumpkin ravioli [O] goat cheese gnocchi [O] filet mignon on top of spinach and mashed potatoes
+Quints:  [('null', 'null', 'null', 'loved', 'null'), ('null', 'null', 'null', 'pumpkin ravioli [ O ] goat cheese gnocchi [ O ] filet mignon on top of spinach and mashed potatoes', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that are not explicitly stated in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] recommend [SSEP] [O] saag [O] paneer [O] korma
+Quints:  [('null', 'null', 'null', 'recommend', 'null'), ('null', 'null', 'null', 'saag [ O ] paneer [ O ] korma', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS list.
+
+
+End of Task
+
+Please provide the opinion spans for each quadruple in the ACOS list. In this case, the opinion spans are:
+
+[O] nice [SSEP] [O] no spice
+Quints:  [('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'no spice', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] fajita salad [SSEP] [O] colorado [SSEP] [O] fajitas
+Quints:  [('null', 'null', 'null', 'fajita salad', 'null'), ('null', 'null', 'null', 'colorado', 'null'), ('null', 'null', 'null', 'fajitas', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Running ACOS extend
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:35<01:11, 35.93s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:11<00:35, 35.73s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 29.91s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 31.50s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 49578.06item/s]
+Running pipeline...
+Total output tokens: 76637
+Avg out tokens per prompt: 766.37
+Prediction:  [O] not worth
+Quints:  [('null', 'null', 'null', 'not worth', 'null')]
+Prediction:  ### Input/Output Specifications:
+
+| # | Input |
+|:-------------|:-------------|
+| 1 | The review is a string of length at most 10000. |
+| 2 | The ACOS quadruples are a list of quadruples. Each quadruple is a list of 4 strings, where the first 3 strings are the aspect, category, and sentiment, and the last string is the opinion. The length of each quadruple is at most 1000. |
+| 3 | The opinion spans are a list of strings. Each string is an opinion span. The length of each opinion span is at most 1000. |
+
+
+
+### Sample Test Cases:
+
+| # | Input | Output |
+|:-------------|:-------------|:-------------|
+| 1 | going from acer 15 to acer 11 was difficult, 11 inches seems too small for me. | [O] difficult [SSEP] [O] small |
+| 2 | looks nice, and the surface is smooth, but certain apps take seconds to respond. | [O] smooth [SSEP] [O] nice [SSEP] [O] apps take seconds to respond |
+| 3 | with the theater 2 blocks away we had a delicious meal in a beautiful room. | [O] delicious [SSEP] [O] theater 2 blocks away [SSEP] [O] beautiful |
+
+
+
+### Clarifications:
+
+1. The review is guaranteed to be well-formed.
+2. The ACOS quadruples are guaranteed to be well-formed.
+3. The opinion spans are guaranteed to be well-formed.
+4. The opinion spans are guaranteed to be non-empty.
+5. The review and ACOS quadruples are guaranteed to be in English.
+6. The opinion spans are guaranteed to be in English.
+7. The opinion spans may contain punctuation and white space.
+8. The review and ACOS quadruples will not contain any punctuation or white space.
+9. The review and ACOS quadruples may contain numbers.
+10. The opinion spans
+Quints:  [('null', 'null', 'null', 'difficult', 'null'), ('null', 'null', 'null', 'small | | 2 | looks nice , and the surface is smooth , but certain apps take seconds to respond . | [ O ] smooth', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'apps take seconds to respond | | 3 | with the theater 2 blocks away we had a delicious meal in a beautiful room . | [ O ] delicious', 'null'), ('null', 'null', 'null', 'theater 2 blocks away', 'null'), ('null', 'null', 'null', 'beautiful | # # # Clarifications : 1 . The review is guaranteed to be well - formed . 2 . The ACOS quadruples are guaranteed to be well - formed . 3 . The opinion spans are guaranteed to be well - formed . 4 . The opinion spans are guaranteed to be non - empty . 5 . The review and ACOS quadruples are guaranteed to be in English . 6 . The opinion spans are guaranteed to be in English . 7 . The opinion spans may contain punctuation and white space . 8 . The review and ACOS quadruples will not contain any punctuation or white space . 9 . The review and ACOS quadruples may contain numbers . 10 . The opinion spans', 'null')]
+Prediction:  ### Hint:
+
+
+
+### Notes:
+
+
+
+
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Hint:
+
+
+
+### Explanation:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] a couple days ago i updated the chrome os
+Quints:  [('null', 'null', 'null', 'a couple days ago i updated the chrome os', 'null')]
+Prediction:  ### Hint:
+
+
+### Input/Output
+
+- **[testcase](testcase/testcase.txt)**: A list of test cases. Each test case is a line of input as described above.
+- **[result](result/result.txt)**: A list of lists of lists. Each sublist of the list represents a line of output as described above.
+
+
+### Constraints
+
+- **1 <= N <= 50**: The number of characters in the review.
+- **1 <= M <= 10**: The number of ACOS quadruples.
+- **1 <= L <= 50**: The number of characters in each aspect, category, opinion, and sentiment.
+- **1 <= A <= 50**: The number of characters in each aspect.
+- **1 <= C <= 50**: The number of characters in each category.
+- **1 <= S <= 50**: The number of characters in each sentiment.
+- **1 <= O <= 50**: The number of characters in each opinion.
+- **1 <= L <= 50**: The number of characters in each opinion span.
+- **1 <= A <= 50**: The number of characters in each opinion span.
+- **1 <= C <= 50**: The number of characters in each opinion span.
+- **1 <= S <= 50**: The number of characters in each opinion span.
+- **1 <= O <= 50**: The number of characters in each opinion span.
+- **1 <= A <= 50**: The number of characters in each opinion span.
+- **1 <= C <= 50**: The number of characters in each opinion span.
+- **1 <= S <= 50**: The number of characters in each opinion span.
+- **1 <= O <= 50**: The number of characters in each opinion span.
+- **1 <= A <= 50**: The number of characters in each opinion span.
+- **1 <= C <= 50**: The number of characters in each opinion span.
+- **1 <= S <= 50**: The number of characters in each opinion span.
+- **1 <= O <= 50**: The number of
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ```
+[O] bought this last year on july
+```
+
+
+### Explanation:
+
+```
+
+```
+
+
+
+### Hint 1:
+
+```
+
+```
+
+
+
+### Hint 2:
+
+```
+
+```
+
+
+
+### Hint 3:
+
+```
+
+```
+
+
+
+### Hint 4:
+
+```
+
+```
+
+
+
+### Hint 5:
+
+```
+
+```
+
+
+
+### Hint 6:
+
+```
+
+```
+
+
+
+### Hint 7:
+
+```
+
+```
+
+
+
+### Hint 8:
+
+```
+
+```
+
+
+
+### Hint 9:
+
+```
+
+```
+
+
+
+### Hint 10:
+
+```
+
+```
+
+
+
+### Hint 11:
+
+```
+
+```
+
+
+
+### Hint 12:
+
+```
+
+```
+
+
+
+### Hint 13:
+
+```
+
+```
+
+
+
+### Hint 14:
+
+```
+
+```
+
+
+
+### Hint 15:
+
+```
+
+```
+
+
+
+### Hint 16:
+
+```
+
+```
+
+
+
+### Hint 17:
+
+```
+
+```
+
+
+
+### Hint 18:
+
+```
+
+```
+
+
+
+### Hint 19:
+
+```
+
+```
+
+
+
+### Hint 20:
+
+```
+
+```
+
+
+
+### Hint 21:
+
+```
+
+```
+
+
+
+### Hint 22:
+
+```
+
+```
+
+
+
+### Hint 23:
+
+```
+
+```
+
+
+
+### Hint 24:
+
+```
+
+```
+
+
+
+### Hint 25:
+
+```
+
+```
+
+
+
+### Hint 26:
+
+```
+
+```
+
+
+
+### Hint 27:
+
+```
+
+```
+
+
+
+##
+Quints:  [('null', 'null', 'null', 'bought this last year on july ` ` ` # # # Explanation : ` ` ` ` ` ` # # # Hint 1 : ` ` ` ` ` ` # # # Hint 2 : ` ` ` ` ` ` # # # Hint 3 : ` ` ` ` ` ` # # # Hint 4 : ` ` ` ` ` ` # # # Hint 5 : ` ` ` ` ` ` # # # Hint 6 : ` ` ` ` ` ` # # # Hint 7 : ` ` ` ` ` ` # # # Hint 8 : ` ` ` ` ` ` # # # Hint 9 : ` ` ` ` ` ` # # # Hint 10 : ` ` ` ` ` ` # # # Hint 11 : ` ` ` ` ` ` # # # Hint 12 : ` ` ` ` ` ` # # # Hint 13 : ` ` ` ` ` ` # # # Hint 14 : ` ` ` ` ` ` # # # Hint 15 : ` ` ` ` ` ` # # # Hint 16 : ` ` ` ` ` ` # # # Hint 17 : ` ` ` ` ` ` # # # Hint 18 : ` ` ` ` ` ` # # # Hint 19 : ` ` ` ` ` ` # # # Hint 20 : ` ` ` ` ` ` # # # Hint 21 : ` ` ` ` ` ` # # # Hint 22 : ` ` ` ` ` ` # # # Hint 23 : ` ` ` ` ` ` # # # Hint 24 : ` ` ` ` ` ` # # # Hint 25 : ` ` ` ` ` ` # # # Hint 26 : ` ` ` ` ` ` # # # Hint 27 : ` ` ` ` ` ` # #', 'null')]
+Prediction:  ### Explanation:
+
+
+### Hint:
+
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ```
+[O] glitchy [SSEP] [O] barely usable
+Quints:  [('null', 'null', 'null', 'glitchy', 'null'), ('null', 'null', 'null', 'barely usable', 'null')]
+Prediction:  ### Input Format:
+The first line contains a single integer T, the number of test cases.
+Each test case is described by a single line of text, containing the review text.
+
+### Output Format:
+For each test case, output a single line of text containing the opinion spans.
+
+### Sample Input:
+
+1
+i ordered one, the touch pad failed to work consistently.
+
+### Sample Output:
+
+[O] touch pad
+Quints:  [('null', 'null', 'null', 'touch pad', 'null')]
+Prediction:  ### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Hint:
+
+
+### Sample Test Cases:
+
+
+### Input:
+
+
+### Output:
+
+
+### Explanation:
+
+
+
+### Constraints:
+
+
+
+### Note:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null
+
+
+Expected:
+
+[O] null
+
+
+Submissions (Coming soon!)
+Quints:  [('null', 'null', 'null', 'null Expected : [ O ] null Submissions ( Coming soon ! )', 'null')]
+Prediction:  [O] touchscreen didn't work at all on tablet mode
+Quints:  [('null', 'null', 'null', "touchscreen didn ' t work at all on tablet mode", 'null')]
+Prediction:  ### Explanation:
+
+
+
+### Hint:
+
+
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] decent
+
+### Explanation:
+
+There is only one quadruple, so there is only one opinion span.
+
+### Code:
+
+
+```python
+
+```
+
+
+### Submitting
+
+Use the `submit` script in the exercise directory to submit your solution to Coursera.
+
+### Tests
+
+There are 10 test cases.
+
+### Discussion
+
+If you have questions, please post them to the Discussions.
+Quints:  [('null', 'null', 'null', 'decent # # # Explanation : There is only one quadruple , so there is only one opinion span . # # # Code : ` ` ` python ` ` ` # # # Submitting Use the ` submit ` script in the exercise directory to submit your solution to Coursera . # # # Tests There are 10 test cases . # # # Discussion If you have questions , please post them to the Discussions .', 'null')]
+Prediction:  [O] flimsy
+Quints:  [('null', 'null', 'null', 'flimsy', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null
+
+Expected:
+Quints:  [('null', 'null', 'null', 'null Expected :', 'null')]
+Prediction:  ### Explanation:
+
+
+### Note:
+
+
+### Example 1:
+
+
+### Example 2:
+
+
+### Example 3:
+
+
+### Example 4:
+
+
+### Example 5:
+
+
+### Example 6:
+
+
+### Example 7:
+
+
+### Example 8:
+
+
+### Example 9:
+
+
+### Example 10:
+
+
+### Example 11:
+
+
+### Example 12:
+
+
+### Example 13:
+
+
+### Example 14:
+
+
+### Example 15:
+
+
+### Example 16:
+
+
+### Example 17:
+
+
+### Example 18:
+
+
+### Example 19:
+
+
+### Example 20:
+
+
+### Example 21:
+
+
+### Example 22:
+
+
+### Example 23:
+
+
+### Example 24:
+
+
+### Example 25:
+
+
+### Example 26:
+
+
+### Example 27:
+
+
+### Example 28:
+
+
+### Example 29:
+
+
+### Example 30:
+
+
+### Example 31:
+
+
+### Example 32:
+
+
+### Example 33:
+
+
+### Example 34:
+
+
+### Example 35:
+
+
+### Example 36:
+
+
+### Example 37:
+
+
+### Example 38:
+
+
+### Example 39:
+
+
+### Example 40:
+
+
+### Example 41:
+
+
+### Example 42:
+
+
+### Example 43:
+
+
+### Example 44:
+
+
+### Example 45:
+
+
+### Example 46:
+
+
+### Example 47:
+
+
+### Example 48:
+
+
+### Example 49:
+
+
+### Example 50:
+
+
+### Example
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] called support a second time after 10 minutes of verifying some type of info [SSEP] [O] they told me to call google without even trying to help
+Quints:  [('null', 'null', 'null', 'called support a second time after 10 minutes of verifying some type of info', 'null'), ('null', 'null', 'null', 'they told me to call google without even trying to help', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+
+
+### Hint:
+
+
+### Sample Test Cases:
+
+    Input:
+    Output:
+    Explanation:
+    Input:
+    Output:
+    Explanation:
+    Input:
+    Output:
+    Explanation:
+
+### Submitting Your Solution
+
+When you are ready to submit your solution, click the Submit to Qwiklabs button in the top-right of the page. This will navigate you to the Qwiklabs hub where you can download your zip file of files for submission. Look for the link that ends in `your_solution_name-R1.zip` where `your_solution_name` is the name of your solution that you specified when your solution was created.
+
+### Resources
+
+- [Google Cloud Platform documentation](https://cloud.google.com/docs/)
+- [Google Cloud Platform API documentation](https://cloud.google.com/docs/apis/)
+- [Cloud Client Libraries](https://cloud.google.com/docs/apis/libraries)
+- [Cloud SDK](https://cloud.google.com/sdk/)
+- [Qwiklabs Google Cloud Platform tutorials](https://qwiklabs.com/focus-area/google-cloud)
+- [Qwiklabs Google Cloud Platform quizzes](https://qwiklabs.com/focus-area/google-cloud/quizzes)
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] smooth [SSEP] [O] nice [SSEP] [O] apps take seconds to respond
+Quints:  [('null', 'null', 'null', 'smooth', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'apps take seconds to respond', 'null')]
+Prediction:  ### Explanation:
+
+
+
+### Submitting Your Solution
+
+Submit your solution to the Review-Response challenge on the challenge page.
+
+### Scoring
+
+The solution will be evaluated against the test set. The accuracy of the solution will be measured by the number of correctly predicted opinion spans.
+
+The test set will be the same as the training set.
+
+### Resources
+
+The following resources are provided to help you prepare for this challenge:
+
+* The [online customer review dataset](https://s3-us-west-1.amazonaws.com/fighter-ai-review-response/customer-reviews.json), which contains 1,000 online customer reviews and their corresponding ACOS quadruples.
+* The [online customer review dataset](https://s3-us-west-1.amazonaws.com/fighter-ai-review-response/customer-reviews.json), which contains 1,000 online customer reviews and their corresponding ACOS quadruples.
+* The [online customer review dataset](https://s3-us-west-1.amazonaws.com/fighter-ai-review-response/customer-reviews.json), which contains 1,000 online customer reviews and their corresponding ACOS quadruples.
+* The [online customer review dataset](https://s3-us-west-1.amazonaws.com/fighter-ai-review-response/customer-reviews.json), which contains 1,000 online customer reviews and their corresponding ACOS quadruples.
+* The [online customer review dataset](https://s3-us-west-1.amazonaws.com/fighter-ai-review-response/customer-reviews.json), which contains 1,000 online customer reviews and their corresponding ACOS quadruples.
+* The [online customer review dataset](https://s3-us-west-1.amazonaws.com/fighter-ai-review-response/customer-reviews.json), which contains 1,000 online customer reviews and their corresponding ACOS quadruples.
+* The [online customer review dataset](https://s3-us-west-1.amazonaws.com/fighter
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] well
+Quints:  [('null', 'null', 'null', 'well', 'null')]
+Prediction:  [O] flashes for a second every 30 seconds or so
+Quints:  [('null', 'null', 'null', 'flashes for a second every 30 seconds or so', 'null')]
+Prediction:  Expected:
+"i noticed the battery went down to 67 % for no reason."
+
+
+Accepted:
+"i noticed the battery went down to 67 % for no reason."
+
+
+### Code:
+
+```python
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output: "i noticed the battery went down to 67 % for no reason."
+
+Input: review = "i noticed the battery went down to 67 % for no reason."
+Output:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation of the Sample Input/Output
+
+
+
+
+
+
+
+### Hint
+
+
+
+
+### Related Problems
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] nice
+
+
+Review: the phone is great.
+ACOS quadruples: [A] phone [C] phone#operation_performance [S] positive [O] great
+Quints:  [('phone', 'phone#operation_performance', 'positive [O] great', 'nice Review : the phone is great . ACOS quadruples :', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Submission:
+
+### Sample Output:
+
+
+
+### Explanation:
+
+
+
+### Hint:
+
+
+
+### Related Topics:
+
+- [Regular Expression](https://leetcode.com/tag/regular-expression/)
+- [String](https://leetcode.com/tag/string/)
+
+### Similar Questions:
+
+### Note:
+
+
+
+### Solutions:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+
+
+### Submission:
+
+
+### Test cases:
+
+| Test case | Input | Expected output |
+| --------- | ----- | --------------- |
+| 1 | [A] null [C] laptop#operation_performance [S] negative [O] slow
+Quints:  [('null', 'laptop#operation_performance', 'negative', 'slow', 'null')]
+Prediction:  [O] terrible
+
+Explanation:
+There are no explicit opinions in this example. The implicit opinion span for the first quadruple is "terrible".
+
+
+'''
+
+from collections import defaultdict
+
+def process(text):
+    # text = "here's the kicker : it is doing a terrible job running dragon age."
+    text = text.strip()
+    text = text.split()
+    text = text[1:]
+    text = text[1:]
+    text = [x for x in text if x!= '']
+    text = [x.strip() for x in text]
+    text = [x.lower() for x in text]
+    text = [x for x in text if len(x) > 0]
+    text = [x for x in text if x!= 'null']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x in text if x!= '']
+    text = [x for x
+Quints:  [('null', 'null', 'null', 'terrible Explanation : There are no explicit opinions in this example . The implicit opinion span for the first quadruple is " terrible " . \' \' \' from collections import defaultdict def process ( text ) : # text = " here \' s the kicker : it is doing a terrible job running dragon age . " text = text . strip ( ) text = text . split ( ) text = text [ 1 : ] text = text [ 1 : ] text = [ x for x in text if x ! = \' \' ] text = [ x . strip ( ) for x in text ] text = [ x . lower ( ) for x in text ] text = [ x for x in text if len ( x ) > 0 ] text = [ x for x in text if x ! = \' null \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x in text if x ! = \' \' ] text = [ x for x', 'null')]
+Prediction:  [O] typing in low light is such a pain
+Quints:  [('null', 'null', 'null', 'typing in low light is such a pain', 'null')]
+Prediction:  ### Notes:
+
+1. The number of quadruples will not exceed 10.
+2. The aspect will not be the same as the opinion.
+3. The aspect will not be the same as the category.
+4. The sentiment will be either positive, negative, or neutral.
+5. The aspect will not be NULL.
+6. The opinion will not be NULL.
+7. The opinion will be a substring of the aspect.
+8. The aspect will be a substring of the opinion.
+9. The aspect will be a substring of the category.
+10. The category will be a substring of the aspect.
+11. The opinion will be a substring of the category.
+12. The opinion will be a substring of the category.
+13. The opinion will be a substring of the category.
+14. The opinion will be a substring of the category.
+15. The opinion will be a substring of the category.
+16. The opinion will be a substring of the category.
+17. The opinion will be a substring of the category.
+18. The opinion will be a substring of the category.
+19. The opinion will be a substring of the category.
+20. The opinion will be a substring of the category.
+21. The opinion will be a substring of the category.
+22. The opinion will be a substring of the category.
+23. The opinion will be a substring of the category.
+24. The opinion will be a substring of the category.
+25. The opinion will be a substring of the category.
+26. The opinion will be a substring of the category.
+27. The opinion will be a substring of the category.
+28. The opinion will be a substring of the category.
+29. The opinion will be a substring of the category.
+30. The opinion will be a substring of the category.
+31. The opinion will be a substring of the category.
+32. The opinion will be a substring of the category.
+33. The opinion will be a substring of the category.
+34. The opinion will be a substring of the category.
+35. The opinion will be a substring of the category.
+36. The opinion will be a substring of the category.
+37. The opinion will be a
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] fine [SSEP] [O] keyboard and mouse pad [SSEP] [O] overall it seems strangely slow
+Quints:  [('null', 'null', 'null', 'fine', 'null'), ('null', 'null', 'null', 'keyboard and mouse pad', 'null'), ('null', 'null', 'null', 'overall it seems strangely slow', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] crazy [SSEP] [O] this issue is even worse
+Quints:  [('null', 'null', 'null', 'crazy', 'null'), ('null', 'null', 'null', 'this issue is even worse', 'null')]
+Prediction:  [O] solid
+
+### Explanation:
+
+
+
+
+### Hint:
+Quints:  [('null', 'null', 'null', 'solid # # # Explanation : # # # Hint :', 'null')]
+Prediction:  [O] this lead me to believe that [SSEP] [O] although i purchased a “ new ” product [SSEP] [O] they sent me a refurbished one instead
+Quints:  [('null', 'null', 'null', 'this lead me to believe that', 'null'), ('null', 'null', 'null', 'although i purchased a “ new ” product', 'null'), ('null', 'null', 'null', 'they sent me a refurbished one instead', 'null')]
+Prediction:  [O] null
+
+Explanation:
+
+The review has one quadruple. The opinion span is NULL.
+Quints:  [('null', 'null', 'null', 'null Explanation : The review has one quadruple . The opinion span is NULL .', 'null')]
+Prediction:  [O] like [SSEP] [O] speed [SSEP] [O] processor [SSEP] [O] hybrid storage units [SSEP] [O] sucks [SSEP] [O] poor [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'like', 'null'), ('null', 'null', 'null', 'speed', 'null'), ('null', 'null', 'null', 'processor', 'null'), ('null', 'null', 'null', 'hybrid storage units', 'null'), ('null', 'null', 'null', 'sucks', 'null'), ('null', 'null', 'null', 'poor', 'null'), ('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] lightweight
+
+
+### Explanation:
+
+
+
+### Code:
+
+```python
+# Your Code Here
+```
+Quints:  [('null', 'null', 'null', 'lightweight # # # Explanation : # # # Code : ` ` ` python # Your Code Here ` ` `', 'null')]
+Prediction:  [O] smooth [SSEP] [O] nice [SSEP] [O] apps take seconds to respond
+Quints:  [('null', 'null', 'null', 'smooth', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'apps take seconds to respond', 'null')]
+Prediction:  [O] smooth [SSEP] [O] nice [SSEP] [O] apps take seconds to respond
+Quints:  [('null', 'null', 'null', 'smooth', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'apps take seconds to respond', 'null')]
+Prediction:  ### Explanation:
+
+
+
+### Hints:
+
+
+
+### Solutions:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Input Format:
+
+The first line of the input will contain an integer, T, denoting the number of test cases.
+T test cases follow. Each test case starts with a line containing an integer, N, denoting the number of quadruples in the review.
+Each quadruple is described by a line containing 4 space-separated values: A, C, S, and O.
+
+
+### Constraints:
+
+1 <= T <= 10
+
+1 <= N <= 10
+
+1 <= A.length <= 20
+
+1 <= C.length <= 20
+
+1 <= S.length <= 20
+
+1 <= O.length <= 20
+
+A, C, S, and O consist of only lowercase English letters.
+
+
+### Output Format:
+
+For each test case, print T lines, one for each quadruple in the review. Each line should contain 4 space-separated values: A, C, S, and O.
+
+
+### Sample Input 0:
+
+```
+3
+1
+ram upgrade available
+```
+
+### Sample Output 0:
+
+```
+ram
+upgrade
+available
+```
+
+### Explanation 0:
+
+The review has 1 quadruple.
+
+
+### Sample Input 1:
+
+```
+3
+3
+looks nice, and the surface is smooth, but certain apps take seconds to respond.
+with the theater 2 blocks away we had a delicious meal in a beautiful room.
+```
+
+### Sample Output 1:
+
+```
+smooth
+nice
+apps take seconds to respond
+delicious
+theater 2 blocks away
+beautiful
+room
+```
+
+### Explanation 1:
+
+The first review has 3 quadruples.
+
+The second review has 3 quadruples.
+
+
+### Sample Input 2:
+
+```
+3
+3
+ram upgrade available
+```
+
+### Sample Output 2:
+
+```
+ram
+upgrade
+available
+```
+
+### Explanation 2:
+
+The first review has 3 quadruples.
+
+The second review has 3 quadruples.
+
+
+### Sample Input
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Input Format
+
+The first line of the input contains an integer, T, denoting the number of test cases. The description of T test cases follows. The first line of each test case contains an integer, N, denoting the length of the review. The second line of each test case contains N characters, which represent the review.
+
+The third line of each test case contains an integer, Q, denoting the number of ACOS quadruples in the review. The fourth line of each test case contains Q quadruples, each of which consists of 4 integers separated by spaces, representing the aspect, category, sentiment, and opinion of the quadruple, respectively.
+
+
+### Constraints
+
+- 1 <= T <= 100
+- 1 <= N <= 1000
+- 1 <= Q <= 1000
+- 1 <= A, C, S <= 20
+- 1 <= O <= 1000
+- Each character in the review is a lowercase letter.
+- Each aspect and opinion in the quadruples is a lowercase letter.
+- The sentiment is either "positive", "negative", or "neutral".
+- The category is either "design", "software", or "food#quality".
+- The opinion is a substring of the review.
+
+
+### Output Format
+
+For each test case, output Q lines. Each line should contain the span of the opinion for each quadruple, separated by a space.
+
+
+### Sample Input 0
+
+```
+1
+10
+review
+1
+3
+aspect null category null sentiment positive opinion null
+aspect null category null sentiment negative opinion null
+aspect null category null sentiment positive opinion null
+```
+
+### Sample Output 0
+
+```
+review
+```
+
+
+### Sample Input 1
+
+```
+1
+10
+review
+1
+3
+aspect hard drive category memory#operation_performance sentiment positive opinion available
+aspect hard drive category memory#operation_performance sentiment negative opinion null
+aspect hard drive category memory#operation_performance sentiment positive opinion available
+```
+
+### Sample Output 1
+
+```
+hard drive
+```
+
+
+### Explanation of Sample Input 0
+
+- There is only
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] click [SSEP] [O] not responding
+Quints:  [('null', 'null', 'null', 'click', 'null'), ('null', 'null', 'null', 'not responding', 'null')]
+Prediction:  ### Explanation:
+
+
+
+### Hint:
+
+
+
+### Solutions:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] computer [SSEP] [O] used it a total of less than 20 hours [SSEP] [O] gone for 3 weeks
+Quints:  [('null', 'null', 'null', 'computer', 'null'), ('null', 'null', 'null', 'used it a total of less than 20 hours', 'null'), ('null', 'null', 'null', 'gone for 3 weeks', 'null')]
+Prediction:  [O] i send it to asus warranty
+Quints:  [('null', 'null', 'null', 'i send it to asus warranty', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+
+
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Input:
+
+
+
+### Output:
+
+
+
+### Sample Test Cases:
+
+
+
+### Expected Output:
+
+
+
+### Solutions:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ```
+[O] screen broke
+Quints:  [('null', 'null', 'null', 'screen broke', 'null')]
+Prediction:  [O] no good
+Quints:  [('null', 'null', 'null', 'no good', 'null')]
+Prediction:  ### Explanation:
+
+
+
+### Hint:
+
+
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] big [SSEP] [O] ease [SSEP] [O] light
+
+Explanation:
+
+The first ACOS quadruple is missing an aspect, so the response is [O] big [SSEP] [O] ease [SSEP] [O] light.
+
+
+### Hint 1:
+
+You may find it helpful to break the review into sentences, and then break the sentences into words.
+
+### Hint 2:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing aspect.
+
+
+### Hint 3:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing opinion.
+
+
+### Hint 4:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing sentiment.
+
+
+### Hint 5:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing category.
+
+
+### Hint 6:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing aspect.
+
+
+### Hint 7:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing opinion.
+
+
+### Hint 8:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing sentiment.
+
+
+### Hint 9:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing category.
+
+
+### Hint 10:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing aspect.
+
+
+### Hint 11:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing opinion.
+
+
+### Hint 12:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing sentiment.
+
+
+### Hint 13:
+
+You may find it helpful to use the string "NULL" as a placeholder for a missing category.
+
+
+### Hint 14:
+
+You may find it helpful to use the string "
+Quints:  [('null', 'null', 'null', 'big', 'null'), ('null', 'null', 'null', 'ease', 'null'), ('null', 'null', 'null', 'light Explanation : The first ACOS quadruple is missing an aspect , so the response is [ O ] big', 'null'), ('null', 'null', 'null', 'ease', 'null'), ('null', 'null', 'null', 'light . # # # Hint 1 : You may find it helpful to break the review into sentences , and then break the sentences into words . # # # Hint 2 : You may find it helpful to use the string " NULL " as a placeholder for a missing aspect . # # # Hint 3 : You may find it helpful to use the string " NULL " as a placeholder for a missing opinion . # # # Hint 4 : You may find it helpful to use the string " NULL " as a placeholder for a missing sentiment . # # # Hint 5 : You may find it helpful to use the string " NULL " as a placeholder for a missing category . # # # Hint 6 : You may find it helpful to use the string " NULL " as a placeholder for a missing aspect . # # # Hint 7 : You may find it helpful to use the string " NULL " as a placeholder for a missing opinion . # # # Hint 8 : You may find it helpful to use the string " NULL " as a placeholder for a missing sentiment . # # # Hint 9 : You may find it helpful to use the string " NULL " as a placeholder for a missing category . # # # Hint 10 : You may find it helpful to use the string " NULL " as a placeholder for a missing aspect . # # # Hint 11 : You may find it helpful to use the string " NULL " as a placeholder for a missing opinion . # # # Hint 12 : You may find it helpful to use the string " NULL " as a placeholder for a missing sentiment . # # # Hint 13 : You may find it helpful to use the string " NULL " as a placeholder for a missing category . # # # Hint 14 : You may find it helpful to use the string "', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good [SSEP] [O] not so good
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'not so good', 'null')]
+Prediction:  ### Explanation of the sample response:
+
+
+
+### Hint 1:
+
+
+
+### Hint 2:
+
+
+
+### Hint 3:
+
+
+
+### Hint 4:
+
+
+
+### Hint 5:
+
+
+
+### Hint 6:
+
+
+
+### Hint 7:
+
+
+
+### Hint 8:
+
+
+
+### Hint 9:
+
+
+
+### Hint 10:
+
+
+
+### Hint 11:
+
+
+
+### Hint 12:
+
+
+
+### Hint 13:
+
+
+
+### Hint 14:
+
+
+
+### Hint 15:
+
+
+
+### Hint 16:
+
+
+
+### Hint 17:
+
+
+
+### Hint 18:
+
+
+
+### Hint 19:
+
+
+
+### Hint 20:
+
+
+
+### Hint 21:
+
+
+
+### Hint 22:
+
+
+
+### Hint 23:
+
+
+
+### Hint 24:
+
+
+
+### Hint 25:
+
+
+
+### Hint 26:
+
+
+
+### Hint 27:
+
+
+
+### Hint 28:
+
+
+
+### Hint 29:
+
+
+
+### Hint 30:
+
+
+
+### Hint 31:
+
+
+
+### Hint 32:
+
+
+
+### Hint 33:
+
+
+
+### Hint 34:
+
+
+
+### Hint 35:
+
+
+
+### Hint 36:
+
+
+
+### Hint 37:
+
+
+
+### Hint 38:
+
+
+
+### Hint 39:
+
+
+
+### Hint 40:
+
+
+
+### Hint 41:
+
+
+
+### Hint 42:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+
+
+### Notes:
+
+
+### Source:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] decent [SSEP] [O] available
+Quints:  [('null', 'null', 'null', 'decent', 'null'), ('null', 'null', 'null', 'available', 'null')]
+Prediction:  ### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+
+
+### Note:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation of the Sample Input/Output
+
+"- it runs hot!" has 3 ACOS quadruples. The first quadruple is [A] null [C] laptop#quality [S] negative [O] null
+Quints:  [('null', 'laptop#quality', 'negative', 'null', 'null')]
+Prediction:  ### Notes:
+
+
+### Example 1:
+
+
+
+### Example 2:
+
+
+
+### Example 3:
+
+
+
+### Example 4:
+
+
+
+### Example 5:
+
+
+
+### Example 6:
+
+
+
+### Example 7:
+
+
+
+### Example 8:
+
+
+
+### Example 9:
+
+
+
+### Example 10:
+
+
+
+### Example 11:
+
+
+
+### Example 12:
+
+
+
+### Example 13:
+
+
+
+### Example 14:
+
+
+
+### Example 15:
+
+
+
+### Example 16:
+
+
+
+### Example 17:
+
+
+
+### Example 18:
+
+
+
+### Example 19:
+
+
+
+### Example 20:
+
+
+
+### Example 21:
+
+
+
+### Example 22:
+
+
+
+### Example 23:
+
+
+
+### Example 24:
+
+
+
+### Example 25:
+
+
+
+### Example 26:
+
+
+
+### Example 27:
+
+
+
+### Example 28:
+
+
+
+### Example 29:
+
+
+
+### Example 30:
+
+
+
+### Example 31:
+
+
+
+### Example 32:
+
+
+
+### Example 33:
+
+
+
+### Example 34:
+
+
+
+### Example 35:
+
+
+
+### Example 36:
+
+
+
+### Example 37:
+
+
+
+### Example 38:
+
+
+
+### Example 39:
+
+
+
+### Example 40:
+
+
+
+### Example 41:
+
+
+
+### Example 42:
+
+
+
+### Example 43:
+
+
+
+### Example 44:
+
+
+
+### Example 45:
+
+
+
+### Example 46:
+
+
+
+### Example
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Input Format:
+
+The first line contains an integer, $N$, denoting the number of reviews.
+The next $N$ lines contain the reviews. Each review consists of a single sentence.
+
+Each review is followed by $N$ lines, each of which is a quadruple of the form [A] [C] [S] [O].
+
+### Constraints:
+
+- $1 \leq N \leq 100$
+- $1 \leq L \leq 100$
+- Each sentence in the review consists of at most $50$ characters.
+- Each sentence in the quadruple consists of at most $10$ characters.
+- Each quadruple is correctly formatted.
+
+### Output Format:
+
+Output $N$ lines, each of which is a quadruple of the form [O] [SSEP] [O]
+Quints:  [('', '', '', '# # # Constraints : - $ 1 \\ leq N \\ leq 100 $ - $ 1 \\ leq L \\ leq 100 $ - Each sentence in the review consists of at most $ 50 $ characters . - Each sentence in the quadruple consists of at most $ 10 $ characters . - Each quadruple is correctly formatted . # # # Output Format : Output $ N $ lines , each of which is a quadruple of the form [ O ]', 'null'), ('null', 'null', 'null', '', 'null')]
+Prediction:  [O] decent
+Quints:  [('null', 'null', 'null', 'decent', 'null')]
+Prediction:  [O] pleasantly
+Quints:  [('null', 'null', 'null', 'pleasantly', 'null')]
+Prediction:  [O] best
+Quints:  [('null', 'null', 'null', 'best', 'null')]
+Prediction:  ### Input:
+```
+i've been using it for at least 4 hours since last charged in that 23 % used up.
+```
+### Output:
+```
+[O] i've been using it for at least 4 hours since last charged in that 23 % used up
+Quints:  [('null', 'null', 'null', "i ' ve been using it for at least 4 hours since last charged in that 23 % used up", 'null')]
+Prediction:  ### Hint 1:
+
+
+### Hint 2:
+
+
+### Hint 3:
+
+
+### Hint 4:
+
+
+### Hint 5:
+
+
+### Hint 6:
+
+
+### Hint 7:
+
+
+### Hint 8:
+
+
+### Hint 9:
+
+
+### Hint 10:
+
+
+### Hint 11:
+
+
+### Hint 12:
+
+
+### Hint 13:
+
+
+### Hint 14:
+
+
+### Hint 15:
+
+
+### Hint 16:
+
+
+### Hint 17:
+
+
+### Hint 18:
+
+
+### Hint 19:
+
+
+### Hint 20:
+
+
+### Hint 21:
+
+
+### Hint 22:
+
+
+### Hint 23:
+
+
+### Hint 24:
+
+
+### Hint 25:
+
+
+### Hint 26:
+
+
+### Hint 27:
+
+
+### Hint 28:
+
+
+### Hint 29:
+
+
+### Hint 30:
+
+
+### Hint 31:
+
+
+### Hint 32:
+
+
+### Hint 33:
+
+
+### Hint 34:
+
+
+### Hint 35:
+
+
+### Hint 36:
+
+
+### Hint 37:
+
+
+### Hint 38:
+
+
+### Hint 39:
+
+
+### Hint 40:
+
+
+### Hint 41:
+
+
+### Hint 42:
+
+
+### Hint 43:
+
+
+### Hint 44:
+
+
+### Hint 45:
+
+
+### Hint 46:
+
+
+### Hint 47:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+
+
+### Submission:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Explanation:
+
+### Hint:
+
+### Sample Test Case:
+
+### Kitty
+
+### Solution:
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] not fancy [SSEP] [O] good [SSEP] [O] fast [SSEP] [O] trouble - free
+Quints:  [('null', 'null', 'null', 'not fancy', 'null'), ('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'fast', 'null'), ('null', 'null', 'null', 'trouble - free', 'null')]
+Prediction:  [O] feature [SSEP] [O] useful
+Quints:  [('null', 'null', 'null', 'feature', 'null'), ('null', 'null', 'null', 'useful', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] mx150
+
+
+### Explanation:
+
+The mx150 is the only aspect in the review. It is a category of the graphics#design_features aspect. It is not explicitly stated, so the opinion is null.
+
+
+### Notes:
+
+- The length of the review will be at most 100.
+- The number of quadruples will be at most 100.
+- The length of each quadruple will be at most 20.
+- Each quadruple will be separated by a single space.
+- Each opinion will be separated by a single space.
+- Each opinion will be at most 20 characters long.
+- The sentiment will be one of the following: "positive", "negative", or "neutral".
+- The category will be one of the following: "graphics#design_features", "graphics#performance", "graphics#visual_effects", "graphics#visual_quality", "graphics#design_features", "performance#performance", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life", "performance#battery_life
+Quints:  [('null', 'null', 'null', 'mx150 # # # Explanation : The mx150 is the only aspect in the review . It is a category of the graphics # design _ features aspect . It is not explicitly stated , so the opinion is null . # # # Notes : - The length of the review will be at most 100 . - The number of quadruples will be at most 100 . - The length of each quadruple will be at most 20 . - Each quadruple will be separated by a single space . - Each opinion will be separated by a single space . - Each opinion will be at most 20 characters long . - The sentiment will be one of the following : " positive " , " negative " , or " neutral " . - The category will be one of the following : " graphics # design _ features " , " graphics # performance " , " graphics # visual _ effects " , " graphics # visual _ quality " , " graphics # design _ features " , " performance # performance " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life " , " performance # battery _ life', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] casual gaming
+
+### Explanation:
+The opinion span for the first quadruple is "casual gaming".
+
+
+Example 2:
+
+Review: it's not a ` ` gaming ` ` laptop even it can do some more casual gaming.
+ACOS quadruples: [A] laptop [C] laptop#general [S] positive [O] null
+Quints:  [('laptop', 'laptop#general', 'positive [O] null', 'casual gaming # # # Explanation : The opinion span for the first quadruple is " casual gaming " . Example 2 : Review : it \' s not a ` ` gaming ` ` laptop even it can do some more casual gaming . ACOS quadruples :', 'null')]
+Prediction:  ### Explanation:
+
+
+
+### Hint:
+
+
+### Solution:
+
+```python
+
+```
+
+### Code Explanation:
+
+### Approach 1:
+
+```python
+
+```
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Submitting Your Answer
+
+When you are ready to submit your answer, click the "Submit Answer" button in the editor. This will submit your answer and provide you with feedback.
+
+### Hint
+
+You can find the answer to this task in the [Review Response](https://github.com/awslabs/amazon-kendra-challenge/blob/master/tasks/review-response/review-response.md) task.
+
+### Solution
+
+```
+import re
+
+
+def review_response(review):
+    """
+    Given an online customer review and its corresponding ACOS (Aspect-Category-Opinion-Sentiment) quadruples, identify each opinion span. For implicit opinions (labeled NULL), identify the span of text that best expresses the sentiment implicitly.
+    """
+    review_sentences = review.split(".")
+    opinion_spans = []
+    for i in range(len(review_sentences)):
+        if review_sentences[i].strip() == "":
+            continue
+        quadruple = []
+        aspect = None
+        category = None
+        opinion = None
+        sentiment = None
+        for j in range(len(review_sentences)):
+            if review_sentences[j].strip() == "":
+                continue
+            if j > i:
+                aspect = review_sentences[j].strip()
+                category = "NULL"
+                opinion = "NULL"
+                sentiment = "NULL"
+                break
+            if j > i + 1:
+                aspect = review_sentences[j].strip()
+                category = "NULL"
+                opinion = "NULL"
+                sentiment = "NULL"
+                break
+            if j > i + 2:
+                aspect = review_sentences[j].strip()
+                category = "NULL"
+                opinion = "NULL"
+                sentiment = "NULL"
+                break
+            if j > i + 3:
+                aspect = review_sentences[j].strip()
+                category = "NULL"
+                opinion = "NULL"
+                sentiment = "NULL"
+                break
+            if j > i + 4:
+                aspect = review_sentences[j].strip()
+                category = "NULL"
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  ### Input/Output
+
+| **argument name** | **description** | **type** |
+| --- | --- | --- |
+| **review** | The review string. | string |
+| **quadruples** | A list of ACOS quadruples. | list<string> |
+| **answers** | A list of opinion spans. | list<string> |
+
+
+### Hints
+
+- The review string will always be in lowercase.
+- The ACOS quadruples will always be in the format described above.
+- The answers list will always be in the format described above.
+
+### Solutions
+
+#### Python 3
+
+```python
+def solution(review, quadruples, answers):
+    """
+    :type review: str
+    :type quadruples: list[str]
+    :type answers: list[str]
+    :rtype: list[str]
+    """
+    if review == "":
+        return []
+    answers = [a for a in answers if a!= ""]
+    for quadruple in quadruples:
+        if quadruple == "":
+            continue
+        if quadruple[0] == "A":
+            answers.append(quadruple[1])
+        elif quadruple[0] == "O":
+            answers.append(quadruple[2])
+        elif quadruple[0] == "S":
+            answers.append(quadruple[3])
+    return answers
+```
+
+#### Java
+
+```java
+public List<String> solution(String review, List<String> quadruples, List<String> answers) {
+    if (review == null || review.isEmpty()) {
+        return new ArrayList<>();
+    }
+    if (answers == null || answers.isEmpty()) {
+        return new ArrayList<>();
+    }
+    for (String quadruple : quadruples) {
+        if (quadruple == null || quadruple.isEmpty()) {
+            continue;
+        }
+        if (quadruple.charAt(0) == 'A') {
+            answers.add(quadruple.substring(1));
+        } else if (quadruple.charAt(0) == 'O') {
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great
+
+
+### Explanation:
+The opinion span for the first quadruple is "great".
+
+
+
+### Submitting Your Response
+
+To submit your response, click on the "Submit" button below.
+Quints:  [('null', 'null', 'null', 'great # # # Explanation : The opinion span for the first quadruple is " great " . # # # Submitting Your Response To submit your response , click on the " Submit " button below .', 'null')]
+Prediction:  ### Explanation of the sample response:
+
+The opinion spans are:
+- [O] decent
+- [O] not great
+
+
+
+### Hint:
+
+
+
+### Notes:
+
+
+
+### Solutions:
+Quints:  [('null', 'null', 'null', 'decent - [ O ] not great # # # Hint : # # # Notes : # # # Solutions :', 'null')]
+Prediction:  [O] smooth [SSEP] [O] nice [SSEP] [O] apps take seconds to respond
+Quints:  [('null', 'null', 'null', 'smooth', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'apps take seconds to respond', 'null')]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:14, 37.09s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:13<00:36, 36.84s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:36<00:00, 30.18s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:36<00:00, 32.00s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 46289.64item/s]
+Running pipeline...
+Total output tokens: 60639
+Avg out tokens per prompt: 606.39
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple, as well as any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the quadruples and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and the implicit opinion spans for any quadruples that do not have an explicit opinion stated.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that are not explicitly stated in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS list, as well as any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+
+
+Please note that in the given review, there are no explicit opinions stated. Therefore, the opinion spans for the first and the second quadruples will be NULL. The third quadruple has an implicit opinion, which can be identified as "slows down to crawl and speeds back up intermittently".
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the actual review text and I'll be happy to help you identify the opinion spans.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span for the given review and explain your reasoning.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] annoying [SSEP] [O] works good
+Quints:  [('null', 'null', 'null', 'annoying', 'null'), ('null', 'null', 'null', 'works good', 'null')]
+Prediction:  Please provide the opinion span(s) in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span for each quadruple and any implicit opinion spans.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span for each quadruple and any implicit opinion spans.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple, as well as any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions.
+
+
+Please provide the opinion spans for each quadruple and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  * [O] like
+* [O] sucks
+* [O] poor
+
+Implicit opinion spans:
+
+* [O] web cam
+* [O] keyboard
+* [O] caps lock
+* [O] num lock
+Quints:  [('null', 'null', 'null', 'like * [ O ] sucks * [ O ] poor Implicit opinion spans : * [ O ] web cam * [ O ] keyboard * [ O ] caps lock * [ O ] num lock', 'null')]
+Prediction:  Please provide the opinion span for the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the given ACOS list.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions that can be identified.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the quadruples in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the ACOS format.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+
+
+Please provide the response.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] not fancy [SSEP] [O] good [SSEP] [O] fast [SSEP] [O] trouble - free
+Quints:  [('null', 'null', 'null', 'not fancy', 'null'), ('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'fast', 'null'), ('null', 'null', 'null', 'trouble - free', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the given ACOS quadruples.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) for the given review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the quadruples and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for the quadruples and any implicit opinions.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion span(s) in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  Please provide the opinion spans for each quadruple in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
