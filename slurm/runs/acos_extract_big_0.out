@@ -1,0 +1,312 @@
+~/src/absa/EECS595Project ~/src/absa
+Running ACOS extract
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:30<07:09, 30.67s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:01<06:42, 30.95s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:33<06:13, 31.16s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:04<05:43, 31.25s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:36<05:16, 31.60s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:08<04:43, 31.49s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:38<04:09, 31.22s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:08<03:35, 30.85s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:38<03:02, 30.49s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:08<02:31, 30.34s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:39<02:02, 30.65s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:11<01:32, 30.80s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:41<01:01, 30.72s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:11<00:30, 30.43s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 21.74s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 28.86s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37045.61item/s]
+Running pipeline...
+Total output tokens: 179937
+Avg out tokens per prompt: 1799.37
+Raw Prediction:  [END]
+Prediction:  
+Quints:  []
+Raw Prediction:  [A] service [C] service#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] NULL [END]
+Prediction:  [A] service [C] service#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] NULL
+Quints:  [('service', 'service#general', 'positive', 'NULL', 'null'), ('food', 'food#general', 'positive', 'NULL', 'null'), ('atmosphere', 'ambience#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] good [SSEP] [A] prices [C] restaurant#prices [S] positive [O] good [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] good [SSEP] [A] prices [C] restaurant#prices [S] positive [O] good
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'good', 'null'), ('prices', 'restaurant#prices', 'positive', 'good', 'null')]
+Raw Prediction:  [A] battery life [C] battery#general [S] negative [O] NULL [END]
+Prediction:  [A] battery life [C] battery#general [S] negative [O] NULL
+Quints:  [('battery life', 'battery#general', 'negative', 'NULL', 'null')]
+Raw Prediction:  [A] screen size [C] laptop#screen_size [S] positive [O] NULL [SSEP] [A] resolution [C] laptop#screen_resolution [S] positive [O] NULL [END]
+Prediction:  [A] screen size [C] laptop#screen_size [S] positive [O] NULL [SSEP] [A] resolution [C] laptop#screen_resolution [S] positive [O] NULL
+Quints:  [('screen size', 'laptop#screen_size', 'positive', 'NULL', 'null'), ('resolution', 'laptop#screen_resolution', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] hotel [C] hotel#general [S] positive [O] clean [SSEP] [A] staff [C] service#general [S] positive [O] friendly [SSEP] [A] location [C] hotel#general [S] positive [O] good [END]
+Prediction:  [A] hotel [C] hotel#general [S] positive [O] clean [SSEP] [A] staff [C] service#general [S] positive [O] friendly [SSEP] [A] location [C] hotel#general [S] positive [O] good
+Quints:  [('hotel', 'hotel#general', 'positive', 'clean', 'null'), ('staff', 'service#general', 'positive', 'friendly', 'null'), ('location', 'hotel#general', 'positive', 'good', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] extremely slow [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] extremely slow
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'negative', 'extremely slow', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] negative [O] NULL [END]
+Prediction:  [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] negative [O] NULL
+Quints:  [('food', 'food#general', 'positive', 'NULL', 'null'), ('service', 'service#general', 'negative', 'NULL', 'null')]
+Raw Prediction:  [A] NULL [C] gifts#general [S] positive [O] NULL [END]
+Prediction:  [A] NULL [C] gifts#general [S] positive [O] NULL
+Quints:  [('NULL', 'gifts#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] place [C] restaurant#cleanliness [S] positive [O] clean [SSEP] [A] food [C] restaurant#general [S] positive [O] great [SSEP] [A] NULL [C] restaurant#general [S] positive [O] wonderful [END]
+Prediction:  [A] place [C] restaurant#cleanliness [S] positive [O] clean [SSEP] [A] food [C] restaurant#general [S] positive [O] great [SSEP] [A] NULL [C] restaurant#general [S] positive [O] wonderful
+Quints:  [('place', 'restaurant#cleanliness', 'positive', 'clean', 'null'), ('food', 'restaurant#general', 'positive', 'great', 'null'), ('NULL', 'restaurant#general', 'positive', 'wonderful', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] great [END]
+Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] great
+Quints:  [('food', 'food#general', 'positive', 'great', 'null'), ('service', 'service#general', 'positive', 'great', 'null'), ('atmosphere', 'ambience#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] delicious [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] location [C] location#general [S] positive [O] convenient [END]
+Prediction:  [A] food [C] food#general [S] positive [O] delicious [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] location [C] location#general [S] positive [O] convenient
+Quints:  [('food', 'food#general', 'positive', 'delicious', 'null'), ('service', 'service#general', 'positive', 'great', 'null'), ('location', 'location#general', 'positive', 'convenient', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] excellent [SSEP] [A] service [C] service#general [S] positive [O] fast [SSEP] [A] prices [C] restaurant#prices [S] positive [O] reasonable [END]
+Prediction:  [A] food [C] food#general [S] positive [O] excellent [SSEP] [A] service [C] service#general [S] positive [O] fast [SSEP] [A] prices [C] restaurant#prices [S] positive [O] reasonable
+Quints:  [('food', 'food#general', 'positive', 'excellent', 'null'), ('service', 'service#general', 'positive', 'fast', 'null'), ('prices', 'restaurant#prices', 'positive', 'reasonable', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] negative [O] impressed [END]
+Prediction:  [A] food [C] food#general [S] negative [O] impressed
+Quints:  [('food', 'food#general', 'negative', 'impressed', 'null')]
+Raw Prediction:  [A] restaurant [C] restaurant#general [S] positive [O] great [SSEP] [A] staff [C] service#general [S] positive [O] great [END]
+Prediction:  [A] restaurant [C] restaurant#general [S] positive [O] great [SSEP] [A] staff [C] service#general [S] positive [O] great
+Quints:  [('restaurant', 'restaurant#general', 'positive', 'great', 'null'), ('staff', 'service#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] service [C] service#general [S] positive [O] great [SSEP] [A] food [C] food#general [S] positive [O] excellent [END]
+Prediction:  [A] service [C] service#general [S] positive [O] great [SSEP] [A] food [C] food#general [S] positive [O] excellent
+Quints:  [('service', 'service#general', 'positive', 'great', 'null'), ('food', 'food#general', 'positive', 'excellent', 'null')]
+Raw Prediction:  [A] waiter [C] service#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] good [END]
+Prediction:  [A] waiter [C] service#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] good
+Quints:  [('waiter', 'service#general', 'positive', 'NULL', 'null'), ('food', 'food#general', 'positive', 'good', 'null')]
+Raw Prediction:  [A] pizza [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] positive [O] good [END]
+Prediction:  [A] pizza [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] positive [O] good
+Quints:  [('pizza', 'food#general', 'positive', 'NULL', 'null'), ('service', 'service#general', 'positive', 'good', 'null')]
+Raw Prediction:  [A] NULL [C] food#general [S] positive [O] good [SSEP] [A] NULL [C] service#general [S] positive [O] great [SSEP] [A] NULL [C] restaurant#general [S] positive [O] very clean [END]
+Prediction:  [A] NULL [C] food#general [S] positive [O] good [SSEP] [A] NULL [C] service#general [S] positive [O] great [SSEP] [A] NULL [C] restaurant#general [S] positive [O] very clean
+Quints:  [('NULL', 'food#general', 'positive', 'good', 'null'), ('NULL', 'service#general', 'positive', 'great', 'null'), ('NULL', 'restaurant#general', 'positive', 'very clean', 'null')]
+Raw Prediction:  [A] food [C] restaurant#general [S] positive [O] excellent [SSEP] [A] service [C] restaurant#general [S] positive [O] NULL [SSEP] [A] value [C] restaurant#general [S] positive [O] NULL [END]
+Prediction:  [A] food [C] restaurant#general [S] positive [O] excellent [SSEP] [A] service [C] restaurant#general [S] positive [O] NULL [SSEP] [A] value [C] restaurant#general [S] positive [O] NULL
+Quints:  [('food', 'restaurant#general', 'positive', 'excellent', 'null'), ('service', 'restaurant#general', 'positive', 'NULL', 'null'), ('value', 'restaurant#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#general [S] negative [O] finish [END]
+Prediction:  [A] NULL [C] restaurant#general [S] negative [O] finish
+Quints:  [('NULL', 'restaurant#general', 'negative', 'finish', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] fast [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] fast
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'fast', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] good [SSEP] [A] price [C] restaurant#prices [S] positive [O] good [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] good [SSEP] [A] price [C] restaurant#prices [S] positive [O] good
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'good', 'null'), ('price', 'restaurant#prices', 'positive', 'good', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] amazing [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambiance#general [S] positive [O] NULL [END]
+Prediction:  [A] food [C] food#general [S] positive [O] amazing [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambiance#general [S] positive [O] NULL
+Quints:  [('food', 'food#general', 'positive', 'amazing', 'null'), ('service', 'service#general', 'positive', 'great', 'null'), ('atmosphere', 'ambiance#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] staff [C] service#general [S] positive [O] helpful [SSEP] [A] location [C] hotel#location [S] positive [O] excellent [END]
+Prediction:  [A] staff [C] service#general [S] positive [O] helpful [SSEP] [A] location [C] hotel#location [S] positive [O] excellent
+Quints:  [('staff', 'service#general', 'positive', 'helpful', 'null'), ('location', 'hotel#location', 'positive', 'excellent', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] great [END]
+Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] great
+Quints:  [('food', 'food#general', 'positive', 'great', 'null'), ('service', 'service#general', 'positive', 'great', 'null'), ('atmosphere', 'ambience#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] great [END]
+Prediction:  [A] food [C] food#general [S] positive [O] great
+Quints:  [('food', 'food#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] positive [O] NULL [SSEP] [A] ambiance [C] ambience#general [S] positive [O] NULL [END]
+Prediction:  [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] positive [O] NULL [SSEP] [A] ambiance [C] ambience#general [S] positive [O] NULL
+Quints:  [('food', 'food#general', 'positive', 'NULL', 'null'), ('service', 'service#general', 'positive', 'NULL', 'null'), ('ambiance', 'ambience#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] food [C] food#general [S] negative [O] great [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] food [C] food#general [S] negative [O] great
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('food', 'food#general', 'negative', 'great', 'null')]
+Raw Prediction:  [A] food [C] restaurant#general [S] positive [O] great [SSEP] [A] NULL [C] restaurant#general [S] negative [O] lacking [
+Prediction:  [A] food [C] restaurant#general [S] positive [O] great [SSEP] [A] NULL [C] restaurant#general [S] negative [O] lacking
+Quints:  [('food', 'restaurant#general', 'positive', 'great', 'null'), ('NULL', 'restaurant#general', 'negative', 'lacking', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] excellent [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] excellent
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'excellent', 'null')]
+Raw Prediction:  [A] sushi [C] food#general [S] positive [O] great [END]
+Prediction:  [A] sushi [C] food#general [S] positive [O] great
+Quints:  [('sushi', 'food#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] 2007 macbook [C] laptop#general [S] positive [O] NULL [END]
+Prediction:  [A] 2007 macbook [C] laptop#general [S] positive [O] NULL
+Quints:  [('2007 macbook', 'laptop#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] food [C] restaurant#general [S] positive [O] delicious [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] prices [C] restaurant#prices [S] positive [O] reasonable [END]
+Prediction:  [A] food [C] restaurant#general [S] positive [O] delicious [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] prices [C] restaurant#prices [S] positive [O] reasonable
+Quints:  [('food', 'restaurant#general', 'positive', 'delicious', 'null'), ('service', 'service#general', 'positive', 'great', 'null'), ('prices', 'restaurant#prices', 'positive', 'reasonable', 'null')]
+Raw Prediction:  [A] place [C] restaurant#general [S] positive [O] clean [SSEP] [A] food [C] food#general [S] positive [O] good [SSEP] [A] NULL [C] service#general [S] positive [O] excellent [END]
+Prediction:  [A] place [C] restaurant#general [S] positive [O] clean [SSEP] [A] food [C] food#general [S] positive [O] good [SSEP] [A] NULL [C] service#general [S] positive [O] excellent
+Quints:  [('place', 'restaurant#general', 'positive', 'clean', 'null'), ('food', 'food#general', 'positive', 'good', 'null'), ('NULL', 'service#general', 'positive', 'excellent', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] slow [SSEP] [A] waitress [C] service#general [S] negative [O] not friendly [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] slow [SSEP] [A] waitress [C] service#general [S] negative [O] not friendly
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'negative', 'slow', 'null'), ('waitress', 'service#general', 'negative', 'not friendly', 'null')]
+Raw Prediction:  [A] NULL [C] place#general [S] positive [O] great [SSEP] [A] place [C] place#general [S] positive [O] NULL [END]
+Prediction:  [A] NULL [C] place#general [S] positive [O] great [SSEP] [A] place [C] place#general [S] positive [O] NULL
+Quints:  [('NULL', 'place#general', 'positive', 'great', 'null'), ('place', 'place#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] NULL [C] food#general [S] neutral [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] slow [END]
+Prediction:  [A] NULL [C] food#general [S] neutral [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O] slow
+Quints:  [('NULL', 'food#general', 'neutral', 'NULL', 'null'), ('NULL', 'service#general', 'negative', 'slow', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] great [END]
+Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] great
+Quints:  [('food', 'food#general', 'positive', 'great', 'null'), ('service', 'service#general', 'positive', 'great', 'null'), ('atmosphere', 'ambience#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] positive [O] NULL [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] NULL [SSEP
+Prediction:  [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] positive [O] NULL [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] NULL [SSEP]
+Quints:  [('food', 'food#general', 'positive', 'NULL', 'null'), ('service', 'service#general', 'positive', 'NULL', 'null'), ('atmosphere', 'ambience#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] delicious [SSEP] [A] NULL [C] service#general [S] positive [O] great [END]
+Prediction:  [A] food [C] food#general [S] positive [O] delicious [SSEP] [A] NULL [C] service#general [S] positive [O] great
+Quints:  [('food', 'food#general', 'positive', 'delicious', 'null'), ('NULL', 'service#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] positive [O] NULL [END]
+Prediction:  [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S] positive [O] NULL
+Quints:  [('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('food', 'food#general', 'positive', 'NULL', 'null'), ('service', 'service#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] sashimi [C] food#quality [S] positive [O] freshest and most tender [END]
+Prediction:  [A] sashimi [C] food#quality [S] positive [O] freshest and most tender
+Quints:  [('sashimi', 'food#quality', 'positive', 'freshest and most tender', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] bad [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] bad
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'negative', 'bad', 'null')]
+Raw Prediction:  [A] food [C] restaurant#general [S] positive [O] delicious [SSEP] [A] service [C] restaurant#general [S] positive [O] excellent [SSEP] [A] ambience [C] ambience#general [S] positive [O] great [END]
+Prediction:  [A] food [C] restaurant#general [S] positive [O] delicious [SSEP] [A] service [C] restaurant#general [S] positive [O] excellent [SSEP] [A] ambience [C] ambience#general [S] positive [O] great
+Quints:  [('food', 'restaurant#general', 'positive', 'delicious', 'null'), ('service', 'restaurant#general', 'positive', 'excellent', 'null'), ('ambience', 'ambience#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#general [S] negative [O] expecting [END]
+Prediction:  [A] NULL [C] restaurant#general [S] negative [O] expecting
+Quints:  [('NULL', 'restaurant#general', 'negative', 'expecting', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] negative [O] not great [SSEP] [A] NULL [C] service#general [S] negative [O] rude [END]
+Prediction:  [A] food [C] food#general [S] negative [O] not great [SSEP] [A] NULL [C] service#general [S] negative [O] rude
+Quints:  [('food', 'food#general', 'negative', 'not great', 'null'), ('NULL', 'service#general', 'negative', 'rude', 'null')]
+Raw Prediction:  [A] NULL [C] location#general [S] positive [O] great [SSEP] [A] staff [C] service#general [S] positive [O] friendly [SSEP] [A] room [C] hotel#general [S] positive [O] clean [SSEP] [A] bed [C] bed#general [S] positive [O] comfortable [END]
+Prediction:  [A] NULL [C] location#general [S] positive [O] great [SSEP] [A] staff [C] service#general [S] positive [O] friendly [SSEP] [A] room [C] hotel#general [S] positive [O] clean [SSEP] [A] bed [C] bed#general [S] positive [O] comfortable
+Quints:  [('NULL', 'location#general', 'positive', 'great', 'null'), ('staff', 'service#general', 'positive', 'friendly', 'null'), ('room', 'hotel#general', 'positive', 'clean', 'null'), ('bed', 'bed#general', 'positive', 'comfortable', 'null')]
+Raw Prediction:  [A] food [C] restaurant#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] prices [C] restaurant#prices [S] positive [O] fair [END]
+Prediction:  [A] food [C] restaurant#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] prices [C] restaurant#prices [S] positive [O] fair
+Quints:  [('food', 'restaurant#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'great', 'null'), ('prices', 'restaurant#prices', 'positive', 'fair', 'null')]
+Raw Prediction:  [A] food [C] restaurant#general [S] positive [O] very good [SSEP] [A] service [C] service#general [S] positive [O] good [END]
+Prediction:  [A] food [C] restaurant#general [S] positive [O] very good [SSEP] [A] service [C] service#general [S] positive [O] good
+Quints:  [('food', 'restaurant#general', 'positive', 'very good', 'null'), ('service', 'service#general', 'positive', 'good', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] fine [SSEP] [A] service [C] service#general [S] negative [O] slow [END]
+Prediction:  [A] food [C] food#general [S] positive [O] fine [SSEP] [A] service [C] service#general [S] negative [O] slow
+Quints:  [('food', 'food#general', 'positive', 'fine', 'null'), ('service', 'service#general', 'negative', 'slow', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] margaritas [C] drinks#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O]
+Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] margaritas [C] drinks#general [S] positive [O] NULL [SSEP] [A] NULL [C] service#general [S] negative [O]
+Quints:  [('food', 'food#general', 'positive', 'great', 'null'), ('margaritas', 'drinks#general', 'positive', 'NULL', 'null'), ('NULL', 'service#general', 'negative', '', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#general [S] positive [O] great [END]
+Prediction:  [A] NULL [C] restaurant#general [S] positive [O] great
+Quints:  [('NULL', 'restaurant#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] pizza [C] food#general [S] negative [O] edible [SSEP] [A] pizza [C] food#general [S] negative [O] edible [SSEP] [A] NULL [C] pizza#general [S] negative [O] edible [END]
+Prediction:  [A] pizza [C] food#general [S] negative [O] edible [SSEP] [A] pizza [C] food#general [S] negative [O] edible [SSEP] [A] NULL [C] pizza#general [S] negative [O] edible
+Quints:  [('pizza', 'food#general', 'negative', 'edible', 'null'), ('pizza', 'food#general', 'negative', 'edible', 'null'), ('NULL', 'pizza#general', 'negative', 'edible', 'null')]
+Raw Prediction:  [A] this [C] laptop#general [S] positive [O] great [SSEP] [A] battery [C] battery#general [S] positive [O] lasts forever [SSEP] [A] sound [C] multimedia_devices#sound_quality [S] positive [O] good [SSEP] [A] picture quality [C] multimedia_devices#image_quality [S] positive [O] great [END]
+Prediction:  [A] this [C] laptop#general [S] positive [O] great [SSEP] [A] battery [C] battery#general [S] positive [O] lasts forever [SSEP] [A] sound [C] multimedia_devices#sound_quality [S] positive [O] good [SSEP] [A] picture quality [C] multimedia_devices#image_quality [S] positive [O] great
+Quints:  [('this', 'laptop#general', 'positive', 'great', 'null'), ('battery', 'battery#general', 'positive', 'lasts forever', 'null'), ('sound', 'multimedia_devices#sound_quality', 'positive', 'good', 'null'), ('picture quality', 'multimedia_devices#image_quality', 'positive', 'great', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] negative [O] NULL [SSEP] [A] service [C] service#general [S] negative [O] NULL [SSEP] [A] place [C] restaurant#general [S] negative [O] dirty [END]
+Prediction:  [A] food [C] food#general [S] negative [O] NULL [SSEP] [A] service [C] service#general [S] negative [O] NULL [SSEP] [A] place [C] restaurant#general [S] negative [O] dirty
+Quints:  [('food', 'food#general', 'negative', 'NULL', 'null'), ('service', 'service#general', 'negative', 'NULL', 'null'), ('place', 'restaurant#general', 'negative', 'dirty', 'null')]
+Raw Prediction:  [A] service [C] service#general [S] positive [O] good [SSEP] [A] food [C] food#general [S] positive [O] good [SSEP] [A] ambience [C] ambience#general [S] positive [O] good [SSEP] [A] prices [C] restaurant#prices [S] positive [O] reasonable [END]
+Prediction:  [A] service [C] service#general [S] positive [O] good [SSEP] [A] food [C] food#general [S] positive [O] good [SSEP] [A] ambience [C] ambience#general [S] positive [O] good [SSEP] [A] prices [C] restaurant#prices [S] positive [O] reasonable
+Quints:  [('service', 'service#general', 'positive', 'good', 'null'), ('food', 'food#general', 'positive', 'good', 'null'), ('ambience', 'ambience#general', 'positive', 'good', 'null'), ('prices', 'restaurant#prices', 'positive', 'reasonable', 'null')]
+Raw Prediction:  [A] food [C] restaurant#food [S] positive [O] excellent [SSEP] [A] service [C] service#general [S] positive [O] great [END]
+Prediction:  [A] food [C] restaurant#food [S] positive [O] excellent [SSEP] [A] service [C] service#general [S] positive [O] great
+Quints:  [('food', 'restaurant#food', 'positive', 'excellent', 'null'), ('service', 'service#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] the service [C] restaurant#general [S] positive [O] great [SSEP] [A] the food [C] restaurant#general [S] positive [O] delicious [SSEP] [A] the atmosphere [C] restaurant#general [S] positive [O] nice [SSEP] [A] the prices [C] restaurant#general [S] positive [O] reasonable [END]
+Prediction:  [A] the service [C] restaurant#general [S] positive [O] great [SSEP] [A] the food [C] restaurant#general [S] positive [O] delicious [SSEP] [A] the atmosphere [C] restaurant#general [S] positive [O] nice [SSEP] [A] the prices [C] restaurant#general [S] positive [O] reasonable
+Quints:  [('the service', 'restaurant#general', 'positive', 'great', 'null'), ('the food', 'restaurant#general', 'positive', 'delicious', 'null'), ('the atmosphere', 'restaurant#general', 'positive', 'nice', 'null'), ('the prices', 'restaurant#general', 'positive', 'reasonable', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#general [S] positive [O] food [SSEP] [A] service [C] restaurant#service [S] positive [O] NULL [SSEP] [A] atmosphere [C] restaurant#ambience [S] positive [O] NULL [END]
+Prediction:  [A] NULL [C] restaurant#general [S] positive [O] food [SSEP] [A] service [C] restaurant#service [S] positive [O] NULL [SSEP] [A] atmosphere [C] restaurant#ambience [S] positive [O] NULL
+Quints:  [('NULL', 'restaurant#general', 'positive', 'food', 'null'), ('service', 'restaurant#service', 'positive', 'NULL', 'null'), ('atmosphere', 'restaurant#ambience', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] NULL [C] hotel#general [S] negative [O] disappointing [SSEP] [A] breakfast [C] breakfast#general [S] negative [O] free [END]
+Prediction:  [A] NULL [C] hotel#general [S] negative [O] disappointing [SSEP] [A] breakfast [C] breakfast#general [S] negative [O] free
+Quints:  [('NULL', 'hotel#general', 'negative', 'disappointing', 'null'), ('breakfast', 'breakfast#general', 'negative', 'free', 'null')]
+Raw Prediction:  [A] food [C] restaurant#food [S] positive [O] great [SSEP] [A] service [C] restaurant#service [S] positive [O] excellent [END]
+Prediction:  [A] food [C] restaurant#food [S] positive [O] great [SSEP] [A] service [C] restaurant#service [S] positive [O] excellent
+Quints:  [('food', 'restaurant#food', 'positive', 'great', 'null'), ('service', 'restaurant#service', 'positive', 'excellent', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] friendly [SSEP] [A] service [C] service#general [S] positive [O] fast [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] friendly [SSEP] [A] service [C] service#general [S] positive [O] fast
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'friendly', 'null'), ('service', 'service#general', 'positive', 'fast', 'null')]
+Raw Prediction:  [A] food [C] restaurant#food [S] positive [O] good [SSEP] [A] service [C] restaurant#service [S] negative [O] terrible [END]
+Prediction:  [A] food [C] restaurant#food [S] positive [O] good [SSEP] [A] service [C] restaurant#service [S] negative [O] terrible
+Quints:  [('food', 'restaurant#food', 'positive', 'good', 'null'), ('service', 'restaurant#service', 'negative', 'terrible', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] tasty [SSEP] [A] portions [C] food#general [S] negative [O] small [END]
+Prediction:  [A] food [C] food#general [S] positive [O] tasty [SSEP] [A] portions [C] food#general [S] negative [O] small
+Quints:  [('food', 'food#general', 'positive', 'tasty', 'null'), ('portions', 'food#general', 'negative', 'small', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#general [S] positive [O] great [END]
+Prediction:  [A] NULL [C] restaurant#general [S] positive [O] great
+Quints:  [('NULL', 'restaurant#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] good [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] good
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'negative', 'good', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] excellent [SSEP] [A] service [C] service#general [S] positive [O] good [SSEP] [A] NULL [C] restaurant#general [S] positive [O] nice [SSEP] [A] NULL [C] location#general [S] positive [O] great [SSEP] [A] NULL [C] location#general [S] positive [O] great [END]
+Prediction:  [A] food [C] food#general [S] positive [O] excellent [SSEP] [A] service [C] service#general [S] positive [O] good [SSEP] [A] NULL [C] restaurant#general [S] positive [O] nice [SSEP] [A] NULL [C] location#general [S] positive [O] great [SSEP] [A] NULL [C] location#general [S] positive [O] great
+Quints:  [('food', 'food#general', 'positive', 'excellent', 'null'), ('service', 'service#general', 'positive', 'good', 'null'), ('NULL', 'restaurant#general', 'positive', 'nice', 'null'), ('NULL', 'location#general', 'positive', 'great', 'null'), ('NULL', 'location#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] owner [C] owner#general [S] positive [O] friendly [SSEP] [A] owner [C] owner#general [S] positive [O] nice [END]
+Prediction:  [A] owner [C] owner#general [S] positive [O] friendly [SSEP] [A] owner [C] owner#general [S] positive [O] nice
+Quints:  [('owner', 'owner#general', 'positive', 'friendly', 'null'), ('owner', 'owner#general', 'positive', 'nice', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] very good [SSEP] [A] service [C] service#general [S] negative [O] terrible [END]
+Prediction:  [A] NULL [C] restaurant#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] very good [SSEP] [A] service [C] service#general [S] negative [O] terrible
+Quints:  [('NULL', 'restaurant#general', 'positive', 'NULL', 'null'), ('food', 'food#general', 'positive', 'very good', 'null'), ('service', 'service#general', 'negative', 'terrible', 'null')]
+Raw Prediction:  [A] food [C] food#quality [S] positive [O] great [SSEP] [A] service [C] service#general [S] negative [O] terrible [END]
+Prediction:  [A] food [C] food#quality [S] positive [O] great [SSEP] [A] service [C] service#general [S] negative [O] terrible
+Quints:  [('food', 'food#quality', 'positive', 'great', 'null'), ('service', 'service#general', 'negative', 'terrible', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] not so good [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] not so good
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'negative', 'not so good', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] very good [SSEP] [A] service [C] service#general [S] positive [O] great [END]
+Prediction:  [A] food [C] food#general [S] positive [O] very good [SSEP] [A] service [C] service#general [S] positive [O] great
+Quints:  [('food', 'food#general', 'positive', 'very good', 'null'), ('service', 'service#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] fresh and delicious [END]
+Prediction:  [A] food [C] food#general [S] positive [O] fresh and delicious
+Quints:  [('food', 'food#general', 'positive', 'fresh and delicious', 'null')]
+Raw Prediction:  [A] NULL [C] product#general [S] positive [O] NULL [SSEP] [A] NULL [C] product#operation_performance [S] positive [O] easy [SSEP] [A] NULL [C] product#weight [S] positive [O] lightweight [END]
+Prediction:  [A] NULL [C] product#general [S] positive [O] NULL [SSEP] [A] NULL [C] product#operation_performance [S] positive [O] easy [SSEP] [A] NULL [C] product#weight [S] positive [O] lightweight
+Quints:  [('NULL', 'product#general', 'positive', 'NULL', 'null'), ('NULL', 'product#operation_performance', 'positive', 'easy', 'null'), ('NULL', 'product#weight', 'positive', 'lightweight', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#general [S] positive [O] amazing [END]
+Prediction:  [A] NULL [C] restaurant#general [S] positive [O] amazing
+Quints:  [('NULL', 'restaurant#general', 'positive', 'amazing', 'null')]
+Raw Prediction:  [A] steak and cheese sub [C] food#prices [S] positive [O] $ 10 [SSEP] [A] fries [C] food#prices [S] positive [O] $ 10 [SSEP] [A] drink [C] food#prices [S] positive [O] $ 10 [END]
+Prediction:  [A] steak and cheese sub [C] food#prices [S] positive [O] $ 10 [SSEP] [A] fries [C] food#prices [S] positive [O] $ 10 [SSEP] [A] drink [C] food#prices [S] positive [O] $ 10
+Quints:  [('steak and cheese sub', 'food#prices', 'positive', '$ 10', 'null'), ('fries', 'food#prices', 'positive', '$ 10', 'null'), ('drink', 'food#prices', 'positive', '$ 10', 'null')]
+Raw Prediction:  [A] bar area [C] restaurant#general [S] negative [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] negative [O] NULL [SSEP] [A] food [C] food#quality [S] negative [O] NULL [END]
+Prediction:  [A] bar area [C] restaurant#general [S] negative [O] NULL [SSEP] [A] NULL [C] restaurant#general [S] negative [O] NULL [SSEP] [A] food [C] food#quality [S] negative [O] NULL
+Quints:  [('bar area', 'restaurant#general', 'negative', 'NULL', 'null'), ('NULL', 'restaurant#general', 'negative', 'NULL', 'null'), ('food', 'food#quality', 'negative', 'NULL', 'null')]
+Raw Prediction:  [A] staff [C] service#general [S] positive [O] friendly [SSEP] [A] food [C] food#general [S] positive [O] good [END]
+Prediction:  [A] staff [C] service#general [S] positive [O] friendly [SSEP] [A] food [C] food#general [S] positive [O] good
+Quints:  [('staff', 'service#general', 'positive', 'friendly', 'null'), ('food', 'food#general', 'positive', 'good', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] ok [END]
+Prediction:  [A] food [C] food#general [S] positive [O] ok
+Quints:  [('food', 'food#general', 'positive', 'ok', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] good [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] good
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'good', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] great [END]
+Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] positive [O] great [SSEP] [A] atmosphere [C] ambience#general [S] positive [O] great
+Quints:  [('food', 'food#general', 'positive', 'great', 'null'), ('service', 'service#general', 'positive', 'great', 'null'), ('atmosphere', 'ambience#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] service [C] service#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S
+Prediction:  [A] service [C] service#general [S] positive [O] NULL [SSEP] [A] service [C] service#general [S]
+Quints:  [('service', 'service#general', 'positive', 'NULL', 'null'), ('service', 'service#general', '', 'null', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good
+Quints:  [('food', 'food#general', 'positive', 'good', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#general [S] negative [O] crowded [SSEP] [A] service [C] service#general [S] negative [O] slow [END]
+Prediction:  [A] NULL [C] restaurant#general [S] negative [O] crowded [SSEP] [A] service [C] service#general [S] negative [O] slow
+Quints:  [('NULL', 'restaurant#general', 'negative', 'crowded', 'null'), ('service', 'service#general', 'negative', 'slow', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] terrible [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] negative [O] terrible
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'negative', 'terrible', 'null')]
+Raw Prediction:  [A] service [C] service#general [S] positive [O] good [SSEP] [A] NULL [C] service#general [S] negative [O] overwhelmed [END]
+Prediction:  [A] service [C] service#general [S] positive [O] good [SSEP] [A] NULL [C] service#general [S] negative [O] overwhelmed
+Quints:  [('service', 'service#general', 'positive', 'good', 'null'), ('NULL', 'service#general', 'negative', 'overwhelmed', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] excellent [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] excellent
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'excellent', 'null')]
+Raw Prediction:  [A] food [C] restaurant#food_quality [S] positive [O] good [SSEP] [A] service [C] restaurant#service_quality [S] positive [O] excellent [END]
+Prediction:  [A] food [C] restaurant#food_quality [S] positive [O] good [SSEP] [A] service [C] restaurant#service_quality [S] positive [O] excellent
+Quints:  [('food', 'restaurant#food_quality', 'positive', 'good', 'null'), ('service', 'restaurant#service_quality', 'positive', 'excellent', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] negative [O] awful [END]
+Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] negative [O] awful
+Quints:  [('food', 'food#general', 'positive', 'great', 'null'), ('service', 'service#general', 'negative', 'awful', 'null')]
+Raw Prediction:  [A] NULL [C] laptop#general [S] positive [O] NULL [END]
+Prediction:  [A] NULL [C] laptop#general [S] positive [O] NULL
+Quints:  [('NULL', 'laptop#general', 'positive', 'NULL', 'null')]
+Raw Prediction:  [A] service [C] service#general [S] positive [O] great [SSEP] [A] food [C] food#general [S] positive [O] great [SSEP] [A] ambience [C] ambience#general [S] positive [O] great [END]
+Prediction:  [A] service [C] service#general [S] positive [O] great [SSEP] [A] food [C] food#general [S] positive [O] great [SSEP] [A] ambience [C] ambience#general [S] positive [O] great
+Quints:  [('service', 'service#general', 'positive', 'great', 'null'), ('food', 'food#general', 'positive', 'great', 'null'), ('ambience', 'ambience#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] good [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] good
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'good', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] excellent [SSEP] [A] service [C] service#general [S] positive [O] superb [END]
+Prediction:  [A] food [C] food#general [S] positive [O] excellent [SSEP] [A] service [C] service#general [S] positive [O] superb
+Quints:  [('food', 'food#general', 'positive', 'excellent', 'null'), ('service', 'service#general', 'positive', 'superb', 'null')]
+Raw Prediction:  [A] location [C] location#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] great [END]
+Prediction:  [A] location [C] location#general [S] positive [O] NULL [SSEP] [A] food [C] food#general [S] positive [O] great
+Quints:  [('location', 'location#general', 'positive', 'NULL', 'null'), ('food', 'food#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] staff [C] service#general [S] positive [O] friendly [SSEP] [A] service [C] service#general [S] positive [O] great [END]
+Prediction:  [A] staff [C] service#general [S] positive [O] friendly [SSEP] [A] service [C] service#general [S] positive [O] great
+Quints:  [('staff', 'service#general', 'positive', 'friendly', 'null'), ('service', 'service#general', 'positive', 'great', 'null')]
+Raw Prediction:  [A] NULL [C] restaurant#prices [S] positive [O] great [SSEP] [A] NULL [C] restaurant#prices [S] positive [O] value [END]
+Prediction:  [A] NULL [C] restaurant#prices [S] positive [O] great [SSEP] [A] NULL [C] restaurant#prices [S] positive [O] value
+Quints:  [('NULL', 'restaurant#prices', 'positive', 'great', 'null'), ('NULL', 'restaurant#prices', 'positive', 'value', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] negative [O] NULL [END]
+Prediction:  [A] food [C] food#general [S] positive [O] great [SSEP] [A] service [C] service#general [S] negative [O] NULL
+Quints:  [('food', 'food#general', 'positive', 'great', 'null'), ('service', 'service#general', 'negative', 'NULL', 'null')]
+Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] NULL [C] food#general [S] positive [O] enjoyed [END]
+Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] NULL [C] food#general [S] positive [O] enjoyed
+Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('NULL', 'food#general', 'positive', 'enjoyed', 'null')]
+Raw Prediction:  [A] food [C] restaurant#general [S] positive [O] good [SSEP] [A] service [C] restaurant#general [S] negative [O] slow [END]
+Prediction:  [A] food [C] restaurant#general [S] positive [O] good [SSEP] [A] service [C] restaurant#general [S] negative [O] slow
+Quints:  [('food', 'restaurant#general', 'positive', 'good', 'null'), ('service', 'restaurant#general', 'negative', 'slow', 'null')]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:29<06:58, 29.91s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:59<06:23, 29.48s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:29<06:00, 30.02s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:00<05:34, 30.37s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:33<05:12, 31.27s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:04<04:39, 31.09s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:36<04:10, 31.37s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:08<03:41, 31.58s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:39<03:08, 31.36s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:09<02:35, 31.07s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:38<02:01, 30.49s/it]slurmstepd: error: *** JOB 65682941 ON gl1523 CANCELLED AT 2023-12-01T03:06:48 DUE TO TIME LIMIT ***

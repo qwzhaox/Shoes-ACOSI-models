@@ -1,0 +1,8 @@
+~/src/absa/EECS595Project ~/src/absa
+Running ACOSI extract
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:31<07:19, 31.37s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:02<06:45, 31.17s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:33<06:15, 31.26s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:03<05:35, 30.54s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:34<05:08, 30.84s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:06<04:41, 31.30s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:37<04:08, 31.09s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:08<03:36, 30.98s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:37<03:02, 30.46s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:07<02:31, 30.24s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:37<02:00, 30.21s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:06<01:29, 29.92s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:36<00:59, 29.89s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:05<00:29, 29.64s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:06<00:00, 21.15s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:06<00:00, 28.47s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 19378.60item/s]
+slurmstepd: error: *** JOB 65682946 ON gl1514 CANCELLED AT 2023-12-01T08:24:20 DUE TO TIME LIMIT ***

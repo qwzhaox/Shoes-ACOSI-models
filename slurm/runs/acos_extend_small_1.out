@@ -1,0 +1,909 @@
+~/src/absa/EECS595Project ~/src/absa
+Running ACOS extend
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:33<00:33, 33.81s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 20.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 22.82s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 38230.83item/s]
+Running pipeline...
+Total output tokens: 150091
+Avg out tokens per prompt: 1500.91
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] the food is always fresh [SSEP] [O] the service is always good
+Quints:  [('null', 'null', 'null', 'the food is always fresh', 'null'), ('null', 'null', 'null', 'the service is always good', 'null')]
+Prediction:  [O] clean [SSEP] [O] friendly
+Quints:  [('null', 'null', 'null', 'clean', 'null'), ('null', 'null', 'null', 'friendly', 'null')]
+Prediction:  [O] eat
+Quints:  [('null', 'null', 'null', 'eat', 'null')]
+Prediction:  [O] great [SSEP] [O] service [SSEP] [O] better
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'service', 'null'), ('null', 'null', 'null', 'better', 'null')]
+Prediction:  [O] tended to my every need
+Quints:  [('null', 'null', 'null', 'tended to my every need', 'null')]
+Prediction:  [O] delicious [SSEP] [O] the service is always good
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'the service is always good', 'null')]
+Prediction:  [O] belligerent [SSEP] [O] guests that have a complaint [SSEP] [O] service is
+Quints:  [('null', 'null', 'null', 'belligerent', 'null'), ('null', 'null', 'null', 'guests that have a complaint', 'null'), ('null', 'null', 'null', 'service is', 'null')]
+Prediction:  Opinion span: [O] delicious [SSEP] [O] beautiful
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'beautiful', 'null')]
+Prediction:  Opinion
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] friendly [SSEP] [O] the staff is pretty friendly [SSEP] [O] the staff is pretty friendly
+Quints:  [('null', 'null', 'null', 'friendly', 'null'), ('null', 'null', 'null', 'the staff is pretty friendly', 'null'), ('null', 'null', 'null', 'the staff is pretty friendly', 'null')]
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] good [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', '', 'null')]
+Prediction:  [O] horrible [SSEP] [O] food [SSEP] [
+Quints:  [('null', 'null', 'null', 'horrible', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good
+Quints:  [('null', 'null', 'null', 'good', 'null')]
+Prediction:  [O] helpful [SSEP] [O] very good
+Quints:  [('null', 'null', 'null', 'helpful', 'null'), ('null', 'null', 'null', 'very good', 'null')]
+Prediction:  [O] non - existent [SSEP] [O] over an hour after we ordered [SSEP]
+Quints:  [('null', 'null', 'null', 'non - existent', 'null'), ('null', 'null', 'null', 'over an hour after we ordered', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] not even apologetic
+Quints:  [('null', 'null', 'null', 'not even apologetic', 'null')]
+Prediction:  [O] delicious [SSEP] [O] fantastic [SSEP]
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'fantastic', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] recommend
+Quints:  [('null', 'null', 'null', 'recommend', 'null')]
+Prediction:  [O] wonderful [SSEP] [O] italian restaurant [SSE
+Quints:  [('null', 'null', 'null', 'wonderful', 'null'), ('null', 'null', 'null', 'italian restaurant [ SSE', 'null')]
+Prediction:  [O] good
+Quints:  [('null', 'null', 'null', 'good', 'null')]
+Prediction:  Opinion span: [O] love [SSEP] [O] i love this restaurant
+Quints:  [('null', 'null', 'null', 'love', 'null'), ('null', 'null', 'null', 'i love this restaurant', 'null')]
+Prediction:  [O] amazing [SSEP] [O] service [SSEP] [O] amazing
+Quints:  [('null', 'null', 'null', 'amazing', 'null'), ('null', 'null', 'null', 'service', 'null'), ('null', 'null', 'null', 'amazing', 'null')]
+Prediction:  [O] incredible [SSEP] [O] extensive [SSEP] [O] diverse [SSEP] [O] incredible [SSEP] [O] nice
+Quints:  [('null', 'null', 'null', 'incredible', 'null'), ('null', 'null', 'null', 'extensive', 'null'), ('null', 'null', 'null', 'diverse', 'null'), ('null', 'null', 'null', 'incredible', 'null'), ('null', 'null', 'null', 'nice', 'null')]
+Prediction:  [O] not a bad
+Quints:  [('null', 'null', 'null', 'not a bad', 'null')]
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] perfect
+Quints:  [('null', 'null', 'null', 'perfect', 'null')]
+Prediction:  [O]
+Quints:  [('null', 'null', 'null', '', 'null')]
+Prediction:  [O] friendly [SSEP] [O] delicious
+Quints:  [('null', 'null', 'null', 'friendly', 'null'), ('null', 'null', 'null', 'delicious', 'null')]
+Prediction:  [O] wonderful [SSEP] [O] great
+Quints:  [('null', 'null', 'null', 'wonderful', 'null'), ('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] liked [SSEP] [O] atmosphere [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O] food [SSEP] [O] not worth [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'liked', 'null'), ('null', 'null', 'null', 'atmosphere', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', '', 'null')]
+Prediction:  [O] okay [SSEP] [O] not much else to it
+Quints:  [('null', 'null', 'null', 'okay', 'null'), ('null', 'null', 'null', 'not much else to it', 'null')]
+Prediction:  [O] medium [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'medium', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] variety of the
+Quints:  [('null', 'null', 'null', 'variety of the', 'null')]
+Prediction:  [O] so
+Quints:  [('null', 'null', 'null', 'so', 'null')]
+Prediction:  [O] clean [SSEP] [O] friendly
+Quints:  [('null', 'null', 'null', 'clean', 'null'), ('null', 'null', 'null', 'friendly', 'null')]
+Prediction:  [O] mediocre [SSEP] [O] offensive
+Quints:  [('null', 'null', 'null', 'mediocre', 'null'), ('null', 'null', 'null', 'offensive', 'null')]
+Prediction:  [O] dismissive [SSEP] [O] waiter was extremely dismissive [SSEP] [O] no less than three staff members waited hand - and - foot on a pair of japanese girls seated nearby
+Quints:  [('null', 'null', 'null', 'dismissive', 'null'), ('null', 'null', 'null', 'waiter was extremely dismissive', 'null'), ('null', 'null', 'null', 'no less than three staff members waited hand - and - foot on a pair of japanese girls seated nearby', 'null')]
+Prediction:  [O] very good [SSEP] [O] quality [SSEP] [O] good
+Quints:  [('null', 'null', 'null', 'very good', 'null'), ('null', 'null', 'null', 'quality', 'null'), ('null', 'null', 'null', 'good', 'null')]
+Prediction:  [O] miso soup [SSEP] [O] complex [SSE
+Quints:  [('null', 'null', 'null', 'miso soup', 'null'), ('null', 'null', 'null', 'complex [ SSE', 'null')]
+Prediction:  [O] freshest [SSEP] [O] tender [SSEP]
+Quints:  [('null', 'null', 'null', 'freshest', 'null'), ('null', 'null', 'null', 'tender', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] delicious [SSEP] [O] beautiful
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'beautiful', 'null')]
+Prediction:  [O] small [SSEP] [O] expensive [SSEP] [O] small
+Quints:  [('null', 'null', 'null', 'small', 'null'), ('null', 'null', 'null', 'expensive', 'null'), ('null', 'null', 'null', 'small', 'null')]
+Prediction:  [O] delicious [SSEP] [O] helpful
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'helpful', 'null')]
+Prediction:  [O] amazing
+Quints:  [('null', 'null', 'null', 'amazing', 'null')]
+Prediction:  [O] nice
+Quints:  [('null', 'null', 'null', 'nice', 'null')]
+Prediction:  [O] amazing
+Quints:  [('null', 'null', 'null', 'amazing', 'null')]
+Prediction:  Opinion span: [O] null [SSEP] [O] my table was shaking [SSEP] [O] it was stabilized [END
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'my table was shaking', 'null'), ('null', 'null', 'null', 'it was stabilized [ END', 'null')]
+Prediction:  [O] fine [SSEP] [O] little [SSEP] [O] some [SSEP] [O] tastier [SSEP] [O] normal [SSEP] [O] salsa
+Quints:  [('null', 'null', 'null', 'fine', 'null'), ('null', 'null', 'null', 'little', 'null'), ('null', 'null', 'null', 'some', 'null'), ('null', 'null', 'null', 'tastier', 'null'), ('null', 'null', 'null', 'normal', 'null'), ('null', 'null', 'null', 'salsa', 'null')]
+Prediction:  [O] busy [SSEP] [O] waitress was too busy being nice to her other larger party [SSEP] [O] food was great
+Quints:  [('null', 'null', 'null', 'busy', 'null'), ('null', 'null', 'null', 'waitress was too busy being nice to her other larger party', 'null'), ('null', 'null', 'null', 'food was great', 'null')]
+Prediction:  [O] pizza place [SSEP] [O] mama mia [SSEP] [O] neighborhood [SSEP] [O] lucky [SSEP] [O] great
+Quints:  [('null', 'null', 'null', 'pizza place', 'null'), ('null', 'null', 'null', 'mama mia', 'null'), ('null', 'null', 'null', 'neighborhood', 'null'), ('null', 'null', 'null', 'lucky', 'null'), ('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] pizza is good [SSEP] [
+Quints:  [('null', 'null', 'null', 'pizza is good', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good
+Quints:  [('null', 'null', 'null', 'good', 'null')]
+Prediction:  [O] very [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'very', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] best [SSEP] [O] summertime deck experience [SSEP] [O] they will even bring you a blanket if you get cold in the seattle evening weather
+Quints:  [('null', 'null', 'null', 'best', 'null'), ('null', 'null', 'null', 'summertime deck experience', 'null'), ('null', 'null', 'null', 'they will even bring you a blanket if you get cold in the seattle evening weather', 'null')]
+Prediction:  [O] excellent
+Quints:  [('null', 'null', 'null', 'excellent', 'null')]
+Prediction:  [O] delicious [SSE
+Quints:  [('null', 'null', 'null', 'delicious [ SSE', 'null')]
+Prediction:  [O] best
+Quints:  [('null', 'null', 'null', 'best', 'null')]
+Prediction:  [O] atmosphere is nice [SSEP] [O] food is good
+Quints:  [('null', 'null', 'null', 'atmosphere is nice', 'null'), ('null', 'null', 'null', 'food is good', 'null')]
+Prediction:  [O] this place is a lot of fun
+Quints:  [('null', 'null', 'null', 'this place is a lot of fun', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] great [SSEP] [O] fun [SSEP] [O] worth staying for
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'fun', 'null'), ('null', 'null', 'null', 'worth staying for', 'null')]
+Prediction:  [O] cold [SSEP] [O] slow [SSEP] [O] cold
+Quints:  [('null', 'null', 'null', 'cold', 'null'), ('null', 'null', 'null', 'slow', 'null'), ('null', 'null', 'null', 'cold', 'null')]
+Prediction:  [O] not alot of smoking places left in new york [SSEP] [O] i have found my favorite smoking balconey in the city
+Quints:  [('null', 'null', 'null', 'not alot of smoking places left in new york', 'null'), ('null', 'null', 'null', 'i have found my favorite smoking balconey in the city', 'null')]
+Prediction:  [O] delicious [SSEP] [O] tuna roll [SSEP] [O] it was delicious
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'tuna roll', 'null'), ('null', 'null', 'null', 'it was delicious', 'null')]
+Prediction:  [O] they have a wide variety of fish [SSEP] [O] they even list which oceans they come from [SSEP] [O] atlantic or pacific
+Quints:  [('null', 'null', 'null', 'they have a wide variety of fish', 'null'), ('null', 'null', 'null', 'they even list which oceans they come from', 'null'), ('null', 'null', 'null', 'atlantic or pacific', 'null')]
+Prediction:  [O] jellyfish [SSEP] [O] good [SSEP] [O] horse mackerel [SSEP] [O] good [SSEP] [O] blue fin tuna [SSEP] [O] good [SSEP] [O] sake ikura roll [SSEP]
+Quints:  [('null', 'null', 'null', 'jellyfish', 'null'), ('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'horse mackerel', 'null'), ('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'blue fin tuna', 'null'), ('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'sake ikura roll', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] traditional japanese [SSEP]
+Quints:  [('null', 'null', 'null', 'traditional japanese', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] friendly [SSEP] [O] staff [SSEP] [O] clean
+Quints:  [('null', 'null', 'null', 'friendly', 'null'), ('null', 'null', 'null', 'staff', 'null'), ('null', 'null', 'null', 'clean', 'null')]
+Prediction:  [O] courteous [SSEP] [O] attentive
+Quints:  [('null', 'null', 'null', 'courteous', 'null'), ('null', 'null', 'null', 'attentive', 'null')]
+Prediction:  [O] good [SSEP] [O] great [SSEP] [O] clean
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'clean', 'null')]
+Prediction:  [O] abbreviated [SSEP] [O] outside patio area [SSEP] [O] has [SSEP] [O
+Quints:  [('null', 'null', 'null', 'abbreviated', 'null'), ('null', 'null', 'null', 'outside patio area', 'null'), ('null', 'null', 'null', 'has', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] food was very mediocre
+Quints:  [('null', 'null', 'null', 'food was very mediocre', 'null')]
+Prediction:  [O] waitress was very nice
+Quints:  [('null', 'null', 'null', 'waitress was very nice', 'null')]
+Prediction:  [O] decent
+Quints:  [('null', 'null', 'null', 'decent', 'null')]
+Prediction:  Opinion span: [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] terrible [SSEP] [O] food was good [SSEP] [O] service was terrible
+Quints:  [('null', 'null', 'null', 'terrible', 'null'), ('null', 'null', 'null', 'food was good', 'null'), ('null', 'null', 'null', 'service was terrible', 'null')]
+Prediction:  [O] pumpkin ravioli [SSEP] [O] goat cheese gnocchi ( 5 big ones to a plate instead of 20 or so little gnocchis ) [SSEP] [O] goat cheese gnocchi ( 5 big ones to a plate instead of 20 or so little gnocchis ) [SSEP] [O] filet mignon on top of spinach and mashed potatoes
+Quints:  [('null', 'null', 'null', 'pumpkin ravioli', 'null'), ('null', 'null', 'null', 'goat cheese gnocchi ( 5 big ones to a plate instead of 20 or so little gnocchis )', 'null'), ('null', 'null', 'null', 'goat cheese gnocchi ( 5 big ones to a plate instead of 20 or so little gnocchis )', 'null'), ('null', 'null', 'null', 'filet mignon on top of spinach and mashed potatoes', 'null')]
+Prediction:  [O] peaceful [SSEP] [O] relaxing
+Quints:  [('null', 'null', 'null', 'peaceful', 'null'), ('null', 'null', 'null', 'relaxing', 'null')]
+Prediction:  [O] delicious
+Quints:  [('null', 'null', 'null', 'delicious', 'null')]
+Prediction:  [O] service was excellent [SSEP] [O] delicious [SSEP
+Quints:  [('null', 'null', 'null', 'service was excellent', 'null'), ('null', 'null', 'null', 'delicious [ SSEP', 'null')]
+Prediction:  [O] also [SSEP] [O] chana masala ( garbanzo beans ) [S
+Quints:  [('null', 'null', 'null', 'also', 'null'), ('null', 'null', 'null', 'chana masala ( garbanzo beans ) [ S', 'null')]
+Prediction:  [O] too long [SSEP] [O] the wait is always too long
+Quints:  [('null', 'null', 'null', 'too long', 'null'), ('null', 'null', 'null', 'the wait is always too long', 'null')]
+Prediction:  [O] best [SSEP] [O] never too crowded
+Quints:  [('null', 'null', 'null', 'best', 'null'), ('null', 'null', 'null', 'never too crowded', 'null')]
+Prediction:  [O] best
+Quints:  [('null', 'null', 'null', 'best', 'null')]
+Prediction:  [O] recommend [SSEP] [O] saag and paneer [SSEP] [O] highly recommend
+Quints:  [('null', 'null', 'null', 'recommend', 'null'), ('null', 'null', 'null', 'saag and paneer', 'null'), ('null', 'null', 'null', 'highly recommend', 'null')]
+Prediction:  [O] food [SSEP] [O] general [SSEP] [O] excellent
+Quints:  [('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'general', 'null'), ('null', 'null', 'null', 'excellent', 'null')]
+Prediction:  [O] horrible [SSEP] [O] great [SSEP] [O] NULL [END
+Quints:  [('null', 'null', 'null', 'horrible', 'null'), ('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'NULL [ END', 'null')]
+Prediction:  [O] enjoyed
+Quints:  [('null', 'null', 'null', 'enjoyed', 'null')]
+Prediction:  [O] yummy [SSEP] [O] lamb korma [SSEP] [O] yummy [SSEP] [O] samosas [SSEP] [O] yummy [SSEP] [O] naan [SSEP]
+Quints:  [('null', 'null', 'null', 'yummy', 'null'), ('null', 'null', 'null', 'lamb korma', 'null'), ('null', 'null', 'null', 'yummy', 'null'), ('null', 'null', 'null', 'samosas', 'null'), ('null', 'null', 'null', 'yummy', 'null'), ('null', 'null', 'null', 'naan', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] too mild [SSEP] [O] way
+Quints:  [('null', 'null', 'null', 'too mild', 'null'), ('null', 'null', 'null', 'way', 'null')]
+Prediction:  [O] best [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'best', 'null'), ('null', 'null', 'null', '', 'null')]
+Prediction:  [O] tender [SSEP] [O] delicious
+Quints:  [('null', 'null', 'null', 'tender', 'null'), ('null', 'null', 'null', 'delicious', 'null')]
+Prediction:  [O] delicious [SSEP] [O] fajita salad [SSEP] [O] colorado [SSEP] [O] fajitas
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'fajita salad', 'null'), ('null', 'null', 'null', 'colorado', 'null'), ('null', 'null', 'null', 'fajitas', 'null')]
+Prediction:  [O] friendly [SSEP] [O] small
+Quints:  [('null', 'null', 'null', 'friendly', 'null'), ('null', 'null', 'null', 'small', 'null')]
+Prediction:  [O] delicious [SSE
+Quints:  [('null', 'null', 'null', 'delicious [ SSE', 'null')]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:33<00:33, 33.70s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 20.83s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 22.76s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37532.92item/s]
+Running pipeline...
+Total output tokens: 121017
+Avg out tokens per prompt: 1210.17
+Prediction:  Opinion span: [O] yum
+Quints:  [('null', 'null', 'null', 'yum', 'null')]
+Prediction:  [O] good
+Quints:  [('null', 'null', 'null', 'good', 'null')]
+Prediction:  [O] not the biggest [SSEP] [O] adequate
+Quints:  [('null', 'null', 'null', 'not the biggest', 'null'), ('null', 'null', 'null', 'adequate', 'null')]
+Prediction:  [O] must
+Quints:  [('null', 'null', 'null', 'must', 'null')]
+Prediction:  [O] great [SSEP] [O] service [SSEP]
+
+The opinion span for the first quadruple is "great", and the opinion span for the second quadruple is "service".
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'service', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] staff
+Quints:  [('null', 'null', 'null', 'staff', 'null')]
+Prediction:  [O] no complaints
+Quints:  [('null', 'null', 'null', 'no complaints', 'null')]
+Prediction:  [O] friendly [SSEP] [O] attentive
+Quints:  [('null', 'null', 'null', 'friendly', 'null'), ('null', 'null', 'null', 'attentive', 'null')]
+Prediction:  [O] good [SSEP]
+
+The opinion span for the quadruple is "good".
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] delicious [SSEP] [O] great
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] friendly
+Quints:  [('null', 'null', 'null', 'friendly', 'null')]
+Prediction:  [O] delicious [SSEP] [O] friendly
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'friendly', 'null')]
+Prediction:  [O] very good [SSEP] [O] friendly
+Quints:  [('null', 'null', 'null', 'very good', 'null'), ('null', 'null', 'null', 'friendly', 'null')]
+Prediction:  [O] nice [SSEP] [O] overrated
+Quints:  [('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'overrated', 'null')]
+Prediction:  [O] worst
+Quints:  [('null', 'null', 'null', 'worst', 'null')]
+Prediction:  [O] overcooked [SSEP] [O] slow
+Quints:  [('null', 'null', 'null', 'overcooked', 'null'), ('null', 'null', 'null', 'slow', 'null')]
+Prediction:  [O] non - existent [SSEP] [O] food finally arrived [SSEP] [O] water or utensils
+Quints:  [('null', 'null', 'null', 'non - existent', 'null'), ('null', 'null', 'null', 'food finally arrived', 'null'), ('null', 'null', 'null', 'water or utensils', 'null')]
+Prediction:  [O] not even apologetic [SSEP]
+
+The opinion span for the quadruple is "not even apologetic".
+Quints:  [('null', 'null', 'null', 'not even apologetic', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] comfortable [SSEP]
+
+The opinion span for the quadruple is "comfortable".
+
+
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+    
+### Instruction:
+An online customer review can be organized into a list of ACOS (Aspect-Category-Opinion
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] recommend
+Quints:  [('null', 'null', 'null', 'recommend', 'null')]
+Prediction:  [O] wonderful [SSEP] [O] happy
+Quints:  [('null', 'null', 'null', 'wonderful', 'null'), ('null', 'null', 'null', 'happy', 'null')]
+Prediction:  [O] wonderful [SSEP] [O] food reminds me of my recent trip to italy [SSEP]
+
+The opinion span for the first quadruple is "wonderful", and the implicit opinion span for the second quadruple (originally labeled NULL) is "food reminds me of my recent trip to italy".
+Quints:  [('null', 'null', 'null', 'wonderful', 'null'), ('null', 'null', 'null', 'food reminds me of my recent trip to italy', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] love
+Quints:  [('null', 'null', 'null', 'love', 'null')]
+Prediction:  [O] amazing [SSEP] [O] service [SSEP] [O] ambiance
+Quints:  [('null', 'null', 'null', 'amazing', 'null'), ('null', 'null', 'null', 'service', 'null'), ('null', 'null', 'null', 'ambiance', 'null')]
+Prediction:  [O] incredible [SSEP] [O] extensive [SSEP] [O] diverse [SSEP] [O] nice
+Quints:  [('null', 'null', 'null', 'incredible', 'null'), ('null', 'null', 'null', 'extensive', 'null'), ('null', 'null', 'null', 'diverse', 'null'), ('null', 'null', 'null', 'nice', 'null')]
+Prediction:  [O] not a bad [SSEP] [O] this place [SSEP]
+Quints:  [('null', 'null', 'null', 'not a bad', 'null'), ('null', 'null', 'null', 'this place', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] helpful [SSEP] [O] staff [SSEP] [O] nice
+Quints:  [('null', 'null', 'null', 'helpful', 'null'), ('null', 'null', 'null', 'staff', 'null'), ('null', 'null', 'null', 'nice', 'null')]
+Prediction:  [O] perfect
+Quints:  [('null', 'null', 'null', 'perfect', 'null')]
+Prediction:  [O] high quality [SSEP] [O] good service [SSEP] [O] nice
+Quints:  [('null', 'null', 'null', 'high quality', 'null'), ('null', 'null', 'null', 'good service', 'null'), ('null', 'null', 'null', 'nice', 'null')]
+Prediction:  [O] relax [SSEP] [O] enjoy [SSEP] [O] finest quality
+Quints:  [('null', 'null', 'null', 'relax', 'null'), ('null', 'null', 'null', 'enjoy', 'null'), ('null', 'null', 'null', 'finest quality', 'null')]
+Prediction:  [O] real [SSEP] [O] best
+Quints:  [('null', 'null', 'null', 'real', 'null'), ('null', 'null', 'null', 'best', 'null')]
+Prediction:  [O] liked [SSEP] [O] atmosphere [SSEP] [O] not worth [SSEP] [O] food
+Quints:  [('null', 'null', 'null', 'liked', 'null'), ('null', 'null', 'null', 'atmosphere', 'null'), ('null', 'null', 'null', 'not worth', 'null'), ('null', 'null', 'null', 'food', 'null')]
+Prediction:  [O] okay
+Quints:  [('null', 'null', 'null', 'okay', 'null')]
+Prediction:  [O] dry [SSEP] [O]n't so fresh
+Quints:  [('null', 'null', 'null', 'dry', 'null'), ('null', 'null', 'null', "' t so fresh", 'null')]
+Prediction:  [O] excellent [SSEP] [O] variety of fish [SSEP] [O] quality of fish
+Quints:  [('null', 'null', 'null', 'excellent', 'null'), ('null', 'null', 'null', 'variety of fish', 'null'), ('null', 'null', 'null', 'quality of fish', 'null')]
+Prediction:  [O] lacking [SSEP] [O] value [SSEP] [O] service
+Quints:  [('null', 'null', 'null', 'lacking', 'null'), ('null', 'null', 'null', 'value', 'null'), ('null', 'null', 'null', 'service', 'null')]
+Prediction:  [O] fresh [SSEP] [O] bland
+Quints:  [('null', 'null', 'null', 'fresh', 'null'), ('null', 'null', 'null', 'bland', 'null')]
+Prediction:  [O] mediocre [SSEP] [O] offensive
+Quints:  [('null', 'null', 'null', 'mediocre', 'null'), ('null', 'null', 'null', 'offensive', 'null')]
+Prediction:  [O] dismissive [SSEP] [O] staff members [SSEP] [O] Japanese girls
+Quints:  [('null', 'null', 'null', 'dismissive', 'null'), ('null', 'null', 'null', 'staff members', 'null'), ('null', 'null', 'null', 'Japanese girls', 'null')]
+Prediction:  [O] freshest [SSEP] [O] love
+Quints:  [('null', 'null', 'null', 'freshest', 'null'), ('null', 'null', 'null', 'love', 'null')]
+Prediction:  [O] complex [SSEP] [O] detail [SSEP] [O] everything
+Quints:  [('null', 'null', 'null', 'complex', 'null'), ('null', 'null', 'null', 'detail', 'null'), ('null', 'null', 'null', 'everything', 'null')]
+Prediction:  [O] freshest [SSEP] [O] tender
+Quints:  [('null', 'null', 'null', 'freshest', 'null'), ('null', 'null', 'null', 'tender', 'null')]
+Prediction:  [O] delicious
+Quints:  [('null', 'null', 'null', 'delicious', 'null')]
+Prediction:  [O] delicious [SSEP] [O] friendly [SSEP] [O] slow
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'friendly', 'null'), ('null', 'null', 'null', 'slow', 'null')]
+Prediction:  [O] small [SSEP] [O] lovely [SSEP] [O] helpful
+Quints:  [('null', 'null', 'null', 'small', 'null'), ('null', 'null', 'null', 'lovely', 'null'), ('null', 'null', 'null', 'helpful', 'null')]
+Prediction:  [O] not great [SSEP] [O] rude
+Quints:  [('null', 'null', 'null', 'not great', 'null'), ('null', 'null', 'null', 'rude', 'null')]
+Prediction:  [O] great [SSEP]
+
+The opinion span for the quadruple is "great".
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] stellar
+Quints:  [('null', 'null', 'null', 'stellar', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] fine [SSEP] [O] salsa
+Quints:  [('null', 'null', 'null', 'fine', 'null'), ('null', 'null', 'null', 'salsa', 'null')]
+Prediction:  [O] great [SSEP] [O] waitress too busy [SSEP]
+
+The opinion span for the first quadruple is "great", the implicit opinion span for the second quadruple (originally labeled NULL) is "waitress too busy", and the opinion span for the third quadruple is "great".
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'waitress too busy', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great [SSEP] [O] mama mia
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'mama mia', 'null')]
+Prediction:  [O] problem [SSEP] [O] pizza [SSEP] [O] even when you order ahead [SSEP]
+Quints:  [('null', 'null', 'null', 'problem', 'null'), ('null', 'null', 'null', 'pizza', 'null'), ('null', 'null', 'null', 'even when you order ahead', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] friendly [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'friendly', 'null'), ('null', 'null', 'null', '', 'null')]
+Prediction:  [O] best [SSEP]
+
+The opinion span for the quadruple is "best".
+Quints:  [('null', 'null', 'null', 'best', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] best
+Quints:  [('null', 'null', 'null', 'best', 'null')]
+Prediction:  [O] best [SSEP] [O] deck experience [SSEP] [O] blanket [SSEP]
+
+The opinion span for the first quadruple is "best", the implicit opinion span for the second quadruple (originally labeled NULL) is "deck experience", and the opinion span for the third quadruple is "blanket".
+Quints:  [('null', 'null', 'null', 'best', 'null'), ('null', 'null', 'null', 'deck experience', 'null'), ('null', 'null', 'null', 'blanket', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] perfect
+Quints:  [('null', 'null', 'null', 'perfect', 'null')]
+Prediction:  [O] awesome [SSEP] [O] great [SSEP] [O] fun
+Quints:  [('null', 'null', 'null', 'awesome', 'null'), ('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'fun', 'null')]
+Prediction:  [O] best
+Quints:  [('null', 'null', 'null', 'best', 'null')]
+Prediction:  [O] great [SSEP] [O] draft and bottle selection [SSEP] [O] pizza rocks
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'draft and bottle selection', 'null'), ('null', 'null', 'null', 'pizza rocks', 'null')]
+Prediction:  [O] best [SSEP]
+
+The opinion span for the quadruple is "best".
+Quints:  [('null', 'null', 'null', 'best', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great [SSEP] [O] bartenders go that extra mile [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'bartenders go that extra mile', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] great [SSEP] [O] fun [SSEP] [O] worth staying for
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'fun', 'null'), ('null', 'null', 'null', 'worth staying for', 'null')]
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] favorite [SSEP] [O] smoking places left [SSEP] [O] balconey
+Quints:  [('null', 'null', 'null', 'favorite', 'null'), ('null', 'null', 'null', 'smoking places left', 'null'), ('null', 'null', 'null', 'balconey', 'null')]
+Prediction:  [O] friendly [SSEP] [O] clean [SSEP]
+
+The opinion span for the first quadruple is "friendly", and the implicit opinion span for the second quadruple (originally labeled NULL) is "clean".
+Quints:  [('null', 'null', 'null', 'friendly', 'null'), ('null', 'null', 'null', 'clean', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] wide [SSEP] [O] Atlantic or Pacific [SSEP]
+
+The opinion span for the first quadruple is "wide", and the implicit opinion span for the second quadruple (originally labeled NULL) is "Atlantic or Pacific".
+Quints:  [('null', 'null', 'null', 'wide', 'null'), ('null', 'null', 'null', 'Atlantic or Pacific', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good [SSEP] [O] jellyfish [SSEP] [O] horse mackerel [SSEP] [O] blue fin tuna [SSEP] [O] sake ikura roll
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'jellyfish', 'null'), ('null', 'null', 'null', 'horse mackerel', 'null'), ('null', 'null', 'null', 'blue fin tuna', 'null'), ('null', 'null', 'null', 'sake ikura roll', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] rustic [SSEP] [O] traditional japanese
+Quints:  [('null', 'null', 'null', 'rustic', 'null'), ('null', 'null', 'null', 'traditional japanese', 'null')]
+Prediction:  [O] beach [SSEP] [O] convenient
+Quints:  [('null', 'null', 'null', 'beach', 'null'), ('null', 'null', 'null', 'convenient', 'null')]
+Prediction:  [O] courteous [SSEP] [O] attentive
+Quints:  [('null', 'null', 'null', 'courteous', 'null'), ('null', 'null', 'null', 'attentive', 'null')]
+Prediction:  [O] mediocre
+Quints:  [('null', 'null', 'null', 'mediocre', 'null')]
+Prediction:  [O] abbreviated
+Quints:  [('null', 'null', 'null', 'abbreviated', 'null')]
+Prediction:  [O] helpful [SSEP] [O] flavor
+Quints:  [('null', 'null', 'null', 'helpful', 'null'), ('null', 'null', 'null', 'flavor', 'null')]
+Prediction:  [O] average [SSEP] [O] one-time customer tourists [SSEP]
+
+The opinion span for the first quadruple is "average", the implicit opinion span for the second quadruple (originally labeled NULL) is "one-time customer tourists", and the opinion span for the third quadruple is "average".
+Quints:  [('null', 'null', 'null', 'average', 'null'), ('null', 'null', 'null', 'one - time customer tourists', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] decent
+Quints:  [('null', 'null', 'null', 'decent', 'null')]
+Prediction:  [O] good
+Quints:  [('null', 'null', 'null', 'good', 'null')]
+Prediction:  [O] excellent [SSEP] [O] nice [SSEP] [O] expensive
+Quints:  [('null', 'null', 'null', 'excellent', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'expensive', 'null')]
+Prediction:  [O] loved [SSEP] [O] pumpkin ravioli [SSEP] [O] goat cheese gnocchi [SSEP] [O] filet mignon on top of spinach and mashed potatoes
+Quints:  [('null', 'null', 'null', 'loved', 'null'), ('null', 'null', 'null', 'pumpkin ravioli', 'null'), ('null', 'null', 'null', 'goat cheese gnocchi', 'null'), ('null', 'null', 'null', 'filet mignon on top of spinach and mashed potatoes', 'null')]
+Prediction:  [O] peaceful [SSEP] [O] relaxing
+Quints:  [('null', 'null', 'null', 'peaceful', 'null'), ('null', 'null', 'null', 'relaxing', 'null')]
+Prediction:  [O] best
+Quints:  [('null', 'null', 'null', 'best', 'null')]
+Prediction:  [O] favorite [SSEP] [O] chicken curry [SSEP] [O] chicken tikka masala
+Quints:  [('null', 'null', 'null', 'favorite', 'null'), ('null', 'null', 'null', 'chicken curry', 'null'), ('null', 'null', 'null', 'chicken tikka masala', 'null')]
+Prediction:  [O] excellent [SSEP] [O] also
+Quints:  [('null', 'null', 'null', 'excellent', 'null'), ('null', 'null', 'null', 'also', 'null')]
+Prediction:  [O] not ideal [SSEP] [O] comfortable [SSEP]
+
+The opinion span for the first quadruple is "not ideal
+Quints:  [('null', 'null', 'null', 'not ideal', 'null'), ('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great [SSEP] [O] never too crowded
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'never too crowded', 'null')]
+Prediction:  [O] food [SSEP] [O] not very good [SSEP]
+
+The opinion span for the first quadruple is "food", the implicit opinion span for the second quadruple (originally labeled NULL) is "not very good", and the opinion span for the third quadruple is "helpful".
+Quints:  [('null', 'null', 'null', 'food', 'null'), ('null', 'null', 'null', 'not very good', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] recommend [SSEP] [O] saag [SSEP] [O] paneer [SSEP] [O] korma
+Quints:  [('null', 'null', 'null', 'recommend', 'null'), ('null', 'null', 'null', 'saag', 'null'), ('null', 'null', 'null', 'paneer', 'null'), ('null', 'null', 'null', 'korma', 'null')]
+Prediction:  [O] appreciate
+Quints:  [('null', 'null', 'null', 'appreciate', 'null')]
+Prediction:  [O] nice [SSEP] [O] no spice [SSEP]
+
+The opinion span for the first quadruple is "nice", and the implicit opinion span for the second quadruple (originally labeled NULL) is "no spice".
+Quints:  [('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'no spice', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] enjoyed [SSEP]
+
+The opinion span for the quadruple is "enjoyed".
+Quints:  [('null', 'null', 'null', 'enjoyed', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] yummy [SSEP] [O] lamb korma [SSEP] [O] saag paneer [SSEP] [O] samosas [SSEP] [O] naan
+Quints:  [('null', 'null', 'null', 'yummy', 'null'), ('null', 'null', 'null', 'lamb korma', 'null'), ('null', 'null', 'null', 'saag paneer', 'null'), ('null', 'null', 'null', 'samosas', 'null'), ('null', 'null', 'null', 'naan', 'null')]
+Prediction:  [O] good [SSEP] [O] too mild
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'too mild', 'null')]
+Prediction:  [O] very friendly [SSEP] [O] knowledgeable [SSEP]
+
+The opinion span for the first quadruple is "very friendly", and the implicit opinion span for
+Quints:  [('null', 'null', 'null', 'very friendly', 'null'), ('null', 'null', 'null', 'knowledgeable', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good [SSEP] [O] normally find too dry [SSEP]
+
+The opinion span for the first quadruple is "good", and the implicit opinion span for the second quadruple (originally labeled NULL) is "normally find too dry".
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'normally find too dry', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] delicious [SSEP] [O] fajita salad [SSEP] [O] colorado [SSEP] [O] fajitas
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'fajita salad', 'null'), ('null', 'null', 'null', 'colorado', 'null'), ('null', 'null', 'null', 'fajitas', 'null')]
+Prediction:  [O] warm [SSEP] [O] cosy
+Quints:  [('null', 'null', 'null', 'warm', 'null'), ('null', 'null', 'null', 'cosy', 'null')]
+Prediction:  [O] private party [SSEP] [O] can't wait to celebrate my next birthday there
+Quints:  [('null', 'null', 'null', 'private party', 'null'), ('null', 'null', 'null', "can ' t wait to celebrate my next birthday there", 'null')]
+Running ACOS extend
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:33<00:33, 33.57s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 20.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 22.80s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 44304.47item/s]
+Running pipeline...
+Total output tokens: 149392
+Avg out tokens per prompt: 1493.92
+Prediction:  [O] helpful [SSEP] [O] friendly
+Quints:  [('null', 'null', 'null', 'helpful', 'null'), ('null', 'null', 'null', 'friendly', 'null')]
+Prediction:  [O] helpful [S
+Quints:  [('null', 'null', 'null', 'helpful [ S', 'null')]
+Prediction:  [O] NULL [SSEP] [O] the 2nd floor is a bit of a walk from the elevator
+Quints:  [('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'the 2nd floor is a bit of a walk from the elevator', 'null')]
+Prediction:  [O] comfortable [SSEP] [O] hotel was quiet [S
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'hotel was quiet [ S', 'null')]
+Prediction:  Opinion span: [O] delicious [SSEP] [O] comfortable
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'comfortable', 'null')]
+Prediction:  [O] the hotel was very nice but the location was terrible
+Quints:  [('null', 'null', 'null', 'the hotel was very nice but the location was terrible', 'null')]
+Prediction:  [O] not very good [SSEP] [O] great
+Quints:  [('null', 'null', 'null', 'not very good', 'null'), ('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] the service was good
+Quints:  [('null', 'null', 'null', 'the service was good', 'null')]
+Prediction:  [O] nice [SSEP] [O] great
+Quints:  [('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] great [SSEP] [O] price [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'price', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] terrible
+Quints:  [('null', 'null', 'null', 'terrible', 'null')]
+Prediction:  [O] NULL [SSEP
+Quints:  [('null', 'null', 'null', 'NULL [ SSEP', 'null')]
+Prediction:  [O] terrible [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'terrible', 'null'), ('null', 'null', 'null', '', 'null')]
+Prediction:  [
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] track pad [SSEP] [O] i also have to press the trackpad very hard for left click [SSEP] [O] i lost right click functionality on the track pad 2 days into my voyage with this thing
+Quints:  [('null', 'null', 'null', 'track pad', 'null'), ('null', 'null', 'null', 'i also have to press the trackpad very hard for left click', 'null'), ('null', 'null', 'null', 'i lost right click functionality on the track pad 2 days into my voyage with this thing', 'null')]
+Prediction:  [O] fine [SSEP] [O] use [SSEP] [O] until [SSEP] [O] i [SSEP] [O] tried
+Quints:  [('null', 'null', 'null', 'fine', 'null'), ('null', 'null', 'null', 'use', 'null'), ('null', 'null', 'null', 'until', 'null'), ('null', 'null', 'null', 'i', 'null'), ('null', 'null', 'null', 'tried', 'null')]
+Prediction:  [O] null [SSEP] [O] i didn't like the bed [SSEP] [O] didn't like the bed
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', "i didn ' t like the bed", 'null'), ('null', 'null', 'null', "didn ' t like the bed", 'null')]
+Prediction:  [O] delicious
+Quints:  [('null', 'null', 'null', 'delicious', 'null')]
+Prediction:  [O]n't work [SSEP] [O] tablet mode [S
+Quints:  [('null', 'null', 'null', "' t work", 'null'), ('null', 'null', 'null', 'tablet mode [ S', 'null')]
+Prediction:  Opinion span: [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] prompt [SSEP] [O] good [SSEP] [O] prompt
+Quints:  [('null', 'null', 'null', 'prompt', 'null'), ('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'prompt', 'null')]
+Prediction:  [O] delicious
+Quints:  [('null', 'null', 'null', 'delicious', 'null')]
+Prediction:  Opinion span: [O] helpful
+Quints:  [('null', 'null', 'null', 'helpful', 'null')]
+Prediction:  [O] the service was
+Quints:  [('null', 'null', 'null', 'the service was', 'null')]
+Prediction:  [O] very
+Quints:  [('null', 'null', 'null', 'very', 'null')]
+Prediction:  [O] big [SSEP
+Quints:  [('null', 'null', 'null', 'big [ SSEP', 'null')]
+Prediction:  [O] terrible [SSEP] [O] great [SSEP] [O] terrible
+Quints:  [('null', 'null', 'null', 'terrible', 'null'), ('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'terrible', 'null')]
+Prediction:  [O] called support [SSEP] [O] a second time [SSEP] [O] verifying some type of info [SSEP] [O] called google
+Quints:  [('null', 'null', 'null', 'called support', 'null'), ('null', 'null', 'null', 'a second time', 'null'), ('null', 'null', 'null', 'verifying some type of info', 'null'), ('null', 'null', 'null', 'called google', 'null')]
+Prediction:  [O] delicious [SSEP] [O] the service was very good [SSEP] [O] the food was delicious
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'the service was very good', 'null'), ('null', 'null', 'null', 'the food was delicious', 'null')]
+Prediction:  [O] nice [SSEP] [O] good [SSEP] [O] great
+Quints:  [('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] helpful
+Quints:  [('null', 'null', 'null', 'helpful', 'null')]
+Prediction:  [O] helpful [SSEP] [O] the front desk was very helpful.
+Quints:  [('null', 'null', 'null', 'helpful', 'null'), ('null', 'null', 'null', 'the front desk was very helpful .', 'null')]
+Prediction:  [O] null [SSEP] [O] shut down [SSEP] [O] unplug it [SSEP] [O] plug it back in [SSEP] [O] reboot
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'shut down', 'null'), ('null', 'null', 'null', 'unplug it', 'null'), ('null', 'null', 'null', 'plug it back in', 'null'), ('null', 'null', 'null', 'reboot', 'null')]
+Prediction:  [O] turning it on
+Quints:  [('null', 'null', 'null', 'turning it on', 'null')]
+Prediction:  [O] NULL [SSEP] [O] slow to turn on
+Quints:  [('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'slow to turn on', 'null')]
+Prediction:  [O] tasty [SSE
+Quints:  [('null', 'null', 'null', 'tasty [ SSE', 'null')]
+Prediction:  [O] terrible [SSEP] [O] cold
+Quints:  [('null', 'null', 'null', 'terrible', 'null'), ('null', 'null', 'null', 'cold', 'null')]
+Prediction:  [O] delicious [SSEP] [O] theater 2 blocks away [SSEP] [O] beautiful [END
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'theater 2 blocks away', 'null'), ('null', 'null', 'null', 'beautiful [ END', 'null')]
+Prediction:  [O] tasty [SSEP] [O] hot
+Quints:  [('null', 'null', 'null', 'tasty', 'null'), ('null', 'null', 'null', 'hot', 'null')]
+Prediction:  [O] nice
+Quints:  [('null', 'null', 'null', 'nice', 'null')]
+Prediction:  [O] slow
+Quints:  [('null', 'null', 'null', 'slow', 'null')]
+Prediction:  [O] dragon age
+Quints:  [('null', 'null', 'null', 'dragon age', 'null')]
+Prediction:  [O] poor
+Quints:  [('null', 'null', 'null', 'poor', 'null')]
+Prediction:  [O] terrible [SSEP] [O] the service
+Quints:  [('null', 'null', 'null', 'terrible', 'null'), ('null', 'null', 'null', 'the service', 'null')]
+Prediction:  [O] fine [SSEP] [O] laptop seems strangely slow
+Quints:  [('null', 'null', 'null', 'fine', 'null'), ('null', 'null', 'null', 'laptop seems strangely slow', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] 1st class [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', '1st class', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  Op
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] little dry [SSEP] [O] the cake was a little dry [SSEP] [O] null
+Quints:  [('null', 'null', 'null', 'little dry', 'null'), ('null', 'null', 'null', 'the cake was a little dry', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] processor [SSEP] [O] like [SSEP] [O] web cam sucks [SSEP] [O] poor resolution [SSEP] [O] caps lock [SSEP] [O] num lock [SSEP]
+Quints:  [('null', 'null', 'null', 'processor', 'null'), ('null', 'null', 'null', 'like', 'null'), ('null', 'null', 'null', 'web cam sucks', 'null'), ('null', 'null', 'null', 'poor resolution', 'null'), ('null', 'null', 'null', 'caps lock', 'null'), ('null', 'null', 'null', 'num lock', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  Opinion span: [O] perfect
+Quints:  [('null', 'null', 'null', 'perfect', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] comfortable [SSEP] [O] clean
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'clean', 'null')]
+Prediction:  [O] worst i have ever experienced [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'worst i have ever experienced', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] good
+Quints:  [('null', 'null', 'null', 'good', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] soft [SSEP] [O] comfortable
+Quints:  [('null', 'null', 'null', 'soft', 'null'), ('null', 'null', 'null', 'comfortable', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] null [SSEP]
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] average [SSEP] [O] good [SSEP] [O] food was average
+Quints:  [('null', 'null', 'null', 'average', 'null'), ('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'food was average', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] clean
+Quints:  [('null', 'null', 'null', 'clean', 'null')]
+Prediction:  [O] terrible
+Quints:  [('null', 'null', 'null', 'terrible', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] mediocre [SSEP] [O] the
+Quints:  [('null', 'null', 'null', 'mediocre', 'null'), ('null', 'null', 'null', 'the', 'null')]
+Prediction:  [O] nice [SSEP] [O] clean
+Quints:  [('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'clean', 'null')]
+Prediction:  [O] tasty [SSEP] [O] fast
+Quints:  [('null', 'null', 'null', 'tasty', 'null'), ('null', 'null', 'null', 'fast', 'null')]
+Prediction:  [O] good
+Quints:  [('null', 'null', 'null', 'good', 'null')]
+Prediction:  [O] NULL [SSEP] [O] NULL [SSE
+Quints:  [('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL [ SSE', 'null')]
+Prediction:  [O] null [SSEP] [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] i like [SSEP] [O] time out [SSEP] [O] keyboard lights up
+Quints:  [('null', 'null', 'null', 'i like', 'null'), ('null', 'null', 'null', 'time out', 'null'), ('null', 'null', 'null', 'keyboard lights up', 'null')]
+Prediction:  [O] the room was clean [SSEP] [O] the bed was comfortable
+Quints:  [('null', 'null', 'null', 'the room was clean', 'null'), ('null', 'null', 'null', 'the bed was comfortable', 'null')]
+Prediction:  [O] raw speed [SSEP] [O] durability [SSEP] [O] energy efficiency
+Quints:  [('null', 'null', 'null', 'raw speed', 'null'), ('null', 'null', 'null', 'durability', 'null'), ('null', 'null', 'null', 'energy efficiency', 'null')]
+Prediction:  [O] there [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'there', 'null'), ('null', 'null', 'null', '', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] very good [SSEP] [O] beautiful
+Quints:  [('null', 'null', 'null', 'very good', 'null'), ('null', 'null', 'null', 'beautiful', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] the staff was friendly [SSEP] [O] the food was delicious [END
+Quints:  [('null', 'null', 'null', 'the staff was friendly', 'null'), ('null', 'null', 'null', 'the food was delicious [ END', 'null')]
+Prediction:  [O] very good [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'very good', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] easy [SSEP] [O] comfortable
+Quints:  [('null', 'null', 'null', 'easy', 'null'), ('null', 'null', 'null', 'comfortable', 'null')]
+Prediction:  [O] i have been using it for 3 weeks
+Quints:  [('null', 'null', 'null', 'i have been using it for 3 weeks', 'null')]
+Prediction:  [O] nice
+Quints:  [('null', 'null', 'null', 'nice', 'null')]
+Prediction:  [O] 23 % used up
+Quints:  [('null', 'null', 'null', '23 % used up', 'null')]
+Prediction:  [O] very good
+Quints:  [('null', 'null', 'null', 'very good', 'null')]
+Prediction:  [O] friendly
+Quints:  [('null', 'null', 'null', 'friendly', 'null')]
+Prediction:  [O] i think [SSEP] [O] love [SSEP] [O] this is a great app
+Quints:  [('null', 'null', 'null', 'i think', 'null'), ('null', 'null', 'null', 'love', 'null'), ('null', 'null', 'null', 'this is a great app', 'null')]
+Prediction:  [O] not fancy [SSEP] [O] good value [SSEP] [O] fast [SSEP] [O] trouble - free
+Quints:  [('null', 'null', 'null', 'not fancy', 'null'), ('null', 'null', 'null', 'good value', 'null'), ('null', 'null', 'null', 'fast', 'null'), ('null', 'null', 'null', 'trouble - free', 'null')]
+Prediction:  [O] small [SSEP] [O] bags [SSEP] [O] hard
+Quints:  [('null', 'null', 'null', 'small', 'null'), ('null', 'null', 'null', 'bags', 'null'), ('null', 'null', 'null', 'hard', 'null')]
+Prediction:  [O] amazing [SSEP] [O] the cake was amazing
+Quints:  [('null', 'null', 'null', 'amazing', 'null'), ('null', 'null', 'null', 'the cake was amazing', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] faster [SSEP] [O] my old one
+Quints:  [('null', 'null', 'null', 'faster', 'null'), ('null', 'null', 'null', 'my old one', 'null')]
+Prediction:  [O] it's not a gaming laptop even it can do some more casual gaming
+Quints:  [('null', 'null', 'null', "it ' s not a gaming laptop even it can do some more casual gaming", 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] very good [SSEP] [O] performance
+Quints:  [('null', 'null', 'null', 'very good', 'null'), ('null', 'null', 'null', 'performance', 'null')]
+Prediction:  [O] great [SSEP] [O] we had a great time at the hotel
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'we had a great time at the hotel', 'null')]
+Prediction:  [O] it is a little hard to get to [SSEP] [O] the food is good
+Quints:  [('null', 'null', 'null', 'it is a little hard to get to', 'null'), ('null', 'null', 'null', 'the food is good', 'null')]
+Prediction:  [O] very [SSEP] [O] hotel [SSEP] [O] cleanliness
+Quints:  [('null', 'null', 'null', 'very', 'null'), ('null', 'null', 'null', 'hotel', 'null'), ('null', 'null', 'null', 'cleanliness', 'null')]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:33<00:33, 33.25s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 20.76s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:45<00:00, 22.64s/it]
+Loading dataset...
+Processing dataset...
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 44351.32item/s]
+Running pipeline...
+Total output tokens: 119776
+Avg out tokens per prompt: 1197.76
+Prediction:  [O] good [SSEP] [O] slow
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'slow', 'null')]
+Prediction:  [O] difficult [SSEP] [O] small
+Quints:  [('null', 'null', 'null', 'difficult', 'null'), ('null', 'null', 'null', 'small', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] difficulty
+Quints:  [('null', 'null', 'null', 'difficulty', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] good [SSEP] [O] overcooked
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'overcooked', 'null')]
+Prediction:  [O] suck [SSEP] [O] badly
+Quints:  [('null', 'null', 'null', 'suck', 'null'), ('null', 'null', 'null', 'badly', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] rarely
+Quints:  [('null', 'null', 'null', 'rarely', 'null')]
+Prediction:  [O] great [SSEP]
+
+The opinion span for the quadruple is "great".
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] glitchy [SSEP] [O] barely usable
+Quints:  [('null', 'null', 'null', 'glitchy', 'null'), ('null', 'null', 'null', 'barely usable', 'null')]
+Prediction:  [O] failed [SSEP] [O] consistently [SSEP] [O] i ordered one [SSEP]
+
+The opinion span for the first quadruple is "failed", the implicit opinion span for the second quadruple (originally labeled NULL) is "consistently", and the opinion span for the third quadruple is "i ordered one".
+Quints:  [('null', 'null', 'null', 'failed', 'null'), ('null', 'null', 'null', 'consistently', 'null'), ('null', 'null', 'null', 'i ordered one', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] unproductive [SSEP] [O] typing an entire sentence (or more) on the wrong keys [SSEP] [O] meeting notes
+Quints:  [('null', 'null', 'null', 'unproductive', 'null'), ('null', 'null', 'null', 'typing an entire sentence ( or more ) on the wrong keys', 'null'), ('null', 'null', 'null', 'meeting notes', 'null')]
+Prediction:  [O] worse [SSEP] [O] new device [SSEP] [O] question
+Quints:  [('null', 'null', 'null', 'worse', 'null'), ('null', 'null', 'null', 'new device', 'null'), ('null', 'null', 'null', 'question', 'null')]
+Prediction:  [O] lost right click functionality [SSEP] [O] had to press the trackpad hard for left click [SSEP] [O] track pad [SSEP]
+
+The opinion span for the first quadruple is "lost right click functionality", the implicit opinion span for the second quadruple (originally labeled NULL) is "had to press the trackpad hard for left click", and the opinion span for the third quadruple is "track pad".
+Quints:  [('null', 'null', 'null', 'lost right click functionality', 'null'), ('null', 'null', 'null', 'had to press the trackpad hard for left click', 'null'), ('null', 'null', 'null', 'track pad', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] defect
+Quints:  [('null', 'null', 'null', 'defect', 'null')]
+Prediction:  [O] comfortable [SSEP] [O] not convenient
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'not convenient', 'null')]
+Prediction:  [O] decent
+Quints:  [('null', 'null', 'null', 'decent', 'null')]
+Prediction:  [O] comfortable [SSEP] [O] clean and comfortable
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'clean and comfortable', 'null')]
+Prediction:  [O] slows down [SSEP] [O] speeds back up [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'slows down', 'null'), ('null', 'null', 'null', 'speeds back up', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] regret [SSEP]
+
+The opinion span for the quadruple is "regret".
+Quints:  [('null', 'null', 'null', 'regret', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null [SSEP]
+
+The opinion span for the quadruple is "null".
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great [SSEP] [O] horrible
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'horrible', 'null')]
+Prediction:  [O] difficulty [SSEP] [O] smooth
+Quints:  [('null', 'null', 'null', 'difficulty', 'null'), ('null', 'null', 'null', 'smooth', 'null')]
+Prediction:  [O] terrible
+Quints:  [('null', 'null', 'null', 'terrible', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] helpful [SSEP]
+
+The opinion span for the quadruple is "helpful".
+Quints:  [('null', 'null', 'null', 'helpful', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] 30mpg [SSEP] [O] new engine [SSEP]
+Quints:  [('null', 'null', 'null', '30mpg', 'null'), ('null', 'null', 'null', 'new engine', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] screen flashes for a second every 30 seconds or so [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'screen flashes for a second every 30 seconds or so', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] great [SSEP] [O] service was great [
+Quints:  [('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'service was great [', 'null')]
+Prediction:  [O] nice
+Quints:  [('null', 'null', 'null', 'nice', 'null')]
+Prediction:  [O] fine
+Quints:  [('null', 'null', 'null', 'fine', 'null')]
+Prediction:  [O] unhelpful [SSEP] [O] nice
+Quints:  [('null', 'null', 'null', 'unhelpful', 'null'), ('null', 'null', 'null', 'nice', 'null')]
+Prediction:  [O] slow
+Quints:  [('null', 'null', 'null', 'slow', 'null')]
+Prediction:  [O] terrible
+Quints:  [('null', 'null', 'null', 'terrible', 'null')]
+Prediction:  [O] pain [SSEP] [O] typing in low light [SSEP]
+Quints:  [('null', 'null', 'null', 'pain', 'null'), ('null', 'null', 'null', 'typing in low light', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] disappointed [SSEP] [O] slow
+Quints:  [('null', 'null', 'null', 'disappointed', 'null'), ('null', 'null', 'null', 'slow', 'null')]
+Prediction:  [O] excellent [SSEP] [O] delicious
+Quints:  [('null', 'null', 'null', 'excellent', 'null'), ('null', 'null', 'null', 'delicious', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] crazy [SSEP] [O] worse
+Quints:  [('null', 'null', 'null', 'crazy', 'null'), ('null', 'null', 'null', 'worse', 'null')]
+Prediction:  [O] solid
+Quints:  [('null', 'null', 'null', 'solid', 'null')]
+Prediction:  [O] comfortable [SSEP]
+
+The implicit opinion span for the third quadruple (originally labeled NULL) is "comfortable".
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null [SSEP]
+
+The opinion span for the quadruple is "null", as the sentiment is neutral and there is no explicit opinion expressed in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] like [SSEP] [O] web cam sucks [SSEP] [O] poor [SSEP]
+
+The opinion span for the first quadruple is "like", the implicit opinion span for the second quadruple (originally labeled NULL) is "web cam sucks", and the opinion span for the third quadruple is "poor".
+Quints:  [('null', 'null', 'null', 'like', 'null'), ('null', 'null', 'null', 'web cam sucks', 'null'), ('null', 'null', 'null', 'poor', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] lightweight
+Quints:  [('null', 'null', 'null', 'lightweight', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] never dropped it [SSEP] [O] brand new out of the box
+Quints:  [('null', 'null', 'null', 'never dropped it', 'null'), ('null', 'null', 'null', 'brand new out of the box', 'null')]
+Prediction:  Opinion span: NULL
+
+The opinion span for the review is NULL because there is no explicit opinion expressed in the review.
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] available
+Quints:  [('null', 'null', 'null', 'available', 'null')]
+Prediction:  [O] available
+Quints:  [('null', 'null', 'null', 'available', 'null')]
+Prediction:  [O] delicious [SSEP] [O] fast delivery [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'fast delivery', 'null'), ('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] functional [SSEP] [O] not the greatest
+Quints:  [('null', 'null', 'null', 'functional', 'null'), ('null', 'null', 'null', 'not the greatest', 'null')]
+Prediction:  [O] comfortable [SSEP] [O] cleanliness [S] positive
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'positive', 'cleanliness', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] not convenient [SSEP] [O] convenience
+Quints:  [('null', 'null', 'null', 'not convenient', 'null'), ('null', 'null', 'null', 'convenience', 'null')]
+Prediction:  [O] null [SSEP] [O] windows 10 software [SSEP] [O] asus notebook
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'windows 10 software', 'null'), ('null', 'null', 'null', 'asus notebook', 'null')]
+Prediction:  [O] bad [SSEP] [O] reading all the bad reviews [SSEP] [O] sent it back for a refund
+Quints:  [('null', 'null', 'null', 'bad', 'null'), ('null', 'null', 'null', 'reading all the bad reviews', 'null'), ('null', 'null', 'null', 'sent it back for a refund', 'null')]
+Prediction:  [O] good [SSEP] [O] not that great
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'not that great', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] never disappointed [SSEP] [O] loyal customer
+Quints:  [('null', 'null', 'null', 'never disappointed', 'null'), ('null', 'null', 'null', 'loyal customer', 'null')]
+Prediction:  [O] null [SSEP]
+
+The opinion span for the quadruple is NULL.
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] big [SSEP] [O] ease [SSEP] [O] light
+Quints:  [('null', 'null', 'null', 'big', 'null'), ('null', 'null', 'null', 'ease', 'null'), ('null', 'null', 'null', 'light', 'null')]
+Prediction:  [O] good [SSEP]
+
+The opinion span for the quadruple is "good".
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] null [SSEP] [O] 10 seconds [SSEP] [O] 2-3 seconds
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', '10 seconds', 'null'), ('null', 'null', 'null', '2 - 3 seconds', 'null')]
+Prediction:  [O] like
+Quints:  [('null', 'null', 'null', 'like', 'null')]
+Prediction:  [O] well
+Quints:  [('null', 'null', 'null', 'well', 'null')]
+Prediction:  [O] terrible [SSEP] [O] enemy
+Quints:  [('null', 'null', 'null', 'terrible', 'null'), ('null', 'null', 'null', 'enemy', 'null')]
+Prediction:  [O] decent [SSEP] [O] available
+Quints:  [('null', 'null', 'null', 'decent', 'null'), ('null', 'null', 'null', 'available', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] hot [SSEP] [O] laptop runs hot [SSEP]
+Quints:  [('null', 'null', 'null', 'hot', 'null'), ('null', 'null', 'null', 'laptop runs hot', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] delicious [SSEP] [O] friendly
+Quints:  [('null', 'null', 'null', 'delicious', 'null'), ('null', 'null', 'null', 'friendly', 'null')]
+Prediction:  [O] NULL
+Quints:  [('null', 'null', 'null', 'NULL', 'null')]
+Prediction:  [O] upgradable
+Quints:  [('null', 'null', 'null', 'upgradable', 'null')]
+Prediction:  [O] decent
+Quints:  [('null', 'null', 'null', 'decent', 'null')]
+Prediction:  [O] pleasantly [SSEP] [O] unit [SSEP] [O] applications [SSEP]
+Quints:  [('null', 'null', 'null', 'pleasantly', 'null'), ('null', 'null', 'null', 'unit', 'null'), ('null', 'null', 'null', 'applications', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] best
+Quints:  [('null', 'null', 'null', 'best', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] annoying [SSEP] [O] there doesn't seem to be a way to change this
+Quints:  [('null', 'null', 'null', 'annoying', 'null'), ('null', 'null', 'null', "there doesn ' t seem to be a way to change this", 'null')]
+Prediction:  [O] upgradeable
+Quints:  [('null', 'null', 'null', 'upgradeable', 'null')]
+Prediction:  [O] love [SSEP] [O] ability to disable touchpad from keyboard
+Quints:  [('null', 'null', 'null', 'love', 'null'), ('null', 'null', 'null', 'ability to disable touchpad from keyboard', 'null')]
+Prediction:  [O] not fancy [SSEP] [O] good [SSEP] [O] fast [SSEP] [O] trouble - free
+Quints:  [('null', 'null', 'null', 'not fancy', 'null'), ('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'fast', 'null'), ('null', 'null', 'null', 'trouble - free', 'null')]
+Prediction:  [O] useful
+Quints:  [('null', 'null', 'null', 'useful', 'null')]
+Prediction:  [O] upgrade [SSEP] [O] ram [SSEP] [O] memory#usability
+Quints:  [('null', 'null', 'null', 'upgrade', 'null'), ('null', 'null', 'null', 'ram', 'null'), ('null', 'null', 'null', 'memory # usability', 'null')]
+Prediction:  [O] null
+Quints:  [('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] 10 to 15 seconds [SSEP] [O] love
+Quints:  [('null', 'null', 'null', '10 to 15 seconds', 'null'), ('null', 'null', 'null', 'love', 'null')]
+Prediction:  [O] null [SSEP] [O] casual gaming [SSEP]
+
+The opinion span for the first quadruple is "NULL", and the implicit opinion span for the second quadruple (originally labeled NULL) is "casual gaming".
+Quints:  [('null', 'null', 'null', 'null', 'null'), ('null', 'null', 'null', 'casual gaming', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] fast [SSEP] [O] it's [SSEP]
+
+The opinion span for the quadruple is "fast".
+Quints:  [('null', 'null', 'null', 'fast', 'null'), ('null', 'null', 'null', "it ' s", 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] impressed
+Quints:  [('null', 'null', 'null', 'impressed', 'null')]
+Prediction:  [O] good [SSEP]
+
+The opinion span for the quadruple is "good".
+Quints:  [('null', 'null', 'null', 'good', 'null'), ('null', 'null', 'null', 'null', 'null')]
+Prediction:  [O] great
+Quints:  [('null', 'null', 'null', 'great', 'null')]
+Prediction:  [O] decent [SSEP] [O] not great
+Quints:  [('null', 'null', 'null', 'decent', 'null'), ('null', 'null', 'null', 'not great', 'null')]
+Prediction:  [O] like
+Quints:  [('null', 'null', 'null', 'like', 'null')]
