@@ -13,3 +13,6 @@
 [submodule "Shoes-ACOSI"]
 	path = Shoes-ACOSI
 	url = git@github.com:qwzhaox/Shoes-ACOSI.git
+[submodule "GEN_SCL_NAT_acosi"]
+	path = GEN_SCL_NAT_acosi
+	url = git@github.com:qwzhaox/GEN_SCL_NAT_acosi.git
