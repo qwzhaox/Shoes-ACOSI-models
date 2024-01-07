@@ -1,207 +1,0 @@
-~/src/absa/EECS595Project ~/src/absa
-Running ACOS extend
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:45<01:30, 45.06s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:26<00:42, 42.93s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:52<00:00, 35.00s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:52<00:00, 37.35s/it]
-Loading dataset...
-Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 39074.94item/s]
-Token indices sequence length is longer than the specified maximum sequence length for this model (1373 > 1024). Running this sequence through the model will result in indexing errors
-Running pipeline...
-Traceback (most recent call last):
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 90, in <module>
-    main(args)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 78, in main
-    opinion_spans, response_key = run_pipeline(
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/pipeline.py", line 110, in run_pipeline
-    output = model_pipe(prompts, generation_config=gen_config)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 208, in __call__
-    return super().__call__(text_inputs, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1121, in __call__
-    outputs = list(final_iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 124, in __next__
-    item = next(self.iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 125, in __next__
-    processed = self.infer(item, **self.params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1046, in forward
-    model_outputs = self._forward(model_inputs, **forward_params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 271, in _forward
-    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1719, in generate
-    return self.sample(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2801, in sample
-    outputs = self(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1052, in forward
-    logits = self.lm_head(hidden_states)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 159, in new_forward
-    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 286, in pre_forward
-    set_module_tensor_to_device(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 317, in set_module_tensor_to_device
-    new_value = value.to(device)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 626.00 MiB. GPU 0 has a total capacty of 44.40 GiB of which 623.25 MiB is free. Including non-PyTorch memory, this process has 43.79 GiB memory in use. Of the allocated memory 41.79 GiB is allocated by PyTorch, and 857.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:41<01:22, 41.15s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:26<00:43, 43.81s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:52<00:00, 35.73s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:52<00:00, 37.64s/it]
-Loading dataset...
-Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 38696.41item/s]
-Token indices sequence length is longer than the specified maximum sequence length for this model (1373 > 1024). Running this sequence through the model will result in indexing errors
-Running pipeline...
-Traceback (most recent call last):
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 90, in <module>
-    main(args)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 78, in main
-    opinion_spans, response_key = run_pipeline(
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/pipeline.py", line 110, in run_pipeline
-    output = model_pipe(prompts, generation_config=gen_config)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 208, in __call__
-    return super().__call__(text_inputs, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1121, in __call__
-    outputs = list(final_iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 124, in __next__
-    item = next(self.iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 125, in __next__
-    processed = self.infer(item, **self.params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1046, in forward
-    model_outputs = self._forward(model_inputs, **forward_params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 271, in _forward
-    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1719, in generate
-    return self.sample(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2801, in sample
-    outputs = self(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1052, in forward
-    logits = self.lm_head(hidden_states)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 159, in new_forward
-    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 286, in pre_forward
-    set_module_tensor_to_device(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 317, in set_module_tensor_to_device
-    new_value = value.to(device)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 626.00 MiB. GPU 0 has a total capacty of 44.40 GiB of which 525.25 MiB is free. Including non-PyTorch memory, this process has 43.88 GiB memory in use. Of the allocated memory 42.08 GiB is allocated by PyTorch, and 650.48 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
-Running ACOS extend
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:43<01:26, 43.31s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:29<00:45, 45.13s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:54<00:00, 35.75s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:54<00:00, 38.10s/it]
-Loading dataset...
-Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 46525.83item/s]
-Token indices sequence length is longer than the specified maximum sequence length for this model (1390 > 1024). Running this sequence through the model will result in indexing errors
-Running pipeline...
-Traceback (most recent call last):
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 90, in <module>
-    main(args)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 78, in main
-    opinion_spans, response_key = run_pipeline(
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/pipeline.py", line 110, in run_pipeline
-    output = model_pipe(prompts, generation_config=gen_config)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 208, in __call__
-    return super().__call__(text_inputs, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1121, in __call__
-    outputs = list(final_iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 124, in __next__
-    item = next(self.iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 125, in __next__
-    processed = self.infer(item, **self.params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1046, in forward
-    model_outputs = self._forward(model_inputs, **forward_params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 271, in _forward
-    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1719, in generate
-    return self.sample(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2801, in sample
-    outputs = self(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1052, in forward
-    logits = self.lm_head(hidden_states)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 159, in new_forward
-    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 286, in pre_forward
-    set_module_tensor_to_device(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 317, in set_module_tensor_to_device
-    new_value = value.to(device)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 626.00 MiB. GPU 0 has a total capacty of 44.40 GiB of which 625.25 MiB is free. Including non-PyTorch memory, this process has 43.79 GiB memory in use. Of the allocated memory 41.79 GiB is allocated by PyTorch, and 855.37 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:44<01:29, 44.78s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:27<00:43, 43.74s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:53<00:00, 35.42s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:53<00:00, 37.77s/it]
-Loading dataset...
-Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 47430.78item/s]
-Token indices sequence length is longer than the specified maximum sequence length for this model (1390 > 1024). Running this sequence through the model will result in indexing errors
-Running pipeline...
-Traceback (most recent call last):
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 90, in <module>
-    main(args)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 78, in main
-    opinion_spans, response_key = run_pipeline(
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/pipeline.py", line 110, in run_pipeline
-    output = model_pipe(prompts, generation_config=gen_config)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 208, in __call__
-    return super().__call__(text_inputs, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1121, in __call__
-    outputs = list(final_iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 124, in __next__
-    item = next(self.iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 125, in __next__
-    processed = self.infer(item, **self.params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1046, in forward
-    model_outputs = self._forward(model_inputs, **forward_params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 271, in _forward
-    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1719, in generate
-    return self.sample(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2801, in sample
-    outputs = self(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1052, in forward
-    logits = self.lm_head(hidden_states)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 159, in new_forward
-    args, kwargs = module._hf_hook.pre_forward(module, *args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 286, in pre_forward
-    set_module_tensor_to_device(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/utils/modeling.py", line 317, in set_module_tensor_to_device
-    new_value = value.to(device)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 626.00 MiB. GPU 0 has a total capacty of 44.40 GiB of which 615.25 MiB is free. Including non-PyTorch memory, this process has 43.80 GiB memory in use. Of the allocated memory 41.87 GiB is allocated by PyTorch, and 783.01 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

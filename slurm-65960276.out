@@ -1,124 +1,0 @@
-~/src/absa/EECS595Project ~/src/absa
-Running ACOS extract
-Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 38568.31item/s]
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:30<07:04, 30.30s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:00<06:35, 30.46s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:32<06:11, 30.97s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:02<05:37, 30.69s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:32<05:04, 30.41s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:01<04:29, 30.00s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:32<04:02, 30.30s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:02<03:31, 30.25s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:35<03:05, 30.86s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:06<02:35, 31.02s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:37<02:04, 31.07s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:08<01:32, 30.91s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:39<01:01, 30.99s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:09<00:30, 30.69s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:10<00:00, 21.92s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:10<00:00, 28.73s/it]
-Running pipeline...
-Traceback (most recent call last):
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extract.py", line 90, in <module>
-    main(args)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extract.py", line 78, in main
-    output, response_key = run_pipeline(
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/pipeline.py", line 114, in run_pipeline
-    output = model_pipe(prompts, generation_config=gen_config)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 208, in __call__
-    return super().__call__(text_inputs, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1121, in __call__
-    outputs = list(final_iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 124, in __next__
-    item = next(self.iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 125, in __next__
-    processed = self.infer(item, **self.params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1046, in forward
-    model_outputs = self._forward(model_inputs, **forward_params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 271, in _forward
-    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1719, in generate
-    return self.sample(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2801, in sample
-    outputs = self(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1034, in forward
-    outputs = self.model(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 922, in forward
-    layer_outputs = decoder_layer(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 672, in forward
-    hidden_states, self_attn_weights, present_key_value = self.self_attn(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 390, in forward
-    attn_weights = torch.matmul(query_states, key_states.transpose(2, 3)) / math.sqrt(self.head_dim)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.83 GiB. GPU 1 has a total capacty of 44.40 GiB of which 1.69 GiB is free. Including non-PyTorch memory, this process has 42.70 GiB memory in use. Of the allocated memory 38.67 GiB is allocated by PyTorch, and 2.86 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
-Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 38875.74item/s]
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:31<07:15, 31.10s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:03<06:52, 31.74s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:33<06:12, 31.06s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:03<05:35, 30.54s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:31<04:58, 29.87s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:01<04:28, 29.79s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:32<04:00, 30.01s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:01<03:29, 29.86s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:30<02:58, 29.71s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:00<02:28, 29.64s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:30<01:58, 29.62s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:00<01:29, 29.91s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:31<01:00, 30.17s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [06:59<00:29, 29.68s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:01<00:00, 21.19s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:01<00:00, 28.10s/it]
-Running pipeline...
-Traceback (most recent call last):
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extract.py", line 90, in <module>
-    main(args)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extract.py", line 78, in main
-    output, response_key = run_pipeline(
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/pipeline.py", line 114, in run_pipeline
-    output = model_pipe(prompts, generation_config=gen_config)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 208, in __call__
-    return super().__call__(text_inputs, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1121, in __call__
-    outputs = list(final_iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 124, in __next__
-    item = next(self.iterator)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 125, in __next__
-    processed = self.infer(item, **self.params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1046, in forward
-    model_outputs = self._forward(model_inputs, **forward_params)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 271, in _forward
-    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1719, in generate
-    return self.sample(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2801, in sample
-    outputs = self(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1034, in forward
-    outputs = self.model(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 922, in forward
-    layer_outputs = decoder_layer(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 672, in forward
-    hidden_states, self_attn_weights, present_key_value = self.self_attn(
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
-  File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 390, in forward
-    attn_weights = torch.matmul(query_states, key_states.transpose(2, 3)) / math.sqrt(self.head_dim)
-torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.83 GiB. GPU 1 has a total capacty of 44.40 GiB of which 1.69 GiB is free. Including non-PyTorch memory, this process has 42.70 GiB memory in use. Of the allocated memory 38.67 GiB is allocated by PyTorch, and 2.86 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

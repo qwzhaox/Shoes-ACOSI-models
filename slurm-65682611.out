@@ -1,48 +1,0 @@
-~/src/absa/EECS595Project ~/src/absa
-Running ACOS extend
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:36<00:36, 36.72s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:49<00:00, 22.47s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:49<00:00, 24.60s/it]
-Loading dataset...
-Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37101.32item/s]
-Token indices sequence length is longer than the specified maximum sequence length for this model (1373 > 1024). Running this sequence through the model will result in indexing errors
-Running pipeline...
-Total output tokens: 150182
-Avg out tokens per prompt: 1501.82
-Traceback (most recent call last):
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 90, in <module>
-    main(args)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 81, in main
-    formatted_output = format_output(opinion_spans, response_key, response_head)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/utils.py", line 156, in format_output
-    prediction = clean_output(out, response_key, response_head)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/utils.py", line 56, in clean_output
-    prediction = prediction.split(response_head)[MODEL_RESPONSE].strip()
-IndexError: list index out of range
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:35<00:35, 35.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:48<00:00, 22.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:48<00:00, 24.14s/it]
-Loading dataset...
-Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37242.98item/s]
-Token indices sequence length is longer than the specified maximum sequence length for this model (1373 > 1024). Running this sequence through the model will result in indexing errors
-Running pipeline...
-Total output tokens: 120457
-Avg out tokens per prompt: 1204.57
-Traceback (most recent call last):
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 90, in <module>
-    main(args)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extend.py", line 81, in main
-    formatted_output = format_output(opinion_spans, response_key, response_head)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/utils.py", line 156, in format_output
-    prediction = clean_output(out, response_key, response_head)
-  File "/home/qwzhao/src/absa/EECS595Project/scripts/utils.py", line 56, in clean_output
-    prediction = prediction.split(response_head)[MODEL_RESPONSE].strip()
-IndexError: list index out of range
-Running ACOS extend
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:35<00:35, 35.62s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:48<00:00, 21.99s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:48<00:00, 24.03s/it]
-Loading dataset...
-Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 42961.22item/s]
-Token indices sequence length is longer than the specified maximum sequence length for this model (1390 > 1024). Running this sequence through the model will result in indexing errors
-slurmstepd: error: *** JOB 65682611 ON gl1509 CANCELLED AT 2023-11-28T06:26:10 DUE TO TIME LIMIT ***
