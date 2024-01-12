@@ -6,7 +6,7 @@
 #SBATCH --cpus-per-gpu=4
 #SBATCH --nodes=1 
 #SBATCH --mem-per-cpu=2800m
-#SBATCH --account=eecs595f23_class
+#SBATCH --account=wangluxy1
 #SBATCH --mail-user=qwzhao@umich.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --job-name=acos_extend_small
@@ -16,4 +16,4 @@ pushd /home/qwzhao/src/absa/EECS595Project
 
 source env/bin/activate
 
-bash scripts/bash/acos_extend/small.sh
+bash scripts/bash/run.sh -t acos-extend -m llama-2 -s small

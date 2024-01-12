@@ -16,4 +16,4 @@ pushd /home/qwzhao/src/absa/EECS595Project
 
 source env/bin/activate
 
-bash scripts/bash/acosi_extract/small.sh
+bash scripts/bash/run.sh -t acosi-extract -m llama-2 -s small

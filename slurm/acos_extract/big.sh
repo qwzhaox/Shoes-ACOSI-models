@@ -16,4 +16,4 @@ pushd /home/qwzhao/src/absa/EECS595Project
 
 source env/bin/activate
 
-bash scripts/bash/acos_extract/big.sh
+bash scripts/bash/run.sh -t acos-extract -m llama-2 -s big

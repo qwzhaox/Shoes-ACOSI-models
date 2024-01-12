@@ -16,4 +16,4 @@ pushd /home/qwzhao/src/absa/EECS595Project
 
 source env/bin/activate
 
-bash scripts/bash/acos_extend/big.sh
+bash scripts/bash/run.sh -t acos-extend -m llama-2 -s big
