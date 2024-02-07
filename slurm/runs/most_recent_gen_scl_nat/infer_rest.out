@@ -1,0 +1,49 @@
+~/src/absa/GEN_SCL_NAT_acosi ~/src/absa
+[rank: 0] Global seed set to 123
+/home/qwzhao/.conda/envs/gen_scl_nat_env/lib/python3.9/site-packages/torch/utils/data/dataloader.py:554: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+restaurant_output
+Sentiment distribution
+Counter({2: 928, 0: 433, 3: 123, 1: 46})
+Here is an example (from the train set):
+Input : judging from previous posts this used to be a good place, but not any longer.
+tensor([    3, 24331,    45,  1767,  3489,    48,   261,    12,    36,     3,
+            9,   207,   286,     3,     6,    68,    59,   136,  1200,     3,
+            5,     1,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
+            0,     0,     0,     0,     0,     0,     0,     0])
+Output: the restaurant overall | THE place IS not any longer | negative
+tensor([   8, 2062, 1879, 1820, 1853,  286, 6827,   59,  136, 1200, 1820, 2841,
+           1,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+           0,    0,    0,    0,    0,    0,    0,    0])
+
+****** Conduct inference on trained checkpoint ******
+Loading trained model from models/GEN_SCL_NAT-RESTAURANT
+
+Sentiment distribution
+Counter({2: 387, 0: 131, 3: 40, 1: 25})
+  0%|          | 0/19 [00:00<?, ?it/s]  5%|▌         | 1/19 [00:48<14:33, 48.53s/it] 11%|█         | 2/19 [00:52<06:16, 22.16s/it] 16%|█▌        | 3/19 [00:57<03:54, 14.63s/it] 21%|██        | 4/19 [01:03<02:43, 10.93s/it] 26%|██▋       | 5/19 [01:07<02:00,  8.61s/it] 32%|███▏      | 6/19 [01:12<01:35,  7.36s/it] 37%|███▋      | 7/19 [01:20<01:30,  7.53s/it] 42%|████▏     | 8/19 [01:25<01:13,  6.72s/it] 47%|████▋     | 9/19 [01:31<01:04,  6.48s/it] 53%|█████▎    | 10/19 [01:35<00:52,  5.81s/it] 58%|█████▊    | 11/19 [01:40<00:43,  5.42s/it] 63%|██████▎   | 12/19 [01:46<00:39,  5.60s/it] 68%|██████▊   | 13/19 [01:49<00:28,  4.80s/it] 74%|███████▎  | 14/19 [01:53<00:22,  4.53s/it] 79%|███████▉  | 15/19 [01:56<00:17,  4.26s/it] 84%|████████▍ | 16/19 [01:59<00:11,  3.90s/it] 89%|████████▉ | 17/19 [02:03<00:07,  3.84s/it] 95%|█████████▍| 18/19 [02:06<00:03,  3.67s/it]100%|██████████| 19/19 [02:08<00:00,  3.06s/it]100%|██████████| 19/19 [02:08<00:00,  6.76s/it]
+the food styles and options | THE it IS negative
+the
+the food quality | THE sea ur
+the food quality | THE food IS positive
+
+Results:
+number of gold spans: 901, predicted spans: 889, hit: 562
+{'precision': 0.6321709786276716, 'recall': 0.6237513873473918, 'f1': 0.6279329608938548}
