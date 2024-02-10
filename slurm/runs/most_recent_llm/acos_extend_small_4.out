@@ -1,10 +1,16 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Running ACOS extend
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:57<00:57, 57.98s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:18<00:00, 35.96s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:18<00:00, 39.27s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:57<00:57, 57.98s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:18<00:00, 35.96s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:18<00:00, 39.27s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37382.39item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 37382.39item/s]
 Running pipeline...
 Total output tokens: 150194
 Avg out tokens per prompt: 1501.94
@@ -309,9 +315,15 @@ Raw Prediction:  [O] can't wait [END]
 Prediction:  [O] can't wait
 Quints:  [('null', 'null', 'null', "can ' t wait", 'null')]
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 38933.48item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 38933.48item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:56<00:56, 56.81s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:17<00:00, 35.31s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:17<00:00, 38.54s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:56<00:56, 56.81s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:17<00:00, 35.31s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:17<00:00, 38.54s/it]
 Running pipeline...
 Total output tokens: 121432
 Avg out tokens per prompt: 1214.32
@@ -617,9 +629,15 @@ Prediction:  [O] private party [SSEP] [O] can't wait [SSEP]
 Quints:  [('null', 'null', 'null', 'private party', 'null'), ('null', 'null', 'null', "can ' t wait", 'null')]
 Running ACOS extend
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 43951.63item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 43951.63item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:55<00:55, 55.39s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:14<00:00, 34.28s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:14<00:00, 37.44s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:55<00:55, 55.39s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:14<00:00, 34.28s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:14<00:00, 37.44s/it]
 Running pipeline...
 Total output tokens: 149409
 Avg out tokens per prompt: 1494.09
@@ -924,9 +942,15 @@ Raw Prediction:  [O] staff is very friendly [SSEP] [O] food is delicious [END]
 Prediction:  [O] staff is very friendly [SSEP] [O] food is delicious
 Quints:  [('null', 'null', 'null', 'staff is very friendly', 'null'), ('null', 'null', 'null', 'food is delicious', 'null')]
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 44974.31item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 44974.31item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [01:01<01:01, 61.08s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 36.49s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 40.18s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [01:01<01:01, 61.08s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 36.49s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 40.18s/it]
 Running pipeline...
 Total output tokens: 120934
 Avg out tokens per prompt: 1209.34

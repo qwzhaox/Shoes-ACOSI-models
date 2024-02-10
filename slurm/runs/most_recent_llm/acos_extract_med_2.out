@@ -1,10 +1,17 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Running ACOS extract
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:14, 37.23s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:16<00:38, 38.31s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:40<00:00, 31.83s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:40<00:00, 33.47s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:14, 37.23s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [01:16<00:38, 38.31s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:40<00:00, 31.83s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:40<00:00, 33.47s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37806.96item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 37806.96item/s]
 Running pipeline...
 Total output tokens: 180415
 Avg out tokens per prompt: 1804.15
@@ -309,9 +316,16 @@ Raw Prediction:  [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] NULL
 Prediction:  [A] food [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL [SSEP] [A] NULL [C] food#general [S] positive [O] NULL
 Quints:  [('food', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null'), ('NULL', 'food#general', 'positive', 'NULL', 'null')]
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 40681.90item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 40681.90item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:35<01:11, 35.54s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:13<00:37, 37.22s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:19<00:00, 22.75s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:19<00:00, 26.49s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:35<01:11, 35.54s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [01:13<00:37, 37.22s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:19<00:00, 22.75s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:19<00:00, 26.49s/it]
 Running pipeline...
 Total output tokens: 171776
 Avg out tokens per prompt: 1717.76
@@ -617,9 +631,16 @@ Prediction:  [A] ambience [C] ambience#general [S] positive [O] cozy [SSEP] [A] 
 Quints:  [('ambience', 'ambience#general', 'positive', 'cozy', 'null'), ('drinks', 'drinks#quality', 'positive', 'delicious', 'null')]
 Running ACOS extract
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 39684.97item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 39684.97item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:17<00:35, 17.92s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:27<00:13, 13.05s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:33<00:00,  9.82s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:33<00:00, 11.18s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:17<00:35, 17.92s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:27<00:13, 13.05s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:33<00:00,  9.82s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:33<00:00, 11.18s/it]
 This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
 Running pipeline...
 Total output tokens: 304651
@@ -925,9 +946,16 @@ Raw Prediction:  [A] keyboard [C] keyboard#usability [S] positive [O] backlit [S
 Prediction:  [A] keyboard [C] keyboard#usability [S] positive [O] backlit [SSEP] [A] keyboard [C] keyboard#usability [S] positive [O] lit
 Quints:  [('keyboard', 'keyboard#usability', 'positive', 'backlit', 'null'), ('keyboard', 'keyboard#usability', 'positive', 'lit', 'null')]
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 39166.16item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 39166.16item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:09<00:18,  9.23s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:18<00:09,  9.09s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:23<00:00,  7.54s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:23<00:00,  7.98s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:09<00:18,  9.23s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:18<00:09,  9.09s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:23<00:00,  7.54s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:23<00:00,  7.98s/it]
 This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
 Running pipeline...
 Total output tokens: 298346

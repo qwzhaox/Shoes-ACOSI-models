@@ -1,12 +1,31 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Task: acos-extend
 Size: big
 Model: llama-2
 Running ACOS extend
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 23636.54item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 23636.54item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:36<08:24, 36.03s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:12<07:52, 36.38s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:49<07:17, 36.47s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:25<06:38, 36.26s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [03:01<06:01, 36.19s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:37<05:26, 36.25s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [04:14<04:51, 36.44s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:51<04:17, 36.76s/it]Loading checkpoint shards:  60%|██████    | 9/15 [05:27<03:39, 36.55s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [06:03<03:01, 36.29s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [06:40<02:25, 36.34s/it]Loading checkpoint shards:  80%|████████  | 12/15 [07:16<01:48, 36.23s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [07:51<01:11, 35.98s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [08:26<00:35, 35.60s/it]Loading checkpoint shards: 100%|██████████| 15/15 [08:28<00:00, 25.52s/it]Loading checkpoint shards: 100%|██████████| 15/15 [08:28<00:00, 33.89s/it]
+
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/15 [00:36<08:24, 36.03s/it]
+Loading checkpoint shards:  13%|█▎        | 2/15 [01:12<07:52, 36.38s/it]
+Loading checkpoint shards:  20%|██        | 3/15 [01:49<07:17, 36.47s/it]
+Loading checkpoint shards:  27%|██▋       | 4/15 [02:25<06:38, 36.26s/it]
+Loading checkpoint shards:  33%|███▎      | 5/15 [03:01<06:01, 36.19s/it]
+Loading checkpoint shards:  40%|████      | 6/15 [03:37<05:26, 36.25s/it]
+Loading checkpoint shards:  47%|████▋     | 7/15 [04:14<04:51, 36.44s/it]
+Loading checkpoint shards:  53%|█████▎    | 8/15 [04:51<04:17, 36.76s/it]
+Loading checkpoint shards:  60%|██████    | 9/15 [05:27<03:39, 36.55s/it]
+Loading checkpoint shards:  67%|██████▋   | 10/15 [06:03<03:01, 36.29s/it]
+Loading checkpoint shards:  73%|███████▎  | 11/15 [06:40<02:25, 36.34s/it]
+Loading checkpoint shards:  80%|████████  | 12/15 [07:16<01:48, 36.23s/it]
+Loading checkpoint shards:  87%|████████▋ | 13/15 [07:51<01:11, 35.98s/it]
+Loading checkpoint shards:  93%|█████████▎| 14/15 [08:26<00:35, 35.60s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [08:28<00:00, 25.52s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [08:28<00:00, 33.89s/it]
 Running pipeline...
 Total output tokens: 205979
 Avg out tokens per prompt: 2059.79
@@ -311,9 +330,28 @@ Raw prediction:  [O] color on the site has neutral beige / brown tones [SSEP] [O
 Prediction:  [O] color on the site has neutral beige / brown tones [SSEP] [O] unfortunately, in person the color is all gray [SSEP] [O] don't buy if you're expecting anything other than bland gray [SSEP] [O] don't buy if you're expecting anything other than bland gray [SSEP] [O] will be returning immediately
 Quints:  [('null', 'null', 'null', 'color on the site has neutral beige / brown tones', 'null'), ('null', 'null', 'null', 'unfortunately , in person the color is all gray', 'null'), ('null', 'null', 'null', "don ' t buy if you ' re expecting anything other than bland gray", 'null'), ('null', 'null', 'null', "don ' t buy if you ' re expecting anything other than bland gray", 'null'), ('null', 'null', 'null', 'will be returning immediately', 'null')]
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 23252.60item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 23252.60item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:36<08:32, 36.58s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:15<08:11, 37.79s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:55<07:48, 39.03s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:33<07:04, 38.60s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [03:10<06:19, 37.98s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:48<05:40, 37.88s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [04:25<05:01, 37.67s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [05:00<04:18, 36.90s/it]Loading checkpoint shards:  60%|██████    | 9/15 [05:38<03:43, 37.22s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [06:15<03:05, 37.16s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [06:52<02:28, 37.20s/it]Loading checkpoint shards:  80%|████████  | 12/15 [07:30<01:52, 37.43s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [08:10<01:16, 38.18s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [08:45<00:37, 37.02s/it]Loading checkpoint shards: 100%|██████████| 15/15 [08:47<00:00, 26.52s/it]Loading checkpoint shards: 100%|██████████| 15/15 [08:47<00:00, 35.15s/it]
+
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/15 [00:36<08:32, 36.58s/it]
+Loading checkpoint shards:  13%|█▎        | 2/15 [01:15<08:11, 37.79s/it]
+Loading checkpoint shards:  20%|██        | 3/15 [01:55<07:48, 39.03s/it]
+Loading checkpoint shards:  27%|██▋       | 4/15 [02:33<07:04, 38.60s/it]
+Loading checkpoint shards:  33%|███▎      | 5/15 [03:10<06:19, 37.98s/it]
+Loading checkpoint shards:  40%|████      | 6/15 [03:48<05:40, 37.88s/it]
+Loading checkpoint shards:  47%|████▋     | 7/15 [04:25<05:01, 37.67s/it]
+Loading checkpoint shards:  53%|█████▎    | 8/15 [05:00<04:18, 36.90s/it]
+Loading checkpoint shards:  60%|██████    | 9/15 [05:38<03:43, 37.22s/it]
+Loading checkpoint shards:  67%|██████▋   | 10/15 [06:15<03:05, 37.16s/it]
+Loading checkpoint shards:  73%|███████▎  | 11/15 [06:52<02:28, 37.20s/it]
+Loading checkpoint shards:  80%|████████  | 12/15 [07:30<01:52, 37.43s/it]
+Loading checkpoint shards:  87%|████████▋ | 13/15 [08:10<01:16, 38.18s/it]
+Loading checkpoint shards:  93%|█████████▎| 14/15 [08:45<00:37, 37.02s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [08:47<00:00, 26.52s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [08:47<00:00, 35.15s/it]
 Running pipeline...
 Total output tokens: 186186
 Avg out tokens per prompt: 1861.86

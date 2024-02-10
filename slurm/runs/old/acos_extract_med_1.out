@@ -1,10 +1,17 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Running ACOS extract
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:38<01:17, 38.86s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:15<00:37, 37.68s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:37<00:00, 30.48s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:37<00:00, 32.54s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:38<01:17, 38.86s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [01:15<00:37, 37.68s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:37<00:00, 30.48s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:37<00:00, 32.54s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37888.93item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 37888.93item/s]
 Running pipeline...
 Total output tokens: 180903
 Avg out tokens per prompt: 1809.03
@@ -209,10 +216,17 @@ Quints:  [('NULL', 'service#general', 'positive', 'NULL', 'null'), ('NULL', 'foo
 Prediction:  [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [SSEP] [A] NULL [C] location#general [S] positive [O] NULL [S
 Quints:  [('NULL', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL', 'null'), ('NULL', 'location#general', 'positive', 'NULL [ S', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:08<00:17,  8.95s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:20<00:10, 10.19s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:25<00:00,  8.11s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:25<00:00,  8.55s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:08<00:17,  8.95s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [00:20<00:10, 10.19s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:25<00:00,  8.11s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [00:25<00:00,  8.55s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37711.78item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 37711.78item/s]
 Running pipeline...
 Total output tokens: 171523
 Avg out tokens per prompt: 1715.23
@@ -414,14 +428,21 @@ Prediction:  [A] NULL [C] ambience#general [S] positive [O] very clean [SSEP] [A
 Quints:  [('NULL', 'ambience#general', 'positive', 'very clean', 'null'), ('NULL', 'service#general', 'positive', 'very friendly', 'null')]
 Prediction:  [A] terrible [C] service#general [S] negative [O] NULL [SSEP] [A] cold [C] food#quality [S] negative [O] NULL
 Quints:  [('terrible', 'service#general', 'negative', 'NULL', 'null'), ('cold', 'food#quality', 'negative', 'NULL', 'null')]
-Prediction:  [A] menu [C] restaurant#miscellaneous [S] positive [O] NULL [SSEP] [A] drinks [C] drinks#quality [S] positive [O] delicious
+Prediction:  [A] menu [C] restLLM-acosianeous [S] positive [O] NULL [SSEP] [A] drinks [C] drinks#quality [S] positive [O] delicious
 Quints:  [('menu', 'restaurant#miscellaneous', 'positive', 'NULL', 'null'), ('drinks', 'drinks#quality', 'positive', 'delicious', 'null')]
-Running ACOS extract
+Running ACOS extractLLM-acosi
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:48<01:36, 48.16s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:33<00:46, 46.56s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:59<00:00, 37.25s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:59<00:00, 39.93s/it]
+LLM-acosi
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33LLM-acosi1/3 [00:48<01:36, 48.16s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [01:33<00:46, 46.56s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:59<00:00, 37.25s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:59<00:00, 39.93s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 38807.40item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 38807.40item/s]
 Token indices sequence length is longer than the specified maximum sequence length for this model (3444 > 2048). Running this sequence through the model will result in indexing errors
 This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
 Running pipeline...
@@ -438,9 +459,16 @@ Traceback (most recent call last):
     delete_loc = len(prediction)
 AttributeError: 'str' object has no attribute 'insert'
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:15, 37.80s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:15<00:37, 37.97s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:38<00:00, 30.83s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:38<00:00, 32.74s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:15, 37.80s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [01:15<00:37, 37.97s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:38<00:00, 30.83s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:38<00:00, 32.74s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 40940.01item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 40940.01item/s]
 Token indices sequence length is longer than the specified maximum sequence length for this model (3444 > 2048). Running this sequence through the model will result in indexing errors
 slurmstepd: error: *** JOB 65682818 ON gl1517 CANCELLED AT 2023-11-30T01:20:16 DUE TO TIME LIMIT ***

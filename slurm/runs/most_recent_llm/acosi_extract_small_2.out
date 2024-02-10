@@ -1,10 +1,16 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Running ACOSI extract
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:10<00:10, 10.62s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.32s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.96s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:10<00:10, 10.62s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.32s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.96s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 21524.70item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 21524.70item/s]
 Running pipeline...
 Total output tokens: 216633
 Avg out tokens per prompt: 2166.33
@@ -309,10 +315,16 @@ Raw Prediction:  [A] NULL [C] performance#sizing_fit [S] neutral [O] i think the
 Prediction:  [A] NULL [C] performance#sizing_fit [S] neutral [O] i think the shoes are pretty cute. i love the look of them. i am not a big fan of the material because it feels a bit cheap. i think it would
 Quints:  [('NULL', 'performance#sizing_fit', 'neutral', 'i think the shoes are pretty cute . i love the look of them . i am not a big fan of the material because it feels a bit cheap . i think it would', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.22s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.72s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.24s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.22s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.72s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.24s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 22130.03item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 22130.03item/s]
 Running pipeline...
 Total output tokens: 189916
 Avg out tokens per prompt: 1899.16

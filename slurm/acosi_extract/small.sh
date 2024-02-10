@@ -12,7 +12,7 @@
 #SBATCH --job-name=acosi_extract_small
 
 module load python cuda
-pushd /home/qwzhao/src/absa/EECS595Project
+pushd /home/qwzhao/src/absa/LLM-acosi
 
 source env/bin/activate
 

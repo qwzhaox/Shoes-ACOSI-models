@@ -1,10 +1,29 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Running ACOS extract
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:30<07:09, 30.67s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:01<06:42, 30.95s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:33<06:13, 31.16s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:04<05:43, 31.25s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:36<05:16, 31.60s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:08<04:43, 31.49s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:38<04:09, 31.22s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:08<03:35, 30.85s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:38<03:02, 30.49s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:08<02:31, 30.34s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:39<02:02, 30.65s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:11<01:32, 30.80s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:41<01:01, 30.72s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:11<00:30, 30.43s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 21.74s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 28.86s/it]
+
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/15 [00:30<07:09, 30.67s/it]
+Loading checkpoint shards:  13%|█▎        | 2/15 [01:01<06:42, 30.95s/it]
+Loading checkpoint shards:  20%|██        | 3/15 [01:33<06:13, 31.16s/it]
+Loading checkpoint shards:  27%|██▋       | 4/15 [02:04<05:43, 31.25s/it]
+Loading checkpoint shards:  33%|███▎      | 5/15 [02:36<05:16, 31.60s/it]
+Loading checkpoint shards:  40%|████      | 6/15 [03:08<04:43, 31.49s/it]
+Loading checkpoint shards:  47%|████▋     | 7/15 [03:38<04:09, 31.22s/it]
+Loading checkpoint shards:  53%|█████▎    | 8/15 [04:08<03:35, 30.85s/it]
+Loading checkpoint shards:  60%|██████    | 9/15 [04:38<03:02, 30.49s/it]
+Loading checkpoint shards:  67%|██████▋   | 10/15 [05:08<02:31, 30.34s/it]
+Loading checkpoint shards:  73%|███████▎  | 11/15 [05:39<02:02, 30.65s/it]
+Loading checkpoint shards:  80%|████████  | 12/15 [06:11<01:32, 30.80s/it]
+Loading checkpoint shards:  87%|████████▋ | 13/15 [06:41<01:01, 30.72s/it]
+Loading checkpoint shards:  93%|█████████▎| 14/15 [07:11<00:30, 30.43s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 21.74s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 28.86s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37045.61item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 37045.61item/s]
 Running pipeline...
 Total output tokens: 179937
 Avg out tokens per prompt: 1799.37
@@ -309,4 +328,16 @@ Raw Prediction:  [A] food [C] restaurant#general [S] positive [O] good [SSEP] [A
 Prediction:  [A] food [C] restaurant#general [S] positive [O] good [SSEP] [A] service [C] restaurant#general [S] negative [O] slow
 Quints:  [('food', 'restaurant#general', 'positive', 'good', 'null'), ('service', 'restaurant#general', 'negative', 'slow', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:29<06:58, 29.91s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:59<06:23, 29.48s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:29<06:00, 30.02s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:00<05:34, 30.37s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:33<05:12, 31.27s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:04<04:39, 31.09s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:36<04:10, 31.37s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:08<03:41, 31.58s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:39<03:08, 31.36s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:09<02:35, 31.07s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:38<02:01, 30.49s/it]slurmstepd: error: *** JOB 65682941 ON gl1523 CANCELLED AT 2023-12-01T03:06:48 DUE TO TIME LIMIT ***
+
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/15 [00:29<06:58, 29.91s/it]
+Loading checkpoint shards:  13%|█▎        | 2/15 [00:59<06:23, 29.48s/it]
+Loading checkpoint shards:  20%|██        | 3/15 [01:29<06:00, 30.02s/it]
+Loading checkpoint shards:  27%|██▋       | 4/15 [02:00<05:34, 30.37s/it]
+Loading checkpoint shards:  33%|███▎      | 5/15 [02:33<05:12, 31.27s/it]
+Loading checkpoint shards:  40%|████      | 6/15 [03:04<04:39, 31.09s/it]
+Loading checkpoint shards:  47%|████▋     | 7/15 [03:36<04:10, 31.37s/it]
+Loading checkpoint shards:  53%|█████▎    | 8/15 [04:08<03:41, 31.58s/it]
+Loading checkpoint shards:  60%|██████    | 9/15 [04:39<03:08, 31.36s/it]
+Loading checkpoint shards:  67%|██████▋   | 10/15 [05:09<02:35, 31.07s/it]
+Loading checkpoint shards:  73%|███████▎  | 11/15 [05:38<02:01, 30.49s/it]slurmstepd: error: *** JOB 65682941 ON gl1523 CANCELLED AT 2023-12-01T03:06:48 DUE TO TIME LIMIT ***

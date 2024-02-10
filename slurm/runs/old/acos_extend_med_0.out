@@ -1,10 +1,17 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Running ACOS extend
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:14, 37.44s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:13<00:36, 36.67s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:35<00:00, 29.95s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:35<00:00, 31.84s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:14, 37.44s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [01:13<00:36, 36.67s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:35<00:00, 29.95s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:35<00:00, 31.84s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 41343.56item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 41343.56item/s]
 Running pipeline...
 Total output tokens: 75899
 Avg out tokens per prompt: 758.99
@@ -1536,10 +1543,17 @@ Prediction:  [O] null
 [
 Quints:  [('null', 'null', 'null', 'null # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Followup : - Can you identify the opinion spans for the second and third quadruples ? - What is the opinion span for the first quadruple ? # # # Hint : # # # Solution : ` ` ` [ O ] null ` ` ` # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [ O ] null ` ` ` # # # Explanation : # # # Submission : ` ` ` [', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:35<01:11, 35.77s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:11<00:35, 35.74s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 29.79s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 31.40s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:35<01:11, 35.77s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [01:11<00:35, 35.74s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 29.79s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 31.40s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 40052.56item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 40052.56item/s]
 Running pipeline...
 Total output tokens: 61945
 Avg out tokens per prompt: 619.45
@@ -1759,10 +1773,17 @@ Prediction:  Please provide the opinion spans for the quadruples.
 Quints:  [('null', 'null', 'null', 'null', 'null')]
 Running ACOS extend
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:35<01:11, 35.93s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:11<00:35, 35.73s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 29.91s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 31.50s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:35<01:11, 35.93s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [01:11<00:35, 35.73s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 29.91s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:34<00:00, 31.50s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 49578.06item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 49578.06item/s]
 Running pipeline...
 Total output tokens: 76637
 Avg out tokens per prompt: 766.37
@@ -3983,10 +4004,17 @@ Quints:  [('null', 'null', 'null', 'decent - [ O ] not great # # # Hint : # # # 
 Prediction:  [O] smooth [SSEP] [O] nice [SSEP] [O] apps take seconds to respond
 Quints:  [('null', 'null', 'null', 'smooth', 'null'), ('null', 'null', 'null', 'nice', 'null'), ('null', 'null', 'null', 'apps take seconds to respond', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:14, 37.09s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [01:13<00:36, 36.84s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:36<00:00, 30.18s/it]Loading checkpoint shards: 100%|██████████| 3/3 [01:36<00:00, 32.00s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [00:37<01:14, 37.09s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [01:13<00:36, 36.84s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:36<00:00, 30.18s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [01:36<00:00, 32.00s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 46289.64item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 46289.64item/s]
 Running pipeline...
 Total output tokens: 60639
 Avg out tokens per prompt: 606.39

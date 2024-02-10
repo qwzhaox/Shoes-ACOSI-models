@@ -1,10 +1,11 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Task: acos-extend
 Size: small
 Model: llama-2
 Running ACOS extend
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Below is an instruction that describes a task. Write a response that appropriately completes the request.
 
 ### Instruction:
 An online customer review can be organized into a list of ACOS (Aspect-Category-Opinion-Sentiment) quadruples.
@@ -4902,7 +4903,8 @@ Review: the color on the site has neutral beige / brown tones , unfortunately , 
 ACOS quadruples: [A] color [C] contextofuse#purchase\_context [S] neutral [O] NULL [SSEP] [A] color [C] appearance#color [S] neutral [O] neutral beige / brown tones [SSEP] [A] color [C] contextofuse#purchase\_context [S] negative [O] unfortunately , in person the color is all gray [SSEP] [A] color [C] appearance#color [S] negative [O] unfortunately , in person the color is all gray [SSEP] [A] NULL [C] cost/value [S] negative [O] don ' t buy if you ' re expecting anything other than bland gray [SSEP] [A] bland gray [C] appearance#color [S] negative [O] NULL [SSEP] [A] returning [C] cost/value [S] negative [O] will be returning immediately [END]
 
 ### Response:
-Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 18247.21item/s]
+
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 18247.21item/s]
 
 Below is an instruction that describes a task. Write a response that appropriately completes the request.
 
@@ -6906,7 +6908,11 @@ ACOS quadruples: [A] neutral beige / brown tones [C] appearance#color [S] negati
 ### Response:
 
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [01:00<01:00, 60.62s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 36.61s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 40.21s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [01:00<01:00, 60.62s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 36.61s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:20<00:00, 40.21s/it]
 Running pipeline...
 Total output tokens: 206187
 Avg out tokens per prompt: 2061.87
@@ -7211,9 +7217,15 @@ Raw prediction:  [O] unfortunately, in person the color is all gray [SSEP] [O] d
 Prediction:  [O] unfortunately, in person the color is all gray [SSEP] [O] don't buy if you're expecting anything other than bland gray [SSEP] [O] color on the site has neutral beige / brown tones [SSEP] [O] NULL
 Quints:  [('null', 'null', 'null', 'unfortunately , in person the color is all gray', 'null'), ('null', 'null', 'null', "don ' t buy if you ' re expecting anything other than bland gray", 'null'), ('null', 'null', 'null', 'color on the site has neutral beige / brown tones', 'null')]
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 20823.67item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 20823.67item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [01:25<01:25, 85.75s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:51<00:00, 50.46s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:51<00:00, 55.76s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [01:25<01:25, 85.75s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:51<00:00, 50.46s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:51<00:00, 55.76s/it]
 Running pipeline...
 Total output tokens: 189615
 Avg out tokens per prompt: 1896.15

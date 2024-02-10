@@ -1,10 +1,16 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Running ACOS extract
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:45<00:45, 45.95s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:03<00:00, 29.07s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:03<00:00, 31.61s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:45<00:45, 45.95s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:03<00:00, 29.07s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:03<00:00, 31.61s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37933.47item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 37933.47item/s]
 Running pipeline...
 Total output tokens: 184939
 Avg out tokens per prompt: 1849.39
@@ -209,10 +215,16 @@ Quints:  [('NULL', 'ambience#general', 'positive', 'NULL', 'null'), ('NULL', 'NU
 Prediction:  [A] NULL [C] NULL [S] positive [O] NULL [SSEP] [A] NULL [C] NULL [S] positive [O] my favorite [SSEP] [A] NULL [C] NULL [S] positive [O] in the city
 Quints:  [('NULL', 'NULL', 'positive', 'NULL', 'null'), ('NULL', 'NULL', 'positive', 'my favorite', 'null'), ('NULL', 'NULL', 'positive', 'in the city', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:46<00:46, 46.90s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:02<00:00, 28.57s/it]Loading checkpoint shards: 100%|██████████| 2/2 [01:02<00:00, 31.32s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:46<00:46, 46.90s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:02<00:00, 28.57s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [01:02<00:00, 31.32s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 39964.78item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 39964.78item/s]
 Running pipeline...
 Total output tokens: 178165
 Avg out tokens per prompt: 1781.65
@@ -418,10 +430,16 @@ Prediction:  [A] food [C] food#quality [S] positive [O] excellent [SSEP] [A] ser
 Quints:  [('food', 'food#quality', 'positive', 'excellent', 'null'), ('service', 'service#general', 'neutral', 'good', 'null'), ('ambiance', 'ambience#general', 'negative', 'too loud', 'null')]
 Running ACOS extract
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.15s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.67s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.19s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.15s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.67s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.19s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 35557.00item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 35557.00item/s]
 Token indices sequence length is longer than the specified maximum sequence length for this model (3444 > 2048). Running this sequence through the model will result in indexing errors
 This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
 Running pipeline...
@@ -638,10 +656,16 @@ Quints:  [('screen', 'screen#general', 'neutral', 'decent', 'null'), ('screen', 
 Prediction:  [A] keyboard [C] keyboard#design_features [S] positive [O] back lit [SSEP] [A] keyboard [C] keyboard#design_features [S] positive [O] back lit
 Quints:  [('keyboard', 'keyboard#design_features', 'positive', 'back lit', 'null'), ('keyboard', 'keyboard#design_features', 'positive', 'back lit', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.11s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.29s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.72s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.11s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.29s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.72s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 38133.50item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 38133.50item/s]
 Token indices sequence length is longer than the specified maximum sequence length for this model (3444 > 2048). Running this sequence through the model will result in indexing errors
 This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
 Running pipeline...

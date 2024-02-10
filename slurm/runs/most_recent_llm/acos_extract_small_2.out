@@ -1,10 +1,16 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Running ACOS extract
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:34<00:34, 34.57s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:46<00:00, 21.05s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:46<00:00, 23.08s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:34<00:34, 34.57s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:46<00:00, 21.05s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:46<00:00, 23.08s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 38276.18item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 38276.18item/s]
 Running pipeline...
 Total output tokens: 184782
 Avg out tokens per prompt: 1847.82
@@ -309,10 +315,16 @@ Raw Prediction:  [A] NULL [C] restaurant#miscellaneous [S] positive [O] deliciou
 Prediction:  [A] NULL [C] restaurant#miscellaneous [S] positive [O] delicious [SSEP] [A] NULL [C] restaurant#design_features [S] positive [O] impeccable
 Quints:  [('NULL', 'restaurant#miscellaneous', 'positive', 'delicious', 'null'), ('NULL', 'restaurant#design_features', 'positive', 'impeccable', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:39<00:39, 39.93s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:54<00:00, 24.82s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:54<00:00, 27.08s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:39<00:39, 39.93s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:54<00:00, 24.82s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:54<00:00, 27.08s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 38130.04item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 38130.04item/s]
 Running pipeline...
 Total output tokens: 178902
 Avg out tokens per prompt: 1789.02
@@ -618,10 +630,16 @@ Prediction:  [A] pasta [C] food#quality [S] positive [O] amazing [SSEP] [A] NULL
 Quints:  [('pasta', 'food#quality', 'positive', 'amazing', 'null'), ('NULL', 'restaurant#general', 'positive', 'perfect', 'null')]
 Running ACOS extract
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.17s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.69s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.21s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.17s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.69s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.21s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 41302.85item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 41302.85item/s]
 This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
 Running pipeline...
 Total output tokens: 310216
@@ -927,10 +945,16 @@ Raw Prediction:  [A] keyboard [C] keyboard#operation_performance [S] positive [O
 Prediction:  [A] keyboard [C] keyboard#operation_performance [S] positive [O] back lit [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] back lit [SSEP] [A] operation [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] keyboard#operation_performance [S] positive [O] operation [SSEP] [A] keyboard [C] operation_performance [S] operation_performance [S] operation_performance [O] operation_performance [S] operation_performance [S] operation_performance [O] operation_performance [S] operation_performance [A] operation_performance [C] operation_performance [A] operation_performance [C] operation_performance [S] operation_performance [A] operation_performance [O] operation_performance [S] operation_performance [O] operation_performance [A] operation_performance [C] operation_performance [S] operation_performance [S] performance [O] operation_performance [O] performance [A] operation_performance [S] operation_performance [C] operation_performance [S] performance
 Quints:  [('keyboard', 'keyboard#operation_performance', 'positive', 'back lit', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'back lit', 'null'), ('operation', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'keyboard#operation_performance', 'positive', 'operation', 'null'), ('keyboard', 'operation_performance', 'operation_performance [S] operation_performance', 'operation _ performance [ S ] operation _ performance [ S ] operation _ performance [ O ] operation _ performance [ S ] operation _ performance [ A ] operation _ performance [ C ] operation _ performance [ A ] operation _ performance [ C ] operation _ performance [ S ] operation _ performance [ A ] operation _ performance [ O ] operation _ performance [ S ] operation _ performance [ O ] operation _ performance [ A ] operation _ performance [ C ] operation _ performance [ S ] operation _ performance [ S ] performance [ O ] operation _ performance [ O ] performance [ A ] operation _ performance [ S ] operation _ performance [ C ] operation _ performance [ S ] performance', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.41s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.84s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.38s/it]
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]
+Loading checkpoint shards:  50%|█████     | 1/2 [00:09<00:09,  9.41s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  5.84s/it]
+Loading checkpoint shards: 100%|██████████| 2/2 [00:12<00:00,  6.38s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 43343.02item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 43343.02item/s]
 This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
 Running pipeline...
 Total output tokens: 260334

@@ -1,12 +1,19 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Task: acos-extend
 Size: med
 Model: llama-2
 Running ACOS extend
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 20372.57item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 20372.57item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [01:40<03:20, 100.25s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [03:21<01:40, 100.81s/it]Loading checkpoint shards: 100%|██████████| 3/3 [04:17<00:00, 80.19s/it] Loading checkpoint shards: 100%|██████████| 3/3 [04:17<00:00, 85.70s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [01:40<03:20, 100.25s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [03:21<01:40, 100.81s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [04:17<00:00, 80.19s/it] 
+Loading checkpoint shards: 100%|██████████| 3/3 [04:17<00:00, 85.70s/it]
 Running pipeline...
 Total output tokens: 206336
 Avg out tokens per prompt: 2063.36
@@ -311,9 +318,16 @@ Raw prediction:  [O] color on the site has neutral beige / brown tones [SSEP] [O
 Prediction:  [O] color on the site has neutral beige / brown tones [SSEP] [O] unfortunately, in person the color is all gray [SSEP] [O] don't buy if you're expecting anything other than bland gray [SSEP] [O] will be returning immediately
 Quints:  [('null', 'null', 'null', 'color on the site has neutral beige / brown tones', 'null'), ('null', 'null', 'null', 'unfortunately , in person the color is all gray', 'null'), ('null', 'null', 'null', "don ' t buy if you ' re expecting anything other than bland gray", 'null'), ('null', 'null', 'null', 'will be returning immediately', 'null')]
 Processing dataset...
-Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 20695.24item/s]
+
+Processing Dataset:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing Dataset: 100%|██████████| 100/100 [00:00<00:00, 20695.24item/s]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [02:11<04:22, 131.49s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [04:15<02:06, 126.93s/it]Loading checkpoint shards: 100%|██████████| 3/3 [06:03<00:00, 118.39s/it]Loading checkpoint shards: 100%|██████████| 3/3 [06:03<00:00, 121.16s/it]
+
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]
+Loading checkpoint shards:  33%|███▎      | 1/3 [02:11<04:22, 131.49s/it]
+Loading checkpoint shards:  67%|██████▋   | 2/3 [04:15<02:06, 126.93s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [06:03<00:00, 118.39s/it]
+Loading checkpoint shards: 100%|██████████| 3/3 [06:03<00:00, 121.16s/it]
 Running pipeline...
 Total output tokens: 187005
 Avg out tokens per prompt: 1870.05

@@ -1,10 +1,29 @@
-~/src/absa/EECS595Project ~/src/absa
+~/src/absa/LLM-acosi ~/src/absa
 Running ACOS extract
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:32<07:39, 32.85s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:03<06:50, 31.60s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:35<06:22, 31.87s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:05<05:43, 31.19s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:35<05:06, 30.69s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:05<04:32, 30.26s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:35<04:02, 30.26s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:03<03:27, 29.62s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:33<02:59, 29.83s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:04<02:29, 29.99s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:34<02:00, 30.09s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:05<01:30, 30.18s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:34<00:59, 29.91s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:01<00:29, 29.11s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:03<00:00, 20.82s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:03<00:00, 28.21s/it]
+
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/15 [00:32<07:39, 32.85s/it]
+Loading checkpoint shards:  13%|█▎        | 2/15 [01:03<06:50, 31.60s/it]
+Loading checkpoint shards:  20%|██        | 3/15 [01:35<06:22, 31.87s/it]
+Loading checkpoint shards:  27%|██▋       | 4/15 [02:05<05:43, 31.19s/it]
+Loading checkpoint shards:  33%|███▎      | 5/15 [02:35<05:06, 30.69s/it]
+Loading checkpoint shards:  40%|████      | 6/15 [03:05<04:32, 30.26s/it]
+Loading checkpoint shards:  47%|████▋     | 7/15 [03:35<04:02, 30.26s/it]
+Loading checkpoint shards:  53%|█████▎    | 8/15 [04:03<03:27, 29.62s/it]
+Loading checkpoint shards:  60%|██████    | 9/15 [04:33<02:59, 29.83s/it]
+Loading checkpoint shards:  67%|██████▋   | 10/15 [05:04<02:29, 29.99s/it]
+Loading checkpoint shards:  73%|███████▎  | 11/15 [05:34<02:00, 30.09s/it]
+Loading checkpoint shards:  80%|████████  | 12/15 [06:05<01:30, 30.18s/it]
+Loading checkpoint shards:  87%|████████▋ | 13/15 [06:34<00:59, 29.91s/it]
+Loading checkpoint shards:  93%|█████████▎| 14/15 [07:01<00:29, 29.11s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [07:03<00:00, 20.82s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [07:03<00:00, 28.21s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 34833.52item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 34833.52item/s]
 Running pipeline...
 Total output tokens: 179658
 Avg out tokens per prompt: 1796.58
@@ -309,10 +328,29 @@ Raw Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] serv
 Prediction:  [A] food [C] food#general [S] positive [O] good [SSEP] [A] service [C] service#general [S] positive [O] great
 Quints:  [('food', 'food#general', 'positive', 'good', 'null'), ('service', 'service#general', 'positive', 'great', 'null')]
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:30<07:03, 30.27s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:00<06:35, 30.43s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:30<06:03, 30.29s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:01<05:35, 30.49s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:30<05:00, 30.04s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:02<04:36, 30.69s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:33<04:04, 30.53s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:03<03:33, 30.47s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:34<03:03, 30.64s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:06<02:34, 30.98s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:38<02:05, 31.43s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:09<01:34, 31.38s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:40<01:02, 31.21s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:10<00:30, 30.84s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 22.03s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 28.82s/it]
+
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/15 [00:30<07:03, 30.27s/it]
+Loading checkpoint shards:  13%|█▎        | 2/15 [01:00<06:35, 30.43s/it]
+Loading checkpoint shards:  20%|██        | 3/15 [01:30<06:03, 30.29s/it]
+Loading checkpoint shards:  27%|██▋       | 4/15 [02:01<05:35, 30.49s/it]
+Loading checkpoint shards:  33%|███▎      | 5/15 [02:30<05:00, 30.04s/it]
+Loading checkpoint shards:  40%|████      | 6/15 [03:02<04:36, 30.69s/it]
+Loading checkpoint shards:  47%|████▋     | 7/15 [03:33<04:04, 30.53s/it]
+Loading checkpoint shards:  53%|█████▎    | 8/15 [04:03<03:33, 30.47s/it]
+Loading checkpoint shards:  60%|██████    | 9/15 [04:34<03:03, 30.64s/it]
+Loading checkpoint shards:  67%|██████▋   | 10/15 [05:06<02:34, 30.98s/it]
+Loading checkpoint shards:  73%|███████▎  | 11/15 [05:38<02:05, 31.43s/it]
+Loading checkpoint shards:  80%|████████  | 12/15 [06:09<01:34, 31.38s/it]
+Loading checkpoint shards:  87%|████████▋ | 13/15 [06:40<01:02, 31.21s/it]
+Loading checkpoint shards:  93%|█████████▎| 14/15 [07:10<00:30, 30.84s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 22.03s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [07:12<00:00, 28.82s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 36941.20item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 36941.20item/s]
 Running pipeline...
 Total output tokens: 111853
 Avg out tokens per prompt: 1118.53
@@ -586,42 +624,61 @@ Quints:  [('menu items', 'restaurant#food_options', 'positive', 'NULL', 'null'),
 Raw Prediction:  [A] saag [C] food#quality [S] positive [O] NULL [SSEP] [A] paneer [C] food#quality [S] positive [O] NULL [SSEP] [A] korma [C] food#quality [S] positive [O] NULL [END]
 Prediction:  [A] saag [C] food#quality [S] positive [O] NULL [SSEP] [A] paneer [C] food#quality [S] positive [O] NULL [SSEP] [A] korma [C] food#quality [S] positive [O] NULL
 Quints:  [('saag', 'food#quality', 'positive', 'NULL', 'null'), ('paneer', 'food#quality', 'positive', 'NULL', 'null'), ('korma', 'food#quality', 'positive', 'NULL', 'null')]
-Raw Prediction:  [A] delivery [C] delivery#general [S] positive [O] NULL [END]
+Raw Prediction:  [A] delivery LLM-acosieneral [S] positive [O] NULL [END]
 Prediction:  [A] delivery [C] delivery#general [S] positive [O] NULL
-Quints:  [('delivery', 'delivery#general', 'positive', 'NULL', 'null')]
+Quints:  [('delivery', 'deliveLLM-acosipositive', 'NULL', 'null')]
 Raw Prediction:  [A] food [C] food#quality [S] negative [O] no spice [SSEP] [A] NULL [C] food#general [S] positive [O] nice [END]
-Prediction:  [A] food [C] food#quality [S] negative [O] no spice [SSEP] [A] NULL [C] food#general [S] positive [O] nice
+Prediction:  [A] food [C] foodLLM-acosiegative [O] no spice [SSEP] [A] NULL [C] food#general [S] positive [O] nice
 Quints:  [('food', 'food#quality', 'negative', 'no spice', 'null'), ('NULL', 'food#general', 'positive', 'nice', 'null')]
-Raw Prediction:  [A] NULL [C] restaurant#food_quality [S] positive [O] enjoyed [SSEP] [A] NULL [C] restaurant#food_general [S] positive [O] NULL [END]
+Raw Prediction:  [A] NULL [C] LLM-acosid_quality [S] positive [O] enjoyed [SSEP] [A] NULL [C] restaurant#food_general [S] positive [O] NULL [END]
 Prediction:  [A] NULL [C] restaurant#food_quality [S] positive [O] enjoyed [SSEP] [A] NULL [C] restaurant#food_general [S] positive [O] NULL
-Quints:  [('NULL', 'restaurant#food_quality', 'positive', 'enjoyed', 'null'), ('NULL', 'restaurant#food_general', 'positive', 'NULL', 'null')]
+Quints:  [('NULL', 'restaurantLLM-acosi, 'positive', 'enjoyed', 'null'), ('NULL', 'restaurant#food_general', 'positive', 'NULL', 'null')]
 Raw Prediction:  [A] lamb korma [C] food#Indian [S] positive [O] yummy [SSEP] [A] saag paneer [C] food#Indian [S] positive [O] NULL [SSEP] [A] samosas [C] food#Indian [S] positive [O] NULL [SSEP] [A] naan [C] food#Indian [S] positive [O] NULL [END]
-Prediction:  [A] lamb korma [C] food#Indian [S] positive [O] yummy [SSEP] [A] saag paneer [C] food#Indian [S] positive [O] NULL [SSEP] [A] samosas [C] food#Indian [S] positive [O] NULL [SSEP] [A] naan [C] food#Indian [S] positive [O] NULL
+Prediction:  [A] lamb korma [CLLM-acosi[S] positive [O] yummy [SSEP] [A] saag paneer [C] food#Indian [S] positive [O] NULL [SSEP] [A] samosas [C] food#Indian [S] positive [O] NULL [SSEP] [A] naan [C] food#Indian [S] positive [O] NULL
 Quints:  [('lamb korma', 'food#Indian', 'positive', 'yummy', 'null'), ('saag paneer', 'food#Indian', 'positive', 'NULL', 'null'), ('samosas', 'food#Indian', 'positive', 'NULL', 'null'), ('naan', 'food#Indian', 'positive', 'NULL', 'null')]
-Raw Prediction:  [A] food [C] food#quality [S] negative [O] mild [SSEP] [A] NULL [C] food#style_options [S] NULL [O] NULL [END]
+Raw Prediction:  [A] food [C] LLM-acosiS] negative [O] mild [SSEP] [A] NULL [C] food#style_options [S] NULL [O] NULL [END]
 Prediction:  [A] food [C] food#quality [S] negative [O] mild [SSEP] [A] NULL [C] food#style_options [S] NULL [O] NULL
-Quints:  [('food', 'food#quality', 'negative', 'mild', 'null'), ('NULL', 'food#style_options', 'NULL', 'NULL', 'null')]
+Quints:  [('food', 'food#qualiLLM-acosi', 'mild', 'null'), ('NULL', 'food#style_options', 'NULL', 'NULL', 'null')]
 Raw Prediction:  [A] naan [C] food#bread [S] positive [O] NULL [SSEP] [A] bhartha [C] food#Indian_dishes [S] positive [O] enjoyed [SSEP] [A] NULL [C] food#quality [S] neutral [O] not too tomatoey [END]
-Prediction:  [A] naan [C] food#bread [S] positive [O] NULL [SSEP] [A] bhartha [C] food#Indian_dishes [S] positive [O] enjoyed [SSEP] [A] NULL [C] food#quality [S] neutral [O] not too tomatoey
+Prediction:  [A] naan [C] foodLLM-acosiitive [O] NULL [SSEP] [A] bhartha [C] food#Indian_dishes [S] positive [O] enjoyed [SSEP] [A] NULL [C] food#quality [S] neutral [O] not too tomatoey
 Quints:  [('naan', 'food#bread', 'positive', 'NULL', 'null'), ('bhartha', 'food#Indian_dishes', 'positive', 'enjoyed', 'null'), ('NULL', 'food#quality', 'neutral', 'not too tomatoey', 'null')]
-Raw Prediction:  [A] waiter [C] service#general [S] positive [O] friendly [SSEP] [A] food [C] food#quality [S] negative [O] overcooked [SSEP] [A] NULL [C] food#style_options [S] negative [O] lacked flavor [END]
+Raw Prediction:  [A] waiter [CLLM-acosiral [S] positive [O] friendly [SSEP] [A] food [C] food#quality [S] negative [O] overcooked [SSEP] [A] NULL [C] food#style_options [S] negative [O] lacked flavor [END]
 Prediction:  [A] waiter [C] service#general [S] positive [O] friendly [SSEP] [A] food [C] food#quality [S] negative [O] overcooked [SSEP] [A] NULL [C] food#style_options [S] negative [O] lacked flavor
-Quints:  [('waiter', 'service#general', 'positive', 'friendly', 'null'), ('food', 'food#quality', 'negative', 'overcooked', 'null'), ('NULL', 'food#style_options', 'negative', 'lacked flavor', 'null')]
+Quints:  [('waiter', 'service#LLM-acosiitive', 'friendly', 'null'), ('food', 'food#quality', 'negative', 'overcooked', 'null'), ('NULL', 'food#style_options', 'negative', 'lacked flavor', 'null')]
 Raw Prediction:  [A] NULL [C] restaurant#general [S] positive [O] delicious [SSEP] [A] fajita salad [C] food#prices [S] positive [O] NULL [SSEP] [A] colorado [C] food#quality [S] positive [O] NULL [SSEP] [A] fajitas [C] food#quality [S] positive [O] NULL [END]
-Prediction:  [A] NULL [C] restaurant#general [S] positive [O] delicious [SSEP] [A] fajita salad [C] food#prices [S] positive [O] NULL [SSEP] [A] colorado [C] food#quality [S] positive [O] NULL [SSEP] [A] fajitas [C] food#quality [S] positive [O] NULL
+Prediction:  [A] NULL [C] restLLM-acosi [S] positive [O] delicious [SSEP] [A] fajita salad [C] food#prices [S] positive [O] NULL [SSEP] [A] colorado [C] food#quality [S] positive [O] NULL [SSEP] [A] fajitas [C] food#quality [S] positive [O] NULL
 Quints:  [('NULL', 'restaurant#general', 'positive', 'delicious', 'null'), ('fajita salad', 'food#prices', 'positive', 'NULL', 'null'), ('colorado', 'food#quality', 'positive', 'NULL', 'null'), ('fajitas', 'food#quality', 'positive', 'NULL', 'null')]
-Raw Prediction:  [A] warm & cosy environment [C] ambience#general [S] positive [O] NULL [END]
+Raw Prediction:  [A] warm & coLLM-acosi [C] ambience#general [S] positive [O] NULL [END]
 Prediction:  [A] warm & cosy environment [C] ambience#general [S] positive [O] NULL
-Quints:  [('warm & cosy environment', 'ambience#general', 'positive', 'NULL', 'null')]
+Quints:  [('warm & cosy enviroLLM-acosince#general', 'positive', 'NULL', 'null')]
 Raw Prediction:  [A] NULL [C] restaurant#private_events [S] positive [O] NULL [SSEP] [A] restaurant#availability [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#ambience [S] positive [O] can't wait [END]
-Prediction:  [A] NULL [C] restaurant#private_events [S] positive [O] NULL [SSEP] [A] restaurant#availability [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#ambience [S] positive [O] can't wait
+Prediction:  [A] NULL [C] restLLM-acosi_events [S] positive [O] NULL [SSEP] [A] restaurant#availability [C] restaurant#general [S] positive [O] NULL [SSEP] [A] NULL [C] restaurant#ambience [S] positive [O] can't wait
 Quints:  [('NULL', 'restaurant#private_events', 'positive', 'NULL', 'null'), ('restaurant # availability', 'restaurant#general', 'positive', 'NULL', 'null'), ('NULL', 'restaurant#ambience', 'positive', "can ' t wait", 'null')]
-Running ACOS extract
+Running ACOS extractLLM-acosi
 Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:06<01:37,  6.98s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:13<01:25,  6.55s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:19<01:17,  6.43s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:25<01:09,  6.32s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:31<01:02,  6.28s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:37<00:55,  6.22s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:44<00:50,  6.26s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [00:50<00:43,  6.22s/it]Loading checkpoint shards:  60%|██████    | 9/15 [00:56<00:37,  6.19s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:02<00:30,  6.17s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [01:08<00:24,  6.20s/it]Loading checkpoint shards:  80%|████████  | 12/15 [01:16<00:20,  6.72s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [01:24<00:14,  7.05s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [01:31<00:06,  6.86s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:31<00:00,  4.92s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:31<00:00,  6.10s/it]
-Loading dataset...
+LLM-acosi
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]
+Loading checkpoint shards:   7LLM-acosi1/15 [00:06<01:37,  6.98s/it]
+Loading checkpoint shards:  13%|█▎        | 2/15 [00:13<01:25,  6.55s/it]
+Loading checkpoint shards:  20LLM-acosi3/15 [00:19<01:17,  6.43s/it]
+Loading checkpoint shards:  27%|██▋       | 4/15 [00:25<01:09,  6.32s/it]
+Loading checkpoint shards:  33LLM-acosi5/15 [00:31<01:02,  6.28s/it]
+Loading checkpoint shards:  40%|████      | 6/15 [00:37<00:55,  6.22s/it]
+Loading checkpoint shards:  47LLM-acosi7/15 [00:44<00:50,  6.26s/it]
+Loading checkpoint shards:  53%|█████▎    | 8/15 [00:50<00:43,  6.22s/it]
+Loading checkpoint shards:  60LLM-acosi9/15 [00:56<00:37,  6.19s/it]
+Loading checkpoint shards:  67%|██████▋   | 10/15 [01:02<00:30,  6.17s/it]
+Loading checkpoint shards:  73LLM-acosi11/15 [01:08<00:24,  6.20s/it]
+Loading checkpoint shards:  80%|████████  | 12/15 [01:16<00:20,  6.72s/it]
+Loading checkpoint shards:  87LLM-acosi13/15 [01:24<00:14,  7.05s/it]
+Loading checkpoint shards:  93%|█████████▎| 14/15 [01:31<00:06,  6.86s/it]
+Loading checkpoint shards: 100LLM-acosi15/15 [01:31<00:00,  4.92s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [01:31<00:00,  6.10s/it]
+Loading dataset...LLM-acosi
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 37854.73item/s]
+LLM-acosi
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 37854.73item/s]
 Running pipeline...
 Traceback (most recent call last):
   File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extract.py", line 87, in <module>
@@ -629,61 +686,80 @@ Traceback (most recent call last):
   File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extract.py", line 75, in main
     output, response_key = run_pipeline(
   File "/home/qwzhao/src/absa/EECS595Project/scripts/pipeline.py", line 110, in run_pipeline
-    output = model_pipe(prompts, generation_config=gen_config)
+    output = model_pipe(promptLLM-acosiconfig=gen_config)
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 208, in __call__
-    return super().__call__(text_inputs, **kwargs)
+    return super().__call__(teLLM-acosiwargs)
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1121, in __call__
-    outputs = list(final_iterator)
+    outputs = list(final_iteraLLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 124, in __next__
-    item = next(self.iterator)
+    item = next(self.iterator)LLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/pt_utils.py", line 125, in __next__
-    processed = self.infer(item, **self.params)
+    processed = self.infer(iteLLM-acosims)
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/base.py", line 1046, in forward
-    model_outputs = self._forward(model_inputs, **forward_params)
+    model_outputs = self._forwLLM-acosits, **forward_params)
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/pipelines/text_generation.py", line 271, in _forward
-    generated_sequence = self.model.generate(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
+    generated_sequence = self.LLM-acosi(input_ids=input_ids, attention_mask=attention_mask, **generate_kwargs)
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
+    return func(*args, **kwargLLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1719, in generate
-    return self.sample(
+    return self.sample(LLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2801, in sample
-    outputs = self(
+    outputs = self(LLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
+    return self._call_impl(*arLLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
+    return forward_call(*args,LLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
+    output = module._old_forwaLLM-acosiargs)
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1034, in forward
-    outputs = self.model(
+    outputs = self.model(LLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
+    return self._call_impl(*arLLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
+    return forward_call(*args,LLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 922, in forward
-    layer_outputs = decoder_layer(
+    layer_outputs = decoder_laLLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
+    return self._call_impl(*arLLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
+    return forward_call(*args,LLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
+    output = module._old_forwaLLM-acosiargs)
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 672, in forward
-    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+    hidden_states, self_attn_wLLM-acosit_key_value = self.self_attn(
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
+    return self._call_impl(*arLLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
-    return forward_call(*args, **kwargs)
+    return forward_call(*args,LLM-acosi
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/accelerate/hooks.py", line 164, in new_forward
-    output = module._old_forward(*args, **kwargs)
+    output = module._old_forwaLLM-acosiargs)
   File "/home/qwzhao/src/absa/EECS595Project/env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 390, in forward
-    attn_weights = torch.matmul(query_states, key_states.transpose(2, 3)) / math.sqrt(self.head_dim)
+    attn_weights = torch.matmuLLM-acosi, key_states.transpose(2, 3)) / math.sqrt(self.head_dim)
 torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.83 GiB. GPU 1 has a total capacty of 44.40 GiB of which 1.69 GiB is free. Including non-PyTorch memory, this process has 42.70 GiB memory in use. Of the allocated memory 38.67 GiB is allocated by PyTorch, and 2.86 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
-Initializing pipeline...
-Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:07<01:49,  7.83s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [00:15<01:41,  7.80s/it]Loading checkpoint shards:  20%|██        | 3/15 [00:23<01:34,  7.86s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [00:31<01:26,  7.87s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [00:39<01:18,  7.88s/it]Loading checkpoint shards:  40%|████      | 6/15 [00:47<01:11,  7.95s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [00:55<01:03,  7.93s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [01:03<00:55,  7.87s/it]Loading checkpoint shards:  60%|██████    | 9/15 [01:10<00:47,  7.85s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [01:18<00:39,  7.83s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [01:26<00:31,  7.87s/it]Loading checkpoint shards:  80%|████████  | 12/15 [01:34<00:23,  7.84s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [01:42<00:15,  7.83s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [01:49<00:07,  7.74s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:50<00:00,  5.55s/it]Loading checkpoint shards: 100%|██████████| 15/15 [01:50<00:00,  7.34s/it]
+Initializing pipeline...LLM-acosi
+
+Loading checkpoint shards:   0LLM-acosi0/15 [00:00<?, ?it/s]
+Loading checkpoint shards:   7%|▋         | 1/15 [00:07<01:49,  7.83s/it]
+Loading checkpoint shards:  13%|█▎        | 2/15 [00:15<01:41,  7.80s/it]
+Loading checkpoint shards:  20%|██        | 3/15 [00:23<01:34,  7.86s/it]
+Loading checkpoint shards:  27%|██▋       | 4/15 [00:31<01:26,  7.87s/it]
+Loading checkpoint shards:  33%|███▎      | 5/15 [00:39<01:18,  7.88s/it]
+Loading checkpoint shards:  40%|████      | 6/15 [00:47<01:11,  7.95s/it]
+Loading checkpoint shards:  47%|████▋     | 7/15 [00:55<01:03,  7.93s/it]
+Loading checkpoint shards:  53%|█████▎    | 8/15 [01:03<00:55,  7.87s/it]
+Loading checkpoint shards:  60%|██████    | 9/15 [01:10<00:47,  7.85s/it]
+Loading checkpoint shards:  67%|██████▋   | 10/15 [01:18<00:39,  7.83s/it]
+Loading checkpoint shards:  73%|███████▎  | 11/15 [01:26<00:31,  7.87s/it]
+Loading checkpoint shards:  80%|████████  | 12/15 [01:34<00:23,  7.84s/it]
+Loading checkpoint shards:  87%|████████▋ | 13/15 [01:42<00:15,  7.83s/it]
+Loading checkpoint shards:  93%|█████████▎| 14/15 [01:49<00:07,  7.74s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [01:50<00:00,  5.55s/it]
+Loading checkpoint shards: 100%|██████████| 15/15 [01:50<00:00,  7.34s/it]
 Loading dataset...
 Processing dataset...
-Processing:   0%|          | 0/100 [00:00<?, ?item/s]Processing: 100%|██████████| 100/100 [00:00<00:00, 40587.42item/s]
+
+Processing:   0%|          | 0/100 [00:00<?, ?item/s]
+Processing: 100%|██████████| 100/100 [00:00<00:00, 40587.42item/s]
 Running pipeline...
 Traceback (most recent call last):
   File "/home/qwzhao/src/absa/EECS595Project/scripts/acos_extract.py", line 87, in <module>
