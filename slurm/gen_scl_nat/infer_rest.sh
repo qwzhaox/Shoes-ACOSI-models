@@ -9,7 +9,7 @@
 #SBATCH --account=wangluxy1
 #SBATCH --mail-user=qwzhao@umich.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --job-name=infer_rest_gen_scl_nat
+#SBATCH --job-name=infer_r_gsn
 
 # conda
 module load python3.10-anaconda/2023.03
