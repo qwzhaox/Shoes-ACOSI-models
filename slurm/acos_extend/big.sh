@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --partition=spgpu
-#SBATCH --time=00-36:00:00
+#SBATCH --time=02-00:00:00
 #SBATCH --gpus=8
 #SBATCH --cpus-per-gpu=4
 #SBATCH --nodes=1 
