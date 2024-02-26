@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #SBATCH --partition=spgpu
-#SBATCH --time=04-00:00:00
+#SBATCH --time=03-04:00:00
 #SBATCH --gpus=8
-#SBATCH --cpus-per-gpu=4
+#SBATCH --cpus-per-gpu=2
 #SBATCH --nodes=1 
-#SBATCH --mem-per-cpu=11500m
+#SBATCH --mem-per-cpu=2000m
 #SBATCH --account=wangluxy1
 #SBATCH --mail-user=qwzhao@umich.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
