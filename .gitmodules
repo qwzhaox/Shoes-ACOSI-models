@@ -1,7 +1,7 @@
 [submodule "multi-view-prompting-acosi"]
 	path = multi-view-prompting-acosi
 	url = git@github.com:qwzhaox/multi-view-prompting-acosi.git
-[submodule "EECS595Project"]
+[submodule "LLM-acosi"]
 	path = LLM-acosi
 	url = git@github.com:qwzhaox/LLM-acosi.git
 [submodule "ACOSI_simple"]
