@@ -1,0 +1,1535 @@
+~/src/absa/LLM-acosi ~/src/absa
+Task: acos-extend
+Size: big
+Model: llama-2
+Running ACOS extend
+Processing dataset...
+Processing Dataset:   0%|          | 0/125 [00:00<?, ?item/s]Processing Dataset:   1%|          | 1/125 [00:00<00:17,  6.96item/s]Processing Dataset:  41%|████      | 51/125 [00:00<00:00, 251.51item/s]Processing Dataset:  81%|████████  | 101/125 [00:00<00:00, 354.41item/s]Processing Dataset: 100%|██████████| 125/125 [00:00<00:00, 317.17item/s]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:31<07:25, 31.79s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:03<06:54, 31.88s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:39<06:46, 33.87s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:12<06:08, 33.52s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:46<05:36, 33.69s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:18<04:57, 33.05s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:49<04:17, 32.19s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:21<03:44, 32.13s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:53<03:12, 32.07s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:24<02:38, 31.76s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:55<02:06, 31.56s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:25<01:33, 31.25s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:56<01:02, 31.12s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:26<00:30, 30.87s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:29<00:00, 22.21s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:29<00:00, 29.94s/it]
+Running pipeline...
+Total output tokens: 267389
+Avg out tokens per prompt: 2139.112
+Raw prediction:  i've been wearing new balance shoes for years and i have to say, these are my new favorites. they are comfortable and stylish.
+Prediction:  i've been wearing new balance shoes for years and i have to say, these are my new favorites. they are comfortable and stylish.
+Quints:  []
+Raw prediction:  i'm a size 8. 5. 9 in men's and i'm wearing a 10. 5 in these. they fit perfectly.
+Prediction:  i'm a size 8. 5. 9 in men's and i'm wearing a 10. 5 in these. they fit perfectly.
+Quints:  []
+Raw prediction:  i have the new balance 1080v2 and love them. i was looking for a shoe that was a little less bulky and these are perfect.
+Prediction:  i have the new balance 1080v2 and love them. i was looking for a shoe that was a little less bulky and these are perfect.
+Quints:  []
+Raw prediction:  [A] these shoes [C] appearance general [S] positive [O] my wife loves these shoes [I] indirect [SSEP] [A] NULL [C] performance comfort [S] positive [O] my wife loves these shoes [I] indirect [SSEP] [A] these shoes [C] contextofuse use case [S] positive [O] my wife loves these shoes [I] indirect [SSEP] [A] these shoes [C] performance durability [S] positive [O] my wife loves these shoes [
+Prediction:  [A] these shoes [C] appearance general [S] positive [O] my wife loves these shoes [I] indirect [SSEP] [A] NULL [C] performance comfort [S] positive [O] my wife loves these shoes [I] indirect [SSEP] [A] these shoes [C] contextofuse use case [S] positive [O] my wife loves these shoes [I] indirect [SSEP] [A] these shoes [C] performance durability [S] positive [O] my wife loves these shoes
+Quints:  [('these shoes', 'appearance general', 'positive', 'my wife loves these shoes', 'indirect'), ('NULL', 'performance comfort', 'positive', 'my wife loves these shoes', 'indirect'), ('these shoes', 'contextofuse use case', 'positive', 'my wife loves these shoes', 'indirect'), ('these shoes', 'performance durability', 'positive', 'my wife loves these shoes', 'null')]
+Raw prediction:  i have a wide foot and these fit perfectly. i can wear them all day with no problems.
+Prediction:  i have a wide foot and these fit perfectly. i can wear them all day with no problems.
+Quints:  []
+Raw prediction:  i bought these shoes to wear in the house. i have a pair of converse that i wear around town. but they are too hot to wear in the house. these are perfect.
+Prediction:  i bought these shoes to wear in the house. i have a pair of converse that i wear around town. but they are too hot to wear in the house. these are perfect.
+Quints:  []
+Raw prediction:  [A] shoes [C] performance comfort [S] positive [O] the shoes are very comfortable [I] direct [SSEP] [A] NULL [C] performance comfort [S] positive [O] i have a high arch and wide feet, and these are the most comfortable shoes i have ever owned [I] indirect [SSEP] [A] shoes [C] performance durability [S] positive [O] i've had them for a couple of years now and they still look great [I] direct [SSEP] [A] shoes [C] cost/value [S] positive [
+Prediction:  [A] shoes [C] performance comfort [S] positive [O] the shoes are very comfortable [I] direct [SSEP] [A] NULL [C] performance comfort [S] positive [O] i have a high arch and wide feet, and these are the most comfortable shoes i have ever owned [I] indirect [SSEP] [A] shoes [C] performance durability [S] positive [O] i've had them for a couple of years now and they still look great [I] direct [SSEP] [A] shoes [C] cost/value [S] positive
+Quints:  [('shoes', 'performance comfort', 'positive', 'the shoes are very comfortable', 'direct'), ('NULL', 'performance comfort', 'positive', 'i have a high arch and wide feet , and these are the most comfortable shoes i have ever owned', 'indirect'), ('shoes', 'performance durability', 'positive', "i ' ve had them for a couple of years now and they still look great", 'direct'), ('shoes', 'cost/value', 'positive', 'null', 'null')]
+Raw prediction:  [A] shoes [C] performance comfort [S] negative [O] i bought these shoes in the hopes that they would be comfortable [I] direct [SSEP] [A] shoes [C] performance comfort [S] negative [O] they are very stiff and uncomfortable [I] direct [SSEP] [A] shoes [C] performance comfort [S] negative [O
+Prediction:  [A] shoes [C] performance comfort [S] negative [O] i bought these shoes in the hopes that they would be comfortable [I] direct [SSEP] [A] shoes [C] performance comfort [S] negative [O] they are very stiff and uncomfortable [I] direct [SSEP] [A] shoes [C] performance comfort [S] negative [O]
+Quints:  [('shoes', 'performance comfort', 'negative', 'i bought these shoes in the hopes that they would be comfortable', 'direct'), ('shoes', 'performance comfort', 'negative', 'they are very stiff and uncomfortable', 'direct'), ('shoes', 'performance comfort', 'negative', '', 'null')]
+Raw prediction:  the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable.
+Prediction:  the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable... but the sole is not durable enough... the shoe is very light and comfortable.
+Quints:  []
+Raw prediction:  i love these shoes. they're so comfortable and look great. i've gotten a lot of compliments on them. i would recommend these to anyone
+Prediction:  i love these shoes. they're so comfortable and look great. i've gotten a lot of compliments on them. i would recommend these to anyone
+Quints:  []
+Raw prediction:  the shoes
+Prediction:  the shoes
+Quints:  []
+Raw prediction:  i love these shoes. they're a little bit stiff at first but after a couple of days they're perfect. i bought them for work and they're really comfy. i have a wide foot and they fit perfectly.
+Prediction:  i love these shoes. they're a little bit stiff at first but after a couple of days they're perfect. i bought them for work and they're really comfy. i have a wide foot and they fit perfectly.
+Quints:  []
+Raw prediction:  [A] NULL [C] contextofuse usage frequency [S] positive [O] i've been skating for about 10 years [I] direct [SSEP] [A] NULL [C] contextofuse age [S] positive [O] i'm a 43 yr old male [I] direct [SSEP] [A] kswiss classic shoes [C] appearance form [S] positive [O] i love them [I] indirect [SSEP] [A] NULL [C] performance comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] performance durability [S] positive [O] last a long time [I] direct
+Prediction:  [A] NULL [C] contextofuse usage frequency [S] positive [O] i've been skating for about 10 years [I] direct [SSEP] [A] NULL [C] contextofuse age [S] positive [O] i'm a 43 yr old male [I] direct [SSEP] [A] kswiss classic shoes [C] appearance form [S] positive [O] i love them [I] indirect [SSEP] [A] NULL [C] performance comfort [S] positive [O] comfortable [I] direct [SSEP] [A] NULL [C] performance durability [S] positive [O] last a long time [I] direct
+Quints:  [('NULL', 'contextofuse usage frequency', 'positive', "i ' ve been skating for about 10 years", 'direct'), ('NULL', 'contextofuse age', 'positive', "i ' m a 43 yr old male", 'direct'), ('kswiss classic shoes', 'appearance form', 'positive', 'i love them', 'indirect'), ('NULL', 'performance comfort', 'positive', 'comfortable', 'direct'), ('NULL', 'performance durability', 'positive', 'last a long time', 'direct')]
+Raw prediction:  i have a wide foot and it's hard to find a shoe that fits. this shoe is perfect for me. i am a true 8.5 and the 8.5 fits perfectly. i don't have any issues with the width. i am 5'2 and 140 lbs. i got the white and silver and they look great. i am buying another pair in a different color.
+Prediction:  i have a wide foot and it's hard to find a shoe that fits. this shoe is perfect for me. i am a true 8.5 and the 8.5 fits perfectly. i don't have any issues with the width. i am 5'2 and 140 lbs. i got the white and silver and they look great. i am buying another pair in a different color.
+Quints:  []
+Raw prediction:  i'm a big fan of the nmd_r1. i have the original, the city sock, the r1, and the r2. this is a nice addition to the line.
+Prediction:  i'm a big fan of the nmd_r1. i have the original, the city sock, the r1, and the r2. this is a nice addition to the line.
+Quints:  []
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C]
+Prediction:  [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C]
+Quints:  [('shoes', 'performance comfort', 'positive', 'very comfortable', 'direct'), ('shoes', 'performance comfort', 'positive', 'very comfortable', 'direct'), ('shoes', '', 'null', 'null', 'null')]
+Raw prediction:  i bought this pair of shoes and the left shoe's sole is already coming apart.
+Prediction:  i bought this pair of shoes and the left shoe's sole is already coming apart.
+Quints:  []
+Raw prediction:  i love these shoes! they are very comfortable and i love the color. they are a little bit tight but i think they will stretch out
+Prediction:  i love these shoes! they are very comfortable and i love the color. they are a little bit tight but i think they will stretch out
+Quints:  []
+Raw prediction:  [A] shoes [C] contextofuse purchase_context [S] neutral [O] love these shoes [I] indirect [SSEP] [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] appearance general [S] positive [O] look great [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] fit perfectly [I] direct [S
+Prediction:  [A] shoes [C] contextofuse purchase_context [S] neutral [O] love these shoes [I] indirect [SSEP] [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] appearance general [S] positive [O] look great [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] fit perfectly [I] direct [S]
+Quints:  [('shoes', 'contextofuse purchase_context', 'neutral', 'love these shoes', 'indirect'), ('shoes', 'performance comfort', 'positive', 'very comfortable', 'direct'), ('shoes', 'appearance general', 'positive', 'look great', 'direct'), ('shoes', 'performance sizing/fit', 'positive', 'fit perfectly', 'direct [S]')]
+Raw prediction:  i got these shoes in a size 8. they are too small.
+Prediction:  i got these shoes in a size 8. they are too small.
+Quints:  []
+Raw prediction:  i'm not sure if it was the shoe or the fact that i was just getting used to walking in a new pair of shoes but i had some pain in my arches.
+Prediction:  i'm not sure if it was the shoe or the fact that i was just getting used to walking in a new pair of shoes but i had some pain in my arches.
+Quints:  []
+Raw prediction:  this is a great shoe. i have a high arch and need a shoe with a lot of support and cushion. this shoe has it all.
+Prediction:  this is a great shoe. i have a high arch and need a shoe with a lot of support and cushion. this shoe has it all.
+Quints:  []
+Raw prediction:  [A] shoes [C] general [S] positive
+Prediction:  [A] shoes [C] general [S] positive
+Quints:  [('shoes', 'general', 'positive', 'null', 'null')]
+Raw prediction:  [A] shoes [C] contextofuse purchase_context [S] negative [O] i'm not sure why i ordered these [I] direct [SSEP] [A] shoes [C] appearance material [S] negative [O] cheaply made [I] direct [SSEP] [A] sole [C] appearance shoe component [S] negative [O] very thin [I] direct [SSEP] [A] shoes [C] appearance form [S] negative [O] flimsy [I] direct [SSEP] [A] shoes [C] performance use case applicability
+Prediction:  [A] shoes [C] contextofuse purchase_context [S] negative [O] i'm not sure why i ordered these [I] direct [SSEP] [A] shoes [C] appearance material [S] negative [O] cheaply made [I] direct [SSEP] [A] sole [C] appearance shoe component [S] negative [O] very thin [I] direct [SSEP] [A] shoes [C] appearance form [S] negative [O] flimsy [I] direct [SSEP] [A] shoes [C] performance use case applicability
+Quints:  [('shoes', 'contextofuse purchase_context', 'negative', "i ' m not sure why i ordered these", 'direct'), ('shoes', 'appearance material', 'negative', 'cheaply made', 'direct'), ('sole', 'appearance shoe component', 'negative', 'very thin', 'direct'), ('shoes', 'appearance form', 'negative', 'flimsy', 'direct'), ('shoes', 'performance use case applicability', 'null', 'null', 'null')]
+Raw prediction:  [A] husband [C] contextofuse purchase_context [
+Prediction:  [A] husband [C] contextofuse purchase_context
+Quints:  [('husband', 'contextofuse purchase_context', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] appearance durability [S] positive [O] still in great condition [I] direct [SSEP] [A] shoes [C] contextofuse usage frequency [S] positive [O]
+Prediction:  [A] shoes [C] appearance durability [S] positive [O] still in great condition [I] direct [SSEP] [A] shoes [C] contextofuse usage frequency [S] positive [O]
+Quints:  [('shoes', 'appearance durability', 'positive', 'still in great condition', 'direct'), ('shoes', 'contextofuse usage frequency', 'positive', '', 'null')]
+Raw prediction:  [A] shoes [C] performance comfort [S] positive [O] very
+Prediction:  [A] shoes [C] performance comfort [S] positive [O] very
+Quints:  [('shoes', 'performance comfort', 'positive', 'very', 'null')]
+Raw prediction:  [A] purchase [C] contextofuse purchase_context [S] positive [O] i'm 100 % satisfied with my purchase [I] direct [SSEP] [A] shoes [
+Prediction:  [A] purchase [C] contextofuse purchase_context [S] positive [O] i'm 100 % satisfied with my purchase [I] direct [SSEP] [A] shoes
+Quints:  [('purchase', 'contextofuse purchase_context', 'positive', "i ' m 100 % satisfied with my purchase", 'direct'), ('shoes', 'null', 'null', 'null', 'null')]
+Raw prediction:  i love these shoes. i'm not a big fan of the colors but the fit and comfort are great.
+Prediction:  i love these shoes. i'm not a big fan of the colors but the fit and comfort are great.
+Quints:  []
+Raw prediction:  [A] shoes [C] general [S] positive [O] i love these shoes [I] direct [SSEP] [A] color [C] appearance color [S] positive [O] i love the color [I] indirect [SSEP] [A] fit [C] performance sizing/fit [S] positive [O] i love the fit [I] indirect [SSEP] [A] style [C] appearance style [S] positive [O] i love the style [I] indirect [SSEP] [A] comfort [C] performance comfort [S] positive [O] i love the comfort [I] indirect [SSEP] [A] price [C] performance price [S] positive [O] i love the price [I] indirect [SSEP] [A] look [C] appearance general [S] positive [O] i love the look [I] indirect [END]
+Prediction:  [A] shoes [C] general [S] positive [O] i love these shoes [I] direct [SSEP] [A] color [C] appearance color [S] positive [O] i love the color [I] indirect [SSEP] [A] fit [C] performance sizing/fit [S] positive [O] i love the fit [I] indirect [SSEP] [A] style [C] appearance style [S] positive [O] i love the style [I] indirect [SSEP] [A] comfort [C] performance comfort [S] positive [O] i love the comfort [I] indirect [SSEP] [A] price [C] performance price [S] positive [O] i love the price [I] indirect [SSEP] [A] look [C] appearance general [S] positive [O] i love the look [I] indirect
+Quints:  [('shoes', 'general', 'positive', 'i love these shoes', 'direct'), ('color', 'appearance color', 'positive', 'i love the color', 'indirect'), ('fit', 'performance sizing/fit', 'positive', 'i love the fit', 'indirect'), ('style', 'appearance style', 'positive', 'i love the style', 'indirect'), ('comfort', 'performance comfort', 'positive', 'i love the comfort', 'indirect'), ('price', 'performance price', 'positive', 'i love the price', 'indirect'), ('look', 'appearance general', 'positive', 'i love the look', 'indirect')]
+Raw prediction:  [A] shoes [C] performance comfort [S] positive [O] these shoes are very comfortable and easy to walk in [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] these shoes are very comfortable and easy to walk in [I] direct [SSEP] [A] shoes [C] appearance material [S] positive [O] these shoes are very comfortable and easy to walk in [I] direct [SSEP] [A] shoes [C] appearance form [S] positive [O] these shoes are very comfortable and easy to walk in [I] direct [SSEP] [A] shoes
+Prediction:  [A] shoes [C] performance comfort [S] positive [O] these shoes are very comfortable and easy to walk in [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] these shoes are very comfortable and easy to walk in [I] direct [SSEP] [A] shoes [C] appearance material [S] positive [O] these shoes are very comfortable and easy to walk in [I] direct [SSEP] [A] shoes [C] appearance form [S] positive [O] these shoes are very comfortable and easy to walk in [I] direct [SSEP] [A] shoes
+Quints:  [('shoes', 'performance comfort', 'positive', 'these shoes are very comfortable and easy to walk in', 'direct'), ('shoes', 'performance sizing/fit', 'positive', 'these shoes are very comfortable and easy to walk in', 'direct'), ('shoes', 'appearance material', 'positive', 'these shoes are very comfortable and easy to walk in', 'direct'), ('shoes', 'appearance form', 'positive', 'these shoes are very comfortable and easy to walk in', 'direct'), ('shoes', 'null', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] general [S] positive [O] great [I] direct [SSEP] [A] shoes [C] appearance general [S] positive [O] cute [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] super comfy [I
+Prediction:  [A] shoes [C] general [S] positive [O] great [I] direct [SSEP] [A] shoes [C] appearance general [S] positive [O] cute [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] super comfy [I]
+Quints:  [('shoes', 'general', 'positive', 'great', 'direct'), ('shoes', 'appearance general', 'positive', 'cute', 'direct'), ('shoes', 'performance comfort', 'positive', 'super comfy', '')]
+Raw prediction:  i love the shoe and enjoy how they on my feet. i also like the design.
+Prediction:  i love the shoe and enjoy how they on my feet. i also like the design.
+Quints:  []
+Raw prediction:  [A] new balance shoes [C] contextofuse purchase_context [S] positive [O] i have bought many new balance shoes over the years [I] indirect [SSEP] [A] shoes [C] performance comfort [S] negative [O] not very comfortable [I] direct [SSEP] [A] soles [C] performance durability [S] negative [O] very stiff and uncomfortable [I] direct [SSEP] [A] NULL [C] appearance misc [S] negative [O] i think they've changed the materials used in the sole [I] direct [SSEP] [A] NULL [C] contextofuse usage frequency [
+Prediction:  [A] new balance shoes [C] contextofuse purchase_context [S] positive [O] i have bought many new balance shoes over the years [I] indirect [SSEP] [A] shoes [C] performance comfort [S] negative [O] not very comfortable [I] direct [SSEP] [A] soles [C] performance durability [S] negative [O] very stiff and uncomfortable [I] direct [SSEP] [A] NULL [C] appearance misc [S] negative [O] i think they've changed the materials used in the sole [I] direct [SSEP] [A] NULL [C] contextofuse usage frequency
+Quints:  [('new balance shoes', 'contextofuse purchase_context', 'positive', 'i have bought many new balance shoes over the years', 'indirect'), ('shoes', 'performance comfort', 'negative', 'not very comfortable', 'direct'), ('soles', 'performance durability', 'negative', 'very stiff and uncomfortable', 'direct'), ('NULL', 'appearance misc', 'negative', "i think they ' ve changed the materials used in the sole", 'direct'), ('NULL', 'contextofuse usage frequency', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] contextofuse review_temporality [S] positive [O] love [I] direct [SSEP] [A] shoes [C] appearance general [S] positive [O] super cute [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] comfy [I] direct [SSEP]
+Prediction:  [A] shoes [C] contextofuse review_temporality [S] positive [O] love [I] direct [SSEP] [A] shoes [C] appearance general [S] positive [O] super cute [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] comfy [I] direct [SSEP]
+Quints:  [('shoes', 'contextofuse review_temporality', 'positive', 'love', 'direct'), ('shoes', 'appearance general', 'positive', 'super cute', 'direct'), ('shoes', 'performance comfort', 'positive', 'comfy', 'direct')]
+Raw prediction:  love the shoes but they are a little too narrow.
+Prediction:  love the shoes but they are a little too narrow.
+Quints:  []
+Raw prediction:  [A] shoes [C] performance sizing/fit [S] negative [O] these shoes are not true to size [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] negative [O] i wear a 10 in most shoes [I] indirect [SSEP] [A] shoes [C] performance sizing/fit [S] negative [O] i had to return these and get an 11 [I] indirect [SSEP] [A] 11 [C] performance sizing/fit [S] positive [O] NULL [I] direct [END
+Prediction:  [A] shoes [C] performance sizing/fit [S] negative [O] these shoes are not true to size [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] negative [O] i wear a 10 in most shoes [I] indirect [SSEP] [A] shoes [C] performance sizing/fit [S] negative [O] i had to return these and get an 11 [I] indirect [SSEP] [A] 11 [C] performance sizing/fit [S] positive [O] NULL [I] direct
+Quints:  [('shoes', 'performance sizing/fit', 'negative', 'these shoes are not true to size', 'direct'), ('shoes', 'performance sizing/fit', 'negative', 'i wear a 10 in most shoes', 'indirect'), ('shoes', 'performance sizing/fit', 'negative', 'i had to return these and get an 11', 'indirect'), ('11', 'performance sizing/fit', 'positive', 'NULL', 'direct')]
+Raw prediction:  [A] shoes [C] performance comfort [S] positive [O] comfy [I] direct [SSEP] [A] shoes [C] contextofuse use case [S] positive [O] wear them all the time [I] direct [SSEP] [A]
+Prediction:  [A] shoes [C] performance comfort [S] positive [O] comfy [I] direct [SSEP] [A] shoes [C] contextofuse use case [S] positive [O] wear them all the time [I] direct [SSEP] [A]
+Quints:  [('shoes', 'performance comfort', 'positive', 'comfy', 'direct'), ('shoes', 'contextofuse use case', 'positive', 'wear them all the time', 'direct')]
+Raw prediction:  i love these shoes. i'm a teacher and on my feet all day. they are so comfortable and cute!!!
+Prediction:  i love these shoes. i'm a teacher and on my feet all day. they are so comfortable and cute!!!
+Quints:  []
+Raw prediction:  [A] shoes [C] performance sizing/fit [S
+Prediction:  [A] shoes [C] performance sizing/fit [S]
+Quints:  [('shoes', 'performance sizing/fit', '', 'null', 'null')]
+Raw prediction:  [A] shoes [C] appearance general [S] positive [O] i love the way they look [I] direct [SSEP] [A] shoes [C] appearance form [S] negative [O] they're comfortable but they're a little too narrow [I] direct [SSEP] [A] shoes [C] appearance shoe component [S] negative [O] they feel like they're cutting into the sides of my feet [I] direct [SSEP] [A] sho
+Prediction:  [A] shoes [C] appearance general [S] positive [O] i love the way they look [I] direct [SSEP] [A] shoes [C] appearance form [S] negative [O] they're comfortable but they're a little too narrow [I] direct [SSEP] [A] shoes [C] appearance shoe component [S] negative [O] they feel like they're cutting into the sides of my feet [I] direct [SSEP] [A] sho
+Quints:  [('shoes', 'appearance general', 'positive', 'i love the way they look', 'direct'), ('shoes', 'appearance form', 'negative', "they ' re comfortable but they ' re a little too narrow", 'direct'), ('shoes', 'appearance shoe component', 'negative', "they feel like they ' re cutting into the sides of my feet", 'direct'), ('sho', 'null', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] NULL [C] performance durability [S] neutral [O] i was able to wear them for hours and my feet never hurt [I] direct [SSEP] [A] shoes [C] contextofuse use case [S] positive [O] i was able to
+Prediction:  [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] NULL [C] performance durability [S] neutral [O] i was able to wear them for hours and my feet never hurt [I] direct [SSEP] [A] shoes [C] contextofuse use case [S] positive [O] i was able to
+Quints:  [('shoes', 'performance comfort', 'positive', 'very comfortable', 'direct'), ('NULL', 'performance durability', 'neutral', 'i was able to wear them for hours and my feet never hurt', 'direct'), ('shoes', 'contextofuse use case', 'positive', 'i was able to', 'null')]
+Raw prediction:  i love the shoe, but it is not true to size. i am normally a 9. 5 and the 9. 5 is too small
+Prediction:  i love the shoe, but it is not true to size. i am normally a 9. 5 and the 9. 5 is too small
+Quints:  []
+Raw prediction:  this is my second pair of these shoes... the first pair lasted me a year and a half... i'm a teacher and wear them every day... i love these shoes... i wear a 9 and a half... but the 9 fits me better... i'm a teacher and wear them every day... i love these shoes.
+Prediction:  this is my second pair of these shoes... the first pair lasted me a year and a half... i'm a teacher and wear them every day... i love these shoes... i wear a 9 and a half... but the 9 fits me better... i'm a teacher and wear them every day... i love these shoes.
+Quints:  []
+Raw prediction:  [A] shoes [C] performance comfort [S] negative [O] not comfortable at all [I] direct [SSEP] [A] shoes [C] performance durability [S] negative [O] i could not walk [I] direct [SSEP] [A] NULL [C] performance sizing/fit [S] negative [O] i wore them for 2
+Prediction:  [A] shoes [C] performance comfort [S] negative [O] not comfortable at all [I] direct [SSEP] [A] shoes [C] performance durability [S] negative [O] i could not walk [I] direct [SSEP] [A] NULL [C] performance sizing/fit [S] negative [O] i wore them for 2
+Quints:  [('shoes', 'performance comfort', 'negative', 'not comfortable at all', 'direct'), ('shoes', 'performance durability', 'negative', 'i could not walk', 'direct'), ('NULL', 'performance sizing/fit', 'negative', 'i wore them for 2', 'null')]
+Raw prediction:  i was looking for
+Prediction:  i was looking for
+Quints:  []
+Raw prediction:  [A] shoes [C] performance sizing/fit [S
+Prediction:  [A] shoes [C] performance sizing/fit [S]
+Quints:  [('shoes', 'performance sizing/fit', '', 'null', 'null')]
+Raw prediction:  [A] NULL [C] general [S] positive [O] i've had this shoe for a while and i love it [I] direct [SSEP] [A] shoe [C] appearance form [S] positive [O] it's a nice shoe to wear everyday or for going out [I] indirect [SSEP] [A] NULL [C] performance comfort [S] positive [O] it's very comfortable and stylish [I] indirect [SSEP] [A] NULL [C] appearance form [S]
+Prediction:  [A] NULL [C] general [S] positive [O] i've had this shoe for a while and i love it [I] direct [SSEP] [A] shoe [C] appearance form [S] positive [O] it's a nice shoe to wear everyday or for going out [I] indirect [SSEP] [A] NULL [C] performance comfort [S] positive [O] it's very comfortable and stylish [I] indirect [SSEP] [A] NULL [C] appearance form [S]
+Quints:  [('NULL', 'general', 'positive', "i ' ve had this shoe for a while and i love it", 'direct'), ('shoe', 'appearance form', 'positive', "it ' s a nice shoe to wear everyday or for going out", 'indirect'), ('NULL', 'performance comfort', 'positive', "it ' s very comfortable and stylish", 'indirect'), ('NULL', 'appearance form', '', 'null', 'null')]
+Raw prediction:  [A] color [C] appearance color [S] positive [O] i love the color and the way they fit [I] direct [SSEP] [A] way [C] appearance form [S] positive [O] i love the way they fit [I] direct [SSEP] [A] cushioning [C] performance comfort [S] positive [O]
+Prediction:  [A] color [C] appearance color [S] positive [O] i love the color and the way they fit [I] direct [SSEP] [A] way [C] appearance form [S] positive [O] i love the way they fit [I] direct [SSEP] [A] cushioning [C] performance comfort [S] positive [O]
+Quints:  [('color', 'appearance color', 'positive', 'i love the color and the way they fit', 'direct'), ('way', 'appearance form', 'positive', 'i love the way they fit', 'direct'), ('cushioning', 'performance comfort', 'positive', '', 'null')]
+Raw prediction:  these shoes are perfect. i can walk all day and not have any foot pain.
+Prediction:  these shoes are perfect. i can walk all day and not have any foot pain.
+Quints:  []
+Raw prediction:  [A] these [C] performance comfort [S] positive [O] these are not as comfortable as the 1060v4, but are still very comfortable [I] direct [SSEP] [A] 1060v4 [C] performance comfort [S] negative [O] these are not as comfortable as the 1060v4 [I] direct [SSEP] [A] 1060v4 [C]
+Prediction:  [A] these [C] performance comfort [S] positive [O] these are not as comfortable as the 1060v4, but are still very comfortable [I] direct [SSEP] [A] 1060v4 [C] performance comfort [S] negative [O] these are not as comfortable as the 1060v4 [I] direct [SSEP] [A] 1060v4 [C]
+Quints:  [('these', 'performance comfort', 'positive', 'these are not as comfortable as the 1060v4 , but are still very comfortable', 'direct'), ('1060v4', 'performance comfort', 'negative', 'these are not as comfortable as the 1060v4', 'direct'), ('1060v4', '', 'null', 'null', 'null')]
+Raw prediction:  i am a huge fan of the nb 1080 series. i have run in the 1080v4, 1080v5, 1
+Prediction:  i am a huge fan of the nb 1080 series. i have run in the 1080v4, 1080v5, 1
+Quints:  []
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  i've worn these shoes for a week now and i love them. they are comfortable and fit well. i have a narrow foot and these shoes fit perfectly. i can wear them
+Prediction:  i've worn these shoes for a week now and i love them. they are comfortable and fit well. i have a narrow foot and these shoes fit perfectly. i can wear them
+Quints:  []
+Raw prediction:  i love these shoes. they're comfortable and cute. i've gotten a lot of compliments on them. i have a wide foot, and they fit me perfectly. i've been wearing them for a few weeks, and they've held up well.
+Prediction:  i love these shoes. they're comfortable and cute. i've gotten a lot of compliments on them. i have a wide foot, and they fit me perfectly. i've been wearing them for a few weeks, and they've held up well.
+Quints:  []
+Raw prediction:  [A] 11 [C] performance sizing
+Prediction:  [A] 11 [C] performance sizing
+Quints:  [('11', 'performance sizing', 'null', 'null', 'null')]
+Raw prediction:  i'm a size 9 and i've been we
+Prediction:  i'm a size 9 and i've been we
+Quints:  []
+Raw prediction:  i bought these shoes in a size 11. they are a little big but i like the look of them. i've only worn them once and they are already falling apart. i am very disappointed in this purchase.
+Prediction:  i bought these shoes in a size 11. they are a little big but i like the look of them. i've only worn them once and they are already falling apart. i am very disappointed in this purchase.
+Quints:  []
+Raw prediction:  [A] shoes [C] appearance general [S] positive [O] i love these shoes [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] i'm a size 7 and they fit perfectly [I] indirect [SSEP] [A] shoes [C] appearance form [S] positive [O] i love the color and the style [I] direct [SSEP] [A] shoes [C] appearance form [S] positive [O] i love the color and the style [I] direct [END]
+Prediction:  [A] shoes [C] appearance general [S] positive [O] i love these shoes [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] i'm a size 7 and they fit perfectly [I] indirect [SSEP] [A] shoes [C] appearance form [S] positive [O] i love the color and the style [I] direct [SSEP] [A] shoes [C] appearance form [S] positive [O] i love the color and the style [I] direct
+Quints:  [('shoes', 'appearance general', 'positive', 'i love these shoes', 'direct'), ('shoes', 'performance sizing/fit', 'positive', "i ' m a size 7 and they fit perfectly", 'indirect'), ('shoes', 'appearance form', 'positive', 'i love the color and the style', 'direct'), ('shoes', 'appearance form', 'positive', 'i love the color and the style', 'direct')]
+Raw prediction:  [A] fit [C] performance sizing/fit [S] negative [O] not sure if i'm just getting used to the [I] direct [SSEP] [A] fit [C] performance sizing/fit [S] neutral [O] i've found myself wearing these more and more lately [I] direct [SSEP] [A] fit [C] performance sizing/fit [S] negative [O
+Prediction:  [A] fit [C] performance sizing/fit [S] negative [O] not sure if i'm just getting used to the [I] direct [SSEP] [A] fit [C] performance sizing/fit [S] neutral [O] i've found myself wearing these more and more lately [I] direct [SSEP] [A] fit [C] performance sizing/fit [S] negative [O]
+Quints:  [('fit', 'performance sizing/fit', 'negative', "not sure if i ' m just getting used to the", 'direct'), ('fit', 'performance sizing/fit', 'neutral', "i ' ve found myself wearing these more and more lately", 'direct'), ('fit', 'performance sizing/fit', 'negative', '', 'null')]
+Raw prediction:  i love these shoes! i've been wearing them for a while and they are very comfortable. they are very cute and the color is beautiful. i love the heel height - just enough to give you a little lift but not too much that it's uncomfortable. they are very cute and the color is beautiful.
+Prediction:  i love these shoes! i've been wearing them for a while and they are very comfortable. they are very cute and the color is beautiful. i love the heel height - just enough to give you a little lift but not too much that it's uncomfortable. they are very cute and the color is beautiful.
+Quints:  []
+Raw prediction:  i love these shoes. i've had them for 2 years and they still look new.
+Prediction:  i love these shoes. i've had them for 2 years and they still look new.
+Quints:  []
+Raw prediction:  i have been a fan of these shoes for a long time. i have a high arch and need a shoe with good support. these shoes fit the bill.
+Prediction:  i have been a fan of these shoes for a long time. i have a high arch and need a shoe with good support. these shoes fit the bill.
+Quints:  []
+Raw prediction:  the shoes are comfortable but they run very small. i ordered a 9 and it fits like a 7.
+Prediction:  the shoes are comfortable but they run very small. i ordered a 9 and it fits like a 7.
+Quints:  []
+Raw prediction:  [A] shoes [C] performance sizing/fit [S] positive [O] fit her perfectly [I] direct [SSEP] [A] shoes [C] contextofuse purchase_context [S] positive [O] bought these for my 14 year old daughter [I] direct [SSEP] [A] shoes [C]
+Prediction:  [A] shoes [C] performance sizing/fit [S] positive [O] fit her perfectly [I] direct [SSEP] [A] shoes [C] contextofuse purchase_context [S] positive [O] bought these for my 14 year old daughter [I] direct [SSEP] [A] shoes [C]
+Quints:  [('shoes', 'performance sizing/fit', 'positive', 'fit her perfectly', 'direct'), ('shoes', 'contextofuse purchase_context', 'positive', 'bought these for my 14 year old daughter', 'direct'), ('shoes', '', 'null', 'null', 'null')]
+Raw prediction:  i am a 7. 5 and the 8 was too small. i had to return them.
+Prediction:  i am a 7. 5 and the 8 was too small. i had to return them.
+Quints:  []
+Raw prediction:  [A] men's version [C] performance support/stability [S] positive [O] have great support [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] are very comfortable [I] direct [SSEP] [A] shoes [C] performance support/stability [
+Prediction:  [A] men's version [C] performance support/stability [S] positive [O] have great support [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] are very comfortable [I] direct [SSEP] [A] shoes [C] performance support/stability
+Quints:  [("men ' s version", 'performance support/stability', 'positive', 'have great support', 'direct'), ('shoes', 'performance comfort', 'positive', 'are very comfortable', 'direct'), ('shoes', 'performance support/stability', 'null', 'null', 'null')]
+Raw prediction:  the shoes are very comfortable and true to size.
+Prediction:  the shoes are very comfortable and true to size.
+Quints:  []
+Raw prediction:  these are very nice shoes. the color is beautiful and they are very comfortable. the only reason i did not give them 5 stars is that the soles of the shoes are very slippery. i was walking on a very smooth floor and my feet kept sliding out from under me. i would not recommend these for anyone who is prone to falling.
+Prediction:  these are very nice shoes. the color is beautiful and they are very comfortable. the only reason i did not give them 5 stars is that the soles of the shoes are very slippery. i was walking on a very smooth floor and my feet kept sliding out from under me. i would not recommend these for anyone who is prone to falling.
+Quints:  []
+Raw prediction:  [A] a size 10 [C] performance sizing/fit [S] negative [O] ordered [I] direct [SSEP] [A] they [C] performance sizing/fit [S] negative [O] are a bit big [I]
+Prediction:  [A] a size 10 [C] performance sizing/fit [S] negative [O] ordered [I] direct [SSEP] [A] they [C] performance sizing/fit [S] negative [O] are a bit big [I]
+Quints:  [('a size 10', 'performance sizing/fit', 'negative', 'ordered', 'direct'), ('they', 'performance sizing/fit', 'negative', 'are a bit big', '')]
+Raw prediction:  [A] shoe [C] appearance general [S] positive [O] it's got a great look and feel [I] direct [SSEP] [A] shoe [C] performance
+Prediction:  [A] shoe [C] appearance general [S] positive [O] it's got a great look and feel [I] direct [SSEP] [A] shoe [C] performance
+Quints:  [('shoe', 'appearance general', 'positive', "it ' s got a great look and feel", 'direct'), ('shoe', 'performance', 'null', 'null', 'null')]
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  i love the color and the style. the material is nice. i would say it is true to size.
+Prediction:  i love the color and the style. the material is nice. i would say it is true to size.
+Quints:  []
+Raw prediction:  [A] shoes [C] performance sizing/fit [S] negative [O] i'm not sure what to do [I] indirect [SSEP] [A] shoes [C] performance sizing/fit [S] negative [O] i've been wearing these shoes for years and love them [I] indirect [SSEP] [A] shoes [C] performance sizing/fit [S] negative [O] i don't know what's changed
+Prediction:  [A] shoes [C] performance sizing/fit [S] negative [O] i'm not sure what to do [I] indirect [SSEP] [A] shoes [C] performance sizing/fit [S] negative [O] i've been wearing these shoes for years and love them [I] indirect [SSEP] [A] shoes [C] performance sizing/fit [S] negative [O] i don't know what's changed
+Quints:  [('shoes', 'performance sizing/fit', 'negative', "i ' m not sure what to do", 'indirect'), ('shoes', 'performance sizing/fit', 'negative', "i ' ve been wearing these shoes for years and love them", 'indirect'), ('shoes', 'performance sizing/fit', 'negative', "i don ' t know what ' s changed", 'null')]
+Raw prediction:  [A] shoes [C] performance
+Prediction:  [A] shoes [C] performance
+Quints:  [('shoes', 'performance', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] general [S] positive [O]
+Prediction:  [A] shoes [C] general [S] positive [O]
+Quints:  [('shoes', 'general', 'positive', '', 'null')]
+Raw prediction:  [A] shoes [C] performance sizing/fit [S] negative [O] the sizing is off [I] direct [SSEP] [A] foot [C] contextofuse use case [S] neutral [O] a 10.5 foot [I] direct [SSEP] [A] shoe [C] performance sizing/fit [S] negative [O] fits like a 10 [I] direct [SSEP] [A] NULL [C] general [S] positive [O] i like the shoes [I] direct [END]
+Prediction:  [A] shoes [C] performance sizing/fit [S] negative [O] the sizing is off [I] direct [SSEP] [A] foot [C] contextofuse use case [S] neutral [O] a 10.5 foot [I] direct [SSEP] [A] shoe [C] performance sizing/fit [S] negative [O] fits like a 10 [I] direct [SSEP] [A] NULL [C] general [S] positive [O] i like the shoes [I] direct
+Quints:  [('shoes', 'performance sizing/fit', 'negative', 'the sizing is off', 'direct'), ('foot', 'contextofuse use case', 'neutral', 'a 10 . 5 foot', 'direct'), ('shoe', 'performance sizing/fit', 'negative', 'fits like a 10', 'direct'), ('NULL', 'general', 'positive', 'i like the shoes', 'direct')]
+Raw prediction:  [A] shoes [C] general [S] positive [O] loves [I] direct [SSEP] [A] shoes [C]
+Prediction:  [A] shoes [C] general [S] positive [O] loves [I] direct [SSEP] [A] shoes [C]
+Quints:  [('shoes', 'general', 'positive', 'loves', 'direct'), ('shoes', '', 'null', 'null', 'null')]
+Raw prediction:  [A] NULL [C] performance s
+Prediction:  [A] NULL [C] performance s
+Quints:  [('NULL', 'performance s', 'null', 'null', 'null')]
+Raw prediction:  [A] shoe [C] appearance form [S] positive [O] great looking shoe [I] direct [SSEP] [A] shoe [C] performance fit [S] positive [O] great fit [I] direct [SSEP] [A] color
+Prediction:  [A] shoe [C] appearance form [S] positive [O] great looking shoe [I] direct [SSEP] [A] shoe [C] performance fit [S] positive [O] great fit [I] direct [SSEP] [A] color
+Quints:  [('shoe', 'appearance form', 'positive', 'great looking shoe', 'direct'), ('shoe', 'performance fit', 'positive', 'great fit', 'direct'), ('color', 'null', 'null', 'null', 'null')]
+Raw prediction:  [A] fit [C] performance sizing/fit [S] negative [O] very narrow and uncomfortable [I] direct [SSEP] [A] fit [C] contextofuse purchase_context [S] negative [O] i have never had this problem with any other new balance shoe [I] direct [END]
+Prediction:  [A] fit [C] performance sizing/fit [S] negative [O] very narrow and uncomfortable [I] direct [SSEP] [A] fit [C] contextofuse purchase_context [S] negative [O] i have never had this problem with any other new balance shoe [I] direct
+Quints:  [('fit', 'performance sizing/fit', 'negative', 'very narrow and uncomfortable', 'direct'), ('fit', 'contextofuse purchase_context', 'negative', 'i have never had this problem with any other new balance shoe', 'direct')]
+Raw prediction:  [A] NULL [C] performance sizing/fit [S] negative [O]
+Prediction:  [A] NULL [C] performance sizing/fit [S] negative [O]
+Quints:  [('NULL', 'performance sizing/fit', 'negative', '', 'null')]
+Raw prediction:  i have a pair of the originals. i love them. i have a pair of the 2.0's. i love them. i have a pair of the 3.0's. i love them. i have a pair of the 4.0's. i love them. i have a pair of the 5.0's. i love them. i have a pair of the 6.0's. i love them. i have a pair of the 7.0's. i love them. i have a pair of the 8.0's. i love them. i have a pair of the 9.0's. i love them. i have a pair of the 10.0's. i love
+Prediction:  i have a pair of the originals. i love them. i have a pair of the 2.0's. i love them. i have a pair of the 3.0's. i love them. i have a pair of the 4.0's. i love them. i have a pair of the 5.0's. i love them. i have a pair of the 6.0's. i love them. i have a pair of the 7.0's. i love them. i have a pair of the 8.0's. i love them. i have a pair of the 9.0's. i love them. i have a pair of the 10.0's. i love
+Quints:  []
+Raw prediction:  i love the shoes but the size is too small.
+Prediction:  i love the shoes but the size is too small.
+Quints:  []
+Raw prediction:  the shoes are very comfortable. but they are not true to size.
+Prediction:  the shoes are very comfortable. but they are not true to size.
+Quints:  []
+Raw prediction:  i bought these for my husband and he loves them. he said they are very comfortable and they fit well.
+Prediction:  i bought these for my husband and he loves them. he said they are very comfortable and they fit well.
+Quints:  []
+Raw prediction:  the shoes are very comfortable and are true to size. the only thing i didn't like about them is that the laces are not
+Prediction:  the shoes are very comfortable and are true to size. the only thing i didn't like about them is that the laces are not
+Quints:  []
+Raw prediction:  [A] NULL [C] performance sizing/fit [S] negative [O] the sho
+Prediction:  [A] NULL [C] performance sizing/fit [S] negative [O] the sho
+Quints:  [('NULL', 'performance sizing/fit', 'negative', 'the sho', 'null')]
+Raw prediction:  [A] shoes [C] appearance misc [S] positive [
+Prediction:  [A] shoes [C] appearance misc [S] positive
+Quints:  [('shoes', 'appearance misc', 'positive', 'null', 'null')]
+Raw prediction:  i ordered a pair of these boots and when they arrived they were too small. i ordered another pair and they were too big. i am returning them.
+Prediction:  i ordered a pair of these boots and when they arrived they were too small. i ordered another pair and they were too big. i am returning them.
+Quints:  []
+Raw prediction:  the shoes are very comfortable and light weight. i have wide feet and the shoes fit perfectly.
+Prediction:  the shoes are very comfortable and light weight. i have wide feet and the shoes fit perfectly.
+Quints:  []
+Raw prediction:  i love the shoe. but it is too narrow. i wear 8.5 wide. i ordered a 9.5 wide and it is still too narrow. i am going to return it.
+Prediction:  i love the shoe. but it is too narrow. i wear 8.5 wide. i ordered a 9.5 wide and it is still too narrow. i am going to return it.
+Quints:  []
+Raw prediction:  [A] feet [C] appearance width [S] positive [O] very wide [I] direct [SSEP] [A] feet [C] performance sizing/fit [S] positive [O] a size 10 [I] direct [SSEP] [A] size 11 [C] performance sizing/fit [S] positive [O] ordered these in a size 11 [I] direct [SSEP] [A] feet [C] performance comfort [S] positive [O] comfortable [I] direct [SSEP] [A] bottom [C] appearance misc [S] positive [O] great grip on the bottom [I]
+Prediction:  [A] feet [C] appearance width [S] positive [O] very wide [I] direct [SSEP] [A] feet [C] performance sizing/fit [S] positive [O] a size 10 [I] direct [SSEP] [A] size 11 [C] performance sizing/fit [S] positive [O] ordered these in a size 11 [I] direct [SSEP] [A] feet [C] performance comfort [S] positive [O] comfortable [I] direct [SSEP] [A] bottom [C] appearance misc [S] positive [O] great grip on the bottom [I]
+Quints:  [('feet', 'appearance width', 'positive', 'very wide', 'direct'), ('feet', 'performance sizing/fit', 'positive', 'a size 10', 'direct'), ('size 11', 'performance sizing/fit', 'positive', 'ordered these in a size 11', 'direct'), ('feet', 'performance comfort', 'positive', 'comfortable', 'direct'), ('bottom', 'appearance misc', 'positive', 'great grip on the bottom', '')]
+Raw prediction:  i ordered a size 10 and they fit perfectly. they are a little loose around the ankle but it's ok.
+Prediction:  i ordered a size 10 and they fit perfectly. they are a little loose around the ankle but it's ok.
+Quints:  []
+Raw prediction:  [A] shoes [C] general [S] positive [O] are very comfortable and fit great [I] direct [SSEP] [A] soles [C] appearance shoe component [S] negative [O] are very squeaky [I] direct [SSEP] [A] NULL [C] performance use case applicability [S] negative [O] i have had them for about a month [I] direct [SSEP] [A] NULL [C] contextofuse review_temporality [S] neutral [O] are still squeaky [I] direct [END]
+Prediction:  [A] shoes [C] general [S] positive [O] are very comfortable and fit great [I] direct [SSEP] [A] soles [C] appearance shoe component [S] negative [O] are very squeaky [I] direct [SSEP] [A] NULL [C] performance use case applicability [S] negative [O] i have had them for about a month [I] direct [SSEP] [A] NULL [C] contextofuse review_temporality [S] neutral [O] are still squeaky [I] direct
+Quints:  [('shoes', 'general', 'positive', 'are very comfortable and fit great', 'direct'), ('soles', 'appearance shoe component', 'negative', 'are very squeaky', 'direct'), ('NULL', 'performance use case applicability', 'negative', 'i have had them for about a month', 'direct'), ('NULL', 'contextofuse review_temporality', 'neutral', 'are still squeaky', 'direct')]
+Raw prediction:  [A] shoe [C] performance comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoe [C] performance support [S] positive [O] has good support [I] direct [SSEP] [A] shoe [C] performance durability [S] positive [O] i have been wearing this shoe
+Prediction:  [A] shoe [C] performance comfort [S] positive [O] comfortable [I] direct [SSEP] [A] shoe [C] performance support [S] positive [O] has good support [I] direct [SSEP] [A] shoe [C] performance durability [S] positive [O] i have been wearing this shoe
+Quints:  [('shoe', 'performance comfort', 'positive', 'comfortable', 'direct'), ('shoe', 'performance support', 'positive', 'has good support', 'direct'), ('shoe', 'performance durability', 'positive', 'i have been wearing this shoe', 'null')]
+Raw prediction:  [A] shoes [C] appearance general [S] positive [O] i was so excited to get these [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] i love the look [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] they are very comfortable [I] direct [SSEP] [A] sho
+Prediction:  [A] shoes [C] appearance general [S] positive [O] i was so excited to get these [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] i love the look [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] they are very comfortable [I] direct [SSEP] [A] sho
+Quints:  [('shoes', 'appearance general', 'positive', 'i was so excited to get these', 'direct'), ('shoes', 'performance comfort', 'positive', 'i love the look', 'direct'), ('shoes', 'performance comfort', 'positive', 'they are very comfortable', 'direct'), ('sho', 'null', 'null', 'null', 'null')]
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  [A] shoes [C] performance sizing/fit [S] negative [O] NULL [I] direct
+Prediction:  [A] shoes [C] performance sizing/fit [S] negative [O] NULL [I] direct
+Quints:  [('shoes', 'performance sizing/fit', 'negative', 'NULL', 'direct')]
+Raw prediction:  [A] reef sandals [C] contextofuse purchase_context [S] neutral [O] i was excited to try these because they're so c
+Prediction:  [A] reef sandals [C] contextofuse purchase_context [S] neutral [O] i was excited to try these because they're so c
+Quints:  [('reef sandals', 'contextofuse purchase_context', 'neutral', "i was excited to try these because they ' re so c", 'null')]
+Raw prediction:  the shoes are great. i'm a little disappointed with the sizing. i usually wear a 10.5 in women's shoes. i ordered a 10.5 and it's too big. i ordered a 10 and it's a little too small. i think i'm going to have to return them and order a 10.5.
+Prediction:  the shoes are great. i'm a little disappointed with the sizing. i usually wear a 10.5 in women's shoes. i ordered a 10.5 and it's too big. i ordered a 10 and it's a little too small. i think i'm going to have to return them and order a 10.5.
+Quints:  []
+Raw prediction:  i would say it is a good shoe. it is a bit heavy and not as comfortable as i would have liked.
+Prediction:  i would say it is a good shoe. it is a bit heavy and not as comfortable as i would have liked.
+Quints:  []
+Raw prediction:  i really like these shoes. they are comfortable and look great. i am a big fan of the brand and these shoes are no exception.
+Prediction:  i really like these shoes. they are comfortable and look great. i am a big fan of the brand and these shoes are no exception.
+Quints:  []
+Raw prediction:  [A] shoes [C] contextofuse purchase_context [S] positive [O] i bought these shoes for my husband [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] the way they fit [I] direct [SSEP] [A] shoes [C] performance general [S] positive [
+Prediction:  [A] shoes [C] contextofuse purchase_context [S] positive [O] i bought these shoes for my husband [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] the way they fit [I] direct [SSEP] [A] shoes [C] performance general [S] positive
+Quints:  [('shoes', 'contextofuse purchase_context', 'positive', 'i bought these shoes for my husband', 'direct'), ('shoes', 'performance sizing/fit', 'positive', 'the way they fit', 'direct'), ('shoes', 'performance general', 'positive', 'null', 'null')]
+Raw prediction:  these shoes are so cute and comfortable... but they are a little narrow and run small. i love them.
+Prediction:  these shoes are so cute and comfortable... but they are a little narrow and run small. i love them.
+Quints:  []
+Raw prediction:  i have always liked this style but when you said they where leather, i think you should say they are leather and manmade.
+Prediction:  i have always liked this style but when you said they where leather, i think you should say they are leather and manmade.
+Quints:  []
+Raw prediction:  [A] NULL [C] performance comfort [S] negative [
+Prediction:  [A] NULL [C] performance comfort [S] negative
+Quints:  [('NULL', 'performance comfort', 'negative', 'null', 'null')]
+Raw prediction:  great shoes! they look great and are comfortable. i have a wide foot and they fit perfectly.
+Prediction:  great shoes! they look great and are comfortable. i have a wide foot and they fit perfectly.
+Quints:  []
+Raw prediction:  [A] 574's [C] general [S] positive [O] nice [I] indirect [SSEP] [A] 574's [C] performance support/stability [S] negative [O] not more like the 574's [I] indirect [SSEP] [A] 574's [C] performance sizing/fit [S] negative [O] not more like the 574's [I] indirect [SSEP] [A] 574's [C
+Prediction:  [A] 574's [C] general [S] positive [O] nice [I] indirect [SSEP] [A] 574's [C] performance support/stability [S] negative [O] not more like the 574's [I] indirect [SSEP] [A] 574's [C] performance sizing/fit [S] negative [O] not more like the 574's [I] indirect [SSEP] [A] 574's [C]
+Quints:  [("574 ' s", 'general', 'positive', 'nice', 'indirect'), ("574 ' s", 'performance support/stability', 'negative', "not more like the 574 ' s", 'indirect'), ("574 ' s", 'performance sizing/fit', 'negative', "not more like the 574 ' s", 'indirect'), ("574 ' s", '', 'null', 'null', 'null')]
+Raw prediction:  i'm a 12 1 / 2 and i wear a 13 in these. i'm very happy with them.
+Prediction:  i'm a 12 1 / 2 and i wear a 13 in these. i'm very happy with them.
+Quints:  []
+Raw prediction:  these are the best shoes ever. i've been wearing them for years. they are so comfortable. i've had 3 pairs and i
+Prediction:  these are the best shoes ever. i've been wearing them for years. they are so comfortable. i've had 3 pairs and i
+Quints:  []
+Raw prediction:  [A] shoes [C] general [S] positive [O] i love [I] direct [SSEP] [A] shoes [C] performance durability [S] positive [O] still in great shape [I] direct [SSEP] [A] shoes [C] performance use case [S] positive [O] worn them on a couple of hikes and they've held up well [I] direct [SSEP] [A] shoes [C] performance sizing
+Prediction:  [A] shoes [C] general [S] positive [O] i love [I] direct [SSEP] [A] shoes [C] performance durability [S] positive [O] still in great shape [I] direct [SSEP] [A] shoes [C] performance use case [S] positive [O] worn them on a couple of hikes and they've held up well [I] direct [SSEP] [A] shoes [C] performance sizing
+Quints:  [('shoes', 'general', 'positive', 'i love', 'direct'), ('shoes', 'performance durability', 'positive', 'still in great shape', 'direct'), ('shoes', 'performance use case', 'positive', "worn them on a couple of hikes and they ' ve held up well", 'direct'), ('shoes', 'performance sizing', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] appearance general [S] positive [O] love the way they look [I] direct [SSEP] [A] shoes [C
+Prediction:  [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] appearance general [S] positive [O] love the way they look [I] direct [SSEP] [A] shoes [C]
+Quints:  [('shoes', 'performance comfort', 'positive', 'very comfortable', 'direct'), ('shoes', 'appearance general', 'positive', 'love the way they look', 'direct'), ('shoes', '', 'null', 'null', 'null')]
+Raw prediction:  i've been using this product for 3 weeks now and i've seen a significant decrease in the appearance of my acne. i've been using it twice a day, once in the morning and once at night. i love that it's a gel and not a liquid. i've been using it in conjunction with the clarifying lotion and i've seen a drastic improvement in the appearance of my skin. i've had a lot of people ask me what i've been using and i've recommended it to a lot of people. i'm definitely going to continue using this product.
+Prediction:  i've been using this product for 3 weeks now and i've seen a significant decrease in the appearance of my acne. i've been using it twice a day, once in the morning and once at night. i love that it's a gel and not a liquid. i've been using it in conjunction with the clarifying lotion and i've seen a drastic improvement in the appearance of my skin. i've had a lot of people ask me what i've been using and i've recommended it to a lot of people. i'm definitely going to continue using this product.
+Quints:  []
+Raw prediction:  the shoes are great. the only thing is they are not true to size. i'm usually a 7. 5 in most shoes. but i had to order a 6. 5 for these.
+Prediction:  the shoes are great. the only thing is they are not true to size. i'm usually a 7. 5 in most shoes. but i had to order a 6. 5 for these.
+Quints:  []
+Raw prediction:  i ordered these in a size 8 and they are too small. i usually wear a 7.5 and i wish i had ordered a 7.5 in these. i'm going to order a size 7.5 and hope they fit.
+Prediction:  i ordered these in a size 8 and they are too small. i usually wear a 7.5 and i wish i had ordered a 7.5 in these. i'm going to order a size 7.5 and hope they fit.
+Quints:  []
+Raw prediction:  [A] shoes
+Prediction:  [A] shoes
+Quints:  [('shoes', 'null', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] contextofuse purchase
+Prediction:  [A] shoes [C] contextofuse purchase
+Quints:  [('shoes', 'contextofuse purchase', 'null', 'null', 'null')]
+Raw prediction:  [A] sneaker [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] NULL [C] performance sizing/fit [S] negative [O] it is a bit small [I] direct
+Prediction:  [A] sneaker [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] NULL [C] performance sizing/fit [S] negative [O] it is a bit small [I] direct
+Quints:  [('sneaker', 'performance comfort', 'positive', 'very comfortable', 'direct'), ('NULL', 'performance sizing/fit', 'negative', 'it is a bit small', 'direct')]
+Raw prediction:  i'm on my 2nd pair of these shoes and i love them! i'm
+Prediction:  i'm on my 2nd pair of these shoes and i love them! i'm
+Quints:  []
+Raw prediction:  [A] shoe [C
+Prediction:  [A] shoe [C]
+Quints:  [('shoe', '', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] performance comfort [S] positive [O] really comfortable [I] direct [SSEP] [A] shoes [C] performance durability [S] positive [O] worn them for over 2 years and they still look good [I] direct [SSEP] [A] second pair in a different color [C] appearance form [S] positive [O] bought a [I] direct [SSEP] [A] NULL [C] contextofuse usage frequency [S] positive [O] worn them for over 2 years and they still look good [I] direct [SSEP] [A] NULL [C] contextofuse review_tem
+Prediction:  [A] shoes [C] performance comfort [S] positive [O] really comfortable [I] direct [SSEP] [A] shoes [C] performance durability [S] positive [O] worn them for over 2 years and they still look good [I] direct [SSEP] [A] second pair in a different color [C] appearance form [S] positive [O] bought a [I] direct [SSEP] [A] NULL [C] contextofuse usage frequency [S] positive [O] worn them for over 2 years and they still look good [I] direct [SSEP] [A] NULL [C] contextofuse review_tem
+Quints:  [('shoes', 'performance comfort', 'positive', 'really comfortable', 'direct'), ('shoes', 'performance durability', 'positive', 'worn them for over 2 years and they still look good', 'direct'), ('second pair in a different color', 'appearance form', 'positive', 'bought a', 'direct'), ('NULL', 'contextofuse usage frequency', 'positive', 'worn them for over 2 years and they still look good', 'direct'), ('NULL', 'contextofuse review_tem', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] contextofuse usage frequency [S] positive [O] worn them all summer [I] direct [SSEP] [A] shoes [C] contextofuse purchase_context [S] positive [O] bought another pair in a different color [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] i have a high arch and flat feet so finding a good pair of shoes is hard to find [I] indirect [SSEP] [A] shoes [C] performance
+Prediction:  [A] shoes [C] contextofuse usage frequency [S] positive [O] worn them all summer [I] direct [SSEP] [A] shoes [C] contextofuse purchase_context [S] positive [O] bought another pair in a different color [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] i have a high arch and flat feet so finding a good pair of shoes is hard to find [I] indirect [SSEP] [A] shoes [C] performance
+Quints:  [('shoes', 'contextofuse usage frequency', 'positive', 'worn them all summer', 'direct'), ('shoes', 'contextofuse purchase_context', 'positive', 'bought another pair in a different color', 'direct'), ('shoes', 'performance sizing/fit', 'positive', 'i have a high arch and flat feet so finding a good pair of shoes is hard to find', 'indirect'), ('shoes', 'performance', 'null', 'null', 'null')]
+Raw prediction:  [A] shoes [C] general [S] positive [O] are great [I] direct [SSEP] [A] shoes [C] contextofuse use case [S] positive [O] wear them all the time [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] fit perfectly [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] performance support/stability [S] positive [O] can walk around in them all day [I] direct [
+Prediction:  [A] shoes [C] general [S] positive [O] are great [I] direct [SSEP] [A] shoes [C] contextofuse use case [S] positive [O] wear them all the time [I] direct [SSEP] [A] shoes [C] performance sizing/fit [S] positive [O] fit perfectly [I] direct [SSEP] [A] shoes [C] performance comfort [S] positive [O] very comfortable [I] direct [SSEP] [A] shoes [C] performance support/stability [S] positive [O] can walk around in them all day [I] direct
+Quints:  [('shoes', 'general', 'positive', 'are great', 'direct'), ('shoes', 'contextofuse use case', 'positive', 'wear them all the time', 'direct'), ('shoes', 'performance sizing/fit', 'positive', 'fit perfectly', 'direct'), ('shoes', 'performance comfort', 'positive', 'very comfortable', 'direct'), ('shoes', 'performance support/stability', 'positive', 'can walk around in them all day', 'direct')]
+Processing dataset...
+Processing Dataset:   0%|          | 0/125 [00:00<?, ?item/s]Processing Dataset:   1%|          | 1/125 [00:00<00:40,  3.04item/s]Processing Dataset:   3%|▎         | 4/125 [00:00<00:11, 10.40item/s]Processing Dataset:   6%|▌         | 7/125 [00:00<00:07, 14.93item/s]Processing Dataset:   8%|▊         | 10/125 [00:00<00:06, 17.87item/s]Processing Dataset:  10%|█         | 13/125 [00:00<00:05, 19.73item/s]Processing Dataset:  13%|█▎        | 16/125 [00:00<00:05, 21.03item/s]Processing Dataset:  15%|█▌        | 19/125 [00:01<00:04, 21.89item/s]Processing Dataset:  18%|█▊        | 22/125 [00:01<00:04, 22.49item/s]Processing Dataset:  20%|██        | 25/125 [00:01<00:04, 22.89item/s]Processing Dataset:  22%|██▏       | 28/125 [00:01<00:04, 23.25item/s]Processing Dataset:  25%|██▍       | 31/125 [00:01<00:03, 23.52item/s]Processing Dataset:  27%|██▋       | 34/125 [00:01<00:03, 23.68item/s]Processing Dataset:  30%|██▉       | 37/125 [00:01<00:03, 23.83item/s]Processing Dataset:  32%|███▏      | 40/125 [00:01<00:03, 23.82item/s]Processing Dataset:  34%|███▍      | 43/125 [00:02<00:03, 23.75item/s]Processing Dataset:  37%|███▋      | 46/125 [00:02<00:03, 23.79item/s]Processing Dataset:  39%|███▉      | 49/125 [00:02<00:03, 23.83item/s]Processing Dataset:  42%|████▏     | 52/125 [00:02<00:03, 23.90item/s]Processing Dataset:  44%|████▍     | 55/125 [00:02<00:02, 23.71item/s]Processing Dataset:  46%|████▋     | 58/125 [00:02<00:02, 23.81item/s]Processing Dataset:  49%|████▉     | 61/125 [00:02<00:02, 23.73item/s]Processing Dataset:  51%|█████     | 64/125 [00:02<00:02, 23.76item/s]Processing Dataset:  54%|█████▎    | 67/125 [00:03<00:02, 23.86item/s]Processing Dataset:  56%|█████▌    | 70/125 [00:03<00:02, 23.87item/s]Processing Dataset:  58%|█████▊    | 73/125 [00:03<00:02, 23.91item/s]Processing Dataset:  61%|██████    | 76/125 [00:03<00:02, 23.91item/s]Processing Dataset:  63%|██████▎   | 79/125 [00:03<00:01, 23.85item/s]Processing Dataset:  66%|██████▌   | 82/125 [00:03<00:01, 23.90item/s]Processing Dataset:  68%|██████▊   | 85/125 [00:03<00:01, 23.93item/s]Processing Dataset:  70%|███████   | 88/125 [00:03<00:01, 23.97item/s]Processing Dataset:  73%|███████▎  | 91/125 [00:04<00:01, 24.01item/s]Processing Dataset:  75%|███████▌  | 94/125 [00:04<00:01, 24.06item/s]Processing Dataset:  78%|███████▊  | 97/125 [00:04<00:01, 24.13item/s]Processing Dataset:  80%|████████  | 100/125 [00:04<00:01, 24.10item/s]Processing Dataset:  82%|████████▏ | 103/125 [00:04<00:00, 24.06item/s]Processing Dataset:  85%|████████▍ | 106/125 [00:04<00:00, 24.07item/s]Processing Dataset:  87%|████████▋ | 109/125 [00:04<00:00, 24.09item/s]Processing Dataset:  90%|████████▉ | 112/125 [00:04<00:00, 23.97item/s]Processing Dataset:  92%|█████████▏| 115/125 [00:05<00:00, 24.05item/s]Processing Dataset:  94%|█████████▍| 118/125 [00:05<00:00, 24.06item/s]Processing Dataset:  97%|█████████▋| 121/125 [00:05<00:00, 24.05item/s]Processing Dataset:  99%|█████████▉| 124/125 [00:05<00:00, 24.10item/s]Processing Dataset: 100%|██████████| 125/125 [00:05<00:00, 22.70item/s]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:33<07:48, 33.43s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:05<07:07, 32.86s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:37<06:28, 32.41s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:08<05:51, 31.94s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:40<05:17, 31.72s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:11<04:42, 31.37s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:41<04:09, 31.16s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:12<03:37, 31.13s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:45<03:08, 31.49s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:17<02:38, 31.72s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:49<02:07, 31.83s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:21<01:35, 31.78s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:52<01:03, 31.64s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:21<00:30, 30.82s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:23<00:00, 22.10s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:23<00:00, 29.55s/it]
+Running pipeline...
+Total output tokens: 209669
+Avg out tokens per prompt: 1677.352
+Raw prediction:  i love the design of these shoes. they are so stylish and look great with jeans.
+Prediction:  i love the design of these shoes. they are so stylish and look great with jeans.
+Quints:  []
+Raw prediction:  ordered a size 10. 5. fit a little small
+Prediction:  ordered a size 10. 5. fit a little small
+Quints:  []
+Raw prediction:  [O] are very comfortable [SSEP] [
+Prediction:  [O] are very comfortable [SSEP]
+Quints:  [('null', 'null', 'null', 'are very comfortable', 'null')]
+Raw prediction:  these sneakers are great, but the quality is not as good as the old ones.
+Prediction:  these sneakers are great, but the quality is not as good as the old ones.
+Quints:  []
+Raw prediction:  these are not as described. they are not waterproof.
+Prediction:  these are not as described. they are not waterproof.
+Quints:  []
+Raw prediction:  these shoes are amazing. i love the style and they are super comfortable. i would definitely recommend them.
+Prediction:  these shoes are amazing. i love the style and they are super comfortable. i would definitely recommend them.
+Quints:  []
+Raw prediction:  these shoes are very comfortable and fit great. however, the color is not what i expected.
+Prediction:  these shoes are very comfortable and fit great. however, the color is not what i expected.
+Quints:  []
+Raw prediction:  these shoes are very comfortable and fit well. they are great for walking and running.
+Prediction:  these shoes are very comfortable and fit well. they are great for walking and running.
+Quints:  []
+Raw prediction:  these are the best shoes i have ever had. they are comfortable, stylish, and perfect for hiking.
+Prediction:  these are the best shoes i have ever had. they are comfortable, stylish, and perfect for hiking.
+Quints:  []
+Raw prediction:  [O] i love these shoes [SSEP] [O] comfortable [SSEP] [O] cute
+Prediction:  [O] i love these shoes [SSEP] [O] comfortable [SSEP] [O] cute
+Quints:  [('null', 'null', 'null', 'i love these shoes', 'null'), ('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'cute', 'null')]
+Raw prediction:  i bought these shoes because they looked comfortable and stylish. however, after wearing them for a few hours, i realized that they are not comfortable at all.
+Prediction:  i bought these shoes because they looked comfortable and stylish. however, after wearing them for a few hours, i realized that they are not comfortable at all.
+Quints:  []
+Raw prediction:  these shoes are horrible. i bought them for work and they are so uncomfortable. the arch support is terrible and they don't provide any cushioning. i have to wear them for 8 hours a day
+Prediction:  these shoes are horrible. i bought them for work and they are so uncomfortable. the arch support is terrible and they don't provide any cushioning. i have to wear them for 8 hours a day
+Quints:  []
+Raw prediction:  i am very disappointed with these shoes. they are not comfortable at all. i have tried to wear them multiple times but they just don't work for me.
+Prediction:  i am very disappointed with these shoes. they are not comfortable at all. i have tried to wear them multiple times but they just don't work for me.
+Quints:  []
+Raw prediction:  i am very disappointed with this shoe. it looks great but it is not comfortable at all.
+Prediction:  i am very disappointed with this shoe. it looks great but it is not comfortable at all.
+Quints:  []
+Raw prediction:  these are the worst shoes i have ever bought. they are so uncomfortable and difficult to get on.
+Prediction:  these are the worst shoes i have ever bought. they are so uncomfortable and difficult to get on.
+Quints:  []
+Raw prediction:  [O
+Prediction:  [O]
+Quints:  []
+Raw prediction:  these shoes are awesome! i love the color and the fit is perfect. they are comfortable and the sole provides good support. they are great for walking and running.
+Prediction:  these shoes are awesome! i love the color and the fit is perfect. they are comfortable and the sole provides good support. they are great for walking and running.
+Quints:  []
+Raw prediction:  [O] sole is too thin and does not provide enough support for my feet [SSEP] [O] sole is too thin and does not provide enough
+Prediction:  [O] sole is too thin and does not provide enough support for my feet [SSEP] [O] sole is too thin and does not provide enough
+Quints:  [('null', 'null', 'null', 'sole is too thin and does not provide enough support for my feet', 'null'), ('null', 'null', 'null', 'sole is too thin and does not provide enough', 'null')]
+Raw prediction:  i bought these shoes for my daughter and she loves them. they are very comfortable and easy to slip on and off.
+Prediction:  i bought these shoes for my daughter and she loves them. they are very comfortable and easy to slip on and off.
+Quints:  []
+Raw prediction:  these shoes are really comfortable and the color is great.
+Prediction:  these shoes are really comfortable and the color is great.
+Quints:  []
+Raw prediction:  the shoe is comfortable but the sizing is a bit off. i ordered my usual size 9 but it fits like a 7.
+Prediction:  the shoe is comfortable but the sizing is a bit off. i ordered my usual size 9 but it fits like a 7.
+Quints:  []
+Raw prediction:  The input data is in the format of "text" and the output data is in the format of "O] opinion". The task is to identify the opinion spans from the input data and create a set of quadruples for each opinion span, where each quadruple consists of the aspect, category, sentiment, and opinion
+Prediction:  The input data is in the format of "text" and the output data is in the format of "O] opinion". The task is to identify the opinion spans from the input data and create a set of quadruples for each opinion span, where each quadruple consists of the aspect, category, sentiment, and opinion
+Quints:  []
+Raw prediction:  i ordered a pair of shoes and they were not what i expected. they were suppose to be black and white but instead they were brown and white. i am very disappointed with this purchase and will not order from this company again
+Prediction:  i ordered a pair of shoes and they were not what i expected. they were suppose to be black and white but instead they were brown and white. i am very disappointed with this purchase and will not order from this company again
+Quints:  []
+Raw prediction:  i have been wearing these shoes for a few days now and i have to say that they are really comfortable.
+Prediction:  i have been wearing these shoes for a few days now and i have to say that they are really comfortable.
+Quints:  []
+Raw prediction:  these shoes are great. they are super comfortable and i can wear them all day.
+Prediction:  these shoes are great. they are super comfortable and i can wear them all day.
+Quints:  []
+Raw prediction:  * The input data is a review text, and the task is to extract the aspects, categories, sentiments, and opinions from the review.
+Prediction:  * The input data is a review text, and the task is to extract the aspects, categories, sentiments, and opinions from the review.
+Quints:  []
+Raw prediction:  i ordered a pair of shoes from this seller and received them within a week. the shoes were exactly as described and fit perfectly. i am very satisfied with this purchase and would definitely buy from this seller again.
+Prediction:  i ordered a pair of shoes from this seller and received them within a week. the shoes were exactly as described and fit perfectly. i am very satisfied with this purchase and would definitely buy from this seller again.
+Quints:  []
+Raw prediction:  i love these slides. they are comfortable and stylish. i have been wearing them nonstop since i got them.
+Prediction:  i love these slides. they are comfortable and stylish. i have been wearing them nonstop since i got them.
+Quints:  []
+Raw prediction:  The above examples are for illustration purposes only and may not represent real-world input data. The output format and the specific sentiment, aspect, and opinion words used may vary depending on the application and
+Prediction:  The above examples are for illustration purposes only and may not represent real-world input data. The output format and the specific sentiment, aspect, and opinion words used may vary depending on the application and
+Quints:  []
+Raw prediction:  i love these shoes, they are so comfortable. i wear them all the time. however, i do wish they came in more colors.
+Prediction:  i love these shoes, they are so comfortable. i wear them all the time. however, i do wish they came in more colors.
+Quints:  []
+Raw prediction:  [O] they are really cute [SSEP]
+Prediction:  [O] they are really cute [SSEP]
+Quints:  [('null', 'null', 'null', 'they are really cute', 'null')]
+Raw prediction:  [O] purchase these sho
+Prediction:  [O] purchase these sho
+Quints:  [('null', 'null', 'null', 'purchase these sho', 'null')]
+Raw prediction:  these shoes are great. they are comfortable and easy to slip on and off. i have worn them for a few months now and they still look
+Prediction:  these shoes are great. they are comfortable and easy to slip on and off. i have worn them for a few months now and they still look
+Quints:  []
+Raw prediction:  [O] love the quality of the shoe [SSEP] [O] beautiful
+Prediction:  [O] love the quality of the shoe [SSEP] [O] beautiful
+Quints:  [('null', 'null', 'null', 'love the quality of the shoe', 'null'), ('null', 'null', 'null', 'beautiful', 'null')]
+Raw prediction:  I love the style and color of this shoe. It is very comfortable and the price is affordable.
+Prediction:  I love the style and color of this shoe. It is very comfortable and the price is affordable.
+Quints:  []
+Raw prediction:  i am a teacher and i wear these shoes every day.
+Prediction:  i am a teacher and i wear these shoes every day.
+Quints:  []
+Raw prediction:  [O] so comfortable [SSEP] [O] i wear them all the time [SSEP] [O] easy to slip on and off [END]
+Prediction:  [O] so comfortable [SSEP] [O] i wear them all the time [SSEP] [O] easy to slip on and off
+Quints:  [('null', 'null', 'null', 'so comfortable', 'null'), ('null', 'null', 'null', 'i wear them all the time', 'null'), ('null', 'null', 'null', 'easy to slip on and off', 'null')]
+Raw prediction:  these boots are amazing. they are comfortable and look great. i have received so many compliments on them. they are definitely worth the investment.
+Prediction:  these boots are amazing. they are comfortable and look great. i have received so many compliments on them. they are definitely worth the investment.
+Quints:  []
+Raw prediction:  i like this shoe... the design is great...
+Prediction:  i like this shoe... the design is great...
+Quints:  []
+Raw prediction:  [O] i bought these shoes because they were advertised as having great arch support and cushioning [SSEP] [O] comfortable [SSEP] [O] they don't have enough arch support for my high arches [SSEP] [O] they don
+Prediction:  [O] i bought these shoes because they were advertised as having great arch support and cushioning [SSEP] [O] comfortable [SSEP] [O] they don't have enough arch support for my high arches [SSEP] [O] they don
+Quints:  [('null', 'null', 'null', 'i bought these shoes because they were advertised as having great arch support and cushioning', 'null'), ('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', "they don ' t have enough arch support for my high arches", 'null'), ('null', 'null', 'null', 'they don', 'null')]
+Raw prediction:  [O] very comfortable [SSEP] [O] very soft and the material is very thin [SSEP
+Prediction:  [O] very comfortable [SSEP] [O] very soft and the material is very thin [SSEP]
+Quints:  [('null', 'null', 'null', 'very comfortable', 'null'), ('null', 'null', 'null', 'very soft and the material is very thin', 'null')]
+Raw prediction:  i love these shoes. they are comfortable and stylish. i have worn them for work and play and they always make me feel confident and put together.
+Prediction:  i love these shoes. they are comfortable and stylish. i have worn them for work and play and they always make me feel confident and put together.
+Quints:  []
+Raw prediction:  [O] i love these shoes [SSEP] [O] so comfortable [SSEP
+Prediction:  [O] i love these shoes [SSEP] [O] so comfortable [SSEP]
+Quints:  [('null', 'null', 'null', 'i love these shoes', 'null'), ('null', 'null', 'null', 'so comfortable', 'null')]
+Raw prediction:  i am very disappointed with the quality of these shoes. they are not made well and fall apart quickly. i will not be purchasing from this brand again
+Prediction:  i am very disappointed with the quality of these shoes. they are not made well and fall apart quickly. i will not be purchasing from this brand again
+Quints:  []
+Raw prediction:  The input data contains examples of both positive and negative sentiment. The output should contain only the sentiment of the opinion expressed in the input data.
+Prediction:  The input data contains examples of both positive and negative sentiment. The output should contain only the sentiment of the opinion expressed in the input data.
+Quints:  []
+Raw prediction:  i ordered these in a size 8. i have had shoe stores measure
+Prediction:  i ordered these in a size 8. i have had shoe stores measure
+Quints:  []
+Raw prediction:  these sandals are perfect for
+Prediction:  these sandals are perfect for
+Quints:  []
+Raw prediction:  The input data contains reviews with a combination of positive and negative opinions. The task is to extract the opinion spans from the input data and categorize them into one of the predefined categories (aspect-category-sentiment-opinion). The output format is [O] opinion [SSEP] [A] aspect [C] category [S] sentiment [O] opinion.
+Prediction:  The input data contains reviews with a combination of positive and negative opinions. The task is to extract the opinion spans from the input data and categorize them into one of the predefined categories (aspect-category-sentiment-opinion). The output format is [O] opinion [SSEP] [A] aspect [C] category [S] sentiment [O] opinion.
+Quints:  [('null', 'null', 'null', 'opinion', 'null'), ('aspect', 'category', 'sentiment', 'opinion .', 'null')]
+Raw prediction:  [O] not as good as i thought it would be [SSEP] [O] not as good as i thought it would be [END]
+Prediction:  [O] not as good as i thought it would be [SSEP] [O] not as good as i thought it would be
+Quints:  [('null', 'null', 'null', 'not as good as i thought it would be', 'null'), ('null', 'null', 'null', 'not as good as i thought it would be', 'null')]
+Raw prediction:  [O] not comfortable [SSEP] [O] not worth the price [END]
+Prediction:  [O] not comfortable [SSEP] [O] not worth the price
+Quints:  [('null', 'null', 'null', 'not comfortable', 'null'), ('null', 'null', 'null', 'not worth the price', 'null')]
+Raw prediction:  [O] comfortable [SSEP] [O] fit perfectly [SSEP] [O] i ordered
+Prediction:  [O] comfortable [SSEP] [O] fit perfectly [SSEP] [O] i ordered
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'fit perfectly', 'null'), ('null', 'null', 'null', 'i ordered', 'null')]
+Raw prediction:  not as described. not comfortable.
+Prediction:  not as described. not comfortable.
+Quints:  []
+Raw prediction:  Write a Python program to extract the opinion spans from the input data and create ACOS quadruples.
+Prediction:  Write a Python program to extract the opinion spans from the input data and create ACOS quadruples.
+Quints:  []
+Raw prediction:  [O] so comfortable [SSEP] [O]
+Prediction:  [O] so comfortable [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'so comfortable', 'null')]
+Raw prediction:  i have been wearing these shoes for a few days now and i have to say that they are really comfortable. they are also very lightweight and easy to slip on and off.
+Prediction:  i have been wearing these shoes for a few days now and i have to say that they are really comfortable. they are also very lightweight and easy to slip on and off.
+Quints:  []
+Raw prediction:  [O] great for walking [SSEP]
+Prediction:  [O] great for walking [SSEP]
+Quints:  [('null', 'null', 'null', 'great for walking', 'null')]
+Raw prediction:  1. Identify the aspect, category, sentiment, and opinion for each input sentence.
+Prediction:  1. Identify the aspect, category, sentiment, and opinion for each input sentence.
+Quints:  []
+Raw prediction:  the shoe is not as comfortable as other reeboks. i like gray but was not expecting gray from the photo!
+Prediction:  the shoe is not as comfortable as other reeboks. i like gray but was not expecting gray from the photo!
+Quints:  []
+Raw prediction:  the shoes are comfortable and lightweight. the laces are a bit long but it's not a big deal.
+Prediction:  the shoes are comfortable and lightweight. the laces are a bit long but it's not a big deal.
+Quints:  []
+Raw prediction:  i have a narrow foot and these fit great. the only issue is that the toes are a bit too pointy.
+Prediction:  i have a narrow foot and these fit great. the only issue is that the toes are a bit too pointy.
+Quints:  []
+Raw prediction:  * [O] i received the color which wasn't the one look like in the website
+Prediction:  * [O] i received the color which wasn't the one look like in the website
+Quints:  [('null', 'null', 'null', "i received the color which wasn ' t the one look like in the website", 'null')]
+Raw prediction:  i have been wearing this shoe for a few weeks now and i have to say that it is not as comfortable as i thought it would be. the heel of the shoe is too tight and it causes discomfort when i walk. i have to wear it with a heel lift to make it more comfortable.
+Prediction:  i have been wearing this shoe for a few weeks now and i have to say that it is not as comfortable as i thought it would be. the heel of the shoe is too tight and it causes discomfort when i walk. i have to wear it with a heel lift to make it more comfortable.
+Quints:  []
+Raw prediction:  these shoes are very comfortable and fit well.
+Prediction:  these shoes are very comfortable and fit well.
+Quints:  []
+Raw prediction:  these shoes are amazing. i have never worn anything so comfortable in my life.
+Prediction:  these shoes are amazing. i have never worn anything so comfortable in my life.
+Quints:  []
+Raw prediction:  i bought this shoe in white and it's a great shoe. it's comfortable and lightweight.
+Prediction:  i bought this shoe in white and it's a great shoe. it's comfortable and lightweight.
+Quints:  []
+Raw prediction:  i love the style of these shoes. they are perfect for work.
+Prediction:  i love the style of these shoes. they are perfect for work.
+Quints:  []
+Raw prediction:  i don't like this shoe because it is not comfortable. the quality is not good.
+Prediction:  i don't like this shoe because it is not comfortable. the quality is not good.
+Quints:  []
+Raw prediction:  i was excited to receive my shoes but when i opened the box i was disappointed. the shoes were not what i expected. they were not as pictured.
+Prediction:  i was excited to receive my shoes but when i opened the box i was disappointed. the shoes were not what i expected. they were not as pictured.
+Quints:  []
+Raw prediction:  i hate these shoes. they are so uncomfortable. i would never wear them again.
+Prediction:  i hate these shoes. they are so uncomfortable. i would never wear them again.
+Quints:  []
+Raw prediction:  the shoes are very comfortable and i love the style but the quality is not what it used to be. i have several pairs of these and i will continue to buy them because they are comfortable but i wish they would go back to the old quality.
+Prediction:  the shoes are very comfortable and i love the style but the quality is not what it used to be. i have several pairs of these and i will continue to buy them because they are comfortable but i wish they would go back to the old quality.
+Quints:  []
+Raw prediction:  [O] comfortable [S
+Prediction:  [O] comfortable [S]
+Quints:  [('null', 'null', '', 'comfortable', 'null')]
+Raw prediction:  i love the shoe but the color is not what i expected. it's more gray than the picture.
+Prediction:  i love the shoe but the color is not what i expected. it's more gray than the picture.
+Quints:  []
+Raw prediction:  i love these shoes. they are so
+Prediction:  i love these shoes. they are so
+Quints:  []
+Raw prediction:  [O] make my foot turn in [SSEP] [O] not sure if keeping or returning them [END]
+Prediction:  [O] make my foot turn in [SSEP] [O] not sure if keeping or returning them
+Quints:  [('null', 'null', 'null', 'make my foot turn in', 'null'), ('null', 'null', 'null', 'not sure if keeping or returning them', 'null')]
+Raw prediction:  [O] opinion
+Prediction:  [O] opinion
+Quints:  [('null', 'null', 'null', 'opinion', 'null')]
+Raw prediction:  these shoes are amazing. i have never had a more comfortable shoe. they are well made and look great.
+Prediction:  these shoes are amazing. i have never had a more comfortable shoe. they are well made and look great.
+Quints:  []
+Raw prediction:  [O] i love [SSEP] [O] super comfortable and lightweight [SSEP] [
+Prediction:  [O] i love [SSEP] [O] super comfortable and lightweight [SSEP]
+Quints:  [('null', 'null', 'null', 'i love', 'null'), ('null', 'null', 'null', 'super comfortable and lightweight', 'null')]
+Raw prediction:  [O] fit perfectly
+Prediction:  [O] fit perfectly
+Quints:  [('null', 'null', 'null', 'fit perfectly', 'null')]
+Raw prediction:  these are super cute but they run small. i normally wear a 6 but these are a little snug
+Prediction:  these are super cute but they run small. i normally wear a 6 but these are a little snug
+Quints:  []
+Raw prediction:  this product is terrible. the design is horrible and the quality is very poor. i would not recommend this product to anyone.
+Prediction:  this product is terrible. the design is horrible and the quality is very poor. i would not recommend this product to anyone.
+Quints:  []
+Raw prediction:  these are great shoes. they are comfortable and supportive. i would recommend them to anyone looking for a good running shoe.
+Prediction:  these are great shoes. they are comfortable and supportive. i would recommend them to anyone looking for a good running shoe.
+Quints:  []
+Raw prediction:  these shoes are not worth the price. i'm disappointed with the quality.
+Prediction:  these shoes are not worth the price. i'm disappointed with the quality.
+Quints:  []
+Raw prediction:  [O] i ordered a size 9 and they fit well [SSEP] [O] i usually wear a size
+Prediction:  [O] i ordered a size 9 and they fit well [SSEP] [O] i usually wear a size
+Quints:  [('null', 'null', 'null', 'i ordered a size 9 and they fit well', 'null'), ('null', 'null', 'null', 'i usually wear a size', 'null')]
+Raw prediction:  the shoe is a 6 but it fits like a 7. i have a narrow foot and this shoe is perfect for me. however the shoe is a bit narrow. i have to say that the shoe is really comfortable.
+Prediction:  the shoe is a 6 but it fits like a 7. i have a narrow foot and this shoe is perfect for me. however the shoe is a bit narrow. i have to say that the shoe is really comfortable.
+Quints:  []
+Raw prediction:  [O] the shoe is good quality but the size is a little small [SSEP] [O] NULL [END]
+Prediction:  [O] the shoe is good quality but the size is a little small [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'the shoe is good quality but the size is a little small', 'null')]
+Raw prediction:  [O] opinion
+Prediction:  [O] opinion
+Quints:  [('null', 'null', 'null', 'opinion', 'null')]
+Raw prediction:  these shoes are amazing, i have been wearing them for a few days now and i am in love with them. they are so comfortable and easy to slip on and off.
+Prediction:  these shoes are amazing, i have been wearing them for a few days now and i am in love with them. they are so comfortable and easy to slip on and off.
+Quints:  []
+Raw prediction:  these shoes are so comfortable and stylish. i wear a size 7 in most shoes and these fit perfectly. i would
+Prediction:  these shoes are so comfortable and stylish. i wear a size 7 in most shoes and these fit perfectly. i would
+Quints:  []
+Raw prediction:  [O] these are really comfortable and i love the style [SSEP] [O] it fits like a 9 [S
+Prediction:  [O] these are really comfortable and i love the style [SSEP] [O] it fits like a 9 [S]
+Quints:  [('null', 'null', 'null', 'these are really comfortable and i love the style', 'null'), ('null', 'null', '', 'it fits like a 9', 'null')]
+Raw prediction:  i have been looking for a pair of shoes like these for a long time. they are exactly what i wanted. the quality is great and they are comfortable. i ordered a 7 and they fit perfectly.
+Prediction:  i have been looking for a pair of shoes like these for a long time. they are exactly what i wanted. the quality is great and they are comfortable. i ordered a 7 and they fit perfectly.
+Quints:  []
+Raw prediction:  i love the style and color of this shoe but it runs small.
+Prediction:  i love the style and color of this shoe but it runs small.
+Quints:  []
+Raw prediction:  these shoes are too narrow and uncomfortable.
+Prediction:  these shoes are too narrow and uncomfortable.
+Quints:  []
+Raw prediction:  [O] comfortable and stylish [SSEP] [O] runs small [END]
+Prediction:  [O] comfortable and stylish [SSEP] [O] runs small
+Quints:  [('null', 'null', 'null', 'comfortable and stylish', 'null'), ('null', 'null', 'null', 'runs small', 'null')]
+Raw prediction:  [O] very comfortable [SSEP] [
+Prediction:  [O] very comfortable [SSEP]
+Quints:  [('null', 'null', 'null', 'very comfortable', 'null')]
+Raw prediction:  the shoe is comfortable but the size is not true to size. i had to order a half size larger than usual.
+Prediction:  the shoe is comfortable but the size is not true to size. i had to order a half size larger than usual.
+Quints:  []
+Raw prediction:  the sneakers are very comfortable and lightweight, but the cushioning is a bit lacking in the heel. i would recommend this shoe to someone who wants a comfortable, lightweight shoe for casual wear.
+Prediction:  the sneakers are very comfortable and lightweight, but the cushioning is a bit lacking in the heel. i would recommend this shoe to someone who wants a comfortable, lightweight shoe for casual wear.
+Quints:  []
+Raw prediction:  these shoes are very comfortable and perfect for running. i am a 9 in men's and i ordered a 9. they fit great and are very supportive.
+Prediction:  these shoes are very comfortable and perfect for running. i am a 9 in men's and i ordered a 9. they fit great and are very supportive.
+Quints:  []
+Raw prediction:  i was expecting a lot from this shoe. it looked great and had a lot of good reviews. but when i put it on, it was very uncomfortable. the arch support was not good and the shoe was too narrow.
+Prediction:  i was expecting a lot from this shoe. it looked great and had a lot of good reviews. but when i put it on, it was very uncomfortable. the arch support was not good and the shoe was too narrow.
+Quints:  []
+Raw prediction:  these shoes are super comfortable and i love the style. however
+Prediction:  these shoes are super comfortable and i love the style. however
+Quints:  []
+Raw prediction:  [O] i am not a fan of the color of this shoe [SSEP] [O] it is not my style [END]
+Prediction:  [O] i am not a fan of the color of this shoe [SSEP] [O] it is not my style
+Quints:  [('null', 'null', 'null', 'i am not a fan of the color of this shoe', 'null'), ('null', 'null', 'null', 'it is not my style', 'null')]
+Raw prediction:  the shoe is very comfortable and i love the color. however, the shoe is not as pictured. the color is not even close to what i expected
+Prediction:  the shoe is very comfortable and i love the color. however, the shoe is not as pictured. the color is not even close to what i expected
+Quints:  []
+Raw prediction:  i have been wearing these for a few weeks now and they are the best shoes i have ever owned. they are so comfortable and supportive. i have been wearing them every day since i got them.
+Prediction:  i have been wearing these for a few weeks now and they are the best shoes i have ever owned. they are so comfortable and supportive. i have been wearing them every day since i got them.
+Quints:  []
+Raw prediction:  i bought these for my husband and he loves them. they are very comfortable and he wears them all the time.
+Prediction:  i bought these for my husband and he loves them. they are very comfortable and he wears them all the time.
+Quints:  []
+Raw prediction:  i love the shoe but it is a bit too tight.
+Prediction:  i love the shoe but it is a bit too tight.
+Quints:  []
+Raw prediction:  i ordered my usual size and it fit perfectly. very comfortable and stylish shoe.
+Prediction:  i ordered my usual size and it fit perfectly. very comfortable and stylish shoe.
+Quints:  []
+Raw prediction:  The input data contains various grammatical errors and typos, but the expected output should still be grammatically correct. Also, the input data may contain redundant or unnecessary information, but the output should only include the most relevant aspects.
+Prediction:  The input data contains various grammatical errors and typos, but the expected output should still be grammatically correct. Also, the input data may contain redundant or unnecessary information, but the output should only include the most relevant aspects.
+Quints:  []
+Raw prediction:  [O] i like the color [SSEP] [O] i like the style [SSEP] [O] it is perfect for my needs
+Prediction:  [O] i like the color [SSEP] [O] i like the style [SSEP] [O] it is perfect for my needs
+Quints:  [('null', 'null', 'null', 'i like the color', 'null'), ('null', 'null', 'null', 'i like the style', 'null'), ('null', 'null', 'null', 'it is perfect for my needs', 'null')]
+Raw prediction:  [O] very comfortable [SSEP] [O] good fit [SSEP] [O] great shoe for running [END]
+Prediction:  [O] very comfortable [SSEP] [O] good fit [SSEP] [O] great shoe for running
+Quints:  [('null', 'null', 'null', 'very comfortable', 'null'), ('null', 'null', 'null', 'good fit', 'null'), ('null', 'null', 'null', 'great shoe for running', 'null')]
+Raw prediction:  i'm so glad i got these shoes. they're super comfortable and look great with everything. i've been wearing them nonstop since i got them.
+Prediction:  i'm so glad i got these shoes. they're super comfortable and look great with everything. i've been wearing them nonstop since i got them.
+Quints:  []
+Raw prediction:  i have been wearing these shoes for a week now and they are great. they are comfortable and supportive. they are also very stylish. i am very happy with this purchase.
+Prediction:  i have been wearing these shoes for a week now and they are great. they are comfortable and supportive. they are also very stylish. i am very happy with this purchase.
+Quints:  []
+Raw prediction:  [O] i'm on my feet all day [SSEP] [O] very comfortable [SSE
+Prediction:  [O] i'm on my feet all day [SSEP] [O] very comfortable [S]SE
+Quints:  [('null', 'null', 'null', "i ' m on my feet all day", 'null'), ('null', 'null', 'E', 'very comfortable', 'null')]
+Raw prediction:  [O] these shoes are awesome [SSEP] [O] i bought them for my son and he loves them [SSEP] [O] they are comfortable [SSEP] [O] the quality is great [END]
+Prediction:  [O] these shoes are awesome [SSEP] [O] i bought them for my son and he loves them [SSEP] [O] they are comfortable [SSEP] [O] the quality is great
+Quints:  [('null', 'null', 'null', 'these shoes are awesome', 'null'), ('null', 'null', 'null', 'i bought them for my son and he loves them', 'null'), ('null', 'null', 'null', 'they are comfortable', 'null'), ('null', 'null', 'null', 'the quality is great', 'null')]
+Raw prediction:  i ordered this shoe in black and
+Prediction:  i ordered this shoe in black and
+Quints:  []
+Raw prediction:  i love the style of this shoe but it's not comfortable.
+Prediction:  i love the style of this shoe but it's not comfortable.
+Quints:  []
+Raw prediction:  [O] comfortable
+Prediction:  [O] comfortable
+Quints:  [('null', 'null', 'null', 'comfortable', 'null')]
+Raw prediction:  Given the input data, identify the opinion spans from the input data and aspect-category-sentiment-opinion quadruples. For implicit opinions (labeled NULL), identify the span of text that best expresses the sentiment implicitly.
+Prediction:  Given the input data, identify the opinion spans from the input data and aspect-category-sentiment-opinion quadruples. For implicit opinions (labeled NULL), identify the span of text that best expresses the sentiment implicitly.
+Quints:  []
+Raw prediction:  i was looking for a pair of shoes that would be comfortable for long walks. i tried these on and they fit well. however, after walking for a while, i realized that they were not as comfortable as i had hoped. the soles were too stiff and did not provide enough cushioning. i also found that the shoes were not as supportive as i needed. i ended up returning them.
+Prediction:  i was looking for a pair of shoes that would be comfortable for long walks. i tried these on and they fit well. however, after walking for a while, i realized that they were not as comfortable as i had hoped. the soles were too stiff and did not provide enough cushioning. i also found that the shoes were not as supportive as i needed. i ended up returning them.
+Quints:  []
+Raw prediction:  i am very satisfied with this product. the sneaker is comfortable and stylish.
+Prediction:  i am very satisfied with this product. the sneaker is comfortable and stylish.
+Quints:  []
+Raw prediction:  i ordered these shoes for my son and he loves them. they are very comfortable and he says they are the best shoes he has ever had.
+Prediction:  i ordered these shoes for my son and he loves them. they are very comfortable and he says they are the best shoes he has ever had.
+Quints:  []
+Raw prediction:  these are the most comfortable shoes i have ever worn. i have been wearing
+Prediction:  these are the most comfortable shoes i have ever worn. i have been wearing
+Quints:  []
+Raw prediction:  * Opinion: positive
+Prediction:  * Opinion: positive
+Quints:  []
+Raw prediction:  [O] the shipping took forever and when i got my order [SSEP] [O] it was the wrong item [SSEP]
+Prediction:  [O] the shipping took forever and when i got my order [SSEP] [O] it was the wrong item [SSEP]
+Quints:  [('null', 'null', 'null', 'the shipping took forever and when i got my order', 'null'), ('null', 'null', 'null', 'it was the wrong item', 'null')]
+Raw prediction:  [O] comfortable [SSEP] [O] stylish [SSEP] [O] so happy with my new [SSEP] [O] so happy with
+Prediction:  [O] comfortable [SSEP] [O] stylish [SSEP] [O] so happy with my new [SSEP] [O] so happy with
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'stylish', 'null'), ('null', 'null', 'null', 'so happy with my new', 'null'), ('null', 'null', 'null', 'so happy with', 'null')]
+Raw prediction:  great shoe but the sizing was a little off. need about a half size bigger. hard to give an honest assessment on an item that doesn't fit perfectly. shoe no longer available so i cannot exchange for bigger size.
+Prediction:  great shoe but the sizing was a little off. need about a half size bigger. hard to give an honest assessment on an item that doesn't fit perfectly. shoe no longer available so i cannot exchange for bigger size.
+Quints:  []
+Raw prediction:  these are not comfortable at all. i have wide feet and these are way too narrow.
+Prediction:  these are not comfortable at all. i have wide feet and these are way too narrow.
+Quints:  []
+Processing dataset...
+Processing Dataset:   0%|          | 0/125 [00:00<?, ?item/s]Processing Dataset:   1%|          | 1/125 [00:00<01:46,  1.16item/s]Processing Dataset:  26%|██▋       | 33/125 [00:00<00:01, 46.54item/s]Processing Dataset:  59%|█████▉    | 74/125 [00:01<00:00, 107.61item/s]Processing Dataset:  92%|█████████▏| 115/125 [00:01<00:00, 166.17item/s]Processing Dataset: 100%|██████████| 125/125 [00:01<00:00, 105.28item/s]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:31<07:23, 31.65s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:03<06:52, 31.73s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:35<06:21, 31.79s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:06<05:45, 31.43s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:37<05:13, 31.31s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:09<04:43, 31.45s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:40<04:12, 31.58s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:12<03:40, 31.56s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:44<03:10, 31.80s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:15<02:38, 31.65s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:47<02:06, 31.53s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:17<01:33, 31.20s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [06:51<01:03, 31.85s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:20<00:31, 31.22s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:22<00:00, 22.41s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:22<00:00, 29.52s/it]
+This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
+Running pipeline...
+Total output tokens: 342551
+Avg out tokens per prompt: 2740.408
+Raw prediction:  i am very disappointed in this shoe. the quality is not what i expected. the shoe is not comfortable and the material is not durable.
+Prediction:  i am very disappointed in this shoe. the quality is not what i expected. the shoe is not comfortable and the material is not durable.
+Quints:  []
+Raw prediction:  the shoes are super cute and comfortable. i love the color and style.
+Prediction:  the shoes are super cute and comfortable. i love the color and style.
+Quints:  []
+Raw prediction:  i ordered these shoes and when i got them they were not what i expected. they were not comfortable and the quality was not what i thought it would be.
+Prediction:  i ordered these shoes and when i got them they were not what i expected. they were not comfortable and the quality was not what i thought it would be.
+Quints:  []
+Raw prediction:  these shoes are so comfortable. i have worn them every day since i got them.
+Prediction:  these shoes are so comfortable. i have worn them every day since i got them.
+Quints:  []
+Raw prediction:  i ordered a 10. 5 but they came in a 11. 5. they fit great but the 10. 5 would have been better.
+Prediction:  i ordered a 10. 5 but they came in a 11. 5. they fit great but the 10. 5 would have been better.
+Quints:  []
+Raw prediction:  the shoe is comfortable and looks great. i wear it for work and it's perfect for walking around the office.
+Prediction:  the shoe is comfortable and looks great. i wear it for work and it's perfect for walking around the office.
+Quints:  []
+Raw prediction:  these are the most uncomfortable shoes i have ever worn. they are so narrow and tight that my toes are cramped and my feet hurt after only a few minutes of wearing them. i can't believe i paid so much money for these terrible shoes.
+Prediction:  these are the most uncomfortable shoes i have ever worn. they are so narrow and tight that my toes are cramped and my feet hurt after only a few minutes of wearing them. i can't believe i paid so much money for these terrible shoes.
+Quints:  []
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  i bought these shoes for my son and he loves them. they are very comfortable and he wears them all the time.
+Prediction:  i bought these shoes for my son and he loves them. they are very comfortable and he wears them all the time.
+Quints:  []
+Raw prediction:  [O] they are the worst shoes i have ever worn [SSEP] [O] uncomfortable [SSEP
+Prediction:  [O] they are the worst shoes i have ever worn [SSEP] [O] uncomfortable [SSEP]
+Quints:  [('null', 'null', 'null', 'they are the worst shoes i have ever worn', 'null'), ('null', 'null', 'null', 'uncomfortable', 'null')]
+Raw prediction:  these shoes are super comfortable and i love the style. but the quality of
+Prediction:  these shoes are super comfortable and i love the style. but the quality of
+Quints:  []
+Raw prediction:  i purchased these shoes for my son and he loves them. they are comfortable and stylish.
+Prediction:  i purchased these shoes for my son and he loves them. they are comfortable and stylish.
+Quints:  []
+Raw prediction:  these are my new favorite shoes. they are so comfortable and stylish. i wear them everywhere.
+Prediction:  these are my new favorite shoes. they are so comfortable and stylish. i wear them everywhere.
+Quints:  []
+Raw prediction:  these are great shoes, i love them. they are comfortable and look great. i wear them all the time.
+Prediction:  these are great shoes, i love them. they are comfortable and look great. i wear them all the time.
+Quints:  []
+Raw prediction:  i love these shoes. they are comfortable and they look great. i will definitely be purchasing another pair in the future.
+Prediction:  i love these shoes. they are comfortable and they look great. i will definitely be purchasing another pair in the future.
+Quints:  []
+Raw prediction:  i love these shoes. they are perfect for work and play. the quality is great and they are comfortable.
+Prediction:  i love these shoes. they are perfect for work and play. the quality is great and they are comfortable.
+Quints:  []
+Raw prediction:  i have a pair of 847v3's and i love them. they are comfortable and supportive. i've been wearing them for a few months now and they still look great.
+Prediction:  i have a pair of 847v3's and i love them. they are comfortable and supportive. i've been wearing them for a few months now and they still look great.
+Quints:  []
+Raw prediction:  i am very happy with my new balance shoes. the 574 model is great and the color i got is perfect. the shoe is comfortable and the support is good.
+Prediction:  i am very happy with my new balance shoes. the 574 model is great and the color i got is perfect. the shoe is comfortable and the support is good.
+Quints:  []
+Raw prediction:  these shoes are very comfortable and stylish. i am very happy with my purchase.
+Prediction:  these shoes are very comfortable and stylish. i am very happy with my purchase.
+Quints:  []
+Raw prediction:  i have been wearing these shoes for a week now and i have to say, they are pretty comfortable.
+Prediction:  i have been wearing these shoes for a week now and i have to say, they are pretty comfortable.
+Quints:  []
+Raw prediction:  i ordered these shoes for my son and they fit him perfectly. they are comfortable and he loves them. i would definitely recommend them.
+Prediction:  i ordered these shoes for my son and they fit him perfectly. they are comfortable and he loves them. i would definitely recommend them.
+Quints:  []
+Raw prediction:  [O] i was so excited to receive these shoes [SSEP] [O] i was so excited to receive these shoes [SSEP] [O] they are a bit too narrow for me [SSEP] [O] they just don't have enough room for my toes to spread out [SSEP] [O] they just don't have enough room for my toes to spread out
+Prediction:  [O] i was so excited to receive these shoes [SSEP] [O] i was so excited to receive these shoes [SSEP] [O] they are a bit too narrow for me [SSEP] [O] they just don't have enough room for my toes to spread out [SSEP] [O] they just don't have enough room for my toes to spread out
+Quints:  [('null', 'null', 'null', 'i was so excited to receive these shoes', 'null'), ('null', 'null', 'null', 'i was so excited to receive these shoes', 'null'), ('null', 'null', 'null', 'they are a bit too narrow for me', 'null'), ('null', 'null', 'null', "they just don ' t have enough room for my toes to spread out", 'null'), ('null', 'null', 'null', "they just don ' t have enough room for my toes to spread out", 'null')]
+Raw prediction:  * A (Aspect): The aspect of the product or service that the opinion is about. This could be a feature, a characteristic, or a specific part of the product.
+Prediction:  * A (Aspect): The aspect of the product or service that the opinion is about. This could be a feature, a characteristic, or a specific part of the product.
+Quints:  []
+Raw prediction:  i am very disappointed with this shoe. the fit is terrible and the quality is not good.
+Prediction:  i am very disappointed with this shoe. the fit is terrible and the quality is not good.
+Quints:  []
+Raw prediction:  these shoes are great, i love the style and they are
+Prediction:  these shoes are great, i love the style and they are
+Quints:  []
+Raw prediction:  * The input data is a review of a shoe.
+Prediction:  * The input data is a review of a shoe.
+Quints:  []
+Raw prediction:  The input data contains multiple reviews, and the output should be the extracted opinion spans for each review. The opinion spans should be in the format of " [O] opinion " and should be separated by a separator "[SSEP]". The last opinion span in each review should be followed by an end marker "[END]".
+Prediction:  The input data contains multiple reviews, and the output should be the extracted opinion spans for each review. The opinion spans should be in the format of " [O] opinion " and should be separated by a separator "[SSEP]". The last opinion span in each review should be followed by an end marker "
+Quints:  [('null', 'null', 'null', 'opinion " and should be separated by a separator "', 'null')]
+Raw prediction:  [O] perfect for running [SSEP]
+Prediction:  [O] perfect for running [SSEP]
+Quints:  [('null', 'null', 'null', 'perfect for running', 'null')]
+Raw prediction:  these sneakers
+Prediction:  these sneakers
+Quints:  []
+Raw prediction:  i love these shoes. they are so comfortable and easy to slip on and off.
+Prediction:  i love these shoes. they are so comfortable and easy to slip on and off.
+Quints:  []
+Raw prediction:  i am very disappointed
+Prediction:  i am very disappointed
+Quints:  []
+Raw prediction:  [O] these shoes are awesome [SSEP] [O] they are very comfortable [SSEP]
+Prediction:  [O] these shoes are awesome [SSEP] [O] they are very comfortable [SSEP]
+Quints:  [('null', 'null', 'null', 'these shoes are awesome', 'null'), ('null', 'null', 'null', 'they are very comfortable', 'null')]
+Raw prediction:  i bought these shoes for my wife as a gift. she has been wearing them for a few weeks now and she loves them. they are very comfortable and look great. she has received many compliments on them.
+Prediction:  i bought these shoes for my wife as a gift. she has been wearing them for a few weeks now and she loves them. they are very comfortable and look great. she has received many compliments on them.
+Quints:  []
+Raw prediction:  these shoes are very comfortable and i love the color. however, the quality is not very good. the shoes are already falling apart after only a few months.
+Prediction:  these shoes are very comfortable and i love the color. however, the quality is not very good. the shoes are already falling apart after only a few months.
+Quints:  []
+Raw prediction:  the shoes are very comfortable. the size is perfect. but the color is not what i expected. it's a bit lighter than i thought it would be.
+Prediction:  the shoes are very comfortable. the size is perfect. but the color is not what i expected. it's a bit lighter than i thought it would be.
+Quints:  []
+Raw prediction:  i purchased this shoe in the black/white color. it is a beautiful shoe and i love the style. it is very comfortable and i have worn it several times already. the only issue i have is that the black color is a bit too shiny. it is not as matte as i would like it to be. other than that, it is a great shoe.
+Prediction:  i purchased this shoe in the black/white color. it is a beautiful shoe and i love the style. it is very comfortable and i have worn it several times already. the only issue i have is that the black color is a bit too shiny. it is not as matte as i would like it to be. other than that, it is a great shoe.
+Quints:  []
+Raw prediction:  The above output format is just an example and may not be the only way to represent the output. The actual output may vary based on the specific requirements of the task.
+Prediction:  The above output format is just an example and may not be the only way to represent the output. The actual output may vary based on the specific requirements of the task.
+Quints:  []
+Raw prediction:  [O] fit me perfectly [SSEP] [O] they are comfortable [SSEP] [O] stylish [SSEP] [O] i will definitely be buying more in the future [END]
+Prediction:  [O] fit me perfectly [SSEP] [O] they are comfortable [SSEP] [O] stylish [SSEP] [O] i will definitely be buying more in the future
+Quints:  [('null', 'null', 'null', 'fit me perfectly', 'null'), ('null', 'null', 'null', 'they are comfortable', 'null'), ('null', 'null', 'null', 'stylish', 'null'), ('null', 'null', 'null', 'i will definitely be buying more in the future', 'null')]
+Raw prediction:  the shoe is comfortable and looks good. but the laces are a bit thin. i wish they were thicker and more durable.
+Prediction:  the shoe is comfortable and looks good. but the laces are a bit thin. i wish they were thicker and more durable.
+Quints:  []
+Raw prediction:  these shoes are amazing. they are so comfortable and the style is perfect.
+Prediction:  these shoes are amazing. they are so comfortable and the style is perfect.
+Quints:  []
+Raw prediction:  very comfortable shoes.....................................................................................................................................................................................................................................................................................................................................................................................................................................
+Prediction:  very comfortable shoes.....................................................................................................................................................................................................................................................................................................................................................................................................................................
+Quints:  []
+Raw prediction:  i purchased these shoes for my son and he loves them. they are comfortable and the quality is great. he wears them every day.
+Prediction:  i purchased these shoes for my son and he loves them. they are comfortable and the quality is great. he wears them every day.
+Quints:  []
+Raw prediction:  these shoes are horrible. they are way too narrow and the material is not breathable. my feet are sweating bullets after 20 minutes of wear. i can't
+Prediction:  these shoes are horrible. they are way too narrow and the material is not breathable. my feet are sweating bullets after 20 minutes of wear. i can't
+Quints:  []
+Raw prediction:  i love the shoe, but the sizing runs small.
+Prediction:  i love the shoe, but the sizing runs small.
+Quints:  []
+Raw prediction:  i ordered a pair of these shoes and they arrived in perfect condition
+Prediction:  i ordered a pair of these shoes and they arrived in perfect condition
+Quints:  []
+Raw prediction:  i love the style and the fit is perfect. however, the quality of the material is not good. the shoe is not durable and the sole is not made well.
+Prediction:  i love the style and the fit is perfect. however, the quality of the material is not good. the shoe is not durable and the sole is not made well.
+Quints:  []
+Raw prediction:  i have a pair of these and they are horrible. they are uncomfortable and the soles are slippery.
+Prediction:  i have a pair of these and they are horrible. they are uncomfortable and the soles are slippery.
+Quints:  []
+Raw prediction:  these are the best shoes i have ever owned. i have tried many different brands and styles but these are by far the most comfortable. i can wear them all day long without any discomfort.
+Prediction:  these are the best shoes i have ever owned. i have tried many different brands and styles but these are by far the most comfortable. i can wear them all day long without any discomfort.
+Quints:  []
+Raw prediction:  the shoe itself is great. it's just the size that's off.
+Prediction:  the shoe itself is great. it's just the size that's off.
+Quints:  []
+Raw prediction:  these are great for casual wear. they are comfortable and easy to slip on and off.
+Prediction:  these are great for casual wear. they are comfortable and easy to slip on and off.
+Quints:  []
+Raw prediction:  [O] the
+Prediction:  [O] the
+Quints:  [('null', 'null', 'null', 'the', 'null')]
+Raw prediction:  i love the color and style of these shoes. they are comfortable and lightweight.
+Prediction:  i love the color and style of these shoes. they are comfortable and lightweight.
+Quints:  []
+Raw prediction:  [O] i bought these shoes because i have to wear orthotics and these are the only shoes that fit comfortably [SSEP] [
+Prediction:  [O] i bought these shoes because i have to wear orthotics and these are the only shoes that fit comfortably [SSEP]
+Quints:  [('null', 'null', 'null', 'i bought these shoes because i have to wear orthotics and these are the only shoes that fit comfortably', 'null')]
+Raw prediction:  the shoe is comfortable but the color is not what i expected. i thought it would be a darker brown.
+Prediction:  the shoe is comfortable but the color is not what i expected. i thought it would be a darker brown.
+Quints:  []
+Raw prediction:  [O] comfortable [SSEP] [O] not what
+Prediction:  [O] comfortable [SSEP] [O] not what
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'not what', 'null')]
+Raw prediction:  i wear these shoes to work every day. they are comfortable and durable. i have been wearing them for 6 months now and they still look and feel like new.
+Prediction:  i wear these shoes to work every day. they are comfortable and durable. i have been wearing them for 6 months now and they still look and feel like new.
+Quints:  []
+Raw prediction:  the shoe is comfortable but the quality of the material is not good. the stitching is coming undone and the fabric is thin.
+Prediction:  the shoe is comfortable but the quality of the material is not good. the stitching is coming undone and the fabric is thin.
+Quints:  []
+Raw prediction:  [O] comfortable [SSEP] [O] supportive [SSEP] [O] i have plantar fas
+Prediction:  [O] comfortable [SSEP] [O] supportive [SSEP] [O] i have plantar fas
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'supportive', 'null'), ('null', 'null', 'null', 'i have plantar fas', 'null')]
+Raw prediction:  these shoes are awesome. they are super comfortable and look great. they are perfect for work and play.
+Prediction:  these shoes are awesome. they are super comfortable and look great. they are perfect for work and play.
+Quints:  []
+Raw prediction:  [O] i love these shoes [SSEP] [O
+Prediction:  [O] i love these shoes [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'i love these shoes', 'null')]
+Raw prediction:  these are
+Prediction:  these are
+Quints:  []
+Raw prediction:  the shoes are very comfortable and fit well, but the sole is a bit thin.
+Prediction:  the shoes are very comfortable and fit well, but the sole is a bit thin.
+Quints:  []
+Raw prediction:  [O]
+Prediction:  [O]
+Quints:  []
+Raw prediction:  the shoes are very comfortable and the price is reasonable. the color selection is great and they look good.
+Prediction:  the shoes are very comfortable and the price is reasonable. the color selection is great and they look good.
+Quints:  []
+Raw prediction:  i am
+Prediction:  i am
+Quints:  []
+Raw prediction:  i love these shoes. they are so comfortable and easy to slip on and off. i wear them every day and have received many compliments.
+Prediction:  i love these shoes. they are so comfortable and easy to slip on and off. i wear them every day and have received many compliments.
+Quints:  []
+Raw prediction:  these shoes are amazing. i have been wearing them for a month now and they still look and feel great.
+Prediction:  these shoes are amazing. i have been wearing them for a month now and they still look and feel great.
+Quints:  []
+Raw prediction:  i love these shoes. they are so comfortable and stylish. i have worn them for a week now and i have received so many compliments.
+Prediction:  i love these shoes. they are so comfortable and stylish. i have worn them for a week now and i have received so many compliments.
+Quints:  []
+Raw prediction:  i love the style of this shoe. it is very comfortable and i get a lot of compliments on it.
+Prediction:  i love the style of this shoe. it is very comfortable and i get a lot of compliments on it.
+Quints:  []
+Raw prediction:  [O] still look cool, but not what they used to be [SSEP] [O] quality has lowered significantly—bummer [SSEP] [O] plus sizing has changed [SSEP] [O] i've always been a good snug 7. 5 [SSEP] [O] is too small [SSEP] [O] is too big [SSEP] [O] i'm so sad [END]
+Prediction:  [O] still look cool, but not what they used to be [SSEP] [O] quality has lowered significantly—bummer [SSEP] [O] plus sizing has changed [SSEP] [O] i've always been a good snug 7. 5 [SSEP] [O] is too small [SSEP] [O] is too big [SSEP] [O] i'm so sad
+Quints:  [('null', 'null', 'null', 'still look cool , but not what they used to be', 'null'), ('null', 'null', 'null', 'quality has lowered significantly—bummer', 'null'), ('null', 'null', 'null', 'plus sizing has changed', 'null'), ('null', 'null', 'null', "i ' ve always been a good snug 7 . 5", 'null'), ('null', 'null', 'null', 'is too small', 'null'), ('null', 'null', 'null', 'is too big', 'null'), ('null', 'null', 'null', "i ' m so sad", 'null')]
+Raw prediction:  i bought these shoes for my son. he loves them. they are comfortable and easy to
+Prediction:  i bought these shoes for my son. he loves them. they are comfortable and easy to
+Quints:  []
+Raw prediction:  i love these shoes, they are so comfortable and stylish. i have worn them for work and play and have received many compliments.
+Prediction:  i love these shoes, they are so comfortable and stylish. i have worn them for work and play and have received many compliments.
+Quints:  []
+Raw prediction:  the shoe is very comfortable but the color is not what i expected. it
+Prediction:  the shoe is very comfortable but the color is not what i expected. it
+Quints:  []
+Raw prediction:  these are great shoes for work. they are comfortable and look professional. however, the soles are not very durable and wear out quickly.
+Prediction:  these are great shoes for work. they are comfortable and look professional. however, the soles are not very durable and wear out quickly.
+Quints:  []
+Raw prediction:  i am very disappointed with this product. the shoes are not comfortable and the quality is not good. i will not buy again.
+Prediction:  i am very disappointed with this product. the shoes are not comfortable and the quality is not good. i will not buy again.
+Quints:  []
+Raw prediction:  i have worn these shoes for a week now and i have to say that they are really comfortable. they are a bit tight in the toe box but other than that they are great.
+Prediction:  i have worn these shoes for a week now and i have to say that they are really comfortable. they are a bit tight in the toe box but other than that they are great.
+Quints:  []
+Raw prediction:  [O] i really enjoy [SSEP] [O] pretty comfortable to wear all day [SSEP] [O] i really like the classic style [SSEP] [O] would recommend [END]
+Prediction:  [O] i really enjoy [SSEP] [O] pretty comfortable to wear all day [SSEP] [O] i really like the classic style [SSEP] [O] would recommend
+Quints:  [('null', 'null', 'null', 'i really enjoy', 'null'), ('null', 'null', 'null', 'pretty comfortable to wear all day', 'null'), ('null', 'null', 'null', 'i really like the classic style', 'null'), ('null', 'null', 'null', 'would recommend', 'null')]
+Raw prediction:  i am very disappointed with these shoes. they are not comfortable at all.
+Prediction:  i am very disappointed with these shoes. they are not comfortable at all.
+Quints:  []
+Raw prediction:  [O] best shoes i have ever worn [SSEP] [O] still look and feel like new [SSEP] [O] i have been wearing them for about a month now [SSEP] [O] i have been wearing them for about a month now [SSEP] [O] i have been wearing them for about
+Prediction:  [O] best shoes i have ever worn [SSEP] [O] still look and feel like new [SSEP] [O] i have been wearing them for about a month now [SSEP] [O] i have been wearing them for about a month now [SSEP] [O] i have been wearing them for about
+Quints:  [('null', 'null', 'null', 'best shoes i have ever worn', 'null'), ('null', 'null', 'null', 'still look and feel like new', 'null'), ('null', 'null', 'null', 'i have been wearing them for about a month now', 'null'), ('null', 'null', 'null', 'i have been wearing them for about a month now', 'null'), ('null', 'null', 'null', 'i have been wearing them for about', 'null')]
+Raw prediction:  [O] comfortable [SSEP] [O] lightweight [SSEP] [O] i have been wearing them nonstop since i got them [SSEP] [O
+Prediction:  [O] comfortable [SSEP] [O] lightweight [SSEP] [O] i have been wearing them nonstop since i got them [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'lightweight', 'null'), ('null', 'null', 'null', 'i have been wearing them nonstop since i got them', 'null')]
+Raw prediction:  these boots are amazing. they are so comfortable and look great. the only issue is that the zipper can be a bit tricky to use.
+Prediction:  these boots are amazing. they are so comfortable and look great. the only issue is that the zipper can be a bit tricky to use.
+Quints:  []
+Raw prediction:  [O] not worth the price [SSEP] [O] i can find similar shoes for half the price
+Prediction:  [O] not worth the price [SSEP] [O] i can find similar shoes for half the price
+Quints:  [('null', 'null', 'null', 'not worth the price', 'null'), ('null', 'null', 'null', 'i can find similar shoes for half the price', 'null')]
+Raw prediction:  i am very disappointed in this shoe. the quality is not good and the color is not what i expected. i would not recommend this shoe to anyone.
+Prediction:  i am very disappointed in this shoe. the quality is not good and the color is not what i expected. i would not recommend this shoe to anyone.
+Quints:  []
+Raw prediction:  i bought these shoes for my son and he loves them. they are comfortable and stylish. he wears them every day.
+Prediction:  i bought these shoes for my son and he loves them. they are comfortable and stylish. he wears them every day.
+Quints:  []
+Raw prediction:  the shoes are very comfortable and the quality is great. i
+Prediction:  the shoes are very comfortable and the quality is great. i
+Quints:  []
+Raw prediction:  the shoes are very comfortable and
+Prediction:  the shoes are very comfortable and
+Quints:  []
+Raw prediction:  i love the style of this shoe, but the fit is not right for me. i wear a 10 1 / 2 in most shoes, but these run small. i would recommend sizing up.
+Prediction:  i love the style of this shoe, but the fit is not right for me. i wear a 10 1 / 2 in most shoes, but these run small. i would recommend sizing up.
+Quints:  []
+Raw prediction:  i am very disappointed with this product. it is not comfortable and the quality is not good. i will not buy this product again.
+Prediction:  i am very disappointed with this product. it is not comfortable and the quality is not good. i will not buy this product again.
+Quints:  []
+Raw prediction:  these shoes are super comfortable and stylish. i wear them all the time.
+Prediction:  these shoes are super comfortable and stylish. i wear them all the time.
+Quints:  []
+Raw prediction:  [O] are beautiful [SSEP] [O] i love them [SSEP] [O] color is amazing [SSEP] [O] quality is good [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL [END]
+Prediction:  [O] are beautiful [SSEP] [O] i love them [SSEP] [O] color is amazing [SSEP] [O] quality is good [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL [SSEP] [O] NULL
+Quints:  [('null', 'null', 'null', 'are beautiful', 'null'), ('null', 'null', 'null', 'i love them', 'null'), ('null', 'null', 'null', 'color is amazing', 'null'), ('null', 'null', 'null', 'quality is good', 'null')]
+Raw prediction:  i have been wearing these shoes for a few weeks now and i have to say that
+Prediction:  i have been wearing these shoes for a few weeks now and i have to say that
+Quints:  []
+Raw prediction:  i love these shoes. they are so comfortable and perfect for walking.
+Prediction:  i love these shoes. they are so comfortable and perfect for walking.
+Quints:  []
+Raw prediction:  these shoes are super comfortable and i love the style. but the sizing is way off. i ordered my normal size and they are way too big.
+Prediction:  these shoes are super comfortable and i love the style. but the sizing is way off. i ordered my normal size and they are way too big.
+Quints:  []
+Raw prediction:  i ordered these boots in a size 9. they fit perfectly. however, the quality of the boots is not what i expected. the leather is very thin and the stitching is poor.
+Prediction:  i ordered these boots in a size 9. they fit perfectly. however, the quality of the boots is not what i expected. the leather is very thin and the stitching is poor.
+Quints:  []
+Raw prediction:  i ordered these shoes for my son and they fit him perfectly. he loves them and they are comfortable.
+Prediction:  i ordered these shoes for my son and they fit him perfectly. he loves them and they are comfortable.
+Quints:  []
+Raw prediction:  [O] super comfortable [SSEP] [
+Prediction:  [O] super comfortable [SSEP]
+Quints:  [('null', 'null', 'null', 'super comfortable', 'null')]
+Raw prediction:  i am very disappointed
+Prediction:  i am very disappointed
+Quints:  []
+Raw prediction:  the shoes are very comfortable, but the sizing is a bit off. i usually wear a 9, but these feel like a 7.
+Prediction:  the shoes are very comfortable, but the sizing is a bit off. i usually wear a 9, but these feel like a 7.
+Quints:  []
+Raw prediction:  i love these shoes. they are so comfortable and stylish. i wear them all the time.
+Prediction:  i love these shoes. they are so comfortable and stylish. i wear them all the time.
+Quints:  []
+Raw prediction:  the shoes are comfortable but the color is not what i expected. i thought they would be a darker blue but they are more of a light blue.
+Prediction:  the shoes are comfortable but the color is not what i expected. i thought they would be a darker blue but they are more of a light blue.
+Quints:  []
+Raw prediction:  [O] color on the site has neutral beige / brown tones [SSEP] [O] unfortunately, in person the color is all gray [SSEP] [O] don't buy if you're expecting anything other than bland gray [SSEP] [O] will be returning immediately [END]
+Prediction:  [O] color on the site has neutral beige / brown tones [SSEP] [O] unfortunately, in person the color is all gray [SSEP] [O] don't buy if you're expecting anything other than bland gray [SSEP] [O] will be returning immediately
+Quints:  [('null', 'null', 'null', 'color on the site has neutral beige / brown tones', 'null'), ('null', 'null', 'null', 'unfortunately , in person the color is all gray', 'null'), ('null', 'null', 'null', "don ' t buy if you ' re expecting anything other than bland gray", 'null'), ('null', 'null', 'null', 'will be returning immediately', 'null')]
+Raw prediction:  these shoes are amazing. i have worn them every day since i got them. they are comfortable and stylish.
+Prediction:  these shoes are amazing. i have worn them every day since i got them. they are comfortable and stylish.
+Quints:  []
+Raw prediction:  i ordered these shoes in black and white. i love them. they are so comfortable.
+Prediction:  i ordered these shoes in black and white. i love them. they are so comfortable.
+Quints:  []
+Raw prediction:  i love these shoes. they are super comfortable and i get a lot of compliments on them.
+Prediction:  i love these shoes. they are super comfortable and i get a lot of compliments on them.
+Quints:  []
+Raw prediction:  i ordered a 10.5. 4e shoe. it fit well. i ordered a second pair in a 10.5. 4e. it also fit well.
+Prediction:  i ordered a 10.5. 4e shoe. it fit well. i ordered a second pair in a 10.5. 4e. it also fit well.
+Quints:  []
+Raw prediction:  i am very satisfied with the shoe. it is comfortable and the quality is great. the fit is perfect and i love the style.
+Prediction:  i am very satisfied with the shoe. it is comfortable and the quality is great. the fit is perfect and i love the style.
+Quints:  []
+Raw prediction:  i hate these shoes. they are so uncomfortable and look terrible.
+Prediction:  i hate these shoes. they are so uncomfortable and look terrible.
+Quints:  []
+Raw prediction:  i have a pair of these in every color.
+Prediction:  i have a pair of these in every color.
+Quints:  []
+Raw prediction:  [O] definitely going to be some of my most worn shoes [SSEP] [O] so cute [SSEP] [O] little small at firet because they were a bit tighter width wise [SSEP] [O] if you have wide feet i probably would not recommend you buy [END]
+Prediction:  [O] definitely going to be some of my most worn shoes [SSEP] [O] so cute [SSEP] [O] little small at firet because they were a bit tighter width wise [SSEP] [O] if you have wide feet i probably would not recommend you buy
+Quints:  [('null', 'null', 'null', 'definitely going to be some of my most worn shoes', 'null'), ('null', 'null', 'null', 'so cute', 'null'), ('null', 'null', 'null', 'little small at firet because they were a bit tighter width wise', 'null'), ('null', 'null', 'null', 'if you have wide feet i probably would not recommend you buy', 'null')]
+Raw prediction:  i have worn these shoes for a few days now and i have to say that they are really comfortable. they are a little bit tight in the toe box, but other than that they are great.
+Prediction:  i have worn these shoes for a few days now and i have to say that they are really comfortable. they are a little bit tight in the toe box, but other than that they are great.
+Quints:  []
+Raw prediction:  the shoes are very comfortable and the style is great. the only thing is that the soles are a bit slippery on smooth floors
+Prediction:  the shoes are very comfortable and the style is great. the only thing is that the soles are a bit slippery on smooth floors
+Quints:  []
+Raw prediction:  i have been wearing these shoes for a few days now and i am in love with them. they are so comfortable and stylish. i have been wearing them with dresses and skirts and they look great.
+Prediction:  i have been wearing these shoes for a few days now and i am in love with them. they are so comfortable and stylish. i have been wearing them with dresses and skirts and they look great.
+Quints:  []
+Raw prediction:  [O] i was very disappointed with this
+Prediction:  [O] i was very disappointed with this
+Quints:  [('null', 'null', 'null', 'i was very disappointed with this', 'null')]
+Raw prediction:  these shoes are very comfortable and i love the style. however, the heel on one of them is already starting to come loose after only a few wears.
+Prediction:  these shoes are very comfortable and i love the style. however, the heel on one of them is already starting to come loose after only a few wears.
+Quints:  []
+Raw prediction:  [O] great looking [SSEP] [O] if you have wider feet do not buy [SSEP] [O] they burned my toes the entire time walking in them [SSEP] [O] send back for a refund after wearing [SSEP] [O] they were unbearable [END]
+Prediction:  [O] great looking [SSEP] [O] if you have wider feet do not buy [SSEP] [O] they burned my toes the entire time walking in them [SSEP] [O] send back for a refund after wearing [SSEP] [O] they were unbearable
+Quints:  [('null', 'null', 'null', 'great looking', 'null'), ('null', 'null', 'null', 'if you have wider feet do not buy', 'null'), ('null', 'null', 'null', 'they burned my toes the entire time walking in them', 'null'), ('null', 'null', 'null', 'send back for a refund after wearing', 'null'), ('null', 'null', 'null', 'they were unbearable', 'null')]
+Raw prediction:  [O] i am very disappointed with this product [SSEP] [O] does
+Prediction:  [O] i am very disappointed with this product [SSEP] [O] does
+Quints:  [('null', 'null', 'null', 'i am very disappointed with this product', 'null'), ('null', 'null', 'null', 'does', 'null')]
+Raw prediction:  these shoes are amazing. i wear them all the time
+Prediction:  these shoes are amazing. i wear them all the time
+Quints:  []
+Raw prediction:  i have been wearing these sho
+Prediction:  i have been wearing these sho
+Quints:  []
+Raw prediction:  the
+Prediction:  the
+Quints:  []
+Raw prediction:  these are the most comfortable shoes i have ever worn. they are perfect for long walks and running.
+Prediction:  these are the most comfortable shoes i have ever worn. they are perfect for long walks and running.
+Quints:  []
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  these are not comfortable at all. they are too narrow and the material is not soft. i have wide feet and these are just not suitable for me.
+Prediction:  these are not comfortable at all. they are too narrow and the material is not soft. i have wide feet and these are just not suitable for me.
+Quints:  []
+Raw prediction:  the shoes are comfortable and the quality is good.
+Prediction:  the shoes are comfortable and the quality is good.
+Quints:  []
+Raw prediction:  the shoes are made of woven elastic bands. i am disappointed. i thought they were woven leather. they look nice but the material is not the quality i expected.
+Prediction:  the shoes are made of woven elastic bands. i am disappointed. i thought they were woven leather. they look nice but the material is not the quality i expected.
+Quints:  []
+Raw prediction:  [O] very comfortable [SSEP] [O] fit well [SSEP] [
+Prediction:  [O] very comfortable [SSEP] [O] fit well [SSEP]
+Quints:  [('null', 'null', 'null', 'very comfortable', 'null'), ('null', 'null', 'null', 'fit well', 'null')]
+Processing dataset...
+Processing Dataset:   0%|          | 0/125 [00:00<?, ?item/s]Processing Dataset:   1%|          | 1/125 [00:00<00:25,  4.94item/s]Processing Dataset:   3%|▎         | 4/125 [00:00<00:08, 13.82item/s]Processing Dataset:   6%|▌         | 7/125 [00:00<00:06, 17.88item/s]Processing Dataset:   8%|▊         | 10/125 [00:00<00:05, 19.93item/s]Processing Dataset:  10%|█         | 13/125 [00:00<00:05, 21.29item/s]Processing Dataset:  13%|█▎        | 16/125 [00:00<00:04, 22.09item/s]Processing Dataset:  15%|█▌        | 19/125 [00:00<00:04, 22.56item/s]Processing Dataset:  18%|█▊        | 22/125 [00:01<00:04, 22.89item/s]Processing Dataset:  20%|██        | 25/125 [00:01<00:04, 23.12item/s]Processing Dataset:  22%|██▏       | 28/125 [00:01<00:04, 23.38item/s]Processing Dataset:  25%|██▍       | 31/125 [00:01<00:03, 23.61item/s]Processing Dataset:  27%|██▋       | 34/125 [00:01<00:03, 23.74item/s]Processing Dataset:  30%|██▉       | 37/125 [00:01<00:03, 23.79item/s]Processing Dataset:  32%|███▏      | 40/125 [00:01<00:03, 23.77item/s]Processing Dataset:  34%|███▍      | 43/125 [00:01<00:03, 23.74item/s]Processing Dataset:  37%|███▋      | 46/125 [00:02<00:03, 23.81item/s]Processing Dataset:  39%|███▉      | 49/125 [00:02<00:03, 23.82item/s]Processing Dataset:  42%|████▏     | 52/125 [00:02<00:03, 23.89item/s]Processing Dataset:  44%|████▍     | 55/125 [00:02<00:02, 23.84item/s]Processing Dataset:  46%|████▋     | 58/125 [00:02<00:02, 23.81item/s]Processing Dataset:  49%|████▉     | 61/125 [00:02<00:02, 23.64item/s]Processing Dataset:  51%|█████     | 64/125 [00:02<00:02, 23.74item/s]Processing Dataset:  54%|█████▎    | 67/125 [00:02<00:02, 23.78item/s]Processing Dataset:  56%|█████▌    | 70/125 [00:03<00:02, 23.83item/s]Processing Dataset:  58%|█████▊    | 73/125 [00:03<00:02, 23.87item/s]Processing Dataset:  61%|██████    | 76/125 [00:03<00:02, 23.83item/s]Processing Dataset:  63%|██████▎   | 79/125 [00:03<00:01, 23.79item/s]Processing Dataset:  66%|██████▌   | 82/125 [00:03<00:01, 23.86item/s]Processing Dataset:  68%|██████▊   | 85/125 [00:03<00:01, 23.86item/s]Processing Dataset:  70%|███████   | 88/125 [00:03<00:01, 23.84item/s]Processing Dataset:  73%|███████▎  | 91/125 [00:03<00:01, 23.70item/s]Processing Dataset:  75%|███████▌  | 94/125 [00:04<00:01, 23.75item/s]Processing Dataset:  78%|███████▊  | 97/125 [00:04<00:01, 23.79item/s]Processing Dataset:  80%|████████  | 100/125 [00:04<00:01, 23.78item/s]Processing Dataset:  82%|████████▏ | 103/125 [00:04<00:00, 23.82item/s]Processing Dataset:  85%|████████▍ | 106/125 [00:04<00:00, 23.87item/s]Processing Dataset:  87%|████████▋ | 109/125 [00:04<00:00, 23.86item/s]Processing Dataset:  90%|████████▉ | 112/125 [00:04<00:00, 23.73item/s]Processing Dataset:  92%|█████████▏| 115/125 [00:04<00:00, 23.74item/s]Processing Dataset:  94%|█████████▍| 118/125 [00:05<00:00, 23.77item/s]Processing Dataset:  97%|█████████▋| 121/125 [00:05<00:00, 23.79item/s]Processing Dataset:  99%|█████████▉| 124/125 [00:05<00:00, 23.82item/s]Processing Dataset: 100%|██████████| 125/125 [00:05<00:00, 23.09item/s]
+Initializing pipeline...
+Loading checkpoint shards:   0%|          | 0/15 [00:00<?, ?it/s]Loading checkpoint shards:   7%|▋         | 1/15 [00:32<07:38, 32.77s/it]Loading checkpoint shards:  13%|█▎        | 2/15 [01:04<07:01, 32.39s/it]Loading checkpoint shards:  20%|██        | 3/15 [01:37<06:32, 32.70s/it]Loading checkpoint shards:  27%|██▋       | 4/15 [02:09<05:55, 32.32s/it]Loading checkpoint shards:  33%|███▎      | 5/15 [02:43<05:26, 32.69s/it]Loading checkpoint shards:  40%|████      | 6/15 [03:15<04:52, 32.52s/it]Loading checkpoint shards:  47%|████▋     | 7/15 [03:47<04:19, 32.40s/it]Loading checkpoint shards:  53%|█████▎    | 8/15 [04:20<03:47, 32.56s/it]Loading checkpoint shards:  60%|██████    | 9/15 [04:51<03:13, 32.29s/it]Loading checkpoint shards:  67%|██████▋   | 10/15 [05:24<02:42, 32.49s/it]Loading checkpoint shards:  73%|███████▎  | 11/15 [05:56<02:09, 32.32s/it]Loading checkpoint shards:  80%|████████  | 12/15 [06:29<01:37, 32.48s/it]Loading checkpoint shards:  87%|████████▋ | 13/15 [07:01<01:04, 32.15s/it]Loading checkpoint shards:  93%|█████████▎| 14/15 [07:33<00:32, 32.27s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:36<00:00, 23.25s/it]Loading checkpoint shards: 100%|██████████| 15/15 [07:36<00:00, 30.40s/it]
+This is a friendly reminder - the current text generation call will exceed the model's predefined maximum length (4096). Depending on the model, you may observe exceptions, performance degradation, or nothing at all.
+Running pipeline...
+Total output tokens: 343132
+Avg out tokens per prompt: 2745.056
+Raw prediction:  i bought these shoes because of the color and they look exactly like the picture. they are so comfortable and fit perfectly.
+Prediction:  i bought these shoes because of the color and they look exactly like the picture. they are so comfortable and fit perfectly.
+Quints:  []
+Raw prediction:  these shoes are very comfortable but they run a little small. i usually wear a 10 but these were a bit too tight.
+Prediction:  these shoes are very comfortable but they run a little small. i usually wear a 10 but these were a bit too tight.
+Quints:  []
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  * A: The aspect of the product being described (e.g., "comfort," "appearance," "performance").
+Prediction:  * A: The aspect of the product being described (e.g., "comfort," "appearance," "performance").
+Quints:  []
+Raw prediction:  i love these sneakers. they are comfortable and stylish. i ordered a 7 and they fit perfectly.
+Prediction:  i love these sneakers. they are comfortable and stylish. i ordered a 7 and they fit perfectly.
+Quints:  []
+Raw prediction:  i purchased these shoes for my husband and he loves them. they are very comfortable and he wears them all the time. the only issue is
+Prediction:  i purchased these shoes for my husband and he loves them. they are very comfortable and he wears them all the time. the only issue is
+Quints:  []
+Raw prediction:  i like the shoe but the heel slips around when i walk. the heel counter is too soft.
+Prediction:  i like the shoe but the heel slips around when i walk. the heel counter is too soft.
+Quints:  []
+Raw prediction:  i love these shoes. they are so comfortable and lightweight. they are perfect for working out.
+Prediction:  i love these shoes. they are so comfortable and lightweight. they are perfect for working out.
+Quints:  []
+Raw prediction:  [O] are the best [SSEP] [O] so comfortable [SSEP] [O] top notch [SSEP] [O] will definitely be purchasing another pair in
+Prediction:  [O] are the best [SSEP] [O] so comfortable [SSEP] [O] top notch [SSEP] [O] will definitely be purchasing another pair in
+Quints:  [('null', 'null', 'null', 'are the best', 'null'), ('null', 'null', 'null', 'so comfortable', 'null'), ('null', 'null', 'null', 'top notch', 'null'), ('null', 'null', 'null', 'will definitely be purchasing another pair in', 'null')]
+Raw prediction:  [O] love [SSEP]
+Prediction:  [O] love [SSEP]
+Quints:  [('null', 'null', 'null', 'love', 'null')]
+Raw prediction:  i bought these shoes because i like the style and the price was reasonable. i wear a size 8. 5 and these fit perfectly.
+Prediction:  i bought these shoes because i like the style and the price was reasonable. i wear a size 8. 5 and these fit perfectly.
+Quints:  []
+Raw prediction:  these shoes are really cute but they are not comfortable at all. i have to wear them with socks because they are too tight.
+Prediction:  these shoes are really cute but they are not comfortable at all. i have to wear them with socks because they are too tight.
+Quints:  []
+Raw prediction:  these shoes are amazing. i have been wearing them for a week now and they are so comfortable. i have been wearing them for long walks and they have been great.
+Prediction:  these shoes are amazing. i have been wearing them for a week now and they are so comfortable. i have been wearing them for long walks and they have been great.
+Quints:  []
+Raw prediction:  i purchased this product because it was on sale and i needed a new pair of sneakers. the shoe is comfortable, but the color is not what i expected. it looks more like a dark grey than the blue that is pictured.
+Prediction:  i purchased this product because it was on sale and i needed a new pair of sneakers. the shoe is comfortable, but the color is not what i expected. it looks more like a dark grey than the blue that is pictured.
+Quints:  []
+Raw prediction:  [O] i really like the look of this shoe [SSEP] [O] the shoe is a bit narrow [SSEP] [O] the heel is a bit high for my taste [SSEP] [O] it's perfect for the office [END]
+Prediction:  [O] i really like the look of this shoe [SSEP] [O] the shoe is a bit narrow [SSEP] [O] the heel is a bit high for my taste [SSEP] [O] it's perfect for the office
+Quints:  [('null', 'null', 'null', 'i really like the look of this shoe', 'null'), ('null', 'null', 'null', 'the shoe is a bit narrow', 'null'), ('null', 'null', 'null', 'the heel is a bit high for my taste', 'null'), ('null', 'null', 'null', "it ' s perfect for the office", 'null')]
+Raw prediction:  [O] comfortable [SSEP] [O] not
+Prediction:  [O] comfortable [SSEP] [O] not
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'not', 'null')]
+Raw prediction:  The output format is [O] opinion, followed by a separator (either [SSEP] or [END]), and then the actual opinion text. The separator is used to indicate the end of a set of quadruples associated with a review and the beginning of a new set.
+Prediction:  The output format is [O] opinion, followed by a separator (either [SSEP] or
+Quints:  [('null', 'null', 'null', 'opinion , followed by a separator ( either', 'null')]
+Raw prediction:  the shoe is comfortable but the stitching on the tongue is coming undone.
+Prediction:  the shoe is comfortable but the stitching on the tongue is coming undone.
+Quints:  []
+Raw prediction:  these shoes are so comfortable and versatile. i wear them for work, running errands and going out. they are perfect for people who are always on the go.
+Prediction:  these shoes are so comfortable and versatile. i wear them for work, running errands and going out. they are perfect for people who are always on the go.
+Quints:  []
+Raw prediction:  [O] fit perfectly [
+Prediction:  [O] fit perfectly
+Quints:  [('null', 'null', 'null', 'fit perfectly', 'null')]
+Raw prediction:  shoe is very comfortable but runs small. order a size up.
+Prediction:  shoe is very comfortable but runs small. order a size up.
+Quints:  []
+Raw prediction:  i have been wearing these shoes for a few months now and i have to say they are really comfortable. i have a pair of brooks ghost and a pair of asics gel kayano and these are by far the most comfortable.
+Prediction:  i have been wearing these shoes for a few months now and i have to say they are really comfortable. i have a pair of brooks ghost and a pair of asics gel kayano and these are by far the most comfortable.
+Quints:  []
+Raw prediction:  i am very disappointed with the quality of this product. it is not what i expected and i will not be purchasing from this company again. the customer service was also very poor.
+Prediction:  i am very disappointed with the quality of this product. it is not what i expected and i will not be purchasing from this company again. the customer service was also very poor.
+Quints:  []
+Raw prediction:  [O] very comfortable [SSEP] [O] reasonable
+Prediction:  [O] very comfortable [SSEP] [O] reasonable
+Quints:  [('null', 'null', 'null', 'very comfortable', 'null'), ('null', 'null', 'null', 'reasonable', 'null')]
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  [O] love the color [SSEP] [O] they are
+Prediction:  [O] love the color [SSEP] [O] they are
+Quints:  [('null', 'null', 'null', 'love the color', 'null'), ('null', 'null', 'null', 'they are', 'null')]
+Raw prediction:  [O] i was expecting a better quality shoe for the price [SSEP] [O] not worth the money [SSE
+Prediction:  [O] i was expecting a better quality shoe for the price [SSEP] [O] not worth the money [S]SE
+Quints:  [('null', 'null', 'null', 'i was expecting a better quality shoe for the price', 'null'), ('null', 'null', 'E', 'not worth the money', 'null')]
+Raw prediction:  i am so glad i purchased these slides. they are perfect for the summer.
+Prediction:  i am so glad i purchased these slides. they are perfect for the summer.
+Quints:  []
+Raw prediction:  [O] looked great [SSEP] [O] way too tight [SSE
+Prediction:  [O] looked great [SSEP] [O] way too tight [S]SE
+Quints:  [('null', 'null', 'null', 'looked great', 'null'), ('null', 'null', 'E', 'way too tight', 'null')]
+Raw prediction:  i love these shoes! they are so comfortable and stylish. i usually wear a 7. 5 and these are a 6. 5 but they fit perfectly. i would definitely recommend them to anyone looking for a great pair of shoes.
+Prediction:  i love these shoes! they are so comfortable and stylish. i usually wear a 7. 5 and these are a 6. 5 but they fit perfectly. i would definitely recommend them to anyone looking for a great pair of shoes.
+Quints:  []
+Raw prediction:  i ordered these in a 10. they fit well but they are a little narrow.
+Prediction:  i ordered these in a 10. they fit well but they are a little narrow.
+Quints:  []
+Raw prediction:  i bought these shoes for my son and he loves them. they are comfortable and easy to put on and take off.
+Prediction:  i bought these shoes for my son and he loves them. they are comfortable and easy to put on and take off.
+Quints:  []
+Raw prediction:  i wear these shoes every day. they are comfortable and stylish. i have received many compliments on them.
+Prediction:  i wear these shoes every day. they are comfortable and stylish. i have received many compliments on them.
+Quints:  []
+Raw prediction:  [O] i love [SSEP] [O] like the design [SSEP] [O] great [SSEP] [O] perfect for my casual
+Prediction:  [O] i love [SSEP] [O] like the design [SSEP] [O] great [SSEP] [O] perfect for my casual
+Quints:  [('null', 'null', 'null', 'i love', 'null'), ('null', 'null', 'null', 'like the design', 'null'), ('null', 'null', 'null', 'great', 'null'), ('null', 'null', 'null', 'perfect for my casual', 'null')]
+Raw prediction:  [O] ordered these shoes in a 9.5 [SSEP] [O]
+Prediction:  [O] ordered these shoes in a 9.5 [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'ordered these shoes in a 9 . 5', 'null')]
+Raw prediction:  i have been wearing these shoes for a few days now and i must say that they are quite comfortable. they are also very stylish and i have received many compliments.
+Prediction:  i have been wearing these shoes for a few days now and i must say that they are quite comfortable. they are also very stylish and i have received many compliments.
+Quints:  []
+Raw prediction:  [
+Prediction:  
+Quints:  []
+Raw prediction:  The input data has been modified for better readability and understanding. The actual input data may contain minor variations in grammar, spelling, punctuation, and formatting.
+Prediction:  The input data has been modified for better readability and understanding. The actual input data may contain minor variations in grammar, spelling, punctuation, and formatting.
+Quints:  []
+Raw prediction:  this shoe is not for me. the fit is not good and the design is not my style.
+Prediction:  this shoe is not for me. the fit is not good and the design is not my style.
+Quints:  []
+Raw prediction:  i have to wear these shoes every day for work. they are comfortable and stylish. i have been wearing them for 2 years now and they still look great.
+Prediction:  i have to wear these shoes every day for work. they are comfortable and stylish. i have been wearing them for 2 years now and they still look great.
+Quints:  []
+Raw prediction:  [O] disappointed [SSEP] [O] way too big [SSEP] [O] looks like a men's shoe on me [SSEP] [O] will
+Prediction:  [O] disappointed [SSEP] [O] way too big [SSEP] [O] looks like a men's shoe on me [SSEP] [O] will
+Quints:  [('null', 'null', 'null', 'disappointed', 'null'), ('null', 'null', 'null', 'way too big', 'null'), ('null', 'null', 'null', "looks like a men ' s shoe on me", 'null'), ('null', 'null', 'null', 'will', 'null')]
+Raw prediction:  [O] i love the look of these shoes [SSEP] [O] super comfortable [SSEP] [O] great alternative to those [END]
+Prediction:  [O] i love the look of these shoes [SSEP] [O] super comfortable [SSEP] [O] great alternative to those
+Quints:  [('null', 'null', 'null', 'i love the look of these shoes', 'null'), ('null', 'null', 'null', 'super comfortable', 'null'), ('null', 'null', 'null', 'great alternative to those', 'null')]
+Raw prediction:  [O] i am so glad i purchased these shoes [SSEP
+Prediction:  [O] i am so glad i purchased these shoes [SSEP]
+Quints:  [('null', 'null', 'null', 'i am so glad i purchased these shoes', 'null')]
+Raw prediction:  i have wide feet and these shoes fit great. the style is nice and they are comfortable.
+Prediction:  i have wide feet and these shoes fit great. the style is nice and they are comfortable.
+Quints:  []
+Raw prediction:  i ordered these shoes in a 9. 5 and they fit perfectly. they are comfortable and i love the style.
+Prediction:  i ordered these shoes in a 9. 5 and they fit perfectly. they are comfortable and i love the style.
+Quints:  []
+Raw prediction:  these shoes are really comfortable but the size i ordered was too small. i had to exchange for a bigger size.
+Prediction:  these shoes are really comfortable but the size i ordered was too small. i had to exchange for a bigger size.
+Quints:  []
+Raw prediction:  i love these sho
+Prediction:  i love these sho
+Quints:  []
+Raw prediction:  [O] love the style [SSEP] [O] way too big for me [SSEP] [O] ordered my usual size but they are huge [SSEP] [O]
+Prediction:  [O] love the style [SSEP] [O] way too big for me [SSEP] [O] ordered my usual size but they are huge [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'love the style', 'null'), ('null', 'null', 'null', 'way too big for me', 'null'), ('null', 'null', 'null', 'ordered my usual size but they are huge', 'null')]
+Raw prediction:  [O] the shoe is very comfortable [SSEP] [O] it is a bit too wide [SSEP] [O]
+Prediction:  [O] the shoe is very comfortable [SSEP] [O] it is a bit too wide [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'the shoe is very comfortable', 'null'), ('null', 'null', 'null', 'it is a bit too wide', 'null')]
+Raw prediction:  i am a big fan of adidas and i have been wearing their shoes for years. i recently purchased the new yeezy boost 350 and i must say that i am very disappointed with the quality of the shoe. the material is not what i am used to and it does not feel comfortable at all. i am also not a fan of the new design. i will stick to my old adidas shoes from now on.
+Prediction:  i am a big fan of adidas and i have been wearing their shoes for years. i recently purchased the new yeezy boost 350 and i must say that i am very disappointed with the quality of the shoe. the material is not what i am used to and it does not feel comfortable at all. i am also not a fan of the new design. i will stick to my old adidas shoes from now on.
+Quints:  []
+Raw prediction:  [O] these are the best shoes i have ever worn [SSEP] [O] these are the best shoes
+Prediction:  [O] these are the best shoes i have ever worn [SSEP] [O] these are the best shoes
+Quints:  [('null', 'null', 'null', 'these are the best shoes i have ever worn', 'null'), ('null', 'null', 'null', 'these are the best shoes', 'null')]
+Raw prediction:  comfortable and fit well.
+Prediction:  comfortable and fit well.
+Quints:  []
+Raw prediction:  these shoes are not true to size. i ordered a 9 and they fit like a 7.
+Prediction:  these shoes are not true to size. i ordered a 9 and they fit like a 7.
+Quints:  []
+Raw prediction:  i love the color and style of these shoes. they are so comfortable and i wear them all the time.
+Prediction:  i love the color and style of these shoes. they are so comfortable and i wear them all the time.
+Quints:  []
+Raw prediction:  these shoes are super comfy and i love the color. i wear them to work every day
+Prediction:  these shoes are super comfy and i love the color. i wear them to work every day
+Quints:  []
+Raw prediction:  In the input data, the aspect and category are not explicitly mentioned, but they can be inferred from the context of the review. For example, in the first input, the aspect is "fit" and the category is "comfort" because the reviewer mentions that the shoes are comfortable but run small. Similarly, in the second input, the aspect is "quality" and the category is "appearance" because the reviewer mentions that the shoes are of great quality but have a negative issue with rubbing into their ankles.
+Prediction:  In the input data, the aspect and category are not explicitly mentioned, but they can be inferred from the context of the review. For example, in the first input, the aspect is "fit" and the category is "comfort" because the reviewer mentions that the shoes are comfortable but run small. Similarly, in the second input, the aspect is "quality" and the category is "appearance" because the reviewer mentions that the shoes are of great quality but have a negative issue with rubbing into their ankles.
+Quints:  []
+Raw prediction:  i love this product. it's so soft and comfortable.
+Prediction:  i love this product. it's so soft and comfortable.
+Quints:  []
+Raw prediction:  [O] the shoe is very comfortable and the color is great [SSEP] [O] more of a navy blue than the dark gray [SSEP] [O] the shoe is very
+Prediction:  [O] the shoe is very comfortable and the color is great [SSEP] [O] more of a navy blue than the dark gray [SSEP] [O] the shoe is very
+Quints:  [('null', 'null', 'null', 'the shoe is very comfortable and the color is great', 'null'), ('null', 'null', 'null', 'more of a navy blue than the dark gray', 'null'), ('null', 'null', 'null', 'the shoe is very', 'null')]
+Raw prediction:  i love the way these shoes look. they are so cute
+Prediction:  i love the way these shoes look. they are so cute
+Quints:  []
+Raw prediction:  these shoes are comfortable and stylish. they fit well and are made of high quality
+Prediction:  these shoes are comfortable and stylish. they fit well and are made of high quality
+Quints:  []
+Raw prediction:  [O] looks great [SSEP] [O] comfortable [SSEP
+Prediction:  [O] looks great [SSEP] [O] comfortable [SSEP]
+Quints:  [('null', 'null', 'null', 'looks great', 'null'), ('null', 'null', 'null', 'comfortable', 'null')]
+Raw prediction:  i have been wearing these shoes for a week now and i have to say that they are very comfortable. the only thing that i don't like is that the heel of the shoe is a little bit too wide for my foot. it's not a big deal but it is noticeable.
+Prediction:  i have been wearing these shoes for a week now and i have to say that they are very comfortable. the only thing that i don't like is that the heel of the shoe is a little bit too wide for my foot. it's not a big deal but it is noticeable.
+Quints:  []
+Raw prediction:  [O] the shoes are very comfortable and the width is perfect for my feet [SSEP] [O] i am very pleased with the purchase [S
+Prediction:  [O] the shoes are very comfortable and the width is perfect for my feet [SSEP] [O] i am very pleased with the purchase [S]
+Quints:  [('null', 'null', 'null', 'the shoes are very comfortable and the width is perfect for my feet', 'null'), ('null', 'null', '', 'i am very pleased with the purchase', 'null')]
+Raw prediction:  [O] are hor
+Prediction:  [O] are hor
+Quints:  [('null', 'null', 'null', 'are hor', 'null')]
+Raw prediction:  the shoe is very comfortable and the color is perfect. however, the shoe is a little bit narrow than i expected.
+Prediction:  the shoe is very comfortable and the color is perfect. however, the shoe is a little bit narrow than i expected.
+Quints:  []
+Raw prediction:  i love the look of these shoes, but they run way small. i normally wear a size 8 and these are way too tight. i would suggest sizing up a full size or more.
+Prediction:  i love the look of these shoes, but they run way small. i normally wear a size 8 and these are way too tight. i would suggest sizing up a full size or more.
+Quints:  []
+Raw prediction:  it's a good shoe but not for me. i have a wider foot and it doesn't fit well.
+Prediction:  it's a good shoe but not for me. i have a wider foot and it doesn't fit well.
+Quints:  []
+Raw prediction:  i was really looking forward to these shoes. they look great in the picture. but when i received them, they are completely different color than what i expected.
+Prediction:  i was really looking forward to these shoes. they look great in the picture. but when i received them, they are completely different color than what i expected.
+Quints:  []
+Raw prediction:  i love the style of these shoes. they are
+Prediction:  i love the style of these shoes. they are
+Quints:  []
+Raw prediction:  these shoes are very comfortable
+Prediction:  these shoes are very comfortable
+Quints:  []
+Raw prediction:  [O] so comfortable [SSEP] [O] love the color [SSE
+Prediction:  [O] so comfortable [SSEP] [O] love the color [S]SE
+Quints:  [('null', 'null', 'null', 'so comfortable', 'null'), ('null', 'null', 'E', 'love the color', 'null')]
+Raw prediction:  these shoes are so comfortable and stylish. i love the color and the fit is perfect. i would definitely recommend these shoes to anyone looking for a comfortable and stylish shoe.
+Prediction:  these shoes are so comfortable and stylish. i love the color and the fit is perfect. i would definitely recommend these shoes to anyone looking for a comfortable and stylish shoe.
+Quints:  []
+Raw prediction:  the shoes are comfortable and fit well. the only thing i don't like is that they don't have a lot of support.
+Prediction:  the shoes are comfortable and fit well. the only thing i don't like is that they don't have a lot of support.
+Quints:  []
+Raw prediction:  i ordered these shoes in a 9.5 and they fit perfectly.
+Prediction:  i ordered these shoes in a 9.5 and they fit perfectly.
+Quints:  []
+Raw prediction:  [O] the style is great [SSEP] [O] they are really comfortable [SSEP
+Prediction:  [O] the style is great [SSEP] [O] they are really comfortable [SSEP]
+Quints:  [('null', 'null', 'null', 'the style is great', 'null'), ('null', 'null', 'null', 'they are really comfortable', 'null')]
+Raw prediction:  these shoes are great. they are comfortable and look good
+Prediction:  these shoes are great. they are comfortable and look good
+Quints:  []
+Raw prediction:  [O] i really enjoy [SSEP] [O] pretty comfortable to wear all day [SSEP] [O] i really like the classic style [SSEP] [O] would recommend [END]
+Prediction:  [O] i really enjoy [SSEP] [O] pretty comfortable to wear all day [SSEP] [O] i really like the classic style [SSEP] [O] would recommend
+Quints:  [('null', 'null', 'null', 'i really enjoy', 'null'), ('null', 'null', 'null', 'pretty comfortable to wear all day', 'null'), ('null', 'null', 'null', 'i really like the classic style', 'null'), ('null', 'null', 'null', 'would recommend', 'null')]
+Raw prediction:  these shoes are very comfortable and the color is great. i ordered my usual size and they fit perfectly.
+Prediction:  these shoes are very comfortable and the color is great. i ordered my usual size and they fit perfectly.
+Quints:  []
+Raw prediction:  [O] love these shoes but they run small [SSEP
+Prediction:  [O] love these shoes but they run small [SSEP]
+Quints:  [('null', 'null', 'null', 'love these shoes but they run small', 'null')]
+Raw prediction:  these shoes are so comfortable and easy to wear. the quality is great. i love them.
+Prediction:  these shoes are so comfortable and easy to wear. the quality is great. i love them.
+Quints:  []
+Raw prediction:  i have a wide foot and these fit perfectly. they are comfortable and stylish. i'm very happy with my purchase.
+Prediction:  i have a wide foot and these fit perfectly. they are comfortable and stylish. i'm very happy with my purchase.
+Quints:  []
+Raw prediction:  i have been looking for a good pair of walking shoes for a while now and i am glad i found these. they are comfortable
+Prediction:  i have been looking for a good pair of walking shoes for a while now and i am glad i found these. they are comfortable
+Quints:  []
+Raw prediction:  these shoes are so comfortable and i love the style. they fit perfectly and i would definitely recommend them to anyone looking
+Prediction:  these shoes are so comfortable and i love the style. they fit perfectly and i would definitely recommend them to anyone looking
+Quints:  []
+Raw prediction:  [O] i ordered these in a 10. 5 ee and they fit
+Prediction:  [O] i ordered these in a 10. 5 ee and they fit
+Quints:  [('null', 'null', 'null', 'i ordered these in a 10 . 5 ee and they fit', 'null')]
+Raw prediction:  i love these shoes but the 8. 5 i ordered was way too big. i usually wear
+Prediction:  i love these shoes but the 8. 5 i ordered was way too big. i usually wear
+Quints:  []
+Raw prediction:  i love these shoes. they are perfect for my narrow feet. they are comfortable and supportive. i have tried other new balance shoes and they are just as
+Prediction:  i love these shoes. they are perfect for my narrow feet. they are comfortable and supportive. i have tried other new balance shoes and they are just as
+Quints:  []
+Raw prediction:  i have a pair of these shoes that i bought a few months ago. they are very comfortable and i love the style. however, the sole is starting to separate from the shoe and it's not even a year old yet.
+Prediction:  i have a pair of these shoes that i bought a few months ago. they are very comfortable and i love the style. however, the sole is starting to separate from the shoe and it's not even a year old yet.
+Quints:  []
+Raw prediction:  [O] comfortable [SSEP] [O] recommend this product to anyone looking
+Prediction:  [O] comfortable [SSEP] [O] recommend this product to anyone looking
+Quints:  [('null', 'null', 'null', 'comfortable', 'null'), ('null', 'null', 'null', 'recommend this product to anyone looking', 'null')]
+Raw prediction:  these are so comfortable and soft. i wear them to work every day. i ordered a 7 1 / 2 and they fit perfectly.
+Prediction:  these are so comfortable and soft. i wear them to work every day. i ordered a 7 1 / 2 and they fit perfectly.
+Quints:  []
+Raw prediction:  i love these shoes, they are so comfortable and stylish. i wear them with dresses and skirts.
+Prediction:  i love these shoes, they are so comfortable and stylish. i wear them with dresses and skirts.
+Quints:  []
+Raw prediction:  i love these shoes. they are very comfortable and stylish. i would definitely recommend them to anyone looking for a comfortable and stylish shoe.
+Prediction:  i love these shoes. they are very comfortable and stylish. i would definitely recommend them to anyone looking for a comfortable and stylish shoe.
+Quints:  []
+Raw prediction:  the fit is a little narrow but i think that's just because i have wide feet. the shoes are comfortable and look great.
+Prediction:  the fit is a little narrow but i think that's just because i have wide feet. the shoes are comfortable and look great.
+Quints:  []
+Raw prediction:  the shoes are comfortable and stylish. but
+Prediction:  the shoes are comfortable and stylish. but
+Quints:  []
+Raw prediction:  these shoes are so comfortable and fit perfectly. i ordered a 7 and they fit like a glove.
+Prediction:  these shoes are so comfortable and fit perfectly. i ordered a 7 and they fit like a glove.
+Quints:  []
+Raw prediction:  comfortable, but runs small. i usually wear a size 8, but i had to get a 9 with these.
+Prediction:  comfortable, but runs small. i usually wear a size 8, but i had to get a 9 with these.
+Quints:  []
+Raw prediction:  i ordered these shoes in black and they are very comfortable. however, the black dye bleeds onto my socks and leaves a stain that is very difficult to remove.
+Prediction:  i ordered these shoes in black and they are very comfortable. however, the black dye bleeds onto my socks and leaves a stain that is very difficult to remove.
+Quints:  []
+Raw prediction:  these shoes are so comfortable and stylish. i have been wearing them every day. they are a little narrow but it's not a big deal.
+Prediction:  these shoes are so comfortable and stylish. i have been wearing them every day. they are a little narrow but it's not a big deal.
+Quints:  []
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  
+Prediction:  
+Quints:  []
+Raw prediction:  i have been wearing these shoes for a few months now and i have to say that they are really comfortable. they are also very stylish and i get compliments every time i wear them. the only thing that i don't like about them is that they are a bit narrow in the toe box. but overall, i am very happy with my purchase.
+Prediction:  i have been wearing these shoes for a few months now and i have to say that they are really comfortable. they are also very stylish and i get compliments every time i wear them. the only thing that i don't like about them is that they are a bit narrow in the toe box. but overall, i am very happy with my purchase.
+Quints:  []
+Raw prediction:  the shoe is very comfortable and has great arch support. however the color is not what i expected. it is more of a dark gray than the light gray that is shown on the website.
+Prediction:  the shoe is very comfortable and has great arch support. however the color is not what i expected. it is more of a dark gray than the light gray that is shown on the website.
+Quints:  []
+Raw prediction:  i bought these shoes for my son and he loves them. they are comfortable and easy to slip on and off. he wears them to school every day.
+Prediction:  i bought these shoes for my son and he loves them. they are comfortable and easy to slip on and off. he wears them to school every day.
+Quints:  []
+Raw prediction:  i am very happy with this product. it is exactly what i was looking for.
+Prediction:  i am very happy with this product. it is exactly what i was looking for.
+Quints:  []
+Raw prediction:  these shoes are very comfortable but i had to return them because they were too big. i ordered a 10 but they felt like a 12. i have a narrow foot and these were just too wide. i am going to try a 9. 5 next time and see if that is better.
+Prediction:  these shoes are very comfortable but i had to return them because they were too big. i ordered a 10 but they felt like a 12. i have a narrow foot and these were just too wide. i am going to try a 9. 5 next time and see if that is better.
+Quints:  []
+Raw prediction:  the shoes are comfortable, but the sizing is a bit off. i usually wear a size 8, but these shoes run a bit small. i would recommend sizing up.
+Prediction:  the shoes are comfortable, but the sizing is a bit off. i usually wear a size 8, but these shoes run a bit small. i would recommend sizing up.
+Quints:  []
+Raw prediction:  these are great shoes for walking. they are comfortable and have good arch support. i love the color and style. they are perfect for my wide feet.
+Prediction:  these are great shoes for walking. they are comfortable and have good arch support. i love the color and style. they are perfect for my wide feet.
+Quints:  []
+Raw prediction:  i have a pair of these in black and they are my go to shoes for work.
+Prediction:  i have a pair of these in black and they are my go to shoes for work.
+Quints:  []
+Raw prediction:  * [O] represents the opinion expressed in the input text.
+Prediction:  * [O] represents the opinion expressed in the input text.
+Quints:  [('null', 'null', 'null', 'represents the opinion expressed in the input text .', 'null')]
+Raw prediction:  [O] i love these shoes [SSEP] [O]
+Prediction:  [O] i love these shoes [SSEP] [O]
+Quints:  [('null', 'null', 'null', 'i love these shoes', 'null')]
+Raw prediction:  i have been wearing these shoes for a few weeks now and i have to say that they are really comfortable. they are a bit narrow but they have good arch support.
+Prediction:  i have been wearing these shoes for a few weeks now and i have to say that they are really comfortable. they are a bit narrow but they have good arch support.
+Quints:  []
+Raw prediction:  these are the most comfortable shoes i have ever worn. they are perfect for running and walking. i have a high arch and these shoes have great arch support. the cushioning is amazing and the fit is perfect.
+Prediction:  these are the most comfortable shoes i have ever worn. they are perfect for running and walking. i have a high arch and these shoes have great arch support. the cushioning is amazing and the fit is perfect.
+Quints:  []
+Raw prediction:  i love these shoes. they are perfect for running and walking. i wear them every day and have had no problems with them. they are very comfortable and supportive. i highly recommend them to anyone looking for a good running shoe.
+Prediction:  i love these shoes. they are perfect for running and walking. i wear them every day and have had no problems with them. they are very comfortable and supportive. i highly recommend them to anyone looking for a good running shoe.
+Quints:  []
+Raw prediction:  i have a
+Prediction:  i have a
+Quints:  []
+Raw prediction:  i love the style and color of this shoe. it's perfect for my son who has wide feet.
+Prediction:  i love the style and color of this shoe. it's perfect for my son who has wide feet.
+Quints:  []
+Raw prediction:  i bought these shoes for my son and he loves them. they are comfortable and easy to slip on and off. they are perfect for school and everyday use.
+Prediction:  i bought these shoes for my son and he loves them. they are comfortable and easy to slip on and off. they are perfect for school and everyday use.
+Quints:  []
+Raw prediction:  these shoes are amazing! i wear a size 9 but i ordered a 9. 5 and they fit great
+Prediction:  these shoes are amazing! i wear a size 9 but i ordered a 9. 5 and they fit great
+Quints:  []
+Raw prediction:  i have been wearing reebok shoes for years and have always been happy
+Prediction:  i have been wearing reebok shoes for years and have always been happy
+Quints:  []
+Raw prediction:  these are great shoes for the price. they are comfortable and look nice. i ordered the black and white ones.
+Prediction:  these are great shoes for the price. they are comfortable and look nice. i ordered the black and white ones.
+Quints:  []
+Raw prediction:  [O] much narrower [SSEP] [
+Prediction:  [O] much narrower [SSEP]
+Quints:  [('null', 'null', 'null', 'much narrower', 'null')]
+Raw prediction:  i love the color of these shoes. they are so comfortable and easy to slip on. perfect for running errands or taking a casual walk.
+Prediction:  i love the color of these shoes. they are so comfortable and easy to slip on. perfect for running errands or taking a casual walk.
+Quints:  []
+Raw prediction:  i love this shoe. it's perfect for my wide feet. i would buy it again in a heartbeat.
+Prediction:  i love this shoe. it's perfect for my wide feet. i would buy it again in a heartbeat.
+Quints:  []
+Raw prediction:  [O] i am very disappointed with this product [SSEP] [O] the quality is not good [SSEP] [O] the customer
+Prediction:  [O] i am very disappointed with this product [SSEP] [O] the quality is not good [SSEP] [O] the customer
+Quints:  [('null', 'null', 'null', 'i am very disappointed with this product', 'null'), ('null', 'null', 'null', 'the quality is not good', 'null'), ('null', 'null', 'null', 'the customer', 'null')]
+Raw prediction:  i'm so glad i bought these shoes. they are perfect for my job as a nurse. comfortable and easy to clean.
+Prediction:  i'm so glad i bought these shoes. they are perfect for my job as a nurse. comfortable and easy to clean.
+Quints:  []
+Raw prediction:  these are so cute and comfy! i love them. i would definitely order again.
+Prediction:  these are so cute and comfy! i love them. i would definitely order again.
+Quints:  []
+Raw prediction:  i love these sneakers. they are so comfortable and the color is beautiful. i have been wearing them nonstop.
+Prediction:  i love these sneakers. they are so comfortable and the color is beautiful. i have been wearing them nonstop.
+Quints:  []

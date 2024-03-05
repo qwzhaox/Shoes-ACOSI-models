@@ -19,4 +19,4 @@ source /sw/pkgs/arc/python3.10-anaconda/2023.03/bin/activate
 conda activate llm_acosi
 
 
-bash scripts/bash/run.sh -t acosi-extract -m llama-2 -s big
+bash scripts/bash/run.sh -t acosi-extract -m llama-2 -s big -d shoes

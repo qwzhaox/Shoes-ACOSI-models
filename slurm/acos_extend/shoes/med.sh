@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SBATCH --partition=spgpu
-#SBATCH --time=00-18:00:00
+#SBATCH --time=00-10:00:00
 #SBATCH --gpus=2
 #SBATCH --cpus-per-gpu=2
 #SBATCH --nodes=1 
@@ -9,7 +9,7 @@
 #SBATCH --account=wangluxy1
 #SBATCH --mail-user=qwzhao@umich.edu
 #SBATCH --mail-type=BEGIN,END,FAIL
-#SBATCH --job-name=ie_med
+#SBATCH --job-name=ax_med
 
 # conda
 module load python3.10-anaconda/2023.03
@@ -19,4 +19,4 @@ source /sw/pkgs/arc/python3.10-anaconda/2023.03/bin/activate
 conda activate llm_acosi
 
 
-bash scripts/bash/run.sh -t acosi-extract -m llama-2 -s med -d shoes
+bash scripts/bash/run.sh -t acos-extend -m llama-2 -s med -d shoes
